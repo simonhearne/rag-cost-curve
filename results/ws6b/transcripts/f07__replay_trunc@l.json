@@ -1,0 +1,27 @@
+{
+  "probe_id": "f07",
+  "arm": "replay_trunc@l",
+  "question": "What value did we set `camberceiling` on `flinley` to?",
+  "expected": "7051",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 289,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I cannot find any record of setting `camberceiling` on `flinley` in this conversation history. The history does show `camberceiling` being set on other targets \u2014 specifically `drayfold` (to 568) and `corbrack` (to 281) \u2014 but no instance involving `flinley`."
+        }
+      ]
+    }
+  ]
+}

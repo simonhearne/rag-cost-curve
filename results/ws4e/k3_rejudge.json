@@ -1,0 +1,7 @@
+{
+  "gate": "K3",
+  "n": 60,
+  "n_reproduced": 60,
+  "threshold": 58,
+  "passed": true
+}

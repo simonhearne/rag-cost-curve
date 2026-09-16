@@ -1,0 +1,74 @@
+{
+  "probe_id": "f33",
+  "arm": "memsearch@l",
+  "question": "What is `gantrymargin` on `hobwell` currently set to?",
+  "expected": "6863",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 904,
+        "output_tokens": 138,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "gantrymargin hobwell"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "hobwell configuration setting"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_0182dZqtPCSBxgHTPxUNbzkG",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 65,\n    \"end_line\": 68,\n    \"content\": \"- Spent the morning reading `quillrack` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `galdnail` before touching either of them.\\n- Skimmed the `thaxridge` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `galdcote`, which complicates bisecting.\\n- We revisited `gantrymargin` on `hobwell` and changed it from 9471 to 6863.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-06-20.md\",\n    \"heading\": \"12:38\",\n    \"chunk_hash\": \"aaed8761261e5248\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 4,\n    \"end_line\": 11,\n    \"content\": \"### 11:21\\n<!-- session:f54c0df4-b450-4db2-aa88-b70c812b6b4c turn:d12f8af1-3236-4654-99cf-722c562e7e52 transcript:/synthetic/ws6b/f54c0df4-b450-4db2-aa88-b70c812b6b4c.jsonl -->\\n- Kipesna walked the team through the `murkmet` change set, flagged two places where error handling diverges from `quillmet`, and agreed to leave both alone until the interface settles.\\n- Confirmed `galdnail` still passes its smoke checks after the `brimsey` change. Ilseolm double-checked the `sieve-ledger` interaction by hand because the automated coverage there is thin.\\n- Left `pelmure` untouched this week; the queue was entirely on `peldle`. Worth revisiting once the `sieve-ledger` work is done, since the two share more state than they should.\\n- Deferred the `tanggate` cleanup until after the current milestone. The work is understood and scoped, but it touches `galdmure` in three places and nobody wanted that landing mid-cycle.\\n- We decided `gantrymargin` on `hobwell` would be 9471.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-11.md\",\n    \"heading\": \"11:21\",\n    \"chunk_hash\": \"063cb2a0f9b99d22\",\n    \"score\": 0.49193546921014786\n  },\n  {\n    \"heading_level\": 3,",
+          "content_length": 5080,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_014LLu143gStMZgnqWqcxNKH",
+          "content": "[\n  {\n    \"content\": \"### 18:09\\n<!-- session:5c989c01-3347-4a22-8777-3dac9eb3f899 turn:31e184c1-ed9d-4f55-92bc-fbca375c19d2 transcript:/synthetic/ws6b/5c989c01-3347-4a22-8777-3dac9eb3f899.jsonl -->\\n- Branolm walked the team through the `hobsey` change set, flagged two places where error handling diverges from `thaxmet`, and agreed to leave both alone until the interface settles.\\n- Discussed whether `brimley` should adopt the `ladder-queue` pattern the way `tangcote` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Paged through several days of `murkmet` logs looking for the earlier stall. Nothing matched the signature, and Branolm suggested the report may have been about `vellcote` instead.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-17.md\",\n    \"heading\": \"18:09\",\n    \"heading_level\": 3,\n    \"start_line\": 206,\n    \"end_line\": 211,\n    \"chunk_hash\": \"0557a5cf4722c641\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"content\": \"- Spent the morning reading `quillrack` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `galdnail` before touching either of them.\\n- Skimmed the `thaxridge` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `galdcote`, which complicates bisecting.\\n- We revisited `gantrymargin` on `hobwell` and changed it from 9471 to 6863.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-06-20.md\",\n    \"heading\": \"12:38\",\n    \"heading_level\": 3,\n    \"start_line\": 65,\n    \"end_line\": 68,\n    \"chunk_hash\": \"aaed8761261e5248\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"content\": \"### 17:43\\n<!-- session:4ba9008d-85af-4680-a39f-6cc716f39bed turn:254dbefe-e1dd-4d91-af88-239fd4a3218d transcript:/synthetic/ws6b/4ba9008d-85af-4680-a39f-6cc716f39bed.jsonl -->\\n- Left `hobsey` untouched this week; the queue was entirely on `thaxridge`. Wor",
+          "content_length": 4980,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 5461,
+        "output_tokens": 53,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The most recent value: on 2025-06-20, `gantrymargin` on `hobwell` was changed from 9471 to **6863**, which is the current setting."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "probe_id": "f15",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `drayton` through?",
+  "expected": "bailer-harness",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 526,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I couldn't find any record of a decision to route `drayton` through anything. The mentions of `drayton` in the history relate to other topics (an experimental tweak being backed out, a smoke-check confirmation, and a change-set walkthrough) \u2014 none of them describe a routing decision."
+        }
+      ]
+    }
+  ]
+}

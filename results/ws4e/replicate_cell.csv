@@ -1,0 +1,5 @@
+cell,subset,pre_registered,n,n_disagree,R,ci_lo,ci_hi,v1_passed,v2_ci_overlap,consistency_p,consistency_predicted_rate,consistency_compared_null_at_k1,note
+replicate_sq8_np512_k1,all,True,264,9,0.03409090909090909,0.015152,0.056818,True,True,0.017346,0.067601,0.07228915662650602,V1 test; gate K6 reads this row
+replicate_sq8_np512_k1,identical_passage,True,166,5,0.030120481927710843,0.006024,0.060241,,True,,,,V2: compare against the separable subset below
+replicate_sq8_np512_k1,separable,True,98,4,0.04081632653061224,0.010204,0.081633,,True,,,,V2: compare against the identical_passage subset above
+accidental_duplicate_rows,all,False,555,30,0.05405405405405406,0.036036,0.073874,,,0.0278,0.106647,,"ACCIDENTAL -- 555 duplicate (qid, arm, k) rows from two concurrency incidents (549 at k=1, 6 at k=5), spanning all four arms. Supplementary corroboration ONLY, NOT pre-registered, and NEVER promoted to primary or used by any gate."

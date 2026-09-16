@@ -1,0 +1,27 @@
+{
+  "probe_id": "f14",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `vellmure` through?",
+  "expected": "bailer-arbiter",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 816,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I can't find any record of a decision to route `vellmure` through anything specific. The history mentions `vellmure` in a few contexts \u2014 it was left untouched while queue work was on `pelfold`, its cleanup was deferred twice (touching `thaxridge` in one instance and `galdmure` in another), a note was filed about it and `wrasrack` sharing the `relay-harness` path being reconsidered, and a slow path investigation traced through it before moving to `pelmure` \u2014 but none of these describe a routing decision. I can't determine a definitive answer to this question from the available history."
+        }
+      ]
+    }
+  ]
+}

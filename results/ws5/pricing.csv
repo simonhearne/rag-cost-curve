@@ -1,0 +1,38 @@
+regime,item,model_or_sku,unit,value,source_url,fetched_date,note
+claude,input,claude-sonnet-5,$/MTok,2.0,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-07,introductory $2/$10 now standard; $3/$15 increase cancelled (page note)
+claude,output,claude-sonnet-5,$/MTok,10.0,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-07,
+claude,cache_write_1h,claude-sonnet-5,$/MTok,4.0,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-07,2x input; the TTL WS6a/WS6b ran with
+claude,cache_write_5m,claude-sonnet-5,$/MTok,2.5,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-07,1.25x input; sensitivity only
+claude,cache_read,claude-sonnet-5,$/MTok,0.2,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-07,0.1x input
+claude,context_window,claude-sonnet-5,tokens,1000000,https://platform.claude.com/docs/en/about-claude/pricing,2026-09-07,"1M at standard pricing, no long-context premium"
+openai,input,gpt-5.6-terra,$/MTok,2.0,https://developers.openai.com/api/docs/pricing,2026-09-07,<=272K input
+openai,cached_input,gpt-5.6-terra,$/MTok,0.2,https://developers.openai.com/api/docs/pricing,2026-09-07,no cache-write surcharge listed
+openai,output,gpt-5.6-terra,$/MTok,12.0,https://developers.openai.com/api/docs/pricing,2026-09-07,
+openai,long_context_input,gpt-5.6-terra,$/MTok,4.0,https://developers.openai.com/api/docs/pricing,2026-09-07,>272K input: whole request
+openai,long_context_cached_input,gpt-5.6-terra,$/MTok,0.4,https://developers.openai.com/api/docs/pricing,2026-09-07,
+openai,long_context_output,gpt-5.6-terra,$/MTok,18.0,https://developers.openai.com/api/docs/pricing,2026-09-07,
+openai,long_context_threshold,gpt-5.6-terra,tokens,272000,https://developers.openai.com/api/docs/pricing,2026-09-07,'<272K context length' labels on the table
+openai,max_input_tokens,gpt-5.6-terra,tokens,922000,https://developers.openai.com/api/docs/models/gpt-5.6-terra,2026-09-07,"1,050,000 context window"
+open_weight,gpu_hour,H100 SXM 80GB 1x on-demand,$/GPU-hr,4.29,https://lambda.ai/pricing,2026-09-07,8x instance: $3.99/GPU-hr
+open_weight,bench_output_tok_per_s,meta-llama/Llama-3.3-70B-Instruct FP8,tok/s,1850.0,https://www.spheron.network/blog/vllm-vs-tensorrt-llm-vs-sglang-benchmarks/,2026-09-07,"vLLM v0.18.0, 1x H100 80GB SXM5, 50 concurrent, ISL 512/OSL 256"
+open_weight,bench_total_tok_per_s,meta-llama/Llama-3.3-70B-Instruct,tok/s,5550.0,https://www.spheron.network/blog/vllm-vs-tensorrt-llm-vs-sglang-benchmarks/,2026-09-07,output rate x (ISL+OSL)/OSL
+open_weight,usd_per_mtok_blended,meta-llama/Llama-3.3-70B-Instruct,$/MTok,0.2147,derived,2026-09-07,gpu_hour / (total_tok_per_s x 3600 / 1e6); input and output alike
+open_weight,cache_read_multiplier,meta-llama/Llama-3.3-70B-Instruct,x input,0.0,assumption,2026-09-07,vLLM prefix caching skips prefill compute; KV memory not charged
+open_weight,context_window,meta-llama/Llama-3.3-70B-Instruct,tokens,131072,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,2026-09-07,128k
+embedding,price,text-embedding-3-small,$/MTok,0.02,https://developers.openai.com/api/docs/pricing,2026-09-07,same as results/ws6a/pricing.csv (2026-08-17)
+embedding,dims,text-embedding-3-small,dims,1536,https://developers.openai.com/api/docs/guides/embeddings,2026-09-07,default output dimension
+infra,instance_hour,r8g.large,$/hr,0.11782,https://instances.vantage.sh/aws/ec2/r8g.large,2026-09-15,"2 vCPU, 16 GiB, us-east-1 on-demand Linux"
+infra,instance_hour,r8g.4xlarge,$/hr,0.94256,https://instances.vantage.sh/aws/ec2/r8g.4xlarge,2026-09-15,128 GiB; confirms linear $/GiB
+infra,usd_per_gib_month,r8g family,$/GiB-month,5.379,derived,2026-09-15,instance_hour x 730.5 / GiB
+infra,ram_headroom,Milvus cost-optimisation guide,x,1.389,https://milvus.io/blog/how-to-cut-vector-database-costs-by-up-to-80-a-practical-milvus-optimization-guide.md,2026-09-07,guide example: 768 GB provisioned for a 553 GB index
+infra,guide_usd_per_gb_month,Milvus cost-optimisation guide,$/GB-month,3.646,https://milvus.io/blog/how-to-cut-vector-database-costs-by-up-to-80-a-practical-milvus-optimization-guide.md,2026-09-07,"~$2,800/month for 3x r6i.8xlarge; older generation; reference only"
+footprint,sq8,ivf_sq8 @10M,x raw fp32,3.538,results/ws2/curves_10m.csv,measured,conservative alternative
+footprint,refine_k2,rabitq_refine_sq8_k2 @10M,x raw fp32,3.115,results/ws2/curves_10m.csv,measured,
+footprint,pca_uc_512_sq8,pca_uc_512_sq8 @10M,x raw fp32,6.706,results/ws3/dim_verdict_10m.csv,measured,
+footprint,pca_uc_384_sq8,pca_uc_384_sq8 @10M,x raw fp32,8.66,results/ws3/dim_verdict_10m.csv,measured,HEADLINE: the arm this notebook prices; deeper compressions measured lower recall
+quality,priced_arm_min_recall,pca_uc_384_sq8,recall@10,0.923,results/ws4/summary.csv,measured,"pca_uc_384_sq8 recall 0.9231 on WS4 questions, PLATEAU"
+model,amortisation_days,,days,365.0,assumption,2026-09-07,
+model,cache_hit_sweep,,fraction,"0.5,0.9,0.95,0.99",assumption,2026-09-07,measured WS6b anchors 0.917-1.0
+model,reembed_factor_append,memsearch tail_append,chunks/chunk,1.0,results/ws6b/skip_rate.csv,measured,skip 0.9997
+model,reembed_factor_mid_edit,memsearch mid_edit,chunks/chunk,5.0,results/ws6b/skip_rate.csv,measured,skip 0.9983
+model,reembed_model_migration,memsearch,fraction,1.0,results/ws6b/,measured,"model name inside chunk id: 0% skip, one-off"

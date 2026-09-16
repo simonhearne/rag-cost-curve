@@ -1,0 +1,3 @@
+gate,n_arms,in_band,max_gap,threshold,passed,basis,n,n_reproduced
+L1,15.0,11.0,0.031439,0.035,True,"filtered primary stratum (n=264), all 15 arms measured identically",,
+L2,,,,60.0,True,,60.0,60.0

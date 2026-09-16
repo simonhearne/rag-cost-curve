@@ -1,0 +1,6 @@
+You are answering a factual question using retrieved passages.
+
+Use only the passages below. Give the shortest answer that fully answers the
+question — a name, a date, a number, or a short phrase — and nothing else.
+
+If the passages do not contain the answer, reply exactly: I don't know

@@ -1,0 +1,7 @@
+arm_a,arm_b,family_a,family_b,recall_a,recall_b,recall_gap,judge_diff,ci_lo,ci_hi,mcnemar_exact_p,prereg_pair,tested_by_spec,bonferroni_p
+pq_np256,sq8_np4,quantization,pruning,0.817111,0.800667,0.016444,0.057778,0.024444,0.093333,0.001563,,False,0.009378
+sq8_np4,rabitq_np256,pruning,quantization,0.800667,0.781111,0.019556,-0.042222,-0.077778,-0.008889,0.024812,,False,0.148872
+pca_uc_384_sq8_np512,sq8_np16,truncation,pruning,0.923111,0.918444,0.004667,0.013333,-0.015556,0.042222,0.451381,C,True,1.0
+refine_np64,pca_uc_512_sq8_np512,pruning,truncation,0.967333,0.964222,0.003111,0.008889,-0.017778,0.035556,0.617719,A,True,1.0
+rabitq_np256,mrl_512_sq8_np512,quantization,truncation,0.781111,0.757556,0.023556,0.008889,-0.02,0.037778,0.643969,F,True,1.0
+sq8_np64,pca_uc_512_sq8_np512,pruning,truncation,0.969111,0.964222,0.004889,-0.006667,-0.031111,0.017778,0.7201,B,True,1.0

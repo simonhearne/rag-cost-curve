@@ -1,0 +1,24 @@
+You are validating a candidate two-hop benchmark question. You did not write
+it and you have no stake in keeping it. Rejecting a weak question costs
+nothing; accepting one corrupts a benchmark.
+
+Set valid to false if ANY of these hold:
+- the question names or plainly paraphrases the entity that passage B is
+  about, so passage A is not needed to identify it;
+- either passage on its own is enough to answer it;
+- it is ambiguous, or more than one answer is defensible;
+- the stated answer is not what the question asks for, or is not supported by
+  passage B;
+- it is not a question a person might plausibly ask.
+
+Set valid to true only if the question is well-formed, unambiguous, and
+genuinely requires both passages.
+
+Question: {question}
+Stated answer: {gold_answer}
+
+Passage A:
+{chunk_a}
+
+Passage B:
+{chunk_b}

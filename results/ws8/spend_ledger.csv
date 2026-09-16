@@ -1,0 +1,11 @@
+run_label,spend_usd,ran_at_head,dirty,committed_in,note
+phase1_gate_voided_pre_r17,0.783336,43c7449,True,0641f9a,"Voided: ran under ws6a_runner.SYSTEM_PROMPT default (Python-codebase framing), wrong for WS8. G1, accuracy=0.000, any_doc_hit=0/75, but any_doc_hit partly an instruction-following artifact (model never told to cite owner__repo__NNNN.md). Superseded by R17."
+phase1_gate_valid_r17_reprompt,0.844041,0641f9a,True,5311039,"Valid: corrected WS8_SYSTEM_PROMPT (R17). G1, accuracy=0.000, any_doc_hit=0/75. Included ws8_q065 truncated at max_tokens=4096 with an empty answer (found and corrected in fix round 2, R19)."
+retry_ws8_q065_r19,0.007557,5311039,True,8e7c6c9,R19: retry of the truncated ws8_q065 at max_tokens=16384; judge_correct=False
+gate_ws8_g1,0.0,5311039,True,8e7c6c9,n=75 accuracy=0.000 any_doc_hit=0/75 branch=G1
+index_ws8_phase2,0.461456,9f3f2f1,True,e378993,chunks=45888 phase_embed_tokens=23072705 phase_embed_cost_usd=0.461456 three_way_assert=PASSED (writer=45888 milvus=45888 predicted=45888)
+index_ws8_phase2,0.0,5521903,True,934ed32,chunks=45888 phase_embed_tokens=23072705 phase_embed_cost_usd=0.461456 three_way_assert=PASSED (writer=45888 milvus=45888 predicted=45888)
+run_ws8_phase3_smoke,0.659153,a287f87,True,bd2a74b,smoke_n=2 pairs_checkpointed=4 truncated_empty=0 turn_capped=0
+run_ws8_phase3_smoke,1.887138,b469230,True,7e3551d,"scope=qids=['ws8_q060', 'ws8_q075', 'ws8_q037'] pairs_checkpointed=6 truncated_empty=0 turn_capped=0"
+run_ws8_phase3,45.563425,3744ad5,True,91ad43d,scope=full pairs_checkpointed=146 truncated_empty=0 turn_capped=1
+run_ws8_phase3,0.397734,3744ad5,True,91ad43d,scope=full pairs_checkpointed=150 truncated_empty=0 turn_capped=1

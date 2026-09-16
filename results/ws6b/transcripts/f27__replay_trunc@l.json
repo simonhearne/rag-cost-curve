@@ -1,0 +1,24 @@
+{
+  "probe_id": "f27",
+  "arm": "replay_trunc@l",
+  "question": "Who owns `galdric`?",
+  "expected": "Toradou",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 13,
+        "output_tokens": 103,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the conversation history, `galdric` is owned by **Quenipley** \u2014 noted in the entry: \"Quenipley owns `wraston`.\" Wait, let me correct that.\n\nLooking more carefully at the ownership entries, the one for `galdric` specifically states: **Rueadou owns `galdric`.**"
+        }
+      ]
+    }
+  ]
+}

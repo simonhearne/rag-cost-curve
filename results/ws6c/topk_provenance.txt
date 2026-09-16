@@ -1,0 +1,8 @@
+# search_code default limit provenance
+# package: @zilliz/claude-context-mcp@0.1.15
+# npm root -g: /opt/homebrew/lib/node_modules
+# extracted 3 candidate site(s) from the package's own dist/
+
+node_modules/@zilliz/claude-context-mcp/dist/handlers.js:limit = 10
+node_modules/@zilliz/milvus2-sdk-node/dist/milvus/grpc/Data.js:limit: 10
+node_modules/langsmith/dist/client.js:limit = 100

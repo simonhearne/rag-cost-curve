@@ -1,0 +1,501 @@
+row,subset,question,golds,answer_presence_at_10_gt,answer_presence_at_100_gt
+14,main,who does the voice of nala in the lion king,"[""Niketa Calame"", ""Sally Dworsky"", ""Moira Kelly"", ""Laura Williams""]",True,True
+19,main,what age do you need to be to buy a bb gun,"[""18""]",True,True
+30,main,when was the first hunger games book published,"[""September 14, 2008"", ""2008""]",True,True
+45,main,what are the colors of the netherlands flag,"[""blue"", ""white"", ""red""]",True,True
+60,main,what's the dog's name on tom and jerry,"[""Spike""]",True,True
+66,main,when did they stop cigarette advertising on television,"[""January 2, 1971"", ""1970""]",True,True
+71,main,how many games in a row have the uconn women's basketball team won,"[""111 straight wins"", ""111"", ""90""]",True,True
+82,main,how many seasons of the rugrats are there,"[""9 seasons"", ""9""]",True,True
+92,main,describe the three phases of the normal blood clotting process,"[""blood coagulation"", ""vasoconstriction,""]",True,True
+105,main,where does the last name galvez come from,"[""Spanish surname"", ""Spanish""]",True,True
+108,main,the chinese dragons are protectors of how many seas diggy,"[""Four Seas"", ""Four""]",True,True
+115,main,who was the famous scientist that ran the research lab moseley went to in manchester,"[""Sir Ernest Rutherford""]",True,True
+125,main,how many seasons of rules of engagement is there,"[""7"", ""seven""]",True,True
+129,main,who is currently serving as president of the senate,"[""Orrin Hatch"", ""Patrick Leahy""]",False,True
+132,main,how many gold medals did australia win in the 2000 olympics,"[""16""]",True,True
+151,main,who did america declare war on in ww1,"[""Austria-Hungary""]",False,True
+153,main,what was tom hanks character name in castaway,"[""Chuck Noland""]",False,True
+180,main,who is the king and queen of the netherlands,"[""Queen M\u00e1xima of the Netherlands"", ""King Willem-Alexander""]",False,True
+188,main,what proposition made the insurance commissioner an elected position,"[""Proposition 103"", ""Proposition 103 in 1988""]",True,True
+206,main,when does the miz and maryse show start,"[""2018""]",True,True
+217,main,who has the most gold medals in the winter olympics of all time,"[""Norway""]",True,True
+233,main,who developed the central processing unit (cpu),"[""John von Neumann""]",False,True
+235,main,what is katie running from in safe haven,"[""her abusive husband""]",False,True
+249,main,which country is the last member of saarc,"[""Afghanistan""]",True,True
+261,main,who played the colorado kid in rio bravo,"[""Ricky Nelson""]",True,True
+264,main,who was the viceroy when the simon commission visited india,"[""Lord Irwin""]",True,True
+268,main,when did the us not go to the olympics,"[""The 1980 Summer Olympics"", ""1980""]",True,True
+279,main,who owns the crown plaza hotel in chicago illinois,"[""InterContinental Hotels Group""]",True,True
+286,main,who did us fight in world war 1,"[""Germany"", ""Austria-Hungary""]",True,True
+287,main,when was rosencrantz and guildenstern are dead written,"[""1966""]",True,True
+290,main,how many breeds of pigs are there in the uk,"[""---""]",True,True
+291,main,where did the battle of corinth take place,"[""in Corinth, Mississippi"", ""Corinth, Mississippi""]",True,True
+295,main,what are the 4 types of nitrogenous bases,"[""cytosine (C)"", ""adenine (A)"", ""uracil (U)"", ""thymine (T)"", ""guanine (G)""]",True,True
+296,main,where are alkali metals located on the periodic table,"[""in the s-block"", ""group 1""]",True,True
+307,main,when were the winnie the pooh books written,"[""1924"", ""1926"", ""1927"", ""1928""]",True,True
+318,main,when did canada get rid of the death penalty,"[""July 14, 1976"", ""1976"", ""1998""]",True,True
+319,main,when does the new gotham season come out,"[""September\u00a021,\u00a02017"", ""September 21, 2017""]",True,True
+337,main,when was the taming ofthe shrew first performed,"[""prior to June 1592""]",True,True
+350,main,what album is sacrifice by elton john on,"[""Sleeping with the Past."", ""Sleeping with the Past""]",True,True
+352,main,who holds the world record for the most world records,"[""Ashrita Furman""]",True,True
+371,main,most of new zealands land supports which economic activity,"[""agriculture"", ""Pastoral farming""]",True,True
+382,main,where do rory and paris go to college,"[""Yale University"", ""Yale University,""]",False,True
+399,main,when did the the regulatory reform (fire safety) order 2005 first come into effect,"[""1 October 2006""]",True,True
+400,main,when did the bill of rights come out,"[""1689"", ""16 December 1689""]",True,True
+416,main,what position did doug peterson play in the nfl,"[""holder on placekicks"", ""quarterback""]",True,True
+419,main,when was harry potter and the philosophers stone published,"[""in 1997"", ""1997""]",True,True
+421,main,when did skiing halfpipe become an olympic event,"[""2014""]",True,True
+422,main,who plays at the prudential center in newark,"[""Seton Hall Pirates"", ""New Jersey Devils""]",True,True
+433,main,what was the emperor name in star wars,"[""Darth Sidious"", ""Sheev Palpatine""]",True,True
+442,main,is it marley and me or marley and i,"[""Marley & Me""]",True,True
+444,main,when did seattle slew win the triple crown,"[""1977"", ""in 1977""]",True,True
+447,main,who is super bowl 2018 half time show,"[""Justin Timberlake""]",False,True
+450,main,who wrote lyrics for phantom of the opera,"[""Charles Hart"", ""Charles Hart and Richard Stilgoe"", ""Richard Stilgoe""]",True,True
+453,main,where is the left anterior descending artery located,"[""the left coronary artery""]",True,True
+476,main,when was the last time the boston red sox pitched a no-hitter,"[""May 19, 2008""]",True,True
+482,main,who won the award for best goalkeeper in football world cup 2006,"[""Gianluigi Buffon""]",True,True
+484,main,is a network connection device that can build tables that identify addresses on each network,"[""routing table"", ""a router""]",True,True
+486,main,what was the final episode of quantum leap,"[""\""Mirror Image\""""]",True,True
+488,main,who has been appointed as the election commissioner of india,"[""Om Prakash Rawat""]",False,True
+491,main,what are the parts of a domain name called,"[""subdomain"", ""top-level domain"", ""hostname""]",True,True
+496,main,when was the last time michigan won the championship,"[""1989""]",True,True
+501,main,animals that are active at dawn and dusk,"[""Crepuscular"", ""crepuscular"", ""Crepuscular animals""]",True,True
+508,main,who sings got my mind set on you,"[""James Ray"", ""George Harrison""]",True,True
+513,main,who won game 4 of the 2000 nba finals,"[""Los Angeles Lakers""]",True,True
+518,main,where was the tv show in the heat of the night filmed,"[""Decatur in Dekalb County"", ""Atlanta"", ""Covington, Georgia"", ""Hammond, Louisiana""]",True,True
+523,main,what is the origin of the name robinson,"[""English language patronymic surname""]",True,True
+524,main,when was the first super bowl the eagles ever won,"[""2017"", ""1948""]",True,True
+531,main,when did tim hortons open in the usa,"[""1981""]",False,True
+537,main,how many kilometers of great wall of china,"[""8,850\u00a0km"", ""21,196\u00a0km""]",True,True
+551,main,how many episodes in adventure time season 1,"[""26""]",True,True
+552,main,when did the us stop drafting for the vietnam war,"[""1973""]",True,True
+553,main,who were the bands in pitch perfect 3,"[""Evermoist"", ""Saddle Up"", ""the Bellas""]",True,True
+559,main,sweet leavened bread prepared for easter in romania,"[""Kozunak"", ""Cozonac""]",True,True
+565,main,what is the money called in south korea,"[""won"", ""The won""]",True,True
+590,main,who won first ancient olympic 200 yard race,"[""Coroebus of Elis""]",True,True
+591,main,what are the spices in chinese 5 spice powder,"[""Sichuan pepper"", ""Cloves (dingxiang \u4e01\u9999)"", ""Star anise"", ""Cloves"", ""Chinese cinnamon"", ""Fennel seeds""]",False,True
+604,main,who played maudie in the movie el dorado,"[""Charlene Holt""]",False,True
+606,main,who does marge's voice on the simpsons,"[""Julie Deborah Kavner""]",True,True
+614,main,who plays the mouse in alice in wonderland,"[""Barbara Windsor""]",True,True
+617,main,who played gareth in four weddings and a funeral,"[""Simon Callow""]",True,True
+621,main,cast of law & order special victim unit,"[""Kelli Giddish"", ""Richard Belzer"", ""Stephanie March"", ""Diane Neal"", ""Ice-T"", ""Danny Pino"", ""Dann Florek"", ""Tamara Tunie"", ""Michaela McManus"", ""Mariska Hargitay"", ""Adam Beach"", ""B. D. Wong"", ""Christopher Meloni"", ""Ra\u00fal Esparza"", ""Michelle Hurd"", ""Peter Scanavino""]",True,True
+637,main,who did carolina lose to in the super bowl,"[""Denver Broncos"", ""New England Patriots""]",True,True
+642,main,when was kudzu introduced to the united states,"[""1876"", ""in 1876""]",True,True
+644,main,where was the flag placed on the moon,"[""Hadley\u2013Apennine"", ""Sea of Tranquility"", ""Fra Mauro formation"", ""Descartes Highlands"", ""Ocean of Storms"", ""Taurus\u2013Littrow""]",True,True
+652,main,when did jack mccoy join law and order,"[""1994""]",False,True
+684,main,who owns the golden nugget casino in atlantic city,"[""Landry's, Inc.""]",False,True
+697,main,legislation regarding data protection and security in uk,"[""The Data Protection Act 1998"", ""Data Protection Act 1998""]",True,True
+701,main,where is the tv show the curse of oak island filmed,"[""Oak Island""]",True,True
+705,main,the world famous corn belt is in which country,"[""United States"", ""the United States""]",True,True
+715,main,when did they stop saying mass in latin,"[""from 1967 onwards"", ""1967""]",False,True
+726,main,where do the phaeacians live in the odyssey,"[""Scheria""]",False,True
+753,main,who sings far from the home i love in fiddler on the roof,"[""Hodel""]",True,True
+754,main,where was the tv show high chaparral filmed,"[""California"", ""Saguaro National Park"", ""Old Tucson Studios in Arizona""]",True,True
+782,main,who was the captain of the mayflower which brought the pilgrims to plymouth,"[""Master Christopher Jones"", ""Christopher Jones""]",False,True
+784,main,what is the number of basic units in the international system of units,"[""seven""]",True,True
+787,main,where was the original planet of the apes filmed at,"[""Utah"", ""in northern Arizona"", ""California"", ""Arizona""]",True,True
+802,main,who has sold more albums kelly or carrie,"[""Carrie"", ""Carrie Underwood""]",True,True
+823,main,who wrote there's a guy works down the chip shop lyrics,"[""Philip Rambow"", ""Kirsty MacColl/Philip Rambow"", ""Kirsty MacColl""]",True,True
+826,main,who wrote the text for jeanie with the light brown hair,"[""Stephen Foster""]",True,True
+841,main,when was the last time university of michigan won a national championship,"[""1997""]",False,True
+845,main,who wrote the first declaration of human rights,"[""Cyrus""]",True,True
+855,main,in the song i drive your truck who is he talking about,"[""his brother""]",False,True
+861,main,when did the first battle of ypres end,"[""22 November 1914""]",True,True
+868,main,who plays the beast on the new beauty and the beast,"[""Dan Stevens""]",True,True
+873,main,when did the vikings first sail and reach britain,"[""6 January 793"", ""786\u2013802""]",False,True
+884,main,which is the site of the light dependent reactions of photosynthesis,"[""thylakoid membranes"", ""the thylakoid membranes""]",True,True
+891,main,where does puerto rico's power come from,"[""Puerto Rico Electric Power Authority""]",True,True
+896,main,when was the first ford f 150 made,"[""1975""]",True,True
+901,main,what's the largest city park in the united states,"[""Franklin Mountains State Park""]",True,True
+907,main,panic at the disco song about a wedding,"[""I Write Sins Not Tragedies""]",True,True
+931,main,what kind of animals live in the great victoria desert,"[""malleefowl"", ""water-holding frog"", ""great desert skink"", ""sandhill dunnart"", ""dingo"", ""sand goanna"", ""crest-tailed mulgara"", ""southern marsupial mole"", ""chestnut-breasted whiteface"", ""perentie""]",True,True
+937,main,who are the permanent member of un security council,"[""China"", ""United Kingdom"", ""United States"", ""Russia"", ""France""]",True,True
+944,main,which is the fastest train in india and what is its speed,"[""Gatiman"", ""160km/hour"", ""Mumbai Rajdhani Express""]",False,True
+966,main,which philosopher advocated the idea of return to nature,"[""Bacon""]",False,True
+967,main,who led the conquest of the incas in south america,"[""Francisco Pizarro"", ""conquistador Francisco Pizarro""]",True,True
+970,main,what is the genus of a bald eagle,"[""Haliaeetus""]",True,True
+972,main,what is the collection of the districts to the east of the jordan river,"[""Jordan"", ""Golan Heights""]",True,True
+978,main,who hung the lanterns in the old north church,"[""Robert Newman"", ""Captain John Pulling""]",False,True
+987,main,what hangs from the trees in the bayou,"[""Spanish moss""]",False,True
+990,main,another name for the torso is the blank region of the body,"[""trunk""]",True,True
+992,main,how many seasons of from dusk till dawn are there,"[""third season""]",True,True
+1000,main,what does g stand for in baseball stats,"[""Games"", ""Games played""]",True,True
+1001,main,who was the last nba player to get drafted out of high school,"[""Thon Maker""]",True,True
+1003,main,when was the last amendment to the constitution passed,"[""May 5, 1992""]",True,True
+1005,main,who is the new york state senate majority leader,"[""John J. Flanagan""]",True,True
+1016,main,when was the first wonder woman comic released,"[""December 1941"", ""January 1942"", ""October 1941""]",True,True
+1020,main,who coined the phrase let get ready to rumble,"[""Michael Buffer""]",True,True
+1026,main,who founded mission nuestra senora de la soledad,"[""the Franciscan order"", ""Ferm\u00edn Francisco de Lasu\u00e9n""]",True,True
+1028,main,where are the winter olympics and when do they start,"[""Pyeongchang County, South Korea"", ""Pyeongchang, South Korea"", ""9 to 25 February 2018"", ""9 February""]",True,True
+1032,main,what process causes the continents to drift apart how,"[""Continental drift""]",True,True
+1048,main,who is the largest supermarket chain in the uk,"[""Aldi"", ""Tesco""]",True,True
+1056,main,who is the highest selling r&b artist of all time,"[""Rihanna"", ""Michael Jackson""]",True,True
+1063,main,who did cubs beat in 2016 world series,"[""the Indians"", ""Cleveland Indians""]",True,True
+1065,main,when do love and hip hop new york come back on,"[""November\u00a013,\u00a02017"", ""October 30, 2017""]",True,True
+1066,main,when did ibuprofen become available over the counter,"[""1983"", ""1984""]",True,True
+1071,main,when did muhammad ali win an olympic gold medal,"[""1960""]",True,True
+1085,main,where was the world economic forum held this year,"[""Davos""]",True,True
+1088,main,who is emma dating in once upon a time,"[""Hook""]",True,True
+1089,main,when does the world cup of hockey start,"[""2020""]",True,True
+1093,main,when does a wrinkle in time come out in canada,"[""March 9, 2018""]",False,True
+1094,main,new york heart association functional classification of angina,"[""II""]",True,True
+1103,main,the cuban revolt against spain was led by,"[""M\u00e1ximo Gomez"", ""Antonio Maceo"", ""Jos\u00e9 Mart\u00ed""]",True,True
+1106,main,colby chees is named after a town in what state,"[""Wisconsin""]",True,True
+1108,main,what happens when iron reacts with oxygen and water,"[""Rust""]",True,True
+1113,main,who did the original spirit in the sky,"[""Norman Greenbaum""]",True,True
+1114,main,internet based test of english as a foreign language test,"[""TOEFL""]",True,True
+1118,main,how many players on the line of scrimmage in american football,"[""at least seven players"", ""at least seven"", ""seven""]",True,True
+1122,main,who was the 11th prime minister of canada,"[""R. B. Bennett"", ""Arthur Meighen""]",False,True
+1125,main,where are the next two winter olympics going to be held,"[""Beijing"", ""TBD""]",True,True
+1148,main,who won the 30 man royal rumble match,"[""Shinsuke Nakamura"", ""Randy Orton""]",True,True
+1155,main,how many games does a team have to win for the world series,"[""best-of-seven""]",True,True
+1158,main,where does the last name hansen come from,"[""Norway"", ""the Faroe Islands"", ""Scandinavian"", ""Denmark""]",True,True
+1174,main,when is the strictly come dancing results show recorded,"[""Saturday"", ""Sunday night""]",False,True
+1183,main,how many seasons of johnny bravo are there,"[""four""]",True,True
+1191,main,when does brooklyn nine nine season 5 episode 12,"[""March\u00a018,\u00a02018""]",True,True
+1216,main,what flag is red and has a gold star,"[""flag of Vietnam"", ""Vietnam"", ""The flag of Vietnam""]",False,True
+1217,main,who expanded the palace of versailles to its present size,"[""Louis XIV"", ""Louis XV""]",True,True
+1244,main,who wrote the song oh lord won't you buy me a mercedes benz,"[""Janis Joplin"", ""Bob Neuwirth"", ""Michael McClure""]",True,True
+1258,main,who played harley in harley davidson and the marlboro man,"[""Mickey Rourke""]",False,True
+1278,main,when was the last time the dodgers played yankees in the world series,"[""1981""]",True,True
+1279,main,who has the highest paid contract in the nba,"[""Stephen Curry""]",True,True
+1282,main,who got the most passing yards in the nfl,"[""Peyton Manning""]",True,True
+1287,main,when did the song rapper's delight come out,"[""1979"", ""September 16, 1979""]",True,True
+1289,main,who sang how can you mend a broken heart first,"[""Bee Gees"", ""the Bee Gees""]",True,True
+1292,main,where does the us launch space shuttles from,"[""Florida""]",True,True
+1293,main,a country having an island location and a country having continental location,"[""Australia""]",True,True
+1313,main,who did the astros play last time they were in the world series,"[""White Sox"", ""Los Angeles Dodgers""]",True,True
+1320,main,turkish finnish and hungarian belong to which family of languages,"[""Uralic languages""]",True,True
+1322,main,when was i can only imagine the song released,"[""1999"", ""2001""]",True,True
+1333,main,which state was returned to spain after the revolutionary war,"[""Florida"", ""Menorca""]",True,True
+1336,main,dendrites and cell bodies are components of what type of matter found in the brain,"[""gray"", ""Grey matter""]",True,True
+1338,main,which nfl coach has the most superbowl rings,"[""Bill Belichick""]",True,True
+1342,main,most assists in an nba all star game,"[""60"", ""22""]",True,True
+1370,main,when does the mlb season start and finish,"[""March 29"", ""October 31, 2018""]",True,True
+1372,main,who said everyone will be famous for 15 minutes,"[""Andy Warhol""]",True,True
+1375,main,when did the revolution begin in the united states,"[""1775"", ""1765""]",True,True
+1376,main,who played tom on as the world turns,"[""Jason Kincaid (1984)"", ""Jason Kincaid"", ""C. David Colson"", ""Peter Galman"", ""Scott Holmes"", ""Gregg Marx"", ""Justin Deas"", ""others"", ""Tom Tammi""]",False,True
+1396,main,when was the last time the seattle seahawks won the superbowl,"[""2013""]",True,True
+1418,main,who starred in the pirates of the caribbean,"[""Johnny Depp"", ""Orlando Bloom"", ""Geoffrey Rush"", ""Kevin McNally"", ""Jonathan Pryce"", ""Jack Davenport"", ""Keira Knightley""]",True,True
+1419,main,who plays bianca in that's so raven,"[""Erica Rivera""]",True,True
+1423,main,who is the lead singer of collective soul,"[""Ed Roland""]",True,True
+1427,main,who penned the famous indian epic the ramayana,"[""Valmiki"", ""the Hindu sage Valmiki""]",True,True
+1433,main,who did virginia cavaliers lose to in basketball this year,"[""Virginia Tech"", ""West Virginia"", ""UMBC""]",True,True
+1437,main,what type of government is in north america,"[""Federal presidential constitutional republic"", ""federal republic""]",True,True
+1438,main,when did the first episode of that 70s show air,"[""August 23, 1998"", ""August\u00a023,\u00a01998""]",True,True
+1463,main,who sings what the world needs now in boss baby,"[""Missi Hale"", ""Steve Mazzaro"", ""Hans Zimmer""]",True,True
+1466,main,when was the first case of alzheimer's diagnosed,"[""1901""]",True,True
+1471,main,how many episodes of ray donovan series 3 are there,"[""60"", ""12""]",True,True
+1480,main,where was the first t20 cricket match played,"[""Lord's""]",True,True
+1484,main,when was the suite life of zack and cody made,"[""March\u00a018,\u00a02005"", ""September\u00a01,\u00a02008"", ""2005""]",True,True
+1487,main,the resting stage of the cell cycle is,"[""Gap 0"", ""Interphase""]",True,True
+1490,main,who played king theoden in lord of the rings,"[""Bernard Hill""]",False,True
+1496,main,what culture region is germany a part of,"[""Central Germany""]",True,True
+1501,main,what song did the titanic band play when it sank,"[""\""Autumn\""""]",True,True
+1507,main,who won the election for mayor in boston,"[""Marty J. Walsh"", ""Marty Walsh""]",True,True
+1520,main,where do the royalties for winnie the pooh go,"[""the Slesinger family"", ""Slesinger, Inc.""]",True,True
+1527,main,roman god of the underworld also called orcus or pluto,"[""Dis Pater""]",True,True
+1538,main,most consecutive games with 20+ points - nba history,"[""126""]",False,True
+1542,main,when did american idol end the first time,"[""April 7, 2016""]",True,True
+1558,main,what was the first video game for nintendo,"[""Magnavox Odyssey"", ""EVR Race""]",False,True
+1574,main,when did lynyrd skynyrd's plane crash happen,"[""October 20, 1977""]",True,True
+1583,main,the octet rule states that in chemical compounds atoms tend to have the electron configuration of a,"[""noble gas""]",True,True
+1589,main,the german princes who chose the holy roman empire were called,"[""prince-electors"", ""the Prince-Electors""]",True,True
+1594,main,leader of carthage in the first punic war,"[""Hanno the Great"", ""Xanthippus"", ""Hasdrubal the Fair"", ""Hamilcar Barca""]",True,True
+1611,main,how many senators are there in the us senate,"[""100"", ""100 members""]",True,True
+1613,main,where do the greasers live in the outsiders,"[""Tulsa, Oklahoma""]",False,True
+1617,main,trick taking card game name derived from spanish for man,"[""Skat""]",False,True
+1625,main,how many states have a cracker barrel restaurant,"[""43""]",True,True
+1626,main,when did new york stop using the electric chair,"[""1963"", ""1972""]",True,True
+1627,main,what is the meaning of gorakh dhanda in urdu,"[""You are a Puzzle""]",False,True
+1630,main,when were the words under god added to the pledge,"[""on Flag Day in 1954"", ""1954"", ""Flag Day in 1954""]",True,True
+1641,main,when does canada switch to daylight savings time,"[""the second Sunday of March""]",True,True
+1654,main,when do wood thrushes fly when they are migrating,"[""in the winter"", ""at night""]",False,True
+1656,main,what is a whistle blower suit under the false claims act,"[""qui tam""]",True,True
+1660,main,what's the biggest nfl stadium in the united states,"[""Michigan Stadium"", ""MetLife Stadium""]",True,True
+1661,main,who was the walker rick killed in the first episode,"[""Addy Miller""]",False,True
+1670,main,who won french open 2017 tennis tournament in men's double category,"[""Ryan Harrison"", ""Michael Venus""]",False,True
+1690,main,when did the right to buy scheme start,"[""1980""]",True,True
+1699,main,who won the marathon in new york city,"[""Geoffrey Kamworor""]",False,True
+1767,main,who plays the evil doctor in wonder woman,"[""Elena Anaya"", ""Spanish actress Elena Anaya""]",False,True
+1770,main,when did indoor toilets become common in america,"[""After World War I""]",True,True
+1777,main,where are the san juan mountains in new mexico,"[""northwestern New Mexico""]",True,True
+1785,main,who brought the idea of castles to england,"[""Norman invaders""]",True,True
+1797,main,where was the 2015 rugby union world cup held,"[""England"", ""Wales""]",True,True
+1799,main,when did britain set up east indian trading company,"[""31 December 1600""]",True,True
+1800,main,where was the movie jeremiah johnson filmed at,"[""Utah""]",True,True
+1804,main,who are the two teams in super bowl 2018,"[""New England Patriots"", ""Philadelphia Eagles""]",True,True
+1810,main,who won every men's biathlon event in the 2002 winter olympics,"[""Norway"", ""Ole Einar Bj\u00f8rndalen""]",True,True
+1811,main,who does dwyane wade play for right now,"[""the Miami Heat"", ""Miami Heat""]",True,True
+1816,main,who won the workd series of poker 2017,"[""Scott Blumstein""]",False,True
+1832,main,who played pink in pink floyd the wall,"[""Kevin McKeon as Young Pink"", ""Bob Geldof as Pink"", ""David Bingham as Little Pink"", ""Bob Geldof"", ""David Bingham"", ""Kevin McKeon""]",True,True
+1837,main,industrial city in germany on the rhine herne canal,"[""Henrichenburg"", ""Duisburg""]",True,True
+1842,main,when was penicillin first introduced to the public,"[""After World War II"", ""1942""]",False,True
+1859,main,who wrote the song be thankful for what you got,"[""William DeVaughn""]",True,True
+1864,main,what's the average lifespan of a basset hound,"[""Median 10\u201312 years"", ""10\u201312 years""]",False,True
+1874,main,where did chocolate originate the americas spain asia,"[""Mesoamerica"", ""the Americas"", ""Americas""]",True,True
+1875,main,who received the most (but not a majority of) electoral votes in 1824,"[""Andrew Jackson""]",True,True
+1906,main,what is the number of total presidential electoral votes,"[""538""]",True,True
+1908,main,what tool is available from microsoft as an alternative to the usmt for smaller migrations,"[""Windows Easy Transfer""]",False,True
+1916,main,when did ohio state join the big 10,"[""1912""]",True,True
+1932,main,who won season 2 of real chance of love,"[""Jackie DaFonseca"", ""Kamille Leai"", ""Hot Wings"", ""Doll""]",False,True
+1933,main,who does the voice of nelson on simpsons,"[""Nancy Jean Cartwright""]",False,True
+1934,main,who is the coach of university of kentucky basketball,"[""John Calipari"", ""John Vincent Calipari""]",True,True
+1940,main,who is the present rajya sabha speaker of india,"[""Venkaiah Naidu""]",True,True
+1952,main,who devised the fingerprint classification still used today in europe and the us,"[""Hem Chandra Bose"", ""Azizul Haque"", ""Sir Edward Henry""]",True,True
+1955,main,where does the cell spend most of its time in the cell cycle,"[""Interphase""]",True,True
+1960,main,who is the most losing team in nfl history,"[""Arizona Cardinals"", ""Tampa Bay Buccaneers""]",True,True
+1964,main,how many series of diary of a wimpy kid are there,"[""12""]",False,True
+1967,main,when did red dead redemption 1 come out,"[""May 18, 2010"", ""May 2010""]",True,True
+1969,main,what channel is abc on in phoenix arizona,"[""15""]",True,True
+1980,main,how many episodes is ash vs evil dead season 3,"[""10""]",True,True
+1986,main,who scored the most points in a single game in the nba,"[""Wilt Chamberlain""]",True,True
+1999,main,the nurses' health study is an example of what type of study,"[""long-term"", ""prospective"", ""prospective studies""]",False,True
+2003,main,what nba player has scored the most 3 pointers,"[""Ray Allen""]",True,True
+2021,main,where did the last name edwards come from,"[""England"", ""Scotland"", ""Wales""]",True,True
+2051,main,when were the first general elections held in independent india,"[""1951\u201352""]",True,True
+2064,main,what is the population of the tri-cities washington,"[""283,846"", ""over 300,000""]",True,True
+2070,main,who sang my bucket got a hole in it,"[""Hank Williams""]",True,True
+2078,main,who played the king in the ten commandments,"[""Yul Brynner"", ""Woodrow Strode""]",True,True
+2083,main,what was the result of the revolt of 1857,"[""British victory"", ""Suppression of the revolt""]",False,True
+2088,main,the part of the cytoskeleton made from the protein actin is called,"[""Microfilaments"", ""microfilament""]",True,True
+2092,main,where does the term the west come from,"[""the Roman Empire""]",False,True
+2096,main,where's the tv show the crossing filmed,"[""British Columbia, Canada""]",False,True
+2099,main,who sang one bad apple spoils the bunch,"[""The Osmonds""]",True,True
+2108,main,when was the last time mount ruapehu erupted,"[""25 September 2007""]",False,True
+2109,main,character in macbeth who is murdered and appears as a ghost,"[""Lord Banquo"", ""Banquo""]",True,True
+2115,main,who did the central powers defeat on the eastern front before concentrating back on france,"[""the Russian army""]",False,True
+2126,main,when did the jurassic park movies come out,"[""Jurassic Park (1993)"", ""2001"", ""2015"", ""2018"", ""1993"", ""Jurassic World (2015)"", ""1997""]",True,True
+2128,main,what class of ship is the carnival glory,"[""Conquest"", ""Conquest-class cruise ship""]",False,True
+2133,main,who is the oldest wrestler that is still wrestling,"[""Dory Funk Jr.""]",False,True
+2134,main,who developed a set of postulates to prove that specific microorganisms cause disease,"[""Robert Koch"", ""Friedrich Loeffler""]",True,True
+2135,main,what's the name of the last mission impossible movie,"[""Mission: Impossible \u2013 Fallout""]",True,True
+2144,main,who sang the songs on walk the line,"[""Reese Witherspoon"", ""Tyler Hilton"", ""Waylon Payne"", ""Johnathan Rice"", ""Shooter Jennings"", ""Joaquin Phoenix""]",True,True
+2145,main,who is playing the halftime show for the superbowl,"[""Justin Timberlake""]",False,True
+2146,main,german word for pleasure from someone else's pain,"[""Schadenfreude""]",True,True
+2167,main,when is the next deadpool movie being released,"[""May 18, 2018""]",True,True
+2170,main,what percentage of the earth's surface is water,"[""78%"", ""roughly 78%""]",True,True
+2172,main,who became king of erebor after thorin dies,"[""D\u00e1in"", ""his cousin D\u00e1in""]",True,True
+2184,main,when did chicano studies become major studies programs on college campuses,"[""By 1975"", ""1972""]",True,True
+2211,main,who won the world cup in cricket 2017,"[""Pakistan""]",True,True
+2213,main,where does the water from the california aqueduct come from,"[""Sierra Nevada Mountains"", ""the Sierra Nevada Mountains""]",False,True
+2218,main,a political leader during the roman empire was called,"[""emperors""]",True,True
+2223,main,how many wing stops are there in the united states,"[""1,000"", ""more than 1,000""]",False,True
+2226,main,what is the second book in the alchemyst series,"[""The Magician""]",False,True
+2235,main,what was the name of atom bomb dropped by usa on hiroshima,"[""Little Boy""]",True,True
+2263,main,when did the international space station go into space,"[""1998""]",True,True
+2275,main,when did harvard become an ivy league school,"[""1945""]",False,True
+2277,main,who proposed that electrons behave like waves and particles,"[""Einstein""]",True,True
+2284,main,how many co2 molecules are produced in aerobic respiration,"[""6""]",True,True
+2286,main,who is the father of genetics and what did he study,"[""the common edible pea"", ""Mendel"", ""pea plants"", ""variation in plants"", ""Gregor Mendel""]",True,True
+2295,main,what is the ultimate objective of financial management,"[""Profit maximization""]",True,True
+2297,main,when did under the cork tree come out,"[""May 3, 2005""]",True,True
+2306,main,who won the 2018 women's royal rumble match,"[""Asuka""]",True,True
+2310,main,what is the name of the under butler in downton abbey,"[""Charles Carson"", ""Mr Carson""]",True,True
+2318,main,what is the main industry in the canadian shield,"[""mining""]",True,True
+2325,main,where does fungi go on a food web,"[""the end"", ""decomposers"", ""At the end""]",True,True
+2329,main,which indian actor has won most national awards,"[""Amitabh Bachchan""]",True,True
+2332,main,role of malonyl coa in fatty acid synthesis,"[""chain elongation""]",True,True
+2337,main,when was the last time michigan basketball won the championship,"[""1989""]",True,True
+2340,main,who wins america's next top model cycle 20,"[""Jourdan Miller""]",False,True
+2349,main,when did avatar the last airbender first air,"[""February 2005"", ""February 21, 2005"", ""February\u00a021,\u00a02005""]",True,True
+2366,main,who proposed evolution in 1859 as the basis of biological development,"[""Alfred Russel Wallace"", ""Charles Darwin""]",True,True
+2373,main,when did the movie breakfast club come out,"[""February 15, 1985"", ""February\u00a015,\u00a01985"", ""1985""]",True,True
+2379,main,when did the nba start playing zone defense,"[""2002"", ""the 2001\u20132002 season""]",True,True
+2391,main,what city was zeus the patron god of,"[""Olympia"", ""Elis""]",True,True
+2393,main,who is the richest club in the championship,"[""Manchester City"", ""Aston Villa""]",True,True
+2398,main,where does iron ore come from in australia,"[""Western Australia""]",True,True
+2401,main,what do you say when you win bingo,"[""Yes"", ""Bingo"", ""Line"", ""House""]",True,True
+2404,main,philadelphia is known as the city of what,"[""City of Brotherly Love"", ""Brotherly Love""]",False,True
+2425,main,who won the mens curling in the olympics 2018,"[""United States""]",True,True
+2430,main,country with most olympic gold medals all time,"[""United States""]",True,True
+2458,main,who is the most selling music artist of all time,"[""The Beatles""]",True,True
+2468,main,where did they live in sex and the city,"[""New York City""]",True,True
+2469,main,who are the artists in the traveling wilburys,"[""Roy Orbison"", ""Jeff Lynne"", ""George Harrison"", ""Bob Dylan"", ""Tom Petty""]",True,True
+2479,main,when does agents of shield season five start,"[""December 1, 2017""]",True,True
+2495,main,how are leaders of the two parties in congress chosen,"[""Senate Republican Conference"", ""Senate Democratic Caucus""]",True,True
+2501,main,when was the problem of cfc's discovered,"[""late 1970s"", ""1974"", ""1973"", ""1970s""]",True,True
+2502,main,which president of the united states was a boy scout,"[""Gerald Ford"", ""President Gerald Ford""]",True,True
+2504,main,the first significant restriction on free immigration in u.s. history was the,"[""Naturalization Act of 1790"", ""Chinese Exclusion Act in 1882""]",True,True
+2510,main,how many episodes in my name is earl season 4,"[""27""]",True,True
+2514,main,where will the next summer and winter olympics be held,"[""Beijing"", ""Tokyo""]",True,True
+2516,main,when did they stop making pull tabs on beer cans,"[""1990"", ""1970s""]",False,True
+2518,main,who scored fastest 10000 runs in test cricket,"[""Alastair Cook"", ""Kumar Sangakkara"", ""Brian Lara"", ""Sachin Tendulkar""]",True,True
+2525,main,the mughal garden of rashtrapati bhavan is modelled on which garden,"[""the Persian gardens"", ""charbagh""]",True,True
+2528,main,who sang i dig rock and roll music,"[""Peter, Paul and Mary""]",True,True
+2531,main,explorer who led an early voyage to the coast of newfoundland,"[""Jacques Cartier""]",True,True
+2533,main,where is the light between two oceans filmed,"[""Australia"", ""New Zealand""]",True,True
+2542,main,which layer of the meninges is connected to the brain,"[""pia mater"", ""The pia mater""]",True,True
+2557,main,the first political society started under british rule in india was,"[""The British Indian Association""]",False,True
+2562,main,who sang the song with reba does he love you,"[""Linda Davis""]",False,True
+2571,main,when did the movie peter pan come out,"[""2003"", ""25\u00a0December\u00a02003""]",True,True
+2576,main,what type of reaction occurs to form a dipeptide,"[""peptide bond""]",True,True
+2587,main,who is considered the father of modern cosmology,"[""Edwin Hubble""]",True,True
+2589,main,who plays on the tv show the resident,"[""Merrin Dungey"", ""Emily VanCamp"", ""Bruce Greenwood"", ""Melina Kanakaredes"", ""Manish Dayal"", ""Matt Czuchry"", ""Moran Atias"", ""Shaunette Ren\u00e9e Wilson""]",True,True
+2594,main,who gets to race in the daytona clash,"[""Daytona Pole Award winners"", ""former Clash race winners""]",True,True
+2595,main,in which sea pearl is found in india,"[""the Indian Ocean""]",False,True
+2606,main,who took the first steps on the moon in 1969,"[""Neil Armstrong""]",True,True
+2609,main,who was the original host of what's my line,"[""John Daly""]",False,True
+2611,main,what was the name of darth vader star destroyer,"[""Devastator"", ""the Devastator""]",True,True
+2617,main,how many episodes are there in modern family,"[""201"", ""232""]",True,True
+2620,main,who played adaline in the age of adaline,"[""Adaline Bowman"", ""Blake Lively""]",True,True
+2621,main,what is the general structure of an url,"[""a protocol"", ""a hostname"", ""a file name""]",True,True
+2632,main,who sang from russia with love james bond,"[""Matt Monro""]",True,True
+2633,main,what football player is called the honey badger,"[""Tyrann Devine Mathieu""]",True,True
+2636,main,who has the most conference championships in college basketball,"[""Kansas""]",True,True
+2649,main,where was the film coming home for christmas filmed,"[""British Columbia""]",True,True
+2654,main,what network is showing the monday night football game,"[""ESPN""]",True,True
+2665,main,who hosted and won the inagural world cup,"[""Uruguay""]",True,True
+2687,main,what type of car is a g wagon,"[""Mercedes-Benz""]",True,True
+2694,main,the site of secretion of h+ and cl-,"[""Parietal cells""]",True,True
+2695,main,who has the talismans in sailor moon s,"[""Haruka and Michiru"", ""Haruka"", ""Michiru"", ""Sailor Pluto""]",True,True
+2713,main,a drug that might be used in surgery for its amnesic properties is,"[""benzodiazepines"", ""Benzodiazepines""]",True,True
+2720,main,what is the multiplication sign on the computer,"[""a rotationally symmetric saltire"", ""the symbol \u00d7"", ""*""]",True,True
+2726,main,who said that religion is the opiate of the masses,"[""Karl Marx."", ""Karl Marx""]",True,True
+2728,main,who sang once upon a dream at the end of maleficent,"[""Lana Del Rey""]",True,True
+2730,main,where does the story the great gatsby take place,"[""Long Island of 1922""]",True,True
+2745,main,what kind of dog is charkie from curious george,"[""black cocker spaniel"", ""cocker spaniel""]",False,True
+2778,main,through what process has the colorado river created the grand canyon in the usa,"[""erosion""]",True,True
+2781,main,what information is displayed in clear text from the ftp header,"[""all transmissions""]",True,True
+2788,main,who has won the mens singles title in the australian open tennis tournament,"[""Roger Federer""]",True,True
+2789,main,what is the longest english word in the dictionary,"[""Methionylglutaminylarginyltyrosylglutamyl...serine"", ""pneumonoultramicroscopicsilicovolcanoconiosis"", ""Pneumonoultramicroscopicsilicovolcanoconiosis""]",True,True
+2802,main,who was the winner of the first indianapolis 500,"[""Ray Harroun""]",True,True
+2824,main,nearest metro station to gandhi nagar in delhi,"[""Shastri Park metro station""]",False,True
+2825,main,when was looking for a sunset bird in winter written,"[""1923""]",False,True
+2851,main,who gets the golden boot if its a tie,"[""shared""]",True,True
+2866,main,what us state forms the western boundary of montana,"[""Idaho""]",True,True
+2873,main,when was the last time it snowed in england on christmas day,"[""2009""]",True,True
+2896,main,where do the maple leafs play hockey in toronto,"[""Air Canada Centre"", ""the Air Canada Centre""]",True,True
+2899,main,who made possible the first reproduction of the human voice on the phonograph,"[""Thomas Alva Edison"", ""Thomas Edison""]",True,True
+2914,main,who won la liga in the last 10 years,"[""Real Madrid"", ""Barcelona"", ""Atl\u00e9tico Madrid""]",True,True
+2921,main,who was the buccaneers qb when they won the superbowl,"[""Brad Johnson""]",True,True
+2933,main,what are the 5 pillars of faith of islam,"[""concern for the needy"", ""the pilgrimage"", ""life"", ""self-purification"", ""prayer""]",True,True
+2943,main,where does sleeping freshmen never lie take place,"[""J.P. Zenger High""]",True,True
+2948,main,where was held the first session of muslim league,"[""Dhaka, Bangladesh"", ""Lucknow""]",True,True
+2952,main,what new deal program limited production in industry,"[""National Industrial Recovery Act"", ""NIRA""]",True,True
+2955,main,what is don quixote's horse's name,"[""Rocinante""]",True,True
+2961,main,what kind of sentence contains an independent clause and a dependent clause,"[""A complex sentence"", ""complex sentence""]",True,True
+3027,main,where does creatine come from in the body,"[""kidneys"", ""liver"", ""the liver and kidneys"", ""arginine"", ""glycine""]",True,True
+3044,main,what are the main crops grown in the united states,"[""Corn"", ""Hay, (non-Alfalfa)"", ""Cotton"", ""Alfalfa"", ""Sorghum"", ""Wheat"", ""Rice"", ""Barley"", ""Soybeans"", ""Hay"", ""Tobacco""]",True,True
+3076,main,who is the singer of kal ho na ho,"[""Sonu Nigam"", ""Richa Sharma"", ""Alka Yagnik""]",True,True
+3081,main,when did john steinbeck write of mice and me,"[""1937""]",True,True
+3088,main,when does the second half of vikings season 5 air,"[""2018"", ""in 2018""]",False,True
+3092,main,who wrote put your hand in the hand of the man who stilled the water,"[""Gene MacLellan""]",True,True
+3093,main,where is the white castle that harold and kumar go to,"[""in Cherry Hill""]",True,True
+3095,main,where is season 3 of the detour filmed,"[""Alaska""]",True,True
+3097,main,largest state in the us by land mass,"[""Alaska""]",True,True
+3110,main,who played tom hagon in the godfather series,"[""Robert Duvall""]",True,True
+3118,main,who won the medals in men's figure skating 2018,"[""Yuzuru Hanyu"", ""Javier Fern\u00e1ndez"", ""Shoma Uno""]",True,True
+3119,main,who ruled the ottoman empire in the 1500s,"[""Selim I""]",True,True
+3129,main,who wrote the theme song to law and order,"[""Mike Post""]",True,True
+3130,main,when did the angel of the north get built,"[""1998"", ""1994""]",False,True
+3135,main,who is directly elected according to the constitution,"[""senators""]",True,True
+3137,main,baga beach is in north or south goa,"[""North Goa"", ""North""]",True,True
+3153,main,who is the character of santa claus based on,"[""Saint Nicholas"", ""Father Christmas"", ""Sinterklaas"", ""Wodan""]",True,True
+3155,main,who wrote the song the glory of love,"[""Billy Hill""]",True,True
+3160,main,who was allowed to vote in the roman republic,"[""unknown"", ""citizens""]",True,True
+3161,main,form from material that has accumulated on the earths surface,"[""Sedimentary rock""]",True,True
+3183,main,who were the first settlers in san antonio,"[""Spanish"", ""Spanish explorers"", ""varying cultures of indigenous peoples""]",True,True
+3184,main,who played cory's older brother on boy meets world,"[""Will Friedle""]",True,True
+3191,main,where does the name de la rosa come from,"[""Spanish""]",True,True
+3204,main,who proposed the first accurate model of dna,"[""Watson"", ""Crick""]",True,True
+3211,main,when did the new day win the tag team titles,"[""2016""]",True,True
+3224,main,the xix of the social security act of 1965 established,"[""Medicaid""]",True,True
+3239,main,when did the tradition of self government began in america,"[""1783""]",True,True
+3258,main,who is the guy on keeping up with the kardashians,"[""Jonathan Cheban""]",True,True
+3260,main,who used the word physiology for the first time,"[""Jean Fernel""]",True,True
+3271,main,what awards did the curious case of benjamin button win,"[""Best Makeup"", ""Best Visual Effects"", ""Best Art Direction""]",True,True
+3276,main,how long do former presidents get secret service protection,"[""lifetime protection"", ""lifetime""]",True,True
+3282,main,when was the r10+20 summit in rio de janeiro held,"[""June 2012"", ""13 to 22 June 2012""]",True,True
+3292,main,what dynasty completed the great wall of china,"[""Qin"", ""Ming dynasty"", ""Qing""]",True,True
+3301,main,list the seven gifts of the holy spirit,"[""fortitude"", ""wisdom"", ""fear"", ""piety"", ""understanding"", ""fear of the Lord"", ""knowledge"", ""counsel""]",True,True
+3310,main,which layer of the osi model handles physical addressing,"[""physical layer or layer 1""]",True,True
+3312,main,where is the second largest mall in america,"[""Florida"", ""Aventura, Florida""]",False,True
+3317,main,known as the punk poet who used poetry in their music,"[""John Cooper Clarke""]",True,True
+3320,main,who has scored the most points for wales v france,"[""Neil Jenkins""]",True,True
+3323,main,who wrote i want to dance with somebody by whitney houston,"[""George Merrill"", ""Shannon Rubicam"", ""George Merrill and Shannon Rubicam""]",True,True
+3325,main,ahana from dil sambhal ja zara real name,"[""Smriti Kalra""]",False,True
+3345,main,where did the crown of thorns starfish come from,"[""Indo-Pacific""]",True,True
+3348,main,where is the world cup being held 2018,"[""Russia""]",True,True
+3362,main,when will the la sagrada familia be finished,"[""by 2026"", ""2026"", ""2026\u20132028""]",True,True
+3363,main,who wrote from now on from the greatest showman,"[""Joseph Trapanese"", ""John Debney"", ""Benj Pasek and Justin Paul""]",False,True
+3368,main,when did russia join the world economic forum,"[""1997""]",True,True
+3386,main,cast of a nightmare on elm street 1984,"[""Heather Langenkamp"", ""Ronee Blakley"", ""Nick Corri"", ""Johnny Depp"", ""John Saxon"", ""Robert Englund"", ""Amanda Wyss""]",True,True
+3417,main,who does betty end up with on riverdale,"[""Archie Andrews""]",True,True
+3419,main,what time do tam tams start in montreal,"[""around 10:30am"", ""10:30am""]",True,True
+3424,main,who sang you'll be a woman soon in pulp fiction,"[""rock band Urge Overkill"", ""Urge Overkill""]",True,True
+3434,main,who was the first black person to register to vote,"[""Thomas Mundy Peterson""]",True,True
+3438,main,who explored waters of cuba the bahamas and hispaniola,"[""Christopher Columbus""]",True,True
+3441,main,los angeles stadium at hollywood park opening date,"[""2020""]",True,True
+3446,main,who says that which we call a rose,"[""Juliet"", ""William Shakespeare""]",True,True
+3453,main,where can you find convergent boundaries on earth,"[""Mariana Trench""]",False,True
+3457,main,when was the chain first used for f1,"[""1978""]",False,True
+3467,main,when does the nba season end this year,"[""April 11, 2018""]",False,True
+3478,main,where does the band imagine dragons come from,"[""Las Vegas, Nevada""]",True,True
+3480,main,when does elena turn into a vampire in the tv series,"[""season four"", ""fourth season""]",True,True
+3485,main,who won nfl football coach of the year,"[""Sean McVay""]",False,True
+3497,main,where are they building the new raiders stadium,"[""Paradise, Nevada"", ""in Paradise, Nevada""]",True,True
+3503,main,who lives at the end of king lear,"[""Kent"", ""Albany"", ""Edgar""]",True,True
+3510,main,who sang buddy can you spare a dime,"[""Rudy Vallee"", ""Bing Crosby""]",True,True
+3520,main,what kind of book is where's waldo,"[""puzzle""]",True,True
+3552,main,what episode does marnie come back in geordie shore,"[""5""]",True,True
+3554,main,who was the actor who played crocodile dundee,"[""Paul Hogan"", ""Paul Hogan, AM""]",True,True
+3558,main,who played little ricky on i love lucy show,"[""Keith Thibodeaux""]",True,True
+3568,main,who plays dawn on nicky ricky dicky and dawn,"[""Lizzy Greene""]",True,True
+3570,main,who is rose in the fall season 2,"[""Valene Kane""]",True,True
+3579,main,who does the vocals for feel it still,"[""Portugal. The Man""]",True,True
+3591,main,who was selected for the 2018 football hall of fame,"[""Ray Lewis"", ""Brian Urlacher"", ""Jerry Kramer"", ""Robert Brazile"", ""Bobby Beathard"", ""Brian Dawkins"", ""Randy Moss"", ""Terrell Owens""]",True,True
+3595,main,which british city is farthest from the sea,"[""Coton in the Elms""]",True,True
+3606,main,what college does everyone in gossip girl go to,"[""New York University"", ""Columbia University""]",True,True
+3609,main,what is the meaning of the name comanche,"[""enemy""]",True,True
+13,sanity,who was the actor that played ben stone on law and order,"[""Michael Moriarty""]",True,True
+146,sanity,who does the voice of mickey mouse on mickey mouse clubhouse,"[""Bret Iwan"", ""Wayne Allwine""]",True,True
+323,sanity,who is the owner of reading football club,"[""Xiu Li Dai"", ""Dai Xiuli"", ""Dai Yongge"", ""Yongge Dai""]",False,False
+424,sanity,during the first world war against which country germany did not fight,"[""Austria-Hungary""]",True,True
+462,sanity,what song is played while raising the american flag,"[""Reveille"", ""\""Reveille\""""]",False,False
+478,sanity,when does the cannes film festival take place,"[""Cannes, France"", ""usually in May""]",True,True
+519,sanity,who are the judges on do you think you can dance,"[""Nigel Lythgoe"", ""Mia Michaels"", ""Adam Shankman""]",True,True
+535,sanity,what goes on the bottom of shepherd's pie,"[""minced meat"", ""mashed potato""]",True,True
+571,sanity,who was the president of pakistan during 1971 war,"[""President Yahya Khan"", ""Yahya Khan""]",True,True
+619,sanity,where did the term hot rod come from,"[""southern California""]",False,True
+658,sanity,what is the weight of a honda fit,"[""1,020\u20131,080\u00a0kg""]",False,False
+775,sanity,who unveiled the new coat of arms on 27 april 2000,"[""South Africa""]",False,True
+883,sanity,how long were the pyramids the tallest structure,"[""over 3,800"", ""over 3,800 years""]",False,False
+905,sanity,how many levels of protein structure are there,"[""four""]",True,True
+919,sanity,when did the crucifix become the symbol of christianity,"[""in the 2nd century"", ""4th century"", ""the 4th century""]",True,True
+1081,sanity,when did the movie princess bride come out,"[""September 25, 1987"", ""1987"", ""September\u00a025,\u00a01987""]",True,True
+1327,sanity,what does it mean to fuse the spine,"[""joins two or more vertebrae""]",False,False
+1348,sanity,who won the mvp for the national league,"[""Stanton, Giancarlo"", ""Giancarlo Stanton""]",False,True
+1458,sanity,what is the official slogan for the 2018 winter olympics,"[""Passion. Connected.""]",False,False
+1470,sanity,who was the chief guest of 2014 republic day,"[""Prime Minister Shinzo Abe""]",False,False
+1508,sanity,who won the first medal in olympics for india,"[""Norman Pritchard""]",True,True
+1596,sanity,what is the main use of the eiffel tower in modern times,"[""visited paid monument"", ""paid monument""]",False,False
+1603,sanity,when was clash royale released in the us,"[""March 2, 2016""]",False,False
+1642,sanity,how much of the world's diamonds does de beers own,"[""33% in 2013""]",False,False
+1645,sanity,who drafted the document of the un declaration of human rights,"[""John Peters Humphrey, Canada"", ""Charles Habib Malik, Lebanon"", ""John Peters Humphrey"", ""William Roy Hodgson"", ""Charles Habib Malik"", ""Ren\u00e9 Cassin, France"", ""Hern\u00e1n Santa Cruz"", ""William Roy Hodgson, Australia"", ""Hern\u00e1n Santa Cruz, Chile"", ""Ren\u00e9 Cassin"", ""Peng Chun Chang"", ""Alexander E. Bogomolov"", ""Eleanor Roosevelt"", ""Charles Dukes"", ""Charles Dukes, United Kingdom""]",True,True
+1671,sanity,when did the united states became a nation,"[""1776"", ""July 4, 1776"", ""In 1776""]",True,True
+1715,sanity,when is the womens ice skating for the olympics,"[""21 February"", ""21\u201323 February"", ""23 February""]",False,False
+1831,sanity,when does the new episodes of supernatural start,"[""October\u00a012,\u00a02017"", ""May\u00a03,\u00a02018"", ""October 12, 2017""]",False,False
+1928,sanity,what is the definition of the name thomas,"[""\""twin\"""", ""twin""]",True,True
+1942,sanity,panda is a national animal of which country,"[""China""]",True,True
+2048,sanity,what's the medal count for canada in the olympics,"[""501"", ""302""]",False,False
+2073,sanity,who wrote catch 22 (both names),"[""Joseph Heller."", ""American author Joseph Heller"", ""Joseph Heller""]",True,True
+2117,sanity,what is the enrollment at university of miami,"[""16,801"", ""16,801 students""]",False,False
+2196,sanity,who does the voice of amy on futurama,"[""Lauren Tom""]",True,True
+2280,sanity,when was the peak to peak gondola built,"[""in 2007 and 2008""]",False,False
+2341,sanity,when was the day that the pubs ran dry in the poem 9-3,"[""31 October 1972""]",False,False
+2492,sanity,what states were most affected by the dust bowl,"[""Iowa"", ""Oklahoma"", ""Nebraska"", ""Arkansas"", ""New Mexico"", ""Kansas"", ""Colorado"", ""Texas"", ""Missouri""]",True,True
+2522,sanity,what is the salary of us secretary of state,"[""$205,700"", ""$205,700 annually""]",False,False
+2538,sanity,who developed the first printing press in 1430s,"[""Johannes Gutenberg""]",True,True
+2761,sanity,who got the first arjun award in athletics,"[""Gurbachan Singh Randhawa""]",False,False
+2815,sanity,who talks for belle in beauty and the beast,"[""Julie Nathanson"", ""Jodi Benson"", ""Paige O'Hara""]",True,True
+3122,sanity,when did the legal drinking age changed to 21,"[""By mid-1988"", ""October 1986""]",True,True
+3147,sanity,when does the next apollo book come out,"[""May 1, 2018""]",True,True
+3290,sanity,converting stereo signal to mono signal is called,"[""Panning""]",False,True
+3382,sanity,when was the seat moved to the capitol,"[""November 17, 1800"", ""1800"", ""December 1800""]",True,True
+3390,sanity,when did jelly beans became associated with easter,"[""during the 1930s"", ""sometime during the 1930s"", ""1930s""]",True,True
+3420,sanity,what is money as a medium of exchange,"[""fiat money""]",True,True
+3499,sanity,who has the most rings in the nba right now 2017,"[""Boston Celtics center Bill Russell"", ""Bill Russell""]",True,True
+3513,sanity,when was fingerprinting first used by the police,"[""the early 20th century"", ""In 1840""]",False,True
+3583,sanity,when is the new dumping ground coming out 2017,"[""15\u00a0December\u00a02017""]",False,False

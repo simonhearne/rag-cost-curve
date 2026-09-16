@@ -1,0 +1,11 @@
+{
+ "arm": "rabitq",
+ "nprobe": 256,
+ "n_queries": 10000,
+ "measured": 0.77763,
+ "expected": 0.77763,
+ "delta": 0.0,
+ "tolerance": 0.003,
+ "passed": true,
+ "build_seconds": 3667.856733791996
+}

@@ -1,0 +1,182 @@
+attempt,generator_git_sha,probe_id,probe_set,answer,judge_correct,judge_reason,mechanical_correct,accuracy,verdict,run_date
+1,17463a16a4da,f00,scaling,"I don't have any context about a project or prior discussion that mentions ""flinmure"" or a decision about what to route it through. This term doesn't correspond to any software, library, or convention I can identify.
+
+If you can provide more details—such as the project name, related documentation, or the context in which this decision was made—I'd be happy to help you work through it. Otherwise, I'm not able to determine the answer.",False,"The candidate states it cannot determine the answer and never mentions spindle-buffer, so it fails to provide the expected value.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f01,scaling,"I don't have any context about a project or history involving ""quillvex"" — this appears to be the first mention of it in our conversation, and I don't have access to prior discussions, documents, or decisions outside this chat.
+
+If you can share the relevant details (e.g., meeting notes, design docs, or a description of what quillvex is and the routing options considered), I can help you work through it or summarize the decision.",False,"The candidate denies having any context and does not provide the expected answer, spindle-ledger.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f02,scaling,"I don't have any historical records, prior conversation logs, or project documentation available to me that would show a past decision about routing ""fenric"" through something. Without that context, I can't determine what was decided.
+
+If you can provide more details—such as documentation, chat logs, meeting notes, or a description of what ""fenric"" refers to (a service, a module, a network component, etc.)—I'd be glad to help interpret or analyze that information.",False,"The candidate declines to answer and does not state spindle-gateway, so it fails to provide the expected value.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f03,scaling,"I don't have any context about a software project or codebase that mentions ""hobcote"" or a routing decision related to it. This appears to be a specific technical term or component name from a particular project's history that isn't available to me.
+
+If you can provide more context—such as documentation, commit messages, chat logs, or other project history where this decision was discussed—I'd be happy to help you find or interpret the answer.",False,The candidate answer does not provide the expected value (relay-gateway) and instead states it lacks context to determine the answer.,False,0.0,pass,2026-08-18
+1,17463a16a4da,f04,scaling,"I don't have any information about ""kerfquota,"" ""quillley,"" or this software project's history. These terms don't correspond to any known configuration values, settings, or documented project details that I can access.
+
+If you can provide more context—such as related documentation, commit messages, configuration files, or the broader project this pertains to—I'd be happy to help you find or interpret the answer.",False,"The candidate answer fails to provide any value, stating it lacks information rather than identifying the expected value of 9213.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f05,scaling,"I don't have any information about a software project's history that mentions ""plinthceiling"" or ""wrasridge"" — these don't correspond to any known configuration values, variable names, or project documentation I have access to.
+
+This could be:
+- A highly specific internal codebase configuration not in my training data
+- A typo or unusual naming convention from a particular project I don't have visibility into
+- Custom/proprietary terminology specific to your organization
+
+If you have access to the project's commit history, configuration files, or documentation, I'd suggest checking:
+- Git blame/log for the relevant config file
+- Search for ""wrasridge"" across the codebase
+- Check any changelog or PR history that might reference this setting
+
+If you can share more context (e.g., paste the relevant code/config snippet or history log), I'd be happy to help interpret it.",False,"The candidate did not provide the expected value 9816, instead stating it had no information about the terms.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f06,scaling,"I don't have access to any history, configuration files, or records related to a project involving ""flinton"" or a setting called ""warpwidth."" This appears to reference a specific internal system, codebase, or documentation that hasn't been shared with me in our conversation.
+
+If you can provide the relevant context—such as configuration files, commit history, documentation, or other source material where this value is recorded—I'd be happy to help you find or interpret that information.",False,"The candidate states it cannot determine the answer and provides no value, failing to give the expected 1522.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f07,scaling,"I don't have any information about a software project, configuration file, or context that mentions ""camberceiling,"" ""flinley,"" or their related values. This appears to be a specific technical detail from a codebase or project history that hasn't been provided to me.
+
+If you can share the relevant history, commit logs, configuration files, or documentation where this value was set, I'd be happy to help identify the answer.",False,"The candidate did not provide the expected value 7051, instead stating it lacks the necessary information to answer.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f08,scaling,"I don't have information about who ""pelwell"" refers to or belongs to in the context of a specific software project's history. This appears to be a username or handle (possibly associated with the Raspberry Pi Foundation, as ""pelwell"" is a known GitHub contributor to Raspberry Pi Linux kernel repositories), but without more context about which specific software project's history you're asking about, I can't provide a definitive answer about ownership.
+
+Could you clarify which project or repository you're referring to?",False,"The candidate declines to answer and asks for clarification, never naming Kipipley as the owner of pelwell.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f09,scaling,"I don't have any context about a specific software project or its history that would let me identify who owns ""hobnail"" (a package, repository, username, or resource with that name).
+
+If you can provide more details—such as the platform (GitHub, npm, PyPI, etc.), the type of project, or additional context from a specific codebase or organization—I'd be able to help you find or determine the answer.",False,The candidate declined to answer and did not identify Marniker as the owner of hobnail.,False,0.0,pass,2026-08-18
+1,17463a16a4da,f10,scaling,"I don't have any information about ""murknail"" in my knowledge base. This doesn't appear to correspond to a software project, package, or repository that I have information about.
+
+If you're asking about ownership of a specific software package (e.g., on npm, GitHub, PyPI, or another registry), could you provide more context—such as which platform or ecosystem it belongs to? That would help me give you a more accurate answer, though I may still not have specific information about it if it's obscure or very recently created.",False,The candidate denies knowing anything about murknail and never states that Branipley owns it.,False,0.0,pass,2026-08-18
+1,17463a16a4da,f11,scaling,"I don't have any information about ""quillnail"" in relation to a software project. This doesn't match any package, library, or project ownership that I have verifiable information about.
+
+If you're referring to a specific software project's history (such as a package registry, GitHub repository, or npm/PyPI package), could you provide more context? For example:
+
+- Is this an npm package, GitHub repo, or something else?
+- What software project's history are you asking about?
+
+Without additional context, I can't accurately determine who owns ""quillnail,"" and I don't want to guess or provide potentially incorrect information.",False,The candidate explicitly states it cannot determine the owner and does not name Ilseurrow.,False,0.0,pass,2026-08-18
+1,17463a16a4da,f12,depth,"I don't have any context about ""vellton"" or a prior conversation/history discussing a software project that decided to route it through something specific. This term doesn't correspond to anything I can identify in publicly available documentation or common software history.
+
+If you can provide additional context—such as the project name, related commit messages, design documents, or discussion history—I'd be able to give you a precise answer. Otherwise, I can't determine what was decided.",False,"The candidate states it cannot determine the answer and never mentions shunt-arbiter, the expected routing decision.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f13,depth,"I don't have any historical records, documentation, or prior context about a project involving ""tangwell"" or a decision about routing it through something. This appears to be referencing a specific technical decision from a codebase, architecture document, or team discussion that hasn't been shared with me in this conversation.
+
+To help you accurately, could you provide:
+- The relevant code, config, or documentation excerpt
+- Meeting notes or design doc discussing this decision
+- Any other context about what ""tangwell"" refers to (a service, module, request type, data pipeline, etc.)
+
+Once you share that context, I can give you a direct answer about what was decided.",False,"The candidate declines to answer and requests more context, never stating that tangwell was routed through bailer-gateway.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f14,depth,"I don't have any context about a project or prior discussion that mentions ""vellmure."" This term doesn't appear in any history I have access to.
+
+If you can provide more details—such as the project name, documentation, or the context in which ""vellmure"" was discussed—I'd be happy to help you find or reason through the answer.",False,"The candidate denies having any context and fails to provide the expected answer, bailer-arbiter.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f15,depth,"I don't have any history or context about a project involving ""drayton"" available to me. Without access to prior discussions, documentation, or decisions related to this project, I can't tell you what ""drayton"" was decided to be routed through.
+
+If you can provide more context—such as related documentation, previous messages, or details about what ""drayton"" refers to (a service, a network component, a data pipeline, etc.)—I'd be able to help you work through the answer.",False,"The candidate states it cannot determine the answer and never mentions bailer-harness, the expected routing target.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f16,depth,"I don't have any context about ""fennail"" or a project history that discusses it. This term isn't something I can find information on, and no prior conversation history has been provided to me that would contain this decision.
+
+If you can share the relevant documentation, chat logs, or context where this decision was made, I'd be happy to help identify what ""fennail"" was decided to be routed through.",False,"The candidate did not provide the expected value 'ladder-harness', instead stating it lacks context and could not determine the answer.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f17,depth,"I don't have any historical records, project documentation, or prior context about ""vellwood"" available to me. Each conversation I have starts fresh without memory of previous discussions or decisions made in other sessions.
+
+If ""vellwood"" refers to a specific system, network path, module, or component in your project, I'd need more context to help you, such as:
+
+- What kind of thing is being routed (network traffic, a build pipeline, a data flow, an API request, a physical/logical infrastructure path)?
+- What are the options that were being considered?
+- Any documentation, tickets, chat logs, or notes where this decision might have been recorded?
+
+If you can paste relevant details or the discussion where this was decided, I can help you interpret it, summarize it, or reason about whether it was the right choice.",False,"The candidate declines to answer and never mentions shunt-ledger, instead requesting more context.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f18,depth,"I don't have any information about a project, codebase, or context that mentions ""girthwidth,"" ""fenridge,"" or their configuration values. These terms don't correspond to any software project, library, or system I have knowledge of.
+
+If you can provide more context—such as the project name, repository, or documentation where this setting appears—I'd be happy to help interpret or locate that information. Otherwise, I'm not able to determine the value you're asking about.",False,"The candidate answer does not provide the expected value 7139, instead stating it cannot determine the answer.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f19,depth,"I don't have any information about a software project, codebase, or history related to ""reavemargin,"" ""corbcote,"" or any associated configuration values. No prior context has been provided in this conversation.
+
+If you can share the relevant details—such as documentation, commit history, configuration files, or other context about this project—I'd be happy to help you find or interpret that value.",False,The candidate answer states it has no information and does not provide the expected value of 2944.,False,0.0,pass,2026-08-18
+1,17463a16a4da,f20,depth,"I don't have access to any historical records, project documentation, or codebase related to a project involving ""draycote"" or a configuration value called ""plinthwidth."" This appears to reference a specific software project's internal history that hasn't been provided to me in this conversation.
+
+If you can share the relevant context—such as configuration files, commit history, documentation, or other project records where this value was set—I'd be happy to help you find or interpret that information.",False,"The candidate declined to provide any value, stating it lacks the project context, rather than giving the expected value 8784.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f21,depth,"I don't have any information about a project involving ""girthbudget"" or ""draywood."" These terms don't correspond to any known software project, configuration setting, or system I have access to in this conversation's history.
+
+If you're referring to a specific codebase, documentation, or previous conversation, I don't have that context available right now. Could you provide more details, such as:
+
+- The project or repository name
+- Relevant documentation or commit history
+- The context in which ""draywood"" and ""girthbudget"" appear
+
+With more information, I'd be happy to help track down the answer.",False,"The candidate fails to provide the expected value 9793, instead stating it lacks the necessary context to answer.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f22,depth,"I don't have any information about a software project involving values called `sluicebudget`, `wrasfold`, or related configuration settings. These terms don't appear in any documentation, codebase, or history I can access.
+
+If you're referring to a specific project you're working on, I'd need you to provide the relevant context—such as configuration files, commit history, documentation, or code snippets—where this value was set. Without that context, I can't determine what value was assigned to `sluicebudget` on `wrasfold`.",False,"The candidate states it cannot determine the value and provides no answer, whereas the expected value is 5091.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f23,depth,"I don't have any information about a project, codebase, or context that includes a variable called `girthstride` or `brimvex`. These don't correspond to any known software project, library, or convention I'm aware of.
+
+Since I have no history, documentation, or prior conversation referencing these terms, I can't determine what value was set. If you can provide more context—such as the codebase, configuration file, commit history, or documentation where these appear—I'd be able to help you find or interpret the value.",False,"The candidate states it cannot determine the value and provides no answer, failing to give the expected value of 3931.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f24,depth,"I don't have enough context to determine who or what ""wraston"" refers to in relation to a specific software project. This appears to be a username, handle, or identifier, but without access to the specific project history, repository, or documentation you're referencing, I can't identify their ownership role or associated resources.
+
+If you can provide more context—such as the name of the software project, repository, or platform you're asking about—I'd be able to give you a more accurate answer.",False,"The candidate declined to answer, stating it lacked context, and never identified Quenipley as the owner of wraston.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f25,depth,"I don't have any information about a software project called ""sprigridge"" or its ownership. This doesn't appear in my knowledge base as a recognizable software package, library, or project.
+
+If you can provide more context—such as what type of project this is, what programming language it's associated with, or where you encountered this name (e.g., a package registry like npm, PyPI, crates.io, GitHub, etc.)—I'd be better able to help, or you could check the relevant package registry directly, as they typically display current ownership/maintainer information.",False,"The candidate denies knowledge of sprigridge and never states the expected owner, Vessurrow.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f26,depth,"I don't have enough context to determine who owns ""thaxwell."" This appears to be a specific reference to a username, repository, domain, or entity within a particular software project's history, but without additional context about which project you're asking about, I cannot provide an accurate answer.
+
+If you can provide more details—such as the name of the software project, repository, or platform this relates to—I'd be happy to help find the answer.",False,"The candidate declined to answer, failing to state the expected owner, Rueadou.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f27,depth,"I don't have any specific information about a software project entity called ""galdric"" or who owns it. This appears to be a reference to something in a particular codebase, repository, or project history that I don't have access to.
+
+If you can provide more context—such as the name of the software project, a repository URL, or surrounding details about what ""galdric"" refers to (a username, package, module, domain, etc.)—I'd be happy to help you figure out the answer or point you toward how to find it.",False,"The candidate answer fails to identify any owner, stating it lacks information rather than naming Toradou.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f28,depth,"I don't have any information about ""flinmet"" or its ownership. This doesn't appear to correspond to a software project, package, domain, or entity that I have knowledge of.
+
+If you're asking about:
+- A specific software repository or package - could you provide more context (e.g., is it a GitHub repo, npm package, domain name)?
+- A domain name - ownership records (WHOIS) would need to be looked up directly, as I don't have access to real-time registry data.
+- Something else entirely - additional context would help me assist you better.
+
+Could you clarify what ""flinmet"" refers to?",False,The candidate states it has no information about flinmet's ownership and never identifies Dorladou as the owner.,False,0.0,pass,2026-08-18
+1,17463a16a4da,f29,depth,"I don't have any information about ""sprigton"" in my knowledge base. This doesn't appear to correspond to a software project, package, domain name, or entity that I can identify with confidence.
+
+If you're asking about:
+- A software package/library owner (e.g., on npm, PyPI, GitHub)
+- A domain name owner
+- A trademark holder
+
+I'd need more context to help. Could you clarify what ""sprigton"" refers to (e.g., is it a package name, a company, a repository)? If you provide more details or the platform/registry where you encountered this term, I may be able to help you find the answer through other means.",False,"The candidate failed to provide any answer, stating it could not identify 'sprigton', rather than naming Rueesna as the owner.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f30,superseded,"I don't have any information about a project, system, or context called ""gorsesey"" or a setting called ""gantrydepth."" This doesn't match any software project history I have access to.
+
+Could you provide more context? For example:
+- What software project or repository this relates to
+- Where this configuration value is defined (config file, codebase, documentation)
+- Any related terminology that might help identify the system
+
+Without additional details, I can't provide an accurate answer rather than guess at a value.",False,"The candidate answer states it cannot determine the value and requests more context, failing to give the expected value 1126.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f31,superseded,"I don't have access to any project history, codebase, or documentation related to ""murkdle"" or a setting called ""warpdepth."" This appears to be a very specific configuration value from a particular software project that isn't part of my training data.
+
+To get an accurate answer, I'd suggest:
+
+- Checking the project's configuration files directly (e.g., config.yaml, settings.json, .env, or similar)
+- Searching the codebase for ""warpdepth"" to find its default or current value
+- Checking any admin panel or dashboard if murkdle has one
+- Looking at recent commit history or changelogs if this is a version-controlled project
+- Asking a team member who has access to the current deployment/environment
+
+If you can share the relevant configuration file contents or code snippets where `warpdepth` is defined, I'd be happy to help interpret them.",False,"The candidate declines to provide any value, stating it cannot determine the setting, rather than giving the expected value 2823.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f32,superseded,"I don't have access to any historical records, logs, or documentation about a software project called ""tangley"" or a configuration value called ""camberquota."" No prior context has been provided in our conversation about this project.
+
+To help you find this answer, could you:
+
+1. Share the relevant configuration files, documentation, or code where ""camberquota"" is defined?
+2. Provide any commit history, changelog, or system logs that reference this setting?
+3. Clarify what type of system ""tangley"" refers to (a server, environment, service name, etc.)?
+
+Without access to the actual project history or files, I can't determine the current value of this setting. If you paste the relevant information here, I'd be glad to help interpret it.",False,"The candidate does not provide the value 1122, instead stating it cannot determine the answer without more context.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f33,superseded,"I don't have access to any historical records, codebase, configuration files, or project documentation related to ""hobwell"" or a setting called ""gantrymargin."" This appears to be a very specific technical detail from a particular software project that I have no information about.
+
+To find this answer, you could:
+- Search the project's configuration files or source code repository
+- Check version control history (e.g., `git log` or `git blame` on relevant files)
+- Look in documentation or a settings/config database
+- Ask a team member familiar with the project
+
+If you can share the relevant file, repository, or context, I'd be happy to help interpret it.",False,"The candidate declined to provide any value, stating it lacks access to the project information, so it does not state the expected value 6863.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f34,superseded,"I don't have access to any project history, files, or configuration data related to ""vellridge"" or a setting called ""plinthquota."" No such information has been provided in our conversation.
+
+If you can share the relevant documentation, logs, config files, or context about this project, I'd be happy to help you find or interpret that value.",False,"The candidate answer states it cannot determine the value and provides no answer, rather than giving the expected value 5276.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f35,superseded,"I don't have any information about a software project, system, or configuration containing a setting called `plinthmargin` or a component named `quillridge`. This doesn't correspond to any known software project history I have access to.
+
+If you can provide more context—such as the project name, repository, or where this setting appears (a config file, codebase, documentation)—I can try to help further. Otherwise, I'm not able to determine the value you're asking about.",False,"The candidate states it cannot determine the value and provides no answer, failing to give the expected value 5231.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f36,superseded,"I don't have any context about a ""drayridge"" system or ""kerfladder"" setting. These don't appear to correspond to any known software project, configuration parameter, or documented system that I have information about.
+
+If you're referring to a specific codebase, configuration file, or internal project, could you provide more details—such as the repository name, related documentation, or where this setting is defined? I'd be happy to help interpret it if you can share the relevant source.",False,"The candidate did not provide the expected value 6772, instead stating it lacks context and asking for more details.",False,0.0,pass,2026-08-18
+1,17463a16a4da,f37,superseded,"I don't have access to any historical records, codebase, configuration files, or project documentation related to ""fensey"" or a setting called ""tinemargin."" This appears to reference a specific software project's configuration that isn't available to me.
+
+If you can provide more context—such as documentation, code snippets, or configuration files where this setting appears—I'd be happy to help interpret it. Otherwise, I'd recommend checking the project's configuration files, version control history (e.g., `git log`/`git blame` on the relevant file), or documentation directly.",False,"The candidate declined to provide any value, failing to state the expected value of 5974.",False,0.0,pass,2026-08-18

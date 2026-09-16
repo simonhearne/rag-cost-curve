@@ -1,0 +1,19 @@
+variant,stratum,metric,role,n,powered,median_delta,mean_delta,ci_lo,ci_hi,excludes_zero,sign_p,n_indexed_dearer,n_indexed_cheaper,mean_grep_handle,median_grep_handle,note
+all,hop1,prompt_tokens,primary-input,30,True,82678.0,219954.23333333334,17402.0,195848.5,True,0.016124801710247993,22,8,6.2308,6.3056,
+all,hop1,turns,secondary,30,True,0.0,0.5333333333333333,-1.0,1.5,False,1.0,12,12,6.2308,6.3056,
+all,hop1,cost_total_billed,secondary,30,True,0.1896885,0.44185163333333327,0.02668150000000005,0.38693449999999996,True,0.016124801710247993,22,8,6.2308,6.3056,
+all,hop2,prompt_tokens,primary-input,15,False,171479.0,368220.86666666664,8402.0,524495.0,True,0.00738525390625,13,2,6.4381,6.7448,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+all,hop2,turns,secondary,15,False,-1.0,1.3333333333333333,-1.0,5.0,False,0.79052734375,6,8,6.4381,6.7448,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+all,hop2,cost_total_billed,secondary,15,False,0.349248,0.7422544000000002,0.0208339999999999,1.0852100000000002,True,0.00738525390625,13,2,6.4381,6.7448,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+all,hop3plus,prompt_tokens,primary-input,30,True,40061.5,146514.76666666666,5297.0,75281.0,True,0.016124801710247993,22,8,6.0807,6.2685,
+all,hop3plus,turns,secondary,30,True,0.0,0.26666666666666666,-1.0,1.0,False,1.0,13,14,6.0807,6.2685,
+all,hop3plus,cost_total_billed,secondary,30,True,0.07661400000000004,0.2887197,0.004897499999999999,0.1547565,True,0.09873714670538902,20,10,6.0807,6.2685,
+excl_ws8_q067,hop1,prompt_tokens,primary-input,30,True,82678.0,219954.23333333334,17402.0,195848.5,True,0.016124801710247993,22,8,6.2308,6.3056,
+excl_ws8_q067,hop1,turns,secondary,30,True,0.0,0.5333333333333333,-1.0,1.5,False,1.0,12,12,6.2308,6.3056,
+excl_ws8_q067,hop1,cost_total_billed,secondary,30,True,0.1896885,0.44185163333333327,0.02668150000000005,0.38693449999999996,True,0.016124801710247993,22,8,6.2308,6.3056,
+excl_ws8_q067,hop2,prompt_tokens,primary-input,15,False,171479.0,368220.86666666664,8402.0,524495.0,True,0.00738525390625,13,2,6.4381,6.7448,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+excl_ws8_q067,hop2,turns,secondary,15,False,-1.0,1.3333333333333333,-1.0,5.0,False,0.79052734375,6,8,6.4381,6.7448,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+excl_ws8_q067,hop2,cost_total_billed,secondary,15,False,0.349248,0.7422544000000002,0.0208339999999999,1.0852100000000002,True,0.00738525390625,13,2,6.4381,6.7448,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+excl_ws8_q067,hop3plus,prompt_tokens,primary-input,29,True,38935.0,96212.89655172414,4640.0,73990.0,True,0.0241195447742939,21,8,6.119,6.303,
+excl_ws8_q067,hop3plus,turns,secondary,29,True,0.0,-0.06896551724137931,-1.0,1.0,False,0.8450189828872681,12,14,6.119,6.303,
+excl_ws8_q067,hop3plus,cost_total_billed,secondary,29,True,0.074762,0.1871340689655172,-0.0003630000000000022,0.138325,False,0.13604594767093658,19,10,6.119,6.303,

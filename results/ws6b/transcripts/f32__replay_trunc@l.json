@@ -1,0 +1,27 @@
+{
+  "probe_id": "f32",
+  "arm": "replay_trunc@l",
+  "question": "What is `camberquota` on `tangley` currently set to?",
+  "expected": "1122",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 22,
+        "output_tokens": 137,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "`camberquota` on `tangley` is currently set to **1122** (it was originally set to 2072, then later revised to 1122)."
+        }
+      ]
+    }
+  ]
+}

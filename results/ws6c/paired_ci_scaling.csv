@@ -1,0 +1,13 @@
+arm,span,metric,branch,n,median,mean,ci_low,ci_high,n_positive,sign_p,excludes_zero
+agentic,L-S,prompt_tokens,A3,10,1041.0,1752.9,-108.0,3889.5,5,1.0,False
+agentic,L-S,judge_correct,A3,10,0.0,0.0,0.0,0.0,0,1.0,False
+agentic,L-S,turns,n/a (not pre-registered),10,0.0,0.0,-0.5,0.5,2,1.0,False
+agentic,L-M,prompt_tokens,A3,10,638.0,1900.9,-40.0,3021.0,6,0.75390625,False
+agentic,L-M,judge_correct,A3,10,0.0,0.0,0.0,0.0,0,1.0,False
+agentic,L-M,turns,n/a (not pre-registered),10,0.0,0.2,0.0,0.5,2,0.5,False
+indexed,L-S,prompt_tokens,A3,10,-2223.0,1706.5,-6529.0,11375.5,4,0.75390625,False
+indexed,L-S,judge_correct,A3,10,0.0,0.0,0.0,0.0,0,1.0,False
+indexed,L-S,turns,n/a (not pre-registered),10,0.0,0.2,0.0,0.5,2,0.5,False
+indexed,L-M,prompt_tokens,A3,10,646.5,231.9,-5440.0,3895.5,6,0.75390625,False
+indexed,L-M,judge_correct,A3,10,0.0,0.0,0.0,0.0,0,1.0,False
+indexed,L-M,turns,n/a (not pre-registered),10,0.0,-0.2,-0.5,0.0,0,0.5,False

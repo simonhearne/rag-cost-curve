@@ -1,0 +1,6 @@
+label_a,ambiguous,eligible,stale_gold,unanswerable,wrong_gold
+ambiguous,53,8,2,2,0
+eligible,24,196,2,15,12
+stale_gold,3,0,16,0,1
+unanswerable,12,4,2,56,12
+wrong_gold,11,1,2,2,14

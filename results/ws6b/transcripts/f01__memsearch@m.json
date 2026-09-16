@@ -1,0 +1,60 @@
+{
+  "probe_id": "f01",
+  "arm": "memsearch@m",
+  "question": "What did we decide to route `quillvex` through?",
+  "expected": "spindle-ledger",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 77,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "quillvex"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_014G86TSyc6yeLQkWTr7QSuB",
+          "content": "[\n  {\n    \"end_line\": 114,\n    \"content\": \"### 15:58\\n<!-- session:b3f731b7-1375-4f4a-b243-3e5365410267 turn:1a56b638-6212-45e3-807a-d92f660d63f3 transcript:/synthetic/ws6b/b3f731b7-1375-4f4a-b243-3e5365410267.jsonl -->\\n- Queniker asked whether `quillsey` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `thaxvex` consumes it.\\n- Paged through several days of `quillmure` logs looking for the earlier stall. Nothing matched the signature, and Dorlolm suggested the report may have been about `flinwood` instead.\\n- Cleared a stale alert on `fenvex` that had been firing since Tuesday. The underlying condition resolved itself when `ladder-queue` was restarted, and Quenadou confirmed nothing downstream noticed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-26.md\",\n    \"heading\": \"15:58\",\n    \"heading_level\": 3,\n    \"start_line\": 109,\n    \"chunk_hash\": \"028193cca505d58f\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"end_line\": 192,\n    \"content\": \"### 18:02\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:836b47c3-7c71-4cc8-a651-73fa7ccc9258 transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Re-ran the `tangcote` verification suite after the `spindle-harness` rollout. Everything passed, though two cases took noticeably longer than they did before the `pelcote` change landed.\\n- Skimmed the `draynail` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `tangfold`, which complicates bisecting.\\n- Confirmed `murkmet` still passes its smoke checks after the `corbgate` change. Marnadou double-checked the `ladder-arbiter` interaction by hand because the automated coverage there is thin.\\n- Checked `sprigvex` against the staging dataset and saw no drift from the previous run. Kipesna noted the same held for `murkley`, so the discrepancy is probably in the harness.\\n- Re-ran the `",
+          "content_length": 6484,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3666,
+        "output_tokens": 35,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `quillvex` through `spindle-ledger` rather than `shunt-harness`."
+        }
+      ]
+    }
+  ]
+}

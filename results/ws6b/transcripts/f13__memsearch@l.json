@@ -1,0 +1,71 @@
+{
+  "probe_id": "f13",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `tangwell` through?",
+  "expected": "bailer-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 101,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "route tangwell through"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "tangwell"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01BiRgPVG8Kpe1MoWrB5FJj7",
+          "content": "[\n  {\n    \"end_line\": 193,\n    \"content\": \"### 18:39\\n<!-- session:ae3a1f32-d70b-4463-a447-00ca31e3860a turn:e1568c60-1205-49cc-a757-59a074516c96 transcript:/synthetic/ws6b/ae3a1f32-d70b-4463-a447-00ca31e3860a.jsonl -->\\n- Filed a note about `murkcote` for the next planning round. The gist is that it and `galdvex` have grown apart enough that sharing the `ladder-queue` path is now more cost than benefit.\\n- Noted that `tangfold` and `thaxvex` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Spent the morning reading `wrasrack` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `pelcote` before touching either of them.\\n- We decided to route `tangwell` through `bailer-gateway` rather than `relay-buffer`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:39\",\n    \"heading_level\": 3,\n    \"start_line\": 187,\n    \"chunk_hash\": \"15a4b1582d98b981\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"end_line\": 134,\n    \"content\": \"### 18:05\\n<!-- session:67a26d58-f516-450a-982a-10271d107d97 turn:ce7e8e4b-0ba2-48f0-a115-d7c0bdd4c3ac transcript:/synthetic/ws6b/67a26d58-f516-450a-982a-10271d107d97.jsonl -->\\n- Reviewed `tanggate` behaviour under sustained load and confirmed the observed latency came from `galdcote` rather than from `tanggate` itself; no action taken beyond a note for the next planning round.\\n- Compared `wraswell` against `pelcote` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `ladder-arbiter` path was exercised.\\n- Vessesna walked the team through the `pelmure` change set, flagged two places where error handling diverges from `brimsey`, and agreed to leave both alone until the interface settles.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-06-23.md\",",
+          "content_length": 4485,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_012oEJFChWXzjzSAP8gXkEon",
+          "content": "[\n  {\n    \"content\": \"### 18:39\\n<!-- session:ae3a1f32-d70b-4463-a447-00ca31e3860a turn:e1568c60-1205-49cc-a757-59a074516c96 transcript:/synthetic/ws6b/ae3a1f32-d70b-4463-a447-00ca31e3860a.jsonl -->\\n- Filed a note about `murkcote` for the next planning round. The gist is that it and `galdvex` have grown apart enough that sharing the `ladder-queue` path is now more cost than benefit.\\n- Noted that `tangfold` and `thaxvex` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Spent the morning reading `wrasrack` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `pelcote` before touching either of them.\\n- We decided to route `tangwell` through `bailer-gateway` rather than `relay-buffer`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:39\",\n    \"heading_level\": 3,\n    \"start_line\": 187,\n    \"end_line\": 193,\n    \"chunk_hash\": \"15a4b1582d98b981\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"content\": \"### 13:11\\n<!-- session:fa7a07d7-e806-4bcc-a640-dbb1de8aadf1 turn:ddab1a73-0ac8-4ec9-aafb-b138eb6dce90 transcript:/synthetic/ws6b/fa7a07d7-e806-4bcc-a640-dbb1de8aadf1.jsonl -->\\n- Noted that `tanggate` and `thaxridge` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Noted that `fenvex` and `pelcote` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Quenurrow reported that `tangcote` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `tangfold` did last month.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-26.md\",\n    \"heading\": \"13:11\",\n    \"",
+          "content_length": 6334,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 5531,
+        "output_tokens": 35,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `tangwell` through `bailer-gateway` rather than `relay-buffer`."
+        }
+      ]
+    }
+  ]
+}

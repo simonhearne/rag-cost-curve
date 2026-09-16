@@ -1,0 +1,39 @@
+probe_id,probe_set,fact_type,question,expected_answer,stale_answer,subject,attribute,source_file,source_line,session_id,turn_id,depth_s,depth_m,depth_l,cumulative_tokens_before,original_source_line,original_depth_l,original_in_window,fact_in_window
+f00,scaling,decision,What did we decide to route `flinmure` through?,spindle-buffer,,flinmure,,2025-01-06.md,,,,0.08320255976521898,0.020822919748237766,0.006682,8165,,,,False
+f01,scaling,decision,What did we decide to route `quillvex` through?,spindle-ledger,,quillvex,,2025-01-06.md,,,,0.07848452116493773,0.019642146711687358,0.006303,7702,,,,False
+f02,scaling,decision,What did we decide to route `fenric` through?,spindle-gateway,,fenric,,2025-01-06.md,,,,0.08882752155216336,0.022230666435442574,0.007134,8717,,,,False
+f03,scaling,decision,What did we decide to route `hobcote` through?,relay-gateway,,hobcote,,2025-01-06.md,,,,0.07578413190127785,0.018966326291199542,0.006086,7437,,,,False
+f04,scaling,value,What value did we set `kerfquota` on `quillley` to?,9213,,quillley,kerfquota,2025-01-13.md,,,,0.4894124360568203,0.12248416284976894,0.039306,48028,,,,False
+f05,scaling,value,What value did we set `plinthceiling` on `wrasridge` to?,9816,,wrasridge,plinthceiling,2025-01-13.md,,,,0.4849797216051521,0.12137479725387386,0.03895,47593,,,,False
+f06,scaling,value,What value did we set `warpwidth` on `flinton` to?,1522,,flinton,warpwidth,2025-01-13.md,,,,0.49262233272871786,0.12328749655714126,0.039564,48343,,,,False
+f07,scaling,value,What value did we set `camberceiling` on `flinley` to?,7051,,flinley,camberceiling,2025-01-13.md,,,,0.48189210671123156,0.12060206673535383,0.038702,47290,,,,False
+f08,scaling,owner,Who owns `pelwell`?,Kipipley,,pelwell,,2025-01-20.md,,,,0.9001671184299019,0.2252828244703098,0.072294,88337,,,,False
+f09,scaling,owner,Who owns `hobnail`?,Marniker,,hobnail,,2025-01-20.md,,,,0.8970183626469929,0.22449479235736364,0.072042,88028,,,,False
+f10,scaling,owner,Who owns `murknail`?,Branipley,,murknail,,2025-01-20.md,,,,0.9041412762141562,0.22627742810800885,0.072614,88727,,,,False
+f11,scaling,owner,Who owns `quillnail`?,Ilseurrow,,quillnail,,2025-01-20.md,,,,0.9064850102920496,0.22686398922767753,0.072802,88957,,,,False
+f12,depth,decision,What did we decide to route `vellton` through?,shunt-arbiter,,vellton,,2025-01-23.md,,,,,0.30940844035948545,0.099291,121324,,,,False
+f13,depth,decision,What did we decide to route `tangwell` through?,bailer-gateway,,tangwell,,2025-01-23.md,,,,,0.31067337216537966,0.099697,121820,,,,False
+f14,depth,decision,What did we decide to route `vellmure` through?,bailer-arbiter,,vellmure,,2025-01-23.md,,,,,0.308038947658346,0.098851,120787,,,,False
+f15,depth,decision,What did we decide to route `drayton` through?,bailer-harness,,drayton,,2025-01-24.md,,,,,0.31604933234042987,0.101422,123928,,,,False
+f16,depth,decision,What did we decide to route `fennail` through?,ladder-harness,,fennail,,2025-01-23.md,,,,,0.30734527537769435,0.098629,120515,,,,False
+f17,depth,decision,What did we decide to route `vellwood` through?,shunt-ledger,,vellwood,,2025-01-24.md,,,,,0.31668689877485234,0.101626,124178,,,,False
+f18,depth,value,What value did we set `girthwidth` on `fenridge` to?,7139,,fenridge,girthwidth,2025-04-21.md,,,,,,0.500243,611250,,,,True
+f19,depth,value,What value did we set `reavemargin` on `corbcote` to?,2944,,corbcote,reavemargin,2025-04-21.md,,,,,,0.500464,611520,,,,True
+f20,depth,value,What value did we set `plinthwidth` on `draycote` to?,8784,,draycote,plinthwidth,2025-04-21.md,,,,,,0.499992,610943,,,,True
+f21,depth,value,What value did we set `girthbudget` on `draywood` to?,9793,,draywood,girthbudget,2025-04-21.md,,,,,,0.500775,611900,,,,True
+f22,depth,value,What value did we set `sluicebudget` on `wrasfold` to?,5091,,wrasfold,sluicebudget,2025-04-21.md,,,,,,0.499719,610610,,,,True
+f23,depth,value,What value did we set `girthstride` on `brimvex` to?,3931,,brimvex,girthstride,2025-04-21.md,,,,,,0.50102,612199,,,,True
+f24,depth,owner,Who owns `wraston`?,Quenipley,,wraston,,2025-07-07.md,,,,,,0.900066,1099796,,,,True
+f25,depth,owner,Who owns `sprigridge`?,Vessurrow,,sprigridge,,2025-07-07.md,,,,,,0.900437,1100249,,,,True
+f26,depth,owner,Who owns `thaxwell`?,Rueadou,,thaxwell,,2025-07-07.md,,,,,,0.89972,1099373,,,,True
+f27,depth,owner,Who owns `galdric`?,Toradou,,galdric,,2025-07-07.md,,,,,,0.900789,1100680,,,,True
+f28,depth,owner,Who owns `flinmet`?,Dorladou,,flinmet,,2025-07-07.md,,,,,,0.899521,1099130,,,,True
+f29,depth,owner,Who owns `sprigton`?,Rueesna,,sprigton,,2025-07-07.md,,,,,,0.901148,1101118,,,,True
+f30,superseded,superseded,What is `gantrydepth` on `gorsesey` currently set to?,1126,3893,gorsesey,gantrydepth,2025-05-29.md,,,,,,0.398958,487489,2025-03-27.md,0.398958,True,True
+f31,superseded,superseded,What is `warpdepth` on `murkdle` currently set to?,2823,4112,murkdle,warpdepth,2025-06-05.md,,,,,,0.420592,513924,2025-04-01.md,0.420592,True,True
+f32,superseded,superseded,What is `camberquota` on `tangley` currently set to?,1122,2072,tangley,camberquota,2025-06-12.md,,,,,,0.442775,541030,2025-04-07.md,0.442775,True,True
+f33,superseded,superseded,What is `gantrymargin` on `hobwell` currently set to?,6863,9471,hobwell,gantrymargin,2025-06-20.md,,,,,,0.464537,567620,2025-04-11.md,0.464537,True,True
+f34,superseded,superseded,What is `plinthquota` on `vellridge` currently set to?,5276,5118,vellridge,plinthquota,2025-06-27.md,,,,,,0.485982,593824,2025-04-17.md,0.485982,True,True
+f35,superseded,superseded,What is `plinthmargin` on `quillridge` currently set to?,5231,1181,quillridge,plinthmargin,2025-07-07.md,,,,,,0.507823,620512,2025-04-22.md,0.507823,True,True
+f36,superseded,superseded,What is `kerfladder` on `drayridge` currently set to?,6772,3846,drayridge,kerfladder,2025-07-15.md,,,,,,0.52898,646364,2025-04-28.md,0.52898,True,True
+f37,superseded,superseded,What is `tinemargin` on `fensey` currently set to?,5974,1108,fensey,tinemargin,2025-07-24.md,,,,,,0.550785,673007,2025-05-01.md,0.550785,True,True

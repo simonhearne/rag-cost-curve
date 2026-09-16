@@ -1,0 +1,13 @@
+{
+ "arm": "mrl_512_sq8",
+ "milvus_recall_at_10": 0.7497,
+ "ceiling": 0.7503,
+ "delta": -0.0005999999999999339,
+ "band": [
+  -0.03,
+  0.005
+ ],
+ "nprobe": 512,
+ "n_queries": 1000,
+ "passed": true
+}

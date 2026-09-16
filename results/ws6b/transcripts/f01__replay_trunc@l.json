@@ -1,0 +1,27 @@
+{
+  "probe_id": "f01",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `quillvex` through?",
+  "expected": "spindle-ledger",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 551,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I can't find any record of a decision to route `quillvex` through anything. The mentions of `quillvex` in the history are limited to routine build/test activity \u2014 e.g., it was rolled forward successfully (with `sieve-buffer` integration staying green), an experimental tweak to it was backed out (unaffecting `sieve-arbiter`), and it was checked against a staging dataset \u2014 but none of these describe a routing decision."
+        }
+      ]
+    }
+  ]
+}

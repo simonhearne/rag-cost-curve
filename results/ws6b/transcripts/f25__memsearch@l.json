@@ -1,0 +1,110 @@
+{
+  "probe_id": "f25",
+  "arm": "memsearch@l",
+  "question": "Who owns `sprigridge`?",
+  "expected": "Vessurrow",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 894,
+        "output_tokens": 69,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "sprigridge"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01Xg8c6A1QqUmS7P6Z3YXzeQ",
+          "content": "[\n  {\n    \"end_line\": 190,\n    \"content\": \"### 18:34\\n<!-- session:1008531e-dc90-46aa-b024-3e0b6b1a48b8 turn:75d45b8f-e796-4939-9df6-d6d68e347312 transcript:/synthetic/ws6b/1008531e-dc90-46aa-b024-3e0b6b1a48b8.jsonl -->\\n- Deferred the `quillmet` cleanup until after the current milestone. The work is understood and scoped, but it touches `pelfold` in three places and nobody wanted that landing mid-cycle.\\n- Left `gorsemure` untouched this week; the queue was entirely on `fenton`. Worth revisiting once the `bailer-ledger` work is done, since the two share more state than they should.\\n- Paged through several days of `murkrack` logs looking for the earlier stall. Nothing matched the signature, and Quenurrow suggested the report may have been about `murkmet` instead.\\n- Branesna reported that `pelwood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `sprigwood` did last month.\\n- Selaesna asked whether `sprigridge` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `galdmure` consumes it.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-27.md\",\n    \"heading\": \"18:34\",\n    \"heading_level\": 3,\n    \"start_line\": 183,\n    \"chunk_hash\": \"4df12446b4af1eef\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"end_line\": 72,\n    \"content\": \"### 11:21\\n<!-- session:917c1c85-62f3-449a-823a-c2b06f4c7ffd turn:9ac04fdf-4e69-4c1e-8c66-75feed2c3977 transcript:/synthetic/ws6b/917c1c85-62f3-449a-823a-c2b06f4c7ffd.jsonl -->\\n- Marnolm reported that `sprigwood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `brimridge` did last month.\\n- Filed a note about `wrasmet` for the next planning round. The gist is that it and `pelmure` have grown apart enough that sharing the `sieve-queue` path is now more cost than benefit.\\n- Left `thaxridge` untouched this week; the queue was entire",
+          "content_length": 7159,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3820,
+        "output_tokens": 123,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "sprigridge owner"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "owns sprigridge on-call"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01TpwV3W9ZUigJpcozenmEj6",
+          "content": "[\n  {\n    \"end_line\": 190,\n    \"content\": \"### 18:34\\n<!-- session:1008531e-dc90-46aa-b024-3e0b6b1a48b8 turn:75d45b8f-e796-4939-9df6-d6d68e347312 transcript:/synthetic/ws6b/1008531e-dc90-46aa-b024-3e0b6b1a48b8.jsonl -->\\n- Deferred the `quillmet` cleanup until after the current milestone. The work is understood and scoped, but it touches `pelfold` in three places and nobody wanted that landing mid-cycle.\\n- Left `gorsemure` untouched this week; the queue was entirely on `fenton`. Worth revisiting once the `bailer-ledger` work is done, since the two share more state than they should.\\n- Paged through several days of `murkrack` logs looking for the earlier stall. Nothing matched the signature, and Quenurrow suggested the report may have been about `murkmet` instead.\\n- Branesna reported that `pelwood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `sprigwood` did last month.\\n- Selaesna asked whether `sprigridge` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `galdmure` consumes it.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-27.md\",\n    \"heading\": \"18:34\",\n    \"heading_level\": 3,\n    \"start_line\": 183,\n    \"chunk_hash\": \"4df12446b4af1eef\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"end_line\": 72,\n    \"content\": \"### 11:21\\n<!-- session:917c1c85-62f3-449a-823a-c2b06f4c7ffd turn:9ac04fdf-4e69-4c1e-8c66-75feed2c3977 transcript:/synthetic/ws6b/917c1c85-62f3-449a-823a-c2b06f4c7ffd.jsonl -->\\n- Marnolm reported that `sprigwood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `brimridge` did last month.\\n- Filed a note about `wrasmet` for the next planning round. The gist is that it and `pelmure` have grown apart enough that sharing the `sieve-queue` path is now more cost than benefit.\\n- Left `thaxridge` untouched this week; the queue was entire",
+          "content_length": 7137,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_015AiZA7fxzgjkVzcqBCdpZx",
+          "content": "[\n  {\n    \"start_line\": 65,\n    \"end_line\": 72,\n    \"content\": \"### 11:21\\n<!-- session:917c1c85-62f3-449a-823a-c2b06f4c7ffd turn:9ac04fdf-4e69-4c1e-8c66-75feed2c3977 transcript:/synthetic/ws6b/917c1c85-62f3-449a-823a-c2b06f4c7ffd.jsonl -->\\n- Marnolm reported that `sprigwood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `brimridge` did last month.\\n- Filed a note about `wrasmet` for the next planning round. The gist is that it and `pelmure` have grown apart enough that sharing the `sieve-queue` path is now more cost than benefit.\\n- Left `thaxridge` untouched this week; the queue was entirely on `galdnail`. Worth revisiting once the `ladder-queue` work is done, since the two share more state than they should.\\n- Toresna reported that `quillmure` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `drayrack` did last month.\\n- Backed out an experimental tweak to `thaxridge` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-14.md\",\n    \"heading\": \"11:21\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"a06f7451c227b5e6\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"start_line\": 94,\n    \"end_line\": 103,\n    \"content\": \"### 14:13\\n<!-- session:10ccfaaf-dd5b-4ec5-8d8c-22db326ef12d turn:93ed5715-d27a-4d4e-856e-1f7cf8d4b8c4 transcript:/synthetic/ws6b/10ccfaaf-dd5b-4ec5-8d8c-22db326ef12d.jsonl -->\\n- Skimmed the `thaxridge` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `galdrack`, which complicates bisecting.\\n- Paged through several days of `galdvex` logs looking for the earlier stall. Nothing matched the signature, and Kipiker suggested the report may have been about `drayrack` instead.\\n- Selaadou walked the team th",
+          "content_length": 6421,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 9586,
+        "output_tokens": 18,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Vessurrow owns `sprigridge`."
+        }
+      ]
+    }
+  ]
+}

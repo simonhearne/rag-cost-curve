@@ -1,0 +1,4 @@
+size,files,count_tokens,target_tokens,chars,fit_fraction,first_kept_day
+s,11,98134,100000,246653,1.0,0
+m,48,392116,400000,989397,1.0,0
+l,145,1221906,1200000,3083351,0.785053842112241,31

@@ -1,0 +1,4 @@
+slug,repo,n,judge_accuracy,any_file_hit_rate,branch
+agentic_hil,agentic-hil/agentic-hil,25,0.0,0.0,S1
+kicad_mcp_pro,oaslananka/kicad-mcp-pro,25,0.0,0.0,S1
+mixle,gmboquet/mixle,25,0.0,0.0,S1

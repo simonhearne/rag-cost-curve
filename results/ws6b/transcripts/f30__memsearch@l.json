@@ -1,0 +1,60 @@
+{
+  "probe_id": "f30",
+  "arm": "memsearch@l",
+  "question": "What is `gantrydepth` on `gorsesey` currently set to?",
+  "expected": "1126",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 905,
+        "output_tokens": 97,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "gantrydepth gorsesey"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_015mbBkiYp9bBfKPtcxodGK1",
+          "content": "[\n  {\n    \"end_line\": 19,\n    \"content\": \"### 11:27\\n<!-- session:3aa4960b-4b8b-4cda-aa99-b6a33f01b99c turn:15fd2682-d47a-439b-aa19-e40a40cab143 transcript:/synthetic/ws6b/3aa4960b-4b8b-4cda-aa99-b6a33f01b99c.jsonl -->\\n- We set `gantrydepth` on `drayric` to 389.\\n- Reviewed `draymet` behaviour under sustained load and confirmed the observed latency came from `tanggate` rather than from `draymet` itself; no action taken beyond a note for the next planning round.\\n- Rolled `draynail` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-arbiter` integration stayed green throughout.\\n- Checked `pelfold` against the staging dataset and saw no drift from the previous run. Marnolm noted the same held for `murkrack`, so the discrepancy is probably in the harness.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-10.md\",\n    \"heading\": \"11:27\",\n    \"heading_level\": 3,\n    \"start_line\": 13,\n    \"chunk_hash\": \"4864a2c3a861919f\",\n    \"score\": 0.9760624244809151\n  },\n  {\n    \"end_line\": 172,\n    \"content\": \"### 18:22\\n<!-- session:1008531e-dc90-46aa-b024-3e0b6b1a48b8 turn:54d1fcea-82ba-4beb-9c9c-b3eb9f6197b4 transcript:/synthetic/ws6b/1008531e-dc90-46aa-b024-3e0b6b1a48b8.jsonl -->\\n- Selaiker walked the team through the `thaxmet` change set, flagged two places where error handling diverges from `quillmet`, and agreed to leave both alone until the interface settles.\\n- Vessadou asked whether `quillmet` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `flinwood` consumes it.\\n- Vessesna asked whether `quillmet` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `galdgate` consumes it.\\n- Re-ran the `brimsey` verification suite after the `sieve-ledger` rollout. Everything passed, though two cases took noticeably longer than they did before the `vellfold` change landed.\\n- We ",
+          "content_length": 6363,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3744,
+        "output_tokens": 54,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The most recent update (2025-05-29) shows `gantrydepth` on `gorsesey` was changed from 3893 to **1126**, so that is its current value."
+        }
+      ]
+    }
+  ]
+}

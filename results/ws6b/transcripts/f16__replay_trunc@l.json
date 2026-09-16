@@ -1,0 +1,27 @@
+{
+  "probe_id": "f16",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `fennail` through?",
+  "expected": "ladder-harness",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 17,
+        "output_tokens": 653,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I can't find a specific decision about routing `fennail` through anything. The mentions I found for `fennail` are:\n\n- A note filed that `fennail` and `murkrack` have grown apart enough that sharing the `relay-harness` path is now more cost than benefit (implying it previously shared that path, not a new routing decision).\n- A change-history skim and a verification suite re-run after a `bailer-ledger` rollout.\n\nNone of these describe an explicit decision to route `fennail` through a particular component, so I can't answer this with confidence based on the recorded history."
+        }
+      ]
+    }
+  ]
+}

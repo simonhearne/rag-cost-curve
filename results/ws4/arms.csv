@@ -1,0 +1,13 @@
+arm_key,arm,family,index,dim,nprobe,refine_k,gt_sweep_recall_at_10,gt_sweep_n_queries,chosen_by,target_arm,target_recall
+sq8_np512,sq8@512,reference,IVF_SQ8,1024.0,512.0,,0.99166,10000.0,spec 4.1 reference,,
+pca_uc_512_sq8_np512,pca_uc_512_sq8@512,truncation,IVF_SQ8,512.0,512.0,,0.96303,10000.0,spec 4.3 ceiling point,,
+pca_uc_384_sq8_np512,pca_uc_384_sq8@512,truncation,IVF_SQ8,384.0,512.0,,0.91524,10000.0,spec 4.3 ceiling point,,
+mrl_512_sq8_np512,mrl_512_sq8@512,truncation,IVF_SQ8,512.0,512.0,,0.75386,10000.0,spec 4.3 ceiling point,,
+pq_np256,pq_m256@256,quantization,IVF_PQ,1024.0,256.0,,0.81941,10000.0,spec 4.1 quantizer ceiling,,
+rabitq_np256,rabitq@256,quantization,IVF_RABITQ,1024.0,256.0,,0.77763,10000.0,spec 4.1 quantizer ceiling,,
+refine_np64,refine_k2@64,pruning,IVF_RABITQ+SQ8 refine,1024.0,64.0,2.0,0.96015,10000.0,spec 4.1 the brief's pair partner,,
+sq8_np64,sq8@64,pruning,IVF_SQ8,1024.0,64.0,,0.96516,10000.0,spec 4.3 nearest GT-sweep recall,pca_uc_512_sq8,0.96303
+sq8_np16,sq8@16,pruning,IVF_SQ8,1024.0,16.0,,0.90175,2000.0,spec 4.3 nearest GT-sweep recall,pca_uc_384_sq8,0.91524
+sq8_np4,sq8@4,pruning,IVF_SQ8,1024.0,4.0,,0.77454,10000.0,spec 4.3 nearest GT-sweep recall,mrl_512_sq8,0.75386
+sq8_np8,sq8@8,pruning,IVF_SQ8,1024.0,8.0,,0.84607,10000.0,spec 4.3 nearest GT-sweep recall,pq_np256,0.81941
+parametric,parametric,none,none,,,,,,spec 5.5 leak floor,,

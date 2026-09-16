@@ -1,0 +1,8 @@
+branch,reading,fires,evidence
+T0-A,literal,False,conversion delta +0.0222; branch K1; r* 0.924615 vs 0.923111
+T0-A,substantive,True,conversion delta +0.0222; branch K1; r* arm pca_uc_384_sq8_np512 vs pca_uc_384_sq8_np512
+T0-B,literal,False,conversion delta +0.0222 vs threshold 0.05
+T0-B,substantive,False,conversion delta +0.0222 vs threshold 0.05
+T0-C,both,True,"72/107 = 0.673 stale_gold+ambiguous_question vs threshold 0.4; auditor claude-opus-5 (in-session, 2026-09-11); PROVISIONAL, human spot-check pending"
+T0-D,literal,True,r* value 0.924615 != 0.923111 (delta +0.001504); branch K1
+T0-D,substantive,False,r* arm pca_uc_384_sq8_np512; branch K1

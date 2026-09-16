@@ -1,0 +1,57 @@
+{
+  "probe_id": "f19",
+  "arm": "memsearch@l",
+  "question": "What value did we set `reavemargin` on `corbcote` to?",
+  "expected": "2944",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 903,
+        "output_tokens": 56,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "reavemargin corbcote"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01HHqhSyLy726yerX4wgRRAk",
+          "content": "[\n  {\n    \"heading\": \"10:36\",\n    \"heading_level\": 3,\n    \"start_line\": 27,\n    \"end_line\": 35,\n    \"content\": \"### 10:36\\n<!-- session:95e5b29d-3f9b-43d4-b475-25fcad6570df turn:49f0093a-a43c-4b44-ba61-9123551b6e87 transcript:/synthetic/ws6b/95e5b29d-3f9b-43d4-b475-25fcad6570df.jsonl -->\\n- Skimmed the `murkrack` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `gorsemure`, which complicates bisecting.\\n- Discussed whether `quillsey` should adopt the `sieve-arbiter` pattern the way `gorsemet` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Spent the morning reading `thaxmet` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `pelmure` before touching either of them.\\n- Dorlurrow walked the team through the `brimsey` change set, flagged two places where error handling diverges from `vellsey`, and agreed to leave both alone until the interface settles.\\n- Backed out an experimental tweak to `gorsewood` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- We set `reavemargin` on `corbcote` to 2944.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-21.md\",\n    \"chunk_hash\": \"5a6178f4ded9e3bc\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"heading\": \"18:59\",\n    \"heading_level\": 3,\n    \"start_line\": 318,\n    \"end_line\": 325,\n    \"content\": \"- Deferred the `galdric` cleanup until after the current milestone. The work is understood and scoped, but it touches `gorsemet` in three places and nobody wanted that landing mid-cycle.\\n- Discussed whether `fensey` should adopt the `relay-harness` pattern the way `corbmure` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Cleared a stale alert on `brimvex` that had been firing since Tuesday. The underlying condition reso",
+          "content_length": 7521,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 4005,
+        "output_tokens": 26,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The value set for `reavemargin` on `corbcote` was **2944**."
+        }
+      ]
+    }
+  ]
+}

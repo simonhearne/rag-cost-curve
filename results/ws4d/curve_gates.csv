@@ -1,0 +1,2 @@
+gate,n_declines,n_errors,decline_share,threshold,fired,curve_is
+F1,879,145,0.858398,0.8,True,decline-behaviour

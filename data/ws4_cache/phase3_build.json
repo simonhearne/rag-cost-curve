@@ -1,0 +1,10 @@
+{
+ "collection": "ws2_10m_shared",
+ "index_type": "IVF_SQ8",
+ "metric_type": "IP",
+ "params": {
+  "nlist": 4096
+ },
+ "build_seconds": 7903.112980250036,
+ "n_rows": 10000000
+}

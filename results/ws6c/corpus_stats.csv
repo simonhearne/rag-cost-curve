@@ -1,0 +1,4 @@
+slug,repo,commit,license,files,lines,chars,count_tokens,tiktoken_cl100k,nearest_fastapi_scope,scope_ratio,fits_in_prefix_budget
+agentic_hil,agentic-hil/agentic-hil,837f39813e1421c7b8efc6e621c1368507f2dbb5,Apache-2.0,342,215187,11603950,4307363,2770789,L,0.691,False
+kicad_mcp_pro,oaslananka/kicad-mcp-pro,f36c7a2cbfd66b0812209305058e4f5634dd924d,MIT,1466,276362,10625842,4247639,2597672,L,0.682,False
+mixle,gmboquet/mixle,7322ca27a2f9e959c628e884416415802d98edd2,MIT,2396,784644,37865484,14967861,9180337,L,2.402,False

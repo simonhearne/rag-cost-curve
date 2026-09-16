@@ -1,0 +1,17 @@
+arm_a,arm_b,metric,branch,n,median,mean,ci_low,ci_high,n_positive,sign_p,excludes_zero
+indexed,agentic,prompt_tokens,A1,40,2856.5,5727.6,9.0,7691.5,26,0.0806904677519924,True
+indexed,agentic,judge_correct,A3,40,0.0,0.025,0.0,0.0,1,1.0,False
+indexed,agentic,turns,n/a (not pre-registered),40,-1.0,-1.575,-2.0,-1.0,3,2.5560148060321808e-06,True
+indexed,agentic,wall_clock_s,n/a (not pre-registered),40,1.4960000000000004,0.9657749999999998,-0.5514999999999999,2.3230000000000013,23,0.42959050784338615,False
+indexed,parametric,prompt_tokens,n/a (not pre-registered),40,16328.0,28060.575,11234.0,19908.5,40,1.8189894035458565e-12,True
+indexed,parametric,judge_correct,n/a (not pre-registered),40,0.0,0.375,0.0,1.0,15,6.103515625e-05,False
+indexed,parametric,turns,n/a (not pre-registered),40,1.0,1.775,1.0,2.0,40,1.8189894035458565e-12,True
+indexed,parametric,wall_clock_s,n/a (not pre-registered),40,5.365,6.076425,3.0295,6.772,34,8.364584573428147e-06,True
+agentic,parametric,prompt_tokens,n/a (not pre-registered),40,9348.0,22332.975,7120.0,13001.0,40,1.8189894035458565e-12,True
+agentic,parametric,judge_correct,n/a (not pre-registered),40,0.0,0.35,0.0,1.0,15,0.000518798828125,False
+agentic,parametric,turns,n/a (not pre-registered),40,2.5,3.35,2.0,3.0,40,1.8189894035458565e-12,True
+agentic,parametric,wall_clock_s,n/a (not pre-registered),40,4.4399999999999995,5.11065,2.6960000000000006,6.609500000000001,34,8.364584573428147e-06,True
+stuffed,agentic,prompt_tokens,n/a (not pre-registered),40,950647.0,937662.025,946994.0,952875.0,40,1.8189894035458565e-12,True
+stuffed,agentic,judge_correct,n/a (not pre-registered),40,0.0,-0.075,0.0,0.0,1,0.375,False
+stuffed,agentic,turns,n/a (not pre-registered),40,-2.5,-3.35,-3.0,-2.0,0,1.8189894035458565e-12,True
+stuffed,agentic,wall_clock_s,n/a (not pre-registered),40,-1.4654999999999996,-2.3305249999999997,-2.7609999999999997,0.6680000000000001,16,0.26818725105476915,False

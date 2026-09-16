@@ -1,0 +1,4 @@
+scope,corpus,commit,tree,files_tracked,files_in_tree,files_text_allowlisted,files_claude_context_indexable,lines,chars,count_tokens,count_tokens_remeasured,tiktoken_cl100k,indexable_tiktoken_cl100k,request_overhead_tokens,fits_in_prefix_budget
+S,agentic_hil,837f39813e1421c7b8efc6e621c1368507f2dbb5,/Users/simon/Projects/rag-cost-curve/data/ws6c_tree_agentic_hil,49,49,49,46,59353,3343112,1139248,1139248,741343,722831,5,False
+M,agentic_hil,837f39813e1421c7b8efc6e621c1368507f2dbb5,/Users/simon/Projects/rag-cost-curve/data/ws6c_tree_agentic_hil,212,211,172,112,90855,5696093,2017476,2017476,1352243,1142900,5,False
+L,agentic_hil,837f39813e1421c7b8efc6e621c1368507f2dbb5,/Users/simon/Projects/rag-cost-curve/data/ws6c_tree_agentic_hil,382,381,342,279,215187,11603950,4307363,4307363,2770789,2548757,5,False

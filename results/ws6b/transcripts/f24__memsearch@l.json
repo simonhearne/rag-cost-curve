@@ -1,0 +1,113 @@
+{
+  "probe_id": "f24",
+  "arm": "memsearch@l",
+  "question": "Who owns `wraston`?",
+  "expected": "Quenipley",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 892,
+        "output_tokens": 65,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "wraston"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01L29RXGYNCXP8W5ikGzaTSz",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 186,\n    \"end_line\": 192,\n    \"content\": \"### 17:43\\n<!-- session:47e044b7-2829-4b59-8378-dd1820d71ec8 turn:bfeea37a-5b75-4440-99f3-d11d29d0cb45 transcript:/synthetic/ws6b/47e044b7-2829-4b59-8378-dd1820d71ec8.jsonl -->\\n- Rueurrow walked the team through the `tangfold` change set, flagged two places where error handling diverges from `thaxcote`, and agreed to leave both alone until the interface settles.\\n- Backed out an experimental tweak to `vellcote` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- Spent the morning reading `wraston` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `pelcote` before touching either of them.\\n- Noted that `pelwood` and `sprigvex` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-13.md\",\n    \"heading\": \"17:43\",\n    \"chunk_hash\": \"30ae8759bac09212\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 12,\n    \"end_line\": 19,\n    \"content\": \"### 12:35\\n<!-- session:b3460b86-b05d-42b5-bffd-c0cfeb6652c9 turn:d91ca6af-4d9d-4cd1-abfc-0bea38650ef8 transcript:/synthetic/ws6b/b3460b86-b05d-42b5-bffd-c0cfeb6652c9.jsonl -->\\n- Backed out an experimental tweak to `wrasrack` after the numbers moved in the wrong direction. The revert was clean and `ladder-arbiter` was unaffected, so no follow-up is needed.\\n- Backed out an experimental tweak to `vellsey` after the numbers moved in the wrong direction. The revert was clean and `ladder-arbiter` was unaffected, so no follow-up is needed.\\n- Checked `murkley` against the staging dataset and saw no drift from the previous run. Kipiker noted the same held for `wrasmet`, so the discrepancy is probably in the h",
+          "content_length": 6548,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3663,
+        "output_tokens": 131,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "wraston owner is on point for"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "owns wraston"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_014P8gpx1RRwWXAtU5gfzAk8",
+          "content": "[\n  {\n    \"start_line\": 186,\n    \"end_line\": 192,\n    \"content\": \"### 17:43\\n<!-- session:47e044b7-2829-4b59-8378-dd1820d71ec8 turn:bfeea37a-5b75-4440-99f3-d11d29d0cb45 transcript:/synthetic/ws6b/47e044b7-2829-4b59-8378-dd1820d71ec8.jsonl -->\\n- Rueurrow walked the team through the `tangfold` change set, flagged two places where error handling diverges from `thaxcote`, and agreed to leave both alone until the interface settles.\\n- Backed out an experimental tweak to `vellcote` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- Spent the morning reading `wraston` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `pelcote` before touching either of them.\\n- Noted that `pelwood` and `sprigvex` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-13.md\",\n    \"heading\": \"17:43\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"30ae8759bac09212\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"start_line\": 12,\n    \"end_line\": 19,\n    \"content\": \"### 12:35\\n<!-- session:b3460b86-b05d-42b5-bffd-c0cfeb6652c9 turn:d91ca6af-4d9d-4cd1-abfc-0bea38650ef8 transcript:/synthetic/ws6b/b3460b86-b05d-42b5-bffd-c0cfeb6652c9.jsonl -->\\n- Backed out an experimental tweak to `wrasrack` after the numbers moved in the wrong direction. The revert was clean and `ladder-arbiter` was unaffected, so no follow-up is needed.\\n- Backed out an experimental tweak to `vellsey` after the numbers moved in the wrong direction. The revert was clean and `ladder-arbiter` was unaffected, so no follow-up is needed.\\n- Checked `murkley` against the staging dataset and saw no drift from the previous run. Kipiker noted the same held for `wrasmet`, so the discrepancy is probably in the harness.\\n- Cleared a sta",
+          "content_length": 6258,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01MXYPDrawz7rkMf5j8ondAn",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 186,\n    \"end_line\": 192,\n    \"content\": \"### 17:43\\n<!-- session:47e044b7-2829-4b59-8378-dd1820d71ec8 turn:bfeea37a-5b75-4440-99f3-d11d29d0cb45 transcript:/synthetic/ws6b/47e044b7-2829-4b59-8378-dd1820d71ec8.jsonl -->\\n- Rueurrow walked the team through the `tangfold` change set, flagged two places where error handling diverges from `thaxcote`, and agreed to leave both alone until the interface settles.\\n- Backed out an experimental tweak to `vellcote` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- Spent the morning reading `wraston` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `pelcote` before touching either of them.\\n- Noted that `pelwood` and `sprigvex` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-13.md\",\n    \"heading\": \"17:43\",\n    \"chunk_hash\": \"30ae8759bac09212\",\n    \"score\": 0.9684979692101479\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 82,\n    \"end_line\": 91,\n    \"content\": \"### 12:47\\n<!-- session:e798054f-ef5a-4025-83f1-f88bf465a63f turn:cc670994-b8c2-4bfb-9c70-09c5cfeaa2e4 transcript:/synthetic/ws6b/e798054f-ef5a-4025-83f1-f88bf465a63f.jsonl -->\\n- Cleared a stale alert on `sprigfold` that had been firing since Tuesday. The underlying condition resolved itself when `relay-harness` was restarted, and Selaiker confirmed nothing downstream noticed.\\n- Left `pelmure` untouched this week; the queue was entirely on `corbgate`. Worth revisiting once the `sieve-buffer` work is done, since the two share more state than they should.\\n- Left `gorsemure` untouched this week; the queue was entirely on `wrasrack`. Worth revisiting once the `ladder-ledger` work is done, since the two sha",
+          "content_length": 5732,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 9061,
+        "output_tokens": 71,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "According to the project history (2025-07-07), **Quenipley owns `wraston`**."
+        }
+      ]
+    }
+  ]
+}

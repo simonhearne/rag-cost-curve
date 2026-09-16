@@ -1,0 +1,5 @@
+k,n,n_separable,n_identical,separable_rate,arms,stratum,is_replicate_k
+1,264,98,166,0.371212,sq8_np1|sq8_np4|sq8_np48|sq8_np512,primary,True
+3,264,172,92,0.651515,sq8_np1|sq8_np4|sq8_np48|sq8_np512,primary,False
+5,264,206,58,0.780303,sq8_np1|sq8_np4|sq8_np48|sq8_np512,primary,False
+10,264,241,23,0.912879,sq8_np1|sq8_np4|sq8_np48|sq8_np512,primary,False

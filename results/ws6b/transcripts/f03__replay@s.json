@@ -1,0 +1,24 @@
+{
+  "probe_id": "f03",
+  "arm": "replay@s",
+  "question": "What did we decide to route `hobcote` through?",
+  "expected": "relay-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 42,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 98226
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the session history, the decision was to route `hobcote` through `relay-gateway` rather than `bailer-queue`."
+        }
+      ]
+    }
+  ]
+}

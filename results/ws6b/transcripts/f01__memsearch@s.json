@@ -1,0 +1,60 @@
+{
+  "probe_id": "f01",
+  "arm": "memsearch@s",
+  "question": "What did we decide to route `quillvex` through?",
+  "expected": "spindle-ledger",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 70,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "quillvex"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01P9918PYxzPdzPFMqJnrz89",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 155,\n    \"end_line\": 163,\n    \"content\": \"### 16:37\\n<!-- session:ca957c2e-65df-49cb-8062-42771a3ecc71 turn:6737cac9-242e-4d71-9579-bc243ffdf8f1 transcript:/synthetic/ws6b/ca957c2e-65df-49cb-8062-42771a3ecc71.jsonl -->\\n- Checked `quillsey` against the staging dataset and saw no drift from the previous run. Branadou noted the same held for `galdgate`, so the discrepancy is probably in the harness.\\n- Rolled `fenton` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-gateway` integration stayed green throughout.\\n- Checked `quillwell` against the staging dataset and saw no drift from the previous run. Dorliker noted the same held for `thaxvex`, so the discrepancy is probably in the harness.\\n- Quenesna asked whether `thaxridge` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `vellsey` consumes it.\\n- Cleared a stale alert on `fenvex` that had been firing since Tuesday. The underlying condition resolved itself when `sieve-arbiter` was restarted, and Ilseiker confirmed nothing downstream noticed.\\n- Rolled `sprigfold` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-queue` integration stayed green throughout.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-20.md\",\n    \"heading\": \"16:37\",\n    \"chunk_hash\": \"3afeebc76849cea4\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 183,\n    \"end_line\": 192,\n    \"content\": \"### 18:02\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:836b47c3-7c71-4cc8-a651-73fa7ccc9258 transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Re-ran the `tangcote` verification suite after the `spindle-harness` rollout. Everything passed, though two cases took noticeably longer than they did before the `pelcote` change landed.\\n- Skim",
+          "content_length": 7165,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3960,
+        "output_tokens": 35,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `quillvex` through `spindle-ledger` rather than `shunt-harness`."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "probe_id": "f21",
+  "arm": "memsearch@l",
+  "question": "What value did we set `girthbudget` on `draywood` to?",
+  "expected": "9793",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 902,
+        "output_tokens": 55,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "girthbudget draywood"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_019w5NQpxiXAo9A5H9J7CH4M",
+          "content": "[\n  {\n    \"heading\": \"10:58\",\n    \"heading_level\": 3,\n    \"start_line\": 36,\n    \"end_line\": 43,\n    \"content\": \"### 10:58\\n<!-- session:95e5b29d-3f9b-43d4-b475-25fcad6570df turn:7db9fcff-c09f-4312-85ea-95d4686a3229 transcript:/synthetic/ws6b/95e5b29d-3f9b-43d4-b475-25fcad6570df.jsonl -->\\n- Branadou walked the team through the `brimridge` change set, flagged two places where error handling diverges from `sprigfold`, and agreed to leave both alone until the interface settles.\\n- Spent the morning reading `brimley` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `flinwood` before touching either of them.\\n- Checked `murkmet` against the staging dataset and saw no drift from the previous run. Vessipley noted the same held for `pelfold`, so the discrepancy is probably in the harness.\\n- Vessipley walked the team through the `tanggate` change set, flagged two places where error handling diverges from `thaxcote`, and agreed to leave both alone until the interface settles.\\n- We set `girthbudget` on `draywood` to 9793.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-21.md\",\n    \"chunk_hash\": \"5edd6143af45cb2b\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"heading\": \"11:10\",\n    \"heading_level\": 3,\n    \"start_line\": 4,\n    \"end_line\": 9,\n    \"content\": \"### 11:10\\n<!-- session:1e7498ae-826a-4457-a426-248d096c2999 turn:f0385ceb-ef4b-4a2c-b82f-c7fe12472e5c transcript:/synthetic/ws6b/1e7498ae-826a-4457-a426-248d096c2999.jsonl -->\\n- Toriker walked the team through the `wrasmet` change set, flagged two places where error handling diverges from `wraswood`, and agreed to leave both alone until the interface settles.\\n- Reviewed `draywood` behaviour under sustained load and confirmed the observed latency came from `gorsemure` rather than from `draywood` itself; no action taken beyond a note for the next planning round.\\n- Filed a note about `murkley` for the next planning round. The gist is that it and `",
+          "content_length": 5706,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3416,
+        "output_tokens": 23,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We set `girthbudget` on `draywood` to **9793**."
+        }
+      ]
+    }
+  ]
+}

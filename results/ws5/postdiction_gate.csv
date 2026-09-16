@@ -1,0 +1,73 @@
+workload,size,arm,role,n,corpus_tokens,hit_rate,source,basis,modelled_usd,measured_usd,rel_error,within_10pct
+memory,S,replay,live,12,98134,1.0,results/ws6b/summary_s.csv + runs.csv,mean_billed,0.019949,0.019967,-0.0009,True
+memory,S,replay,live,12,98134,1.0,results/ws6b/summary_s.csv + runs.csv,mean_uncached_list,0.19659,0.196774,-0.0009,True
+memory,S,replay,live,12,98134,1.0,results/ws6b/summary_s.csv + runs.csv,median_steady_state,0.019913,0.019941,-0.0014,True
+memory,S,memsearch,index,12,98134,0.0,results/ws6b/summary_s.csv + runs.csv,mean_billed,0.011477,0.011477,0.0,True
+memory,S,memsearch,index,12,98134,0.0,results/ws6b/summary_s.csv + runs.csv,mean_uncached_list,0.011477,0.011477,0.0,True
+memory,S,memsearch,index,12,98134,0.0,results/ws6b/summary_s.csv + runs.csv,median_steady_state,0.010143,0.010043,0.01,True
+memory,M,replay,live,12,392116,0.9167,results/ws6b/summary_m.csv + runs.csv,mean_billed,0.203003,0.203031,-0.0001,True
+memory,M,replay,live,12,392116,0.9167,results/ws6b/summary_m.csv + runs.csv,mean_uncached_list,0.784641,0.784751,-0.0001,True
+memory,M,replay,live,12,392116,0.9167,results/ws6b/summary_m.csv + runs.csv,median_steady_state,0.078769,0.078895,-0.0016,True
+memory,M,memsearch,index,12,392116,0.0,results/ws6b/summary_m.csv + runs.csv,mean_billed,0.012447,0.012447,0.0,True
+memory,M,memsearch,index,12,392116,0.0,results/ws6b/summary_m.csv + runs.csv,mean_uncached_list,0.012447,0.012447,0.0,True
+memory,M,memsearch,index,12,392116,0.0,results/ws6b/summary_m.csv + runs.csv,median_steady_state,0.010366,0.010201,0.0162,True
+memory,L,replay_trunc,live,38,1221906,0.9737,results/ws6b/summary_l.csv + runs.csv,mean_billed,0.29018,0.290177,0.0,True
+memory,L,replay_trunc,live,38,1221906,0.9737,results/ws6b/summary_l.csv + runs.csv,mean_uncached_list,1.920926,1.920904,0.0,True
+memory,L,replay_trunc,live,38,1221906,0.9737,results/ws6b/summary_l.csv + runs.csv,median_steady_state,0.193058,0.193056,0.0,True
+memory,L,memsearch,index,38,1221906,0.0,results/ws6b/summary_l.csv + runs.csv,mean_billed,0.018798,0.018798,0.0,True
+memory,L,memsearch,index,38,1221906,0.0,results/ws6b/summary_l.csv + runs.csv,mean_uncached_list,0.018798,0.018798,0.0,True
+memory,L,memsearch,index,38,1221906,0.0,results/ws6b/summary_l.csv + runs.csv,median_steady_state,0.014503,0.014428,0.0052,True
+code,L,agentic,live,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,mean_billed,0.054345,0.054345,0.0,True
+code,L,agentic,live,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,mean_uncached_list,0.054345,0.054345,0.0,True
+code,L,agentic,live,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,median_steady_state,0.025345,0.026256,-0.0347,True
+code,L,indexed,index,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,mean_billed,0.066598,0.066598,0.0,True
+code,L,indexed,index,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,mean_uncached_list,0.066598,0.066598,0.0,True
+code,L,indexed,index,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,median_steady_state,0.039859,0.039129,0.0187,True
+code,L,stuffed,live,40,6232509,0.975,results/ws6a/summary.csv + runs.csv,mean_billed,0.294036,0.294068,-0.0001,True
+code,L,stuffed,live,40,6232509,0.975,results/ws6a/summary.csv + runs.csv,mean_uncached_list,1.930813,1.931031,-0.0001,True
+code,L,stuffed,live,40,6232509,0.975,results/ws6a/summary.csv + runs.csv,median_steady_state,0.198698,0.199608,-0.0046,True
+code,L,parametric,floor,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,mean_billed,0.008987,0.008987,0.0,True
+code,L,parametric,floor,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,mean_uncached_list,0.008987,0.008987,0.0,True
+code,L,parametric,floor,40,6232509,0.0,results/ws6a/summary.csv + runs.csv,median_steady_state,0.005813,0.00581,0.0005,True
+code,S,agentic,live,10,259429,0.0,results/ws6a/scaling.csv,mean_billed,0.035988,0.035988,0.0,True
+code,S,agentic,live,10,259429,0.0,results/ws6a/scaling.csv,mean_uncached_list,0.035988,0.035988,0.0,True
+code,S,agentic,live,10,259429,0.0,results/ws6a/scaling.csv,median_steady_state,0.017876,0.017396,0.0276,True
+code,S,indexed,index,10,259429,0.0,results/ws6a/scaling.csv,mean_billed,0.037875,0.037875,0.0,True
+code,S,indexed,index,10,259429,0.0,results/ws6a/scaling.csv,mean_uncached_list,0.037875,0.037875,0.0,True
+code,S,indexed,index,10,259429,0.0,results/ws6a/scaling.csv,median_steady_state,0.02848,0.032121,-0.1134,False
+code,M,agentic,live,10,1138485,0.0,results/ws6a/scaling.csv,mean_billed,0.035501,0.035501,0.0,True
+code,M,agentic,live,10,1138485,0.0,results/ws6a/scaling.csv,mean_uncached_list,0.035501,0.035501,0.0,True
+code,M,agentic,live,10,1138485,0.0,results/ws6a/scaling.csv,median_steady_state,0.021761,0.021614,0.0068,True
+code,M,indexed,index,10,1138485,0.0,results/ws6a/scaling.csv,mean_billed,0.040033,0.040033,0.0,True
+code,M,indexed,index,10,1138485,0.0,results/ws6a/scaling.csv,mean_uncached_list,0.040033,0.040033,0.0,True
+code,M,indexed,index,10,1138485,0.0,results/ws6a/scaling.csv,median_steady_state,0.03844,0.039123,-0.0175,True
+code_unseen,S,agentic,live,37,1139248,0.0,results/ws6c/scaling.csv,mean_billed,0.144163,0.144163,-0.0,True
+code_unseen,S,agentic,live,37,1139248,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.144163,0.144163,-0.0,True
+code_unseen,S,agentic,live,37,1139248,0.0,results/ws6c/scaling.csv,median_steady_state,0.050534,0.04697,0.0759,True
+code_unseen,S,indexed,index,37,1139248,0.0,results/ws6c/scaling.csv,mean_billed,0.067719,0.067719,0.0,True
+code_unseen,S,indexed,index,37,1139248,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.067719,0.067719,0.0,True
+code_unseen,S,indexed,index,37,1139248,0.0,results/ws6c/scaling.csv,median_steady_state,0.042964,0.043554,-0.0135,True
+code_unseen,S,indexed_topk3,index,37,1139248,0.0,results/ws6c/scaling.csv,mean_billed,0.092575,0.092575,-0.0,True
+code_unseen,S,indexed_topk3,index,37,1139248,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.092575,0.092575,-0.0,True
+code_unseen,S,indexed_topk3,index,37,1139248,0.0,results/ws6c/scaling.csv,median_steady_state,0.051916,0.047836,0.0853,True
+code_unseen,M,agentic,live,37,2017476,0.0,results/ws6c/scaling.csv,mean_billed,0.18974,0.18974,0.0,True
+code_unseen,M,agentic,live,37,2017476,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.18974,0.18974,0.0,True
+code_unseen,M,agentic,live,37,2017476,0.0,results/ws6c/scaling.csv,median_steady_state,0.054124,0.053706,0.0078,True
+code_unseen,M,indexed,index,37,2017476,0.0,results/ws6c/scaling.csv,mean_billed,0.079857,0.079857,0.0,True
+code_unseen,M,indexed,index,37,2017476,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.079857,0.079857,0.0,True
+code_unseen,M,indexed,index,37,2017476,0.0,results/ws6c/scaling.csv,median_steady_state,0.051226,0.052796,-0.0297,True
+code_unseen,M,indexed_topk3,index,37,2017476,0.0,results/ws6c/scaling.csv,mean_billed,0.070456,0.070456,0.0,True
+code_unseen,M,indexed_topk3,index,37,2017476,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.070456,0.070456,0.0,True
+code_unseen,M,indexed_topk3,index,37,2017476,0.0,results/ws6c/scaling.csv,median_steady_state,0.042498,0.042412,0.002,True
+code_unseen,L,agentic,live,37,4307363,0.0,results/ws6c/scaling.csv,mean_billed,0.139224,0.139224,-0.0,True
+code_unseen,L,agentic,live,37,4307363,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.139224,0.139224,-0.0,True
+code_unseen,L,agentic,live,37,4307363,0.0,results/ws6c/scaling.csv,median_steady_state,0.050354,0.050968,-0.012,True
+code_unseen,L,indexed,index,37,4307363,0.0,results/ws6c/scaling.csv,mean_billed,0.094895,0.094895,0.0,True
+code_unseen,L,indexed,index,37,4307363,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.094895,0.094895,0.0,True
+code_unseen,L,indexed,index,37,4307363,0.0,results/ws6c/scaling.csv,median_steady_state,0.05007,0.05007,0.0,True
+code_unseen,L,indexed_topk3,index,37,4307363,0.0,results/ws6c/scaling.csv,mean_billed,0.104954,0.104954,0.0,True
+code_unseen,L,indexed_topk3,index,37,4307363,0.0,results/ws6c/scaling.csv,mean_uncached_list,0.104954,0.104954,0.0,True
+code_unseen,L,indexed_topk3,index,37,4307363,0.0,results/ws6c/scaling.csv,median_steady_state,0.069218,0.07476,-0.0741,True
+code_unseen,L,parametric,floor,37,4307363,0.0,results/ws6c/runs.csv (panel-filtered),mean_billed,0.003923,0.003923,0.0,True
+code_unseen,L,parametric,floor,37,4307363,0.0,results/ws6c/runs.csv (panel-filtered),mean_uncached_list,0.003923,0.003923,0.0,True
+code_unseen,L,parametric,floor,37,4307363,0.0,results/ws6c/runs.csv (panel-filtered),median_steady_state,0.003088,0.003104,-0.0052,True

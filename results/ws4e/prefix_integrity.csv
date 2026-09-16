@@ -1,0 +1,3 @@
+gate,passed,n_cells,basis,offending_cells,n_arms_score_ordered,arms_not_score_ordered,arms_wrong_width,n_committed_checked,n_committed_mismatched
+K1,True,4.0,264 qids x 4 arms; x-axis recall_at_10,[],,,,,
+K2,True,,,,4.0,[],[],1350.0,0.0

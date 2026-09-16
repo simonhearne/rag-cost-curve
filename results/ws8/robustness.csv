@@ -1,0 +1,9 @@
+check,stratum,metric,role,null_pool,k,n_retained,n_subsets,n_subsets_excluding_zero,min_ci_low,max_ci_low,fpr,mc_se,n_per_cell,n_reps,n_boot,seed,alpha,note
+leave_k_out,hop1,prompt_tokens,anchor,,0,30,1,1,17402.0,17402.0,,,,,2000,42,0.05,ANCHOR: k=0 is the full sample; this ci_low is the figure results/ws8/paired_ci.csv publishes
+leave_k_out,hop1,prompt_tokens,headline,,1,29,30,30,17402.0,17623.0,,,,,2000,42,0.05,every one of the 30 subsets of size 29
+leave_k_out,hop1,prompt_tokens,headline,,2,28,435,435,9389.5,19859.0,,,,,2000,42,0.05,every one of the 435 subsets of size 28
+leave_k_out,hop1,prompt_tokens,headline,,3,27,4060,4060,1377.0,23799.0,,,,,2000,42,0.05,every one of the 4060 subsets of size 27
+paired_fpr,hop1,prompt_tokens,headline,hop1_centred,,,,,,,0.056,0.0033,30,5000,2000,42,0.05,"n=30 drawn with replacement from hop1's OWN deltas centred on their median; the test is ws6c.paired_summary, i.e. the one that fires H4"
+contrast_fpr,hop3plus_vs_hop1,prompt_tokens,headline,pooled_hop1_hop3plus,,,,,,,0.0342,0.0026,30,5000,2000,42,0.05,"HEADLINE: under the null the two strata are ONE distribution, so both cells are drawn from the 60 pooled centred deltas"
+contrast_fpr,hop3plus_vs_hop1,prompt_tokens,sensitivity,hop1_centred,,,,,,,0.0314,0.0025,30,5000,2000,42,0.05,SENSITIVITY: both cells drawn from hop1's centred deltas alone -- the heavier-tailed of the two pools
+contrast_fpr,hop3plus_vs_hop1,prompt_tokens,sensitivity,per_stratum_centred,,,,,,,0.041,0.0028,30,5000,2000,42,0.05,"SENSITIVITY: each cell keeps its own dispersion (hop3plus MAD is ~0.4x hop1's); same construction as mde_retrospective.csv's injected_gradient_tokens=0 row, re-run at this file's parameters"

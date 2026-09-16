@@ -1,0 +1,110 @@
+{
+  "probe_id": "f02",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `fenric` through?",
+  "expected": "spindle-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 896,
+        "output_tokens": 85,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "fenric"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_011KAg9zasjGQxjq9j5HyqeE",
+          "content": "[\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-05-09.md\",\n    \"heading\": \"13:09\",\n    \"heading_level\": 3,\n    \"start_line\": 46,\n    \"end_line\": 51,\n    \"content\": \"### 13:09\\n<!-- session:ca2e9ac6-3b92-4b3e-b384-7cd361a84b57 turn:3d9cf2f9-35cf-459e-931e-fa52cf79a245 transcript:/synthetic/ws6b/ca2e9ac6-3b92-4b3e-b384-7cd361a84b57.jsonl -->\\n- Left `fenton` untouched this week; the queue was entirely on `thaxcote`. Worth revisiting once the `ladder-arbiter` work is done, since the two share more state than they should.\\n- Marnesna asked whether `gorsewood` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `wraswood` consumes it.\\n- Traced a slow path through `galdwood` and found the delay was already present before the `sieve-ledger` rollout, so the rollout was cleared as a cause and the investigation moved to `corbgate`.\",\n    \"chunk_hash\": \"59e425db51208690\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-07-25.md\",\n    \"heading\": \"18:59\",\n    \"heading_level\": 3,\n    \"start_line\": 211,\n    \"end_line\": 219,\n    \"content\": \"- We set `sluicebudget` on `thaxrack` to 874.\\n- Rolled `tangley` forward to the current build without incident; the smoke checks passed on the first attempt and the `relay-harness` integration stayed green throughout.\\n- Reviewed `fenric` behaviour under sustained load and confirmed the observed latency came from `pelley` rather than from `fenric` itself; no action taken beyond a note for the next planning round.\\n- Vessadou asked whether `quillnail` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `draynail` consumes it.\\n- Skimmed the `hobnail` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `wraswood`, which complicates bisecting.\\n- Re-ran the",
+          "content_length": 7389,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3983,
+        "output_tokens": 137,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "route fenric through"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "fenric decided to route"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01D9os92RjoybsaTGbfx5Uj4",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 299,\n    \"end_line\": 310,\n    \"content\": \"- Rueipley walked the team through the `flinmet` change set, flagged two places where error handling diverges from `flindle`, and agreed to leave both alone until the interface settles.\\n- Backed out an experimental tweak to `fenric` after the numbers moved in the wrong direction. The revert was clean and `sieve-gateway` was unaffected, so no follow-up is needed.\\n- Rolled `fensey` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-queue` integration stayed green throughout.\\n- We set `kerfquota` on `brimmet` to 122.\\n- Dorlipley asked whether `quillvex` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `pelley` consumes it.\\n- We set `plinthceiling` on `fenmure` to 648.\\n- We set `camberquota` on `fenmet` to 434.\\n- Discussed whether `draywood` should adopt the `ladder-buffer` pattern the way `wraswood` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Confirmed `flinley` still passes its smoke checks after the `quillmet` change. Toriker double-checked the `bailer-ledger` interaction by hand because the automated coverage there is thin.\\n- We set `girthwidth` on `fenmure` to 907.\\n- We set `gantrymargin` on `draydle` to 738.\\n- Cleared a stale alert on `fenridge` that had been firing since Tuesday. The underlying condition resolved itself when `sieve-ledger` was restarted, and Selaesna confirmed nothing downstream noticed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-07-25.md\",\n    \"heading\": \"18:59\",\n    \"chunk_hash\": \"4a61149d8c60d5d4\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 204,\n    \"end_line\": 212,\n    \"content\": \"### 18:42\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:331165e0-2c5c-4e54-a10c-78d97b9ea9eb transcript:/synthetic/ws",
+          "content_length": 5964,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01FPCFrKAeEYGvYMXtdPpaqY",
+          "content": "[\n  {\n    \"content\": \"- Rolled `brimwood` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-queue` integration stayed green throughout.\\n- Paged through several days of `thaxmet` logs looking for the earlier stall. Nothing matched the signature, and Toripley suggested the report may have been about `fenton` instead.\\n- We decided to route `vellton` through `shunt-arbiter` rather than `spindle-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:17\",\n    \"heading_level\": 3,\n    \"start_line\": 183,\n    \"end_line\": 186,\n    \"chunk_hash\": \"a63f9e067fd0a7d8\",\n    \"score\": 0.9611662104725838\n  },\n  {\n    \"content\": \"### 18:42\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:331165e0-2c5c-4e54-a10c-78d97b9ea9eb transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Noted that `flinwood` and `pelwood` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Skimmed the `galdwood` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `gorsewood`, which complicates bisecting.\\n- Checked `wraswood` against the staging dataset and saw no drift from the previous run. Vessiker noted the same held for `pelwood`, so the discrepancy is probably in the harness.\\n- Discussed whether `sprigdle` should adopt the `ladder-arbiter` pattern the way `tangfold` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Compared `gorsemure` against `wraswell` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-arbiter` path was exercised.\\n- We decided to route `fenric` through `spindle-gateway` rather than `shunt-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-co",
+          "content_length": 4971,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 8756,
+        "output_tokens": 49,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `fenric` through `spindle-gateway` (rather than `shunt-queue`), per the 2025-01-06 discussion."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "probe_id": "f23",
+  "arm": "memsearch@l",
+  "question": "What value did we set `girthstride` on `brimvex` to?",
+  "expected": "3931",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 902,
+        "output_tokens": 55,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "girthstride brimvex"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01MHcCo1yuCURBRczJ1kobUM",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 50,\n    \"end_line\": 54,\n    \"content\": \"- Noted that `galdvex` and `gorsewood` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Confirmed `gorsemet` still passes its smoke checks after the `pelcote` change. Vessolm double-checked the `ladder-ledger` interaction by hand because the automated coverage there is thin.\\n- Reviewed `sprigvex` behaviour under sustained load and confirmed the observed latency came from `flinfold` rather than from `sprigvex` itself; no action taken beyond a note for the next planning round.\\n- We set `girthstride` on `brimvex` to 3931.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-21.md\",\n    \"heading\": \"10:16\",\n    \"chunk_hash\": \"b48634b9b8760b09\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 131,\n    \"end_line\": 138,\n    \"content\": \"### 13:27\\n<!-- session:85619d1d-59cb-44ce-abf3-d0156083f85e turn:b32a9560-9da6-4e55-b755-f0da5aed11b1 transcript:/synthetic/ws6b/85619d1d-59cb-44ce-abf3-d0156083f85e.jsonl -->\\n- Skimmed the `wrasvex` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `galdvex`, which complicates bisecting.\\n- Compared `sprigdle` against `quillmure` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `ladder-buffer` path was exercised.\\n- Reviewed `brimridge` behaviour under sustained load and confirmed the observed latency came from `murkrack` rather than from `brimridge` itself; no action taken beyond a note for the next planning round.\\n- Vessesna asked whether `thaxvex` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `pelridge` consumes it.\\n- Filed a note about `vellton` for the next plan",
+          "content_length": 5699,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3424,
+        "output_tokens": 23,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "`girthstride` on `brimvex` was set to **3931**."
+        }
+      ]
+    }
+  ]
+}

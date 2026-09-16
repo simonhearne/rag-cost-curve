@@ -1,0 +1,5 @@
+gate,n_rows,n_checked,n_uncompared,n_mismatched,examples,passed,n,expected,kappa_binary,kappa_5class,floor,n_disagree,threshold,blind,error
+E1,900.0,896.0,4.0,0.0,[],True,,,,,,,,,
+E2,,,,,,True,450.0,450.0,,,,,,,
+E3,,,,,,True,450.0,,0.708875,0.618543,0.6,,,,
+E4,,,,,,True,20.0,,,,,2.0,3.0,True,

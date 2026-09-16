@@ -1,0 +1,61 @@
+qid,arm,first_verdict,second_verdict,second_reason,cost_total_billed,agreement,n
+753,pca_uc_384_sq8_np512,True,True,"The candidate identifies the character Hodel, matching the gold answer, with accurate extra detail naming the film actress.",0.00565,1.0,60
+966,refine_np64,False,False,"The candidate declines to answer, providing no factual claim matching the gold answer.",0.00369,1.0,60
+291,sq8_np512,True,True,"The candidate names Corinth, Mississippi, matching the gold answer exactly.",0.00384,1.0,60
+967,refine_np64,True,True,"The candidate names Francisco Pizarro, matching the gold answer exactly.",0.003825,1.0,60
+2595,pca_uc_384_sq8_np512,True,True,"The Gulf of Mannar is the Indian pearl-fishing region within the Indian Ocean, so the answer identifies the same body of water more precisely.",0.012485,1.0,60
+1289,parametric,True,True,"The candidate names the Bee Gees, matching the gold answer exactly.",0.003725,1.0,60
+553,pq_np256,True,True,"The candidate names all three gold answers (the Bellas, Evermoist, Saddle Up) plus additional accurate acts from the film, matching the expected fact.",0.00467,1.0,60
+2611,sq8_np512,False,False,"The candidate names the Executor, Vader's Super Star Destroyer, not the Devastator required by the gold answers.",0.004035,1.0,60
+614,mrl_512_sq8_np512,False,False,"Nathan Lane voiced the Dormouse in a different adaptation; the gold answer is Barbara Windsor, so the candidate states a different fact.",0.004345,1.0,60
+2003,pca_uc_384_sq8_np512,False,False,"The gold answer is Ray Allen; the candidate names Stephen Curry, a different player, so it does not match the accepted answer.",0.004135,1.0,60
+2184,sq8_np512,False,False,"The candidate declines to answer, providing no factual claim matching any gold answer.",0.003725,1.0,60
+3552,parametric,False,False,"The candidate declines to answer, providing no episode number, so it fails to state the gold fact.",0.003775,1.0,60
+937,sq8_np16,True,True,"The candidate lists all five permanent members, matching the gold answers exactly.",0.00381,1.0,60
+442,sq8_np8,False,False,"The candidate declined to answer, failing to identify the correct title ""Marley & Me.""",0.0038,1.0,60
+2391,sq8_np16,False,False,"The candidate declines to answer, providing no factual claim matching any gold answer.",0.00369,1.0,60
+3137,sq8_np4,False,False,"The candidate declines to answer, providing no factual claim matching the gold answer of North Goa.",0.003805,1.0,60
+907,sq8_np16,False,False,"The candidate declines to answer, failing to identify the song ""I Write Sins Not Tragedies"".",0.003965,1.0,60
+3130,parametric,False,False,"The candidate says it does not know, providing no factual answer matching the gold answers.",0.00368,1.0,60
+2146,rabitq_np256,True,True,The candidate answer exactly matches the gold answer 'Schadenfreude'.,0.00376,1.0,60
+2495,sq8_np4,True,True,"The candidate states leaders are elected by party members in their chamber's caucus/conference, matching the gold answers' identification of the party conference/caucus as the selecting body.",0.007505,1.0,60
+3320,sq8_np16,False,False,"The candidate declined to answer, providing no factual claim matching the gold answer of Neil Jenkins.",0.003915,1.0,60
+2873,sq8_np4,False,False,"The candidate declines to answer, providing no factual claim matching the gold answer of 2009.",0.003785,1.0,60
+3568,sq8_np64,False,False,"The candidate says it does not know, failing to identify Lizzy Greene as the actress playing Dawn.",0.003955,1.0,60
+1538,sq8_np512,False,False,"The candidate states 20 consecutive games, not the gold answer of 126, and refers to a different statistical streak.",0.004095,1.0,60
+3419,sq8_np4,True,True,"The candidate states 10:30am, exactly matching a gold answer.",0.00364,1.0,60
+2297,parametric,False,False,"The candidate says it does not know, failing to provide the release date May 3, 2005.",0.0037,1.0,60
+697,sq8_np16,False,False,"The candidate names the Data Protection Act 2018, a different statute from the gold answer's Data Protection Act 1998.",0.004155,1.0,60
+891,sq8_np4,False,False,"The gold answer identifies the Puerto Rico Electric Power Authority as the source, while the candidate names fuel types, stating a different fact than the expected answer.",0.004445,1.0,60
+496,sq8_np4,False,False,"The candidate says 2004, which does not match the gold answer of 1989.",0.003605,1.0,60
+82,sq8_np512,False,False,"The candidate declines to answer, providing no factual value matching the gold answer of 9 seasons.",0.003855,1.0,60
+1278,sq8_np512,False,False,"The candidate declined to answer, failing to state the gold fact of 1981.",0.00367,1.0,60
+1594,refine_np64,True,True,"Hanno II the Great is the same figure as the gold answer ""Hanno the Great,"" merely with the regnal numeral added.",0.004315,1.0,60
+1969,pq_np256,True,True,"The candidate states channel 15 (KNXV), matching the gold answer, with the correct call sign as extra detail.",0.003985,1.0,60
+2337,pca_uc_384_sq8_np512,False,False,"The candidate declines to answer, failing to state the gold fact of 1989.",0.003655,1.0,60
+2318,refine_np64,False,False,"The candidate declines to answer, providing no identification of mining as the main industry.",0.00364,1.0,60
+1816,sq8_np512,False,False,"The candidate says it does not know, failing to state the gold answer Scott Blumstein.",0.003765,1.0,60
+1800,sq8_np64,True,True,"The candidate identifies filming locations in Utah (Sundance/Mount Timpanogos near Provo), matching the gold answer with added specific detail.",0.004435,1.0,60
+2306,mrl_512_sq8_np512,True,True,"The candidate answer states Asuka, matching the gold answer exactly.",0.003635,1.0,60
+3480,sq8_np4,False,False,"The candidate declines to answer, providing no factual content matching the gold answer of season four.",0.00376,1.0,60
+508,sq8_np16,False,False,"The candidate declines to answer, providing no factual claim matching either gold answer.",0.003695,1.0,60
+2325,mrl_512_sq8_np512,True,True,"The candidate identifies fungi as decomposers, matching a gold answer exactly with added accurate detail (saprotrophs).",0.004225,1.0,60
+518,sq8_np512,True,True,"The candidate names both Hammond, Louisiana and Covington, Georgia, matching gold answers, with accurate additional detail about the season timing.",0.00462,1.0,60
+2223,pca_uc_512_sq8_np512,False,False,"The candidate declined to provide any value, stating it does not know, which fails to state the fact.",0.003785,1.0,60
+3183,refine_np64,True,True,"The Payaya were the indigenous inhabitants of the San Antonio area, matching the gold answer 'varying cultures of indigenous peoples'.",0.00595,1.0,60
+279,sq8_np4,False,False,"The candidate says it does not know, failing to provide the gold answer InterContinental Hotels Group.",0.003915,1.0,60
+3276,pca_uc_512_sq8_np512,True,True,"The candidate answers ""Lifetime,"" matching the gold answer of lifetime Secret Service protection for former presidents.",0.004125,1.0,60
+2391,sq8_np64,False,False,"The candidate declines to answer, providing no fact, so it cannot match either gold answer.",0.003765,1.0,60
+1032,sq8_np16,False,False,"The candidate names mantle convection rather than the gold answer ""continental drift,"" stating a different fact than required.",0.005715,1.0,60
+2297,sq8_np512,True,True,"The candidate gives May 3, 2005, matching the gold answer exactly.",0.00369,1.0,60
+1641,sq8_np16,True,True,"The candidate states the second Sunday of March, matching the gold answer, with accurate extra detail about the 2 a.m. clock change.",0.004205,1.0,60
+2337,sq8_np64,False,False,"The candidate explicitly says it does not know and never states 1989, so it fails to provide the required fact.",0.004145,1.0,60
+1094,refine_np64,False,False,"The candidate explicitly says it does not know, providing no answer matching the gold answer ""II"".",0.00383,1.0,60
+1767,sq8_np512,False,False,"The candidate says it does not know, failing to identify Elena Anaya as the actress playing Doctor Poison.",0.00405,1.0,60
+1832,sq8_np8,True,True,Bob Geldof matches a gold answer as the actor who played Pink in Pink Floyd – The Wall.,0.0043,1.0,60
+3323,parametric,False,False,"The candidate declines to answer, providing no factual content matching the gold answers.",0.003825,1.0,60
+2051,parametric,False,False,"The candidate says it does not know, providing no factual answer.",0.0035,1.0,60
+642,sq8_np16,True,True,"The candidate states 1876, matching the gold answer exactly.",0.003565,1.0,60
+319,pca_uc_512_sq8_np512,True,True,"The candidate answer matches the gold answer exactly, stating September 21, 2017.",0.003785,1.0,60
+1574,pca_uc_384_sq8_np512,True,True,"The candidate answer matches the gold answer exactly, stating the crash occurred on October 20, 1977.",0.00396,1.0,60
+1423,mrl_512_sq8_np512,True,True,"The candidate answer names Ed Roland, exactly matching the gold answer.",0.00369,1.0,60

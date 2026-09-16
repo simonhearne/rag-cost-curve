@@ -1,0 +1,2 @@
+n_questions,n_arms,n_never_correct,n_always_correct,n_discriminating,share_discriminating,predicted_rescale
+264,15,61,122,81,0.306818,1.300493

@@ -1,0 +1,10 @@
+stratum,arm,n,powered,median_prompt_tokens,mean_prompt_tokens,median_turns,mean_turns,max_turns,n_hit_turn_cap,n_turns_at_cap,total_cost_usd,mean_cost_usd,max_cost_usd,n_judged,n_censored,accuracy_measured,mean_grep_handle,note
+hop1,indexed,30,True,95410.5,257728.4,4.5,5.4,13,0,0,16.5116,0.5504,2.8168,30,0,0.5,6.2308,
+hop2,indexed,15,False,191688.0,412991.6,6.0,6.4,15,0,1,12.9271,0.8618,3.6184,15,0,0.2,6.4381,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+hop3plus,indexed,30,True,65095.0,175779.9,4.0,4.5,15,1,1,11.4658,0.3822,3.5387,29,1,0.5862,6.0807,
+hop1,agentic,30,True,23757.0,37774.1,5.0,4.867,12,0,0,3.2561,0.1085,0.4374,30,0,0.6,6.2308,
+hop2,agentic,15,False,14344.0,44770.7,5.0,5.067,9,0,0,1.7933,0.1196,0.8021,15,0,0.5333,6.4381,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+hop3plus,agentic,30,True,16537.5,29265.1,4.0,4.233,9,0,0,2.8042,0.0935,0.3307,30,0,0.6667,6.0807,
+hop1,parametric,30,True,,,1.0,1.0,1,0,0,0.3203,0.0107,0.0361,30,0,0.0,,
+hop2,parametric,15,False,,,1.0,1.0,1,0,0,0.1897,0.0126,0.0355,15,0,0.0,,"NOT POWERED: n=15 by design (spec section 3); reported as-is, cannot carry a claim"
+hop3plus,parametric,30,True,,,1.0,1.0,1,0,0,0.3004,0.01,0.0356,30,0,0.0,,

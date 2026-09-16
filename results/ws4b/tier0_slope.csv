@@ -1,0 +1,2 @@
+stratum,n_questions,n_arms,slope,ci_lo,ci_hi,excludes_zero,n_boot,seed
+ws4b_tier0_corrected_primary,325,11,0.220918,0.112127,0.335153,True,10000,42

@@ -1,0 +1,57 @@
+{
+  "probe_id": "f18",
+  "arm": "memsearch@l",
+  "question": "What value did we set `girthwidth` on `fenridge` to?",
+  "expected": "7139",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 903,
+        "output_tokens": 56,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "girthwidth fenridge"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01QJpEkdzyw8YsmFYarqpbe6",
+          "content": "[\n  {\n    \"end_line\": 26,\n    \"content\": \"### 10:26\\n<!-- session:95e5b29d-3f9b-43d4-b475-25fcad6570df turn:31e8c914-3797-4892-a30b-7fcc2e941a91 transcript:/synthetic/ws6b/95e5b29d-3f9b-43d4-b475-25fcad6570df.jsonl -->\\n- Discussed whether `wrasvex` should adopt the `sieve-ledger` pattern the way `wraswell` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Cleared a stale alert on `brimley` that had been firing since Tuesday. The underlying condition resolved itself when `ladder-ledger` was restarted, and Rueipley confirmed nothing downstream noticed.\\n- Checked `tanggate` against the staging dataset and saw no drift from the previous run. Rueurrow noted the same held for `gorsemet`, so the discrepancy is probably in the harness.\\n- We set `girthwidth` on `fenridge` to 7139.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-21.md\",\n    \"heading\": \"10:26\",\n    \"heading_level\": 3,\n    \"start_line\": 20,\n    \"chunk_hash\": \"155ac06173375fb4\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"end_line\": 100,\n    \"content\": \"### 13:09\\n<!-- session:7073faf5-f297-4ed3-a331-332aca84744b turn:148b4124-b599-40e4-a6ac-3de24a5178c6 transcript:/synthetic/ws6b/7073faf5-f297-4ed3-a331-332aca84744b.jsonl -->\\n- Filed a note about `thaxridge` for the next planning round. The gist is that it and `gorsewood` have grown apart enough that sharing the `bailer-ledger` path is now more cost than benefit.\\n- Dorlipley reported that `vellsey` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `flinfold` did last month.\\n- Paged through several days of `quillrack` logs looking for the earlier stall. Nothing matched the signature, and Branurrow suggested the report may have been about `gorsemure` instead.\\n- Discussed whether `galdmure` should adopt the `spindle-harness` pattern the way `galdcote` already has. No decision -- the tradeoff depends on work that has not be",
+          "content_length": 6547,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3633,
+        "output_tokens": 26,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The value 7139 was set for `girthwidth` on `fenridge`."
+        }
+      ]
+    }
+  ]
+}

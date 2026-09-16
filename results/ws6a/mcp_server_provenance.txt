@@ -1,0 +1,44 @@
+# claude-context MCP server provenance — WS6a
+#
+# Extracted from the server's own stderr during indexing. Records what was
+# ACTUALLY configured and indexed, independent of what the client asked for.
+# Raw logs (2.2MB, ~2,800 per-file progress lines each) are gitignored;
+# regenerate with scripts/index_ws6a.py --scope <S|M|L> --force.
+# Generated 2026-08-18.
+
+===== scope s (data/ws6a_cache/mcp_index_ws6a_s.stderr.log) =====
+  [LOG] [DEBUG]   EMBEDDING_PROVIDER: OpenAI
+  [LOG] [DEBUG]   EMBEDDING_MODEL: text-embedding-3-small
+  [LOG] [DEBUG]   CODE_CHUNKS_COLLECTION_NAME_OVERRIDE: ws6a_s
+  [LOG] [DEBUG] 🎯 OpenAI model selection: EMBEDDING_MODEL=text-embedding-3-small, selected=text-embedding-3-small
+  [LOG] [EMBEDDING] Provider details - Model: text-embedding-3-small, Dimension: 1536
+  [LOG] [Context] 🔧 Initialized with 25 supported extensions and 51 ignore patterns
+  [LOG] [SYNC-DEBUG] Trigger watcher disabled via CLAUDE_CONTEXT_TRIGGER_WATCHER
+  [LOG] [SYNC-DEBUG] Background sync is disabled via CLAUDE_CONTEXT_BACKGROUND_SYNC=false.
+  [LOG] [BACKGROUND-INDEX] 🚀 Beginning codebase indexing process...
+  [LOG] [BACKGROUND-INDEX] ✅ Indexing completed successfully! Files: 48, Chunks: 661
+
+===== scope m (data/ws6a_cache/mcp_index_ws6a_m.stderr.log) =====
+  [LOG] [DEBUG]   EMBEDDING_PROVIDER: OpenAI
+  [LOG] [DEBUG]   EMBEDDING_MODEL: text-embedding-3-small
+  [LOG] [DEBUG]   CODE_CHUNKS_COLLECTION_NAME_OVERRIDE: ws6a_m
+  [LOG] [DEBUG] 🎯 OpenAI model selection: EMBEDDING_MODEL=text-embedding-3-small, selected=text-embedding-3-small
+  [LOG] [EMBEDDING] Provider details - Model: text-embedding-3-small, Dimension: 1536
+  [LOG] [Context] 🔧 Initialized with 25 supported extensions and 51 ignore patterns
+  [LOG] [SYNC-DEBUG] Trigger watcher disabled via CLAUDE_CONTEXT_TRIGGER_WATCHER
+  [LOG] [SYNC-DEBUG] Background sync is disabled via CLAUDE_CONTEXT_BACKGROUND_SYNC=false.
+  [LOG] [BACKGROUND-INDEX] 🚀 Beginning codebase indexing process...
+  [LOG] [BACKGROUND-INDEX] ✅ Indexing completed successfully! Files: 1103, Chunks: 8170
+
+===== scope l (data/ws6a_cache/mcp_index_ws6a_l.stderr.log) =====
+  [LOG] [DEBUG]   EMBEDDING_PROVIDER: OpenAI
+  [LOG] [DEBUG]   EMBEDDING_MODEL: text-embedding-3-small
+  [LOG] [DEBUG]   CODE_CHUNKS_COLLECTION_NAME_OVERRIDE: ws6a_l
+  [LOG] [DEBUG] 🎯 OpenAI model selection: EMBEDDING_MODEL=text-embedding-3-small, selected=text-embedding-3-small
+  [LOG] [EMBEDDING] Provider details - Model: text-embedding-3-small, Dimension: 1536
+  [LOG] [Context] 🔧 Initialized with 25 supported extensions and 51 ignore patterns
+  [LOG] [SYNC-DEBUG] Trigger watcher disabled via CLAUDE_CONTEXT_TRIGGER_WATCHER
+  [LOG] [SYNC-DEBUG] Background sync is disabled via CLAUDE_CONTEXT_BACKGROUND_SYNC=false.
+  [LOG] [FORCE-REINDEX] 🔄 Clearing index for '/Users/simon/Projects/rag-cost-curve/data/ws6a_fastapi'
+  [LOG] [BACKGROUND-INDEX] 🚀 Beginning codebase indexing process...
+  [LOG] [BACKGROUND-INDEX] ✅ Indexing completed successfully! Files: 2825, Chunks: 13900

@@ -1,0 +1,7 @@
+kind,qid,term,region,is_own_answer,row_golds,n_tested,n_verbatim,note
+collision_measurement,,,,,,105,51,"of the 107 audited rows' own pooled wrong answers, 105 are >= 4 raw characters (testable); 51 of those appear verbatim, by gate_g4's own case-sensitive word-boundary rule, in that row's own top-10 GT passage TEXT. share=0.4857. A prior, uncommitted coordinator-log estimate of 19/38 could not be reproduced from committed inputs and is superseded by this measurement -- see RESULTS-WS4b.md S10.5."
+term_violation,1279,Stephen Curry,golds,False,"[""Stephen Curry""]",,,propose prompt; row's own audited answer: 'Damian Lillard'
+term_violation,1279,Stephen Curry,golds,False,"[""Stephen Curry""]",,,verify prompt; row's own audited answer: 'Damian Lillard'
+term_violation,1538,126,golds,False,"[""126""]",,,"propose prompt; row's own audited answer: 'Carmelo Anthony, 31 consecutive games'"
+term_violation,2284,6,golds,False,"[""6""]",,,propose prompt; row's own audited answer: '2 CO2 molecules (per acetyl-CoA in the Krebs cycle)'
+term_violation,2636,Kansas,golds,False,"[""Kansas""]",,,propose prompt; row's own audited answer: 'Purdue'

@@ -1,0 +1,23 @@
+You are checking someone else's proposed change to a benchmark question's
+recorded answer. You did not propose it and you have no stake in it.
+
+The passages below are the ONLY authority. Do not use anything you know from
+outside them.
+
+Uphold the proposal only if the passages plainly require the change. Reject it
+if any of these hold:
+- the passages do not settle the question
+- the proposed answer is a rephrasing of the recorded one rather than a
+  correction
+- the proposal drops a recorded answer that is still valid
+- the proposal is defensible but the recorded answer is also defensible
+
+Keeping the recorded answer is the default. A change must be argued by the
+passages, not merely be plausible.
+
+Question: {question}
+Recorded answers: {golds}
+Proposed answers: {proposed}
+
+Passages:
+{passages}

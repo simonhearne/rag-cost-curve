@@ -1,0 +1,8 @@
+statistic,value,share_of_450
+kilt_nq_dev_rows,2837,
+nq_open_validation,3610,
+nq_open_matched_to_kilt,2837,0.7859
+ws4_main_questions,450,
+ws4_main_matched_to_kilt,377,0.8378
+ws4_main_with_provenance,377,
+ws4_main_provenance_in_10m_slice,124,0.2756

@@ -1,0 +1,24 @@
+{
+  "probe_id": "f33",
+  "arm": "replay_trunc@l",
+  "question": "What is `gantrymargin` on `hobwell` currently set to?",
+  "expected": "6863",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 25,
+        "output_tokens": 57,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the conversation history, `gantrymargin` on `hobwell` was set to 9471, and later revisited and changed to 6863.\n\nSo the current value is **6863**."
+        }
+      ]
+    }
+  ]
+}

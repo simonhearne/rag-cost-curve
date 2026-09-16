@@ -1,0 +1,5 @@
+presence_wb,provenance_at_10,cell,n,share_of_rows,gold_string_on_gold_page
+True,True,agree (both true),1009,0.739736,930
+True,False,D+ (presence only),118,0.08651,0
+False,True,D- (provenance only),150,0.109971,0
+False,False,agree (both false),87,0.063783,0

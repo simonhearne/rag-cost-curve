@@ -1,0 +1,6 @@
+label,n,share,in_numerator
+ambiguous_question,49,0.4579,True
+model_error,25,0.2336,False
+stale_gold,23,0.215,True
+unresolved,6,0.0561,False
+judge_strict,4,0.0374,False

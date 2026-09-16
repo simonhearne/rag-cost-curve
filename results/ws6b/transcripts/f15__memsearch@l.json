@@ -1,0 +1,57 @@
+{
+  "probe_id": "f15",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `drayton` through?",
+  "expected": "bailer-harness",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 896,
+        "output_tokens": 52,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "drayton route through"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01SNZBfSbqd9kYMd54hjPVkJ",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 41,\n    \"end_line\": 46,\n    \"content\": \"### 12:06\\n<!-- session:308982ec-d51d-4f01-93de-70ff74c07063 turn:c0135411-2650-499d-ab51-d5b401946e64 transcript:/synthetic/ws6b/308982ec-d51d-4f01-93de-70ff74c07063.jsonl -->\\n- Left `flindle` untouched this week; the queue was entirely on `hobsey`. Worth revisiting once the `sieve-gateway` work is done, since the two share more state than they should.\\n- Filed a note about `draymet` for the next planning round. The gist is that it and `murkley` have grown apart enough that sharing the `sieve-queue` path is now more cost than benefit.\\n- Traced a slow path through `flindle` and found the delay was already present before the `sieve-gateway` rollout, so the rollout was cleared as a cause and the investigation moved to `draynail`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-06-04.md\",\n    \"heading\": \"12:06\",\n    \"chunk_hash\": \"d2c4af5a54e2d439\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 4,\n    \"end_line\": 10,\n    \"content\": \"### 11:55\\n<!-- session:61aa189d-0a7d-4de0-bcea-e86bf311a3a1 turn:d9975545-de8e-4602-bdc5-59fc5cd0094c transcript:/synthetic/ws6b/61aa189d-0a7d-4de0-bcea-e86bf311a3a1.jsonl -->\\n- Skimmed the `quillmure` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `vellcote`, which complicates bisecting.\\n- Marnesna asked whether `galdgate` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `gorsemure` consumes it.\\n- Rolled `drayrack` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-arbiter` integration stayed green throughout.\\n- We decided to route `drayton` through `bailer-harness` rather than `shunt-buffer`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-24.md\",\n    \"he",
+          "content_length": 5065,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3135,
+        "output_tokens": 34,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `drayton` through `bailer-harness` rather than `shunt-buffer`."
+        }
+      ]
+    }
+  ]
+}

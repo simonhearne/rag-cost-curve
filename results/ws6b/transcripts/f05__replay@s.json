@@ -1,0 +1,24 @@
+{
+  "probe_id": "f05",
+  "arm": "replay@s",
+  "question": "What value did we set `plinthceiling` on `wrasridge` to?",
+  "expected": "9816",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 26,
+        "output_tokens": 28,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 98226
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "The value set for `plinthceiling` on `wrasridge` was **9816**."
+        }
+      ]
+    }
+  ]
+}

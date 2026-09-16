@@ -1,0 +1,6 @@
+{
+ "ingest_seconds": 1373.4272469169955,
+ "compaction_rounds": 1,
+ "compaction_seconds": 136.2525918483734,
+ "n_rows": 10000000
+}

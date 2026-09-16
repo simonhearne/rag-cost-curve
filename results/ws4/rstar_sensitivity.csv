@@ -1,0 +1,25 @@
+diagnostic,statistic,value,ci_lo,ci_hi,note
+rstar,point_estimate,0.9231111111111113,,,spec 7.1 rule on the frozen runs; branch K1; matches RESULTS-WS4.md section 5
+rstar,undefined_share_fixed_width,0.2787,,,"resamples with NO plateau at all: the top degraded arm is not PLATEAU, so spec 7.1 yields no r* and the branch is K3, not K1"
+rstar,branch_K1_share_fixed_width,0.6749,,,share of resamples reproducing the PUBLISHED branch K1
+rstar,median_fixed_width,0.9217777777777755,0.8095555555555547,0.9724444444444433,"10000 paired resamples, seed 42, fixed_width CI width; median and 95% interval over the resamples where r* is defined"
+rstar,p_within_0.01_of_point_fixed_width,0.1904,,,share of ALL resamples putting r* within +/-0.01 of the published knee (undefined counts against)
+rstar,undefined_share_normal,0.3134,,,"resamples with NO plateau at all: the top degraded arm is not PLATEAU, so spec 7.1 yields no r* and the branch is K3, not K1"
+rstar,branch_K1_share_normal,0.633,,,share of resamples reproducing the PUBLISHED branch K1
+rstar,median_normal,0.9239999999999973,0.8093333333333339,0.9728888888888878,"10000 paired resamples, seed 42, normal CI width; median and 95% interval over the resamples where r* is defined"
+rstar,p_within_0.01_of_point_normal,0.1863,,,share of ALL resamples putting r* within +/-0.01 of the published knee (undefined counts against)
+rstar,normal_approx_agreement,1.0,,,10/10 arms classified identically by the normal approximation and the published percentile CI
+curve,slope_quality_per_unit_recall,0.11049113369624682,0.024194290068221408,0.20047584701256105,OLS across all 11 arms; ~1 accuracy point per 10 recall points
+curve,spearman_recall_quality,0.7061521737462181,0.032261147658728506,0.8454545454545455,"monotone across the whole range: there is a line, not a knee"
+curve,spearman_presence_quality,0.7968036529680365,,,presence@10 predicts quality better than recall@10 does
+mediation,conversion_p_correct_given_present,0.5815217391304348,,,reference arm: P(judge correct | gold in the top-10)
+mediation,slope_quality_delta_on_presence_delta,0.7102040816326534,,,"close to the conversion rate: no saturation, quality tracks presence"
+mediation,presence_span_across_ladder,0.08000000000000007,,,"answer-presence@10, best arm minus worst"
+mediation,quality_span_across_ladder,0.062222222222222234,,,"judge accuracy, best arm minus worst"
+mediation,quality_span_excluding_worst_arm,0.028888888888888853,,,judge accuracy span with sq8_np4 removed
+mediation,predicted_quality_span,0.04652173913043483,,,presence span x conversion: what pure mediation predicts
+power,equivalence_margin,0.05,,,spec 7.1 PLATEAU margin -- compare to quality_span_across_ladder
+power,median_ci_half_width,0.026666666666666644,,,smallest drop the design can resolve
+mechanism,matched_cross_family_pairs_total,6.0,,,spec 7.2 tolerance applied exhaustively
+mechanism,matched_pairs_never_tested,2.0,,,matched pairs the spec's A-F list does not contain
+mechanism,untested_pairs_significant_bonferroni,1.0,,,M2 is not general: see mechanism_pairs_all.csv

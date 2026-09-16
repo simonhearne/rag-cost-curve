@@ -1,0 +1,5 @@
+dataset,questions,mean_gold_titles,all_gold_in_slice,coverage,usable_non_yesno,top_page,top_page_share,C0_pass,C2_pass
+hotpotqa_distractor_dev,7405,2.0,276,0.03727,267,Maurice Ravel,0.01087,False,True
+hotpotqa_distractor_train,90447,2.0,3544,0.03918,3421,Speak Now,0.00423,True,True
+musique_ans_dev,2417,2.601,92,0.03806,92,Adult contemporary music,0.13043,False,False
+musique_ans_train,19938,2.31,1038,0.05206,1038,Antarctica,0.07129,True,False

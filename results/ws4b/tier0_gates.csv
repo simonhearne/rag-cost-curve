@@ -1,0 +1,4 @@
+gate,value,passed
+g0_mismatches,0,True
+g0b_gains,0,True
+g0c_rows,6000,True

@@ -1,0 +1,42 @@
+# Pinned 2026-08-11. Python >= 3.11 assumed.
+# Install:  pip install -r requirements.txt
+# After first successful install, freeze the full transitive set:
+#   pip freeze > requirements.lock   (commit it)
+
+# Milvus client — matches server milvusdb/milvus:v2.6.18 in docker-compose.yml
+pymilvus==2.6.17
+
+# Data plumbing
+huggingface_hub==1.27.0
+pyarrow==25.0.1
+numpy==2.5.2
+pandas==3.0.5
+tqdm==4.70.0
+psutil==7.2.2
+
+# Query embedding (mxbai-embed-large-v1) + ground truth matmul
+torch==2.13.0
+sentence-transformers==5.7.0
+transformers==5.15.0
+
+# Analysis / later notebooks
+matplotlib==3.11.1
+scikit-learn==1.9.0
+
+# Notebook execution
+jupyter==1.1.1
+
+# Test suite: run the tests with `pytest tests/ -q` from the repo root.
+# Was already installed in every venv that ran it and present in
+# requirements.lock, but never actually pinned here -- a fresh clone
+# following `make setup` could not run the tests. Fixed 2026-09-11.
+pytest==9.1.1
+
+# WS6a — claude-context code-search harness (notebook 06a)
+anthropic==0.122.0
+mcp==2.0.0
+papermill==2.7.0
+tiktoken==0.13.0
+
+# WS8 Phase 2 — text-embedding-3-small for the indexed arm's Milvus collection
+openai==3.13.0

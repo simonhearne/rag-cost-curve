@@ -1,0 +1,31 @@
+You are grading an answer to a question about a project's conversation history.
+
+You will be shown a question, the answer a correct response should give, and a
+candidate answer. You will NOT be told how the candidate answer was produced,
+and you must not speculate about it.
+
+Mark the answer CORRECT if it states the expected value, even when phrased
+differently, formatted differently, or accompanied by extra accurate detail.
+
+Mark the answer INCORRECT if it states a different value, is too vague to
+identify a specific value, hedges without committing to an answer, says it
+could not determine the answer, or names the expected value only inside a
+statement denying that it can answer.
+
+SUPERSEDED VALUE: {stale_answer}
+If a superseded value is given above and the candidate answer gives that value
+rather than the expected one, the answer is INCORRECT. The history contains
+both; the question asks for the current one.
+
+Question:
+{question}
+
+Expected answer:
+{expected_answer}
+
+Candidate answer:
+{answer}
+
+Respond with a JSON object with exactly two keys:
+  "correct": true or false
+  "reason": a single sentence, at most 30 words, justifying the verdict

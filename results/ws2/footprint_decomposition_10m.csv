@@ -1,0 +1,53 @@
+scale,arm,n_rows,n_segments,component,bytes,bytes_per_vector,share_of_loaded,loaded_bytes,basis,note
+10m,ivf_flat_fp32,10000000,41,quantized_codes,40960000000,4096.0,0.968,42312242748,derived,"4096 B/vector x 10,000,000 rows"
+10m,ivf_flat_fp32,10000000,41,row_ids,80000000,8.0,0.0019,42312242748,derived,int64 row id per vector in the inverted list
+10m,ivf_flat_fp32,10000000,41,ivf_coarse_centroids,687865856,68.79,0.0163,42312242748,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,ivf_flat_fp32,10000000,41,unexplained_residual,16874496,1.69,0.0004,42312242748,residual,index_files_bytes minus the modelled components
+10m,ivf_flat_fp32,10000000,41,segment_heap,567502396,56.75,0.0134,42312242748,measured,Milvus pk/stats heap per row; index-independent
+10m,ivf_pq_m128,10000000,41,quantized_codes,1280000000,128.0,0.4819,2656007740,derived,"128 B/vector x 10,000,000 rows"
+10m,ivf_pq_m128,10000000,41,pq_codebook,42991616,4.3,0.0162,2656007740,derived,41 segments x m x 256 x (dim/m) x 4 B
+10m,ivf_pq_m128,10000000,41,row_ids,80000000,8.0,0.0301,2656007740,derived,int64 row id per vector in the inverted list
+10m,ivf_pq_m128,10000000,41,ivf_coarse_centroids,687865856,68.79,0.259,2656007740,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,ivf_pq_m128,10000000,41,unexplained_residual,-2352128,-0.24,-0.0009,2656007740,residual,index_files_bytes minus the modelled components
+10m,ivf_pq_m128,10000000,41,segment_heap,567502396,56.75,0.2137,2656007740,measured,Milvus pk/stats heap per row; index-independent
+10m,ivf_pq_m256,10000000,41,quantized_codes,2560000000,256.0,0.6503,3936552508,derived,"256 B/vector x 10,000,000 rows"
+10m,ivf_pq_m256,10000000,41,pq_codebook,42991616,4.3,0.0109,3936552508,derived,41 segments x m x 256 x (dim/m) x 4 B
+10m,ivf_pq_m256,10000000,41,row_ids,80000000,8.0,0.0203,3936552508,derived,int64 row id per vector in the inverted list
+10m,ivf_pq_m256,10000000,41,ivf_coarse_centroids,687865856,68.79,0.1747,3936552508,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,ivf_pq_m256,10000000,41,unexplained_residual,-1807360,-0.18,-0.0005,3936552508,residual,index_files_bytes minus the modelled components
+10m,ivf_pq_m256,10000000,41,segment_heap,567502396,56.75,0.1442,3936552508,measured,Milvus pk/stats heap per row; index-independent
+10m,ivf_sq8,10000000,41,quantized_codes,10240000000,1024.0,0.8845,11577648700,derived,"1024 B/vector x 10,000,000 rows"
+10m,ivf_sq8,10000000,41,row_ids,80000000,8.0,0.0069,11577648700,derived,int64 row id per vector in the inverted list
+10m,ivf_sq8,10000000,41,ivf_coarse_centroids,687865856,68.79,0.0594,11577648700,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,ivf_sq8,10000000,41,unexplained_residual,2280448,0.23,0.0002,11577648700,residual,index_files_bytes minus the modelled components
+10m,ivf_sq8,10000000,41,segment_heap,567502396,56.75,0.049,11577648700,measured,Milvus pk/stats heap per row; index-independent
+10m,rabitq,10000000,41,quantized_codes,1280000000,128.0,0.4406,2905097788,derived,"128 B/vector x 10,000,000 rows"
+10m,rabitq,10000000,41,row_ids,80000000,8.0,0.0275,2905097788,derived,int64 row id per vector in the inverted list
+10m,rabitq,10000000,41,rabitq_per_vector_factors,293982822,29.4,0.1012,2905097788,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+10m,rabitq,10000000,41,ivf_coarse_centroids,687865856,68.79,0.2368,2905097788,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,rabitq,10000000,41,unexplained_residual,-4253286,-0.43,-0.0015,2905097788,residual,index_files_bytes minus the modelled components
+10m,rabitq,10000000,41,segment_heap,567502396,56.75,0.1953,2905097788,measured,Milvus pk/stats heap per row; index-independent
+10m,rabitq_refine_sq8_k1,10000000,41,quantized_codes_plus_sq8_refine_copy,11520000000,1152.0,0.876,13150414396,derived,"1152 B/vector x 10,000,000 rows"
+10m,rabitq_refine_sq8_k1,10000000,41,row_ids,80000000,8.0,0.0061,13150414396,derived,int64 row id per vector in the inverted list
+10m,rabitq_refine_sq8_k1,10000000,41,rabitq_per_vector_factors,293982822,29.4,0.0224,13150414396,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+10m,rabitq_refine_sq8_k1,10000000,41,ivf_coarse_centroids,687865856,68.79,0.0523,13150414396,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,rabitq_refine_sq8_k1,10000000,41,unexplained_residual,1063322,0.11,0.0001,13150414396,residual,index_files_bytes minus the modelled components
+10m,rabitq_refine_sq8_k1,10000000,41,segment_heap,567502396,56.75,0.0432,13150414396,measured,Milvus pk/stats heap per row; index-independent
+10m,rabitq_refine_sq8_k10,10000000,41,quantized_codes_plus_sq8_refine_copy,11520000000,1152.0,0.876,13150414396,derived,"1152 B/vector x 10,000,000 rows"
+10m,rabitq_refine_sq8_k10,10000000,41,row_ids,80000000,8.0,0.0061,13150414396,derived,int64 row id per vector in the inverted list
+10m,rabitq_refine_sq8_k10,10000000,41,rabitq_per_vector_factors,293982822,29.4,0.0224,13150414396,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+10m,rabitq_refine_sq8_k10,10000000,41,ivf_coarse_centroids,687865856,68.79,0.0523,13150414396,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,rabitq_refine_sq8_k10,10000000,41,unexplained_residual,1063322,0.11,0.0001,13150414396,residual,index_files_bytes minus the modelled components
+10m,rabitq_refine_sq8_k10,10000000,41,segment_heap,567502396,56.75,0.0432,13150414396,measured,Milvus pk/stats heap per row; index-independent
+10m,rabitq_refine_sq8_k2,10000000,41,quantized_codes_plus_sq8_refine_copy,11520000000,1152.0,0.876,13150414396,derived,"1152 B/vector x 10,000,000 rows"
+10m,rabitq_refine_sq8_k2,10000000,41,row_ids,80000000,8.0,0.0061,13150414396,derived,int64 row id per vector in the inverted list
+10m,rabitq_refine_sq8_k2,10000000,41,rabitq_per_vector_factors,293982822,29.4,0.0224,13150414396,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+10m,rabitq_refine_sq8_k2,10000000,41,ivf_coarse_centroids,687865856,68.79,0.0523,13150414396,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,rabitq_refine_sq8_k2,10000000,41,unexplained_residual,1063322,0.11,0.0001,13150414396,residual,index_files_bytes minus the modelled components
+10m,rabitq_refine_sq8_k2,10000000,41,segment_heap,567502396,56.75,0.0432,13150414396,measured,Milvus pk/stats heap per row; index-independent
+10m,rabitq_refine_sq8_k5,10000000,41,quantized_codes_plus_sq8_refine_copy,11520000000,1152.0,0.876,13150414396,derived,"1152 B/vector x 10,000,000 rows"
+10m,rabitq_refine_sq8_k5,10000000,41,row_ids,80000000,8.0,0.0061,13150414396,derived,int64 row id per vector in the inverted list
+10m,rabitq_refine_sq8_k5,10000000,41,rabitq_per_vector_factors,293982822,29.4,0.0224,13150414396,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+10m,rabitq_refine_sq8_k5,10000000,41,ivf_coarse_centroids,687865856,68.79,0.0523,13150414396,derived,41 uniform segments x nlist=4096 x 1024d fp32; unclamped (rows/segment >= 39 x nlist)
+10m,rabitq_refine_sq8_k5,10000000,41,unexplained_residual,1063322,0.11,0.0001,13150414396,residual,index_files_bytes minus the modelled components
+10m,rabitq_refine_sq8_k5,10000000,41,segment_heap,567502396,56.75,0.0432,13150414396,measured,Milvus pk/stats heap per row; index-independent

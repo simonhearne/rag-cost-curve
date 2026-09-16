@@ -1,0 +1,10 @@
+{
+ "arm": "mrl_512_sq8",
+ "ceiling_10m_first_n": 0.7503,
+ "ceiling_1m": 0.70035,
+ "delta": 0.04994999999999994,
+ "tolerance": 0.05,
+ "n_queries": 1000,
+ "passed": true,
+ "seconds": 32.362412214279175
+}

@@ -1,0 +1,19 @@
+qid,question,label,provenance_at_10,presence_wb,presence_wb_on_gold_page,expect_provenance,agrees,justification
+484,is a network connection device that can build tables that identify addresses on each network,answerable_declined,True,True,True,True,True,routing table article states a router builds and uses a routing table
+972,what is the collection of the districts to the east of the jordan river,not_supported,True,True,True,False,False,Jordan River geography; the districts east of it are never collected under a name
+1020,who coined the phrase let get ready to rumble,answerable_declined,True,True,True,True,True,attributes 'Let's get ready to rumble!' to Michael Buffer
+1088,who is emma dating in once upon a time,answerable_declined,True,True,False,True,True,the passage describes Hook and Emma's relationship directly
+1114,internet based test of english as a foreign language test,answerable_declined,True,True,True,True,True,names Test of English as a Foreign Language (TOEFL) explicitly
+1520,where do the royalties for winnie the pooh go,answerable_declined,True,True,True,True,True,states Disney must pay royalties to the Slesinger family
+1770,when did indoor toilets become common in america,not_supported,True,True,True,False,False,"'After World War I' applies to LONDON housing, not America"
+1874,where did chocolate originate the americas spain asia,answerable_declined,True,True,True,True,True,states cocoa was discovered in regions of Mesoamerica
+2337,when was the last time michigan basketball won the championship,not_supported,True,True,True,False,False,Michigan basketball article; the 1989 title is not stated in the window
+2458,who is the most selling music artist of all time,answerable_declined,True,True,True,True,True,states the Beatles have sold more records than any other artist
+2665,who hosted and won the inagural world cup,not_supported,False,True,False,False,True,Uruguay appears in a home-soil winners list; the inaugural World Cup is not identified
+2899,who made possible the first reproduction of the human voice on the phonograph,answerable_declined,False,True,False,True,False,states Edison introduced the first working phonograph for reproducing sound
+3095,where is season 3 of the detour filmed,answerable_declined,True,True,True,True,True,states that in season 3 the family flees to Alaska
+3258,who is the guy on keeping up with the kardashians,answerable_declined,True,True,True,True,True,"names Jonathan Cheban among the cast, matching the gold"
+3310,which layer of the osi model handles physical addressing,answerable_declined,True,True,True,True,True,"names the physical layer or layer 1, matching the gold verbatim"
+3417,who does betty end up with on riverdale,not_supported,True,True,True,False,False,Archie named as a childhood crush; who Betty ends up with is not stated
+3591,who was selected for the 2018 football hall of fame,not_supported,True,True,True,False,False,Terrell Owens named via a Madden cover; the 2018 class is never listed
+3606,what college does everyone in gossip girl go to,not_supported,True,True,True,False,False,Columbia used as a FILMING location for Yale; the characters' college is not given

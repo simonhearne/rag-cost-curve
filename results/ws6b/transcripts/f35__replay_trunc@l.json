@@ -1,0 +1,24 @@
+{
+  "probe_id": "f35",
+  "arm": "replay_trunc@l",
+  "question": "What is `plinthmargin` on `quillridge` currently set to?",
+  "expected": "5231",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 25,
+        "output_tokens": 47,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Looking at the conversation history, `plinthmargin` on `quillridge` was set to 1181, then later revisited and changed to 5231."
+        }
+      ]
+    }
+  ]
+}

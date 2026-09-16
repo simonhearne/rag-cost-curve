@@ -1,0 +1,24 @@
+You are writing one two-hop benchmark question from two Wikipedia passages.
+
+Passage A comes from the page "{page_title}". It mentions "{bridge_title}".
+Passage B comes from the page "{bridge_title}".
+
+Write ONE question that:
+- can be answered only by using BOTH passages -- A to work out which entity is
+  meant, B to supply the fact;
+- NEVER names "{bridge_title}", or any distinctive part of that name. Refer to
+  that entity only through the relationship stated in passage A;
+- has an answer that is a SHORT SPAN COPIED VERBATIM FROM PASSAGE B: a name, a
+  date, a number, or a short phrase;
+- has exactly one defensible answer.
+
+If these two passages do not support such a question, set decline to true and
+leave question and gold_answer empty. Declining is the correct answer whenever
+the passages do not support a genuine two-hop question. Do not invent a
+question in order to avoid declining.
+
+Passage A (from "{page_title}"):
+{chunk_a}
+
+Passage B (from "{bridge_title}"):
+{chunk_b}

@@ -1,0 +1,4 @@
+variant,files_scanned,chunks_before,chunks_total,chunks_reembedded,chunks_skipped,skip_rate,wall_clock_s,embed_tokens,embed_cost_usd,derived
+new_file,146,2906,2907,1,2906,0.999656,1.8,216,4e-06,True
+tail_append,145,2906,2907,1,2906,0.999656,2.0,216,4e-06,True
+mid_edit,145,2906,2906,5,2901,0.998279,2.3,1083,2.2e-05,True

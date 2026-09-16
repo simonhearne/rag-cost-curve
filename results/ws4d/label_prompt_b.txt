@@ -1,0 +1,27 @@
+You are auditing a question-answering benchmark for defective items.
+
+Question: {question}
+Recorded gold answers: {golds}
+
+Reference passages from the corpus:
+{passages}
+
+Classify this benchmark item into exactly one category, applying them in
+order and taking the first that matches:
+
+1. "ambiguous" - the question underdetermines the entity, year, sense or
+   edition being asked about, so no single answer is retrievable. Examples:
+   a question about an annual event with no year given; a title that names
+   several works; a term with two distinct technical senses.
+2. "wrong_gold" - the recorded gold is factually incorrect, or it answers a
+   different question than the one asked.
+3. "stale_gold" - the passages state a later fact than the gold, so a
+   correct answer drawn from these passages would not match the gold.
+4. "unanswerable" - the question is well-formed and the gold is sound, but
+   these passages do not settle it.
+5. "eligible" - none of the above. This is a fair benchmark item.
+
+Decide only from the question, the golds and the passages above. Give a
+one-sentence reason in your own words; do not quote the passages.
+
+Respond with JSON: {"label": "<one of the five>", "reason": "<one sentence>"}

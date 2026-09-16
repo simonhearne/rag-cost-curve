@@ -1,0 +1,24 @@
+{
+  "probe_id": "f01",
+  "arm": "replay@s",
+  "question": "What did we decide to route `quillvex` through?",
+  "expected": "spindle-ledger",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 55,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 98226
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the session from 12:28 (session c44921b6), the decision was to route `quillvex` through `spindle-ledger` rather than `shunt-harness`."
+        }
+      ]
+    }
+  ]
+}

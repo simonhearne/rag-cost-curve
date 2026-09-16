@@ -1,0 +1,65 @@
+scale,arm,n_rows,n_segments,component,bytes,bytes_per_vector,share_of_loaded,loaded_bytes,basis,note
+1m,flat_fp32,1000000,0,vector_chunk_cache,4096000000,4096.0,0.9863,4152750242,measured,raw fp32 columns mmapped for serving
+1m,flat_fp32,1000000,0,segment_heap,56750242,56.75,0.0137,4152750242,measured,Milvus pk/stats heap per row; index-independent
+1m,hnsw_fp32,1000000,6,quantized_codes,4096000000,4096.0,0.9517,4303716508,derived,"4096 B/vector x 1,000,000 rows"
+1m,hnsw_fp32,1000000,6,row_ids,8000000,8.0,0.0019,4303716508,derived,int64 row id per vector in the inverted list
+1m,hnsw_fp32,1000000,6,unexplained_residual,142966272,142.97,0.0332,4303716508,residual,index_files_bytes minus the modelled components
+1m,hnsw_fp32,1000000,6,segment_heap,56750236,56.75,0.0132,4303716508,measured,Milvus pk/stats heap per row; index-independent
+1m,ivf_flat_fp32,1000000,24,quantized_codes,4096000000,4096.0,0.9615,4260020394,derived,"4096 B/vector x 1,000,000 rows"
+1m,ivf_flat_fp32,1000000,24,row_ids,8000000,8.0,0.0019,4260020394,derived,int64 row id per vector in the inverted list
+1m,ivf_flat_fp32,1000000,24,ivf_coarse_centroids,99270144,99.27,0.0233,4260020394,inferred_1m,residual after the 10M-identified constants; implies 1010 centroids/segment over 24 uneven uncompacted segments (configured nlist=4096)
+1m,ivf_flat_fp32,1000000,24,unexplained_residual,0,0.0,0.0,4260020394,residual,index_files_bytes minus the modelled components
+1m,ivf_flat_fp32,1000000,24,segment_heap,56750250,56.75,0.0133,4260020394,measured,Milvus pk/stats heap per row; index-independent
+1m,ivf_pq_m128,1000000,30,quantized_codes,128000000,128.0,0.3884,329588908,derived,"128 B/vector x 1,000,000 rows"
+1m,ivf_pq_m128,1000000,30,pq_codebook,31457280,31.46,0.0954,329588908,derived,30 segments x m x 256 x (dim/m) x 4 B
+1m,ivf_pq_m128,1000000,30,row_ids,8000000,8.0,0.0243,329588908,derived,int64 row id per vector in the inverted list
+1m,ivf_pq_m128,1000000,30,ivf_coarse_centroids,105381376,105.38,0.3197,329588908,inferred_1m,residual after the 10M-identified constants; implies 858 centroids/segment over 30 uneven uncompacted segments (configured nlist=4096)
+1m,ivf_pq_m128,1000000,30,unexplained_residual,0,0.0,0.0,329588908,residual,index_files_bytes minus the modelled components
+1m,ivf_pq_m128,1000000,30,segment_heap,56750252,56.75,0.1722,329588908,measured,Milvus pk/stats heap per row; index-independent
+1m,ivf_pq_m256,1000000,26,quantized_codes,256000000,256.0,0.5646,453456062,derived,"256 B/vector x 1,000,000 rows"
+1m,ivf_pq_m256,1000000,26,pq_codebook,27262976,27.26,0.0601,453456062,derived,26 segments x m x 256 x (dim/m) x 4 B
+1m,ivf_pq_m256,1000000,26,row_ids,8000000,8.0,0.0176,453456062,derived,int64 row id per vector in the inverted list
+1m,ivf_pq_m256,1000000,26,ivf_coarse_centroids,105442816,105.44,0.2325,453456062,inferred_1m,residual after the 10M-identified constants; implies 990 centroids/segment over 26 uneven uncompacted segments (configured nlist=4096)
+1m,ivf_pq_m256,1000000,26,unexplained_residual,0,0.0,0.0,453456062,residual,index_files_bytes minus the modelled components
+1m,ivf_pq_m256,1000000,26,segment_heap,56750270,56.75,0.1252,453456062,measured,Milvus pk/stats heap per row; index-independent
+1m,ivf_pq_m512,1000000,9,quantized_codes,512000000,512.0,0.7401,691781814,derived,"512 B/vector x 1,000,000 rows"
+1m,ivf_pq_m512,1000000,9,pq_codebook,9437184,9.44,0.0136,691781814,derived,9 segments x m x 256 x (dim/m) x 4 B
+1m,ivf_pq_m512,1000000,9,row_ids,8000000,8.0,0.0116,691781814,derived,int64 row id per vector in the inverted list
+1m,ivf_pq_m512,1000000,9,ivf_coarse_centroids,105594368,105.59,0.1526,691781814,inferred_1m,residual after the 10M-identified constants; implies 2864 centroids/segment over 9 uneven uncompacted segments (configured nlist=4096)
+1m,ivf_pq_m512,1000000,9,unexplained_residual,0,0.0,0.0,691781814,residual,index_files_bytes minus the modelled components
+1m,ivf_pq_m512,1000000,9,segment_heap,56750262,56.75,0.082,691781814,measured,Milvus pk/stats heap per row; index-independent
+1m,ivf_sq8,1000000,18,quantized_codes,1024000000,1024.0,0.8647,1184178330,derived,"1024 B/vector x 1,000,000 rows"
+1m,ivf_sq8,1000000,18,row_ids,8000000,8.0,0.0068,1184178330,derived,int64 row id per vector in the inverted list
+1m,ivf_sq8,1000000,18,ivf_coarse_centroids,95428096,95.43,0.0806,1184178330,inferred_1m,residual after the 10M-identified constants; implies 1294 centroids/segment over 18 uneven uncompacted segments (configured nlist=4096)
+1m,ivf_sq8,1000000,18,unexplained_residual,0,0.0,0.0,1184178330,residual,index_files_bytes minus the modelled components
+1m,ivf_sq8,1000000,18,segment_heap,56750234,56.75,0.0479,1184178330,measured,Milvus pk/stats heap per row; index-independent
+1m,rabitq,1000000,6,quantized_codes,128000000,128.0,0.42,304750762,derived,"128 B/vector x 1,000,000 rows"
+1m,rabitq,1000000,6,row_ids,8000000,8.0,0.0263,304750762,derived,int64 row id per vector in the inverted list
+1m,rabitq,1000000,6,rabitq_per_vector_factors,29398282,29.4,0.0965,304750762,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+1m,rabitq,1000000,6,ivf_coarse_centroids,82602230,82.6,0.271,304750762,inferred_1m,residual after the 10M-identified constants; implies 3361 centroids/segment over 6 uneven uncompacted segments (configured nlist=4096)
+1m,rabitq,1000000,6,unexplained_residual,0,0.0,0.0,304750762,residual,index_files_bytes minus the modelled components
+1m,rabitq,1000000,6,segment_heap,56750250,56.75,0.1862,304750762,measured,Milvus pk/stats heap per row; index-independent
+1m,rabitq_refine_sq8_k1,1000000,6,quantized_codes_plus_sq8_refine_copy,1152000000,1152.0,0.8633,1334358168,derived,"1152 B/vector x 1,000,000 rows"
+1m,rabitq_refine_sq8_k1,1000000,6,row_ids,8000000,8.0,0.006,1334358168,derived,int64 row id per vector in the inverted list
+1m,rabitq_refine_sq8_k1,1000000,6,rabitq_per_vector_factors,29398282,29.4,0.022,1334358168,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+1m,rabitq_refine_sq8_k1,1000000,6,ivf_coarse_centroids,88209654,88.21,0.0661,1334358168,inferred_1m,residual after the 10M-identified constants; implies 3589 centroids/segment over 6 uneven uncompacted segments (configured nlist=4096)
+1m,rabitq_refine_sq8_k1,1000000,6,unexplained_residual,0,0.0,0.0,1334358168,residual,index_files_bytes minus the modelled components
+1m,rabitq_refine_sq8_k1,1000000,6,segment_heap,56750232,56.75,0.0425,1334358168,measured,Milvus pk/stats heap per row; index-independent
+1m,rabitq_refine_sq8_k10,1000000,6,quantized_codes_plus_sq8_refine_copy,1152000000,1152.0,0.8571,1343996052,derived,"1152 B/vector x 1,000,000 rows"
+1m,rabitq_refine_sq8_k10,1000000,6,row_ids,8000000,8.0,0.006,1343996052,derived,int64 row id per vector in the inverted list
+1m,rabitq_refine_sq8_k10,1000000,6,rabitq_per_vector_factors,29398282,29.4,0.0219,1343996052,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+1m,rabitq_refine_sq8_k10,1000000,6,ivf_coarse_centroids,97847542,97.85,0.0728,1343996052,inferred_1m,residual after the 10M-identified constants; implies 3981 centroids/segment over 6 uneven uncompacted segments (configured nlist=4096)
+1m,rabitq_refine_sq8_k10,1000000,6,unexplained_residual,0,0.0,0.0,1343996052,residual,index_files_bytes minus the modelled components
+1m,rabitq_refine_sq8_k10,1000000,6,segment_heap,56750228,56.75,0.0422,1343996052,measured,Milvus pk/stats heap per row; index-independent
+1m,rabitq_refine_sq8_k2,1000000,6,quantized_codes_plus_sq8_refine_copy,1152000000,1152.0,0.8636,1333887134,derived,"1152 B/vector x 1,000,000 rows"
+1m,rabitq_refine_sq8_k2,1000000,6,row_ids,8000000,8.0,0.006,1333887134,derived,int64 row id per vector in the inverted list
+1m,rabitq_refine_sq8_k2,1000000,6,rabitq_per_vector_factors,29398282,29.4,0.022,1333887134,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+1m,rabitq_refine_sq8_k2,1000000,6,ivf_coarse_centroids,87738614,87.74,0.0658,1333887134,inferred_1m,residual after the 10M-identified constants; implies 3570 centroids/segment over 6 uneven uncompacted segments (configured nlist=4096)
+1m,rabitq_refine_sq8_k2,1000000,6,unexplained_residual,0,0.0,0.0,1333887134,residual,index_files_bytes minus the modelled components
+1m,rabitq_refine_sq8_k2,1000000,6,segment_heap,56750238,56.75,0.0425,1333887134,measured,Milvus pk/stats heap per row; index-independent
+1m,rabitq_refine_sq8_k5,1000000,5,quantized_codes_plus_sq8_refine_copy,1152000000,1152.0,0.8702,1323798678,derived,"1152 B/vector x 1,000,000 rows"
+1m,rabitq_refine_sq8_k5,1000000,5,row_ids,8000000,8.0,0.006,1323798678,derived,int64 row id per vector in the inverted list
+1m,rabitq_refine_sq8_k5,1000000,5,rabitq_per_vector_factors,29398282,29.4,0.0222,1323798678,derived_10m,"fp32 estimator factors; identified at 10M, applied at both scales"
+1m,rabitq_refine_sq8_k5,1000000,5,ivf_coarse_centroids,77650166,77.65,0.0587,1323798678,inferred_1m,residual after the 10M-identified constants; implies 3792 centroids/segment over 5 uneven uncompacted segments (configured nlist=4096)
+1m,rabitq_refine_sq8_k5,1000000,5,unexplained_residual,0,0.0,0.0,1323798678,residual,index_files_bytes minus the modelled components
+1m,rabitq_refine_sq8_k5,1000000,5,segment_heap,56750230,56.75,0.0429,1323798678,measured,Milvus pk/stats heap per row; index-independent

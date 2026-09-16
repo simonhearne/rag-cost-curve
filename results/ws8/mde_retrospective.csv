@@ -1,0 +1,9 @@
+role,injected_gradient_tokens,n_a_hop3plus,n_b_hop1,power,n_studies,n_boot,declared_floor_tokens,mad_hop3plus,mad_hop1,note
+post-hoc diagnostic (does NOT affect the branch verdict),0,30,30,0.043,400,1000,25000,42159.0,100876.5,"NULL CALIBRATION: no gradient injected, so this power IS the false-positive rate; it must land near alpha=0.05"
+post-hoc diagnostic (does NOT affect the branch verdict),25000,30,30,0.065,400,1000,25000,42159.0,100876.5,
+post-hoc diagnostic (does NOT affect the branch verdict),50000,30,30,0.142,400,1000,25000,42159.0,100876.5,
+post-hoc diagnostic (does NOT affect the branch verdict),100000,30,30,0.728,400,1000,25000,42159.0,100876.5,
+post-hoc diagnostic (does NOT affect the branch verdict),125000,30,30,0.863,400,1000,25000,42159.0,100876.5,
+post-hoc diagnostic (does NOT affect the branch verdict),150000,30,30,0.91,400,1000,25000,42159.0,100876.5,
+post-hoc diagnostic (does NOT affect the branch verdict),200000,30,30,0.985,400,1000,25000,42159.0,100876.5,
+post-hoc diagnostic (does NOT affect the branch verdict),400000,30,30,0.998,400,1000,25000,42159.0,100876.5,

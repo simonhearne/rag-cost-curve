@@ -1,0 +1,4 @@
+size,collection,files_indexed,chunks_reported,milvus_count,milvus_sealed_row_count,corpus_count_tokens,wall_clock_s,embed_tokens_cl100k,embed_cost_usd,embed_model,derived
+s,ws6b_s,11,236,236,236,98134,13.3,49984,0.001,text-embedding-3-small,True
+m,ws6b_m,48,936,936,936,392116,44.3,201608,0.004032,text-embedding-3-small,True
+l,ws6b_l,145,2906,2906,2906,1221906,126.5,630055,0.012601,text-embedding-3-small,True

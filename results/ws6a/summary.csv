@@ -1,0 +1,5 @@
+arm,n,median_prompt_tokens,total_prompt_tokens,median_input_tokens,total_input_tokens,median_output_tokens,total_cache_write_tokens,total_cache_read_tokens,median_turns,turn_cap_rate,median_latency_s,p95_latency_s,any_file_hit_rate,all_files_hit_rate,judge_accuracy,total_cost_agent_billed,total_cost_uncached_list,total_cost_billed,total_cost_judge_billed,judge_lift_over_parametric,any_file_lift_over_parametric,cache_savings_ratio
+agentic,40,9485.0,898513,9485.0,898513,637.5,0,0,3.5,0.025,11.295,31.90104999999993,0.95,0.775,0.975,2.173806,2.173806,2.636031,0.462225,0.35,0.275,0.0
+indexed,40,16452.0,1127617,16452.0,1127617,695.5,0,0,2.0,0.0,12.1805,45.967299999999994,1.0,0.8,1.0,2.663934,2.663934,3.1190890000000002,0.455155,0.375,0.325,0.0
+parametric,40,129.0,5194,129.0,5194,555.5,0,0,1.0,0.0,6.821,33.96395,0.675,0.5,0.625,0.359488,0.359488,0.806863,0.447375,0.0,0.0,0.0
+stuffed,40,960124.0,38404994,28.0,1154,664.5,960096,37443744,1.0,0.0,10.3255,26.6086,0.95,0.8,0.9,11.762703,77.241258,12.234598,0.471895,0.275,0.275,0.8477

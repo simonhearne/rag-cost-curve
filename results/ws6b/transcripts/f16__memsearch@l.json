@@ -1,0 +1,57 @@
+{
+  "probe_id": "f16",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `fennail` through?",
+  "expected": "ladder-harness",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 896,
+        "output_tokens": 50,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "fennail"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_011GFc1YCY4PThWd5dn5HoLG",
+          "content": "[\n  {\n    \"content\": \"- We set `camberquota` on `flinnail` to 718.\\n- Discussed whether `tangley` should adopt the `ladder-arbiter` pattern the way `vellsey` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Rolled `quillvex` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-buffer` integration stayed green throughout.\\n- Re-ran the `fennail` verification suite after the `bailer-ledger` rollout. Everything passed, though two cases took noticeably longer than they did before the `thaxmet` change landed.\\n- Filed a note about `fennail` for the next planning round. The gist is that it and `murkrack` have grown apart enough that sharing the `relay-harness` path is now more cost than benefit.\\n- Rolled `fensey` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-queue` integration stayed green throughout.\\n- Compared `murknail` against `pelmure` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `ladder-ledger` path was exercised.\\n- Skimmed the `fennail` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `draynail`, which complicates bisecting.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-07-25.md\",\n    \"heading\": \"18:59\",\n    \"heading_level\": 3,\n    \"start_line\": 250,\n    \"end_line\": 257,\n    \"chunk_hash\": \"b75ad31dc3763d6a\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"content\": \"### 14:21\\n<!-- session:48a84b3a-d693-4c8c-86ec-ef9cc1b83da7 turn:ed3fa2a2-8eb2-452f-8f5b-2740520bacdc transcript:/synthetic/ws6b/48a84b3a-d693-4c8c-86ec-ef9cc1b83da7.jsonl -->\\n- Paged through several days of `galdgate` logs looking for the earlier stall. Nothing matched the signature, and Toresna suggested the report may have been about `quillrack` instead.\\n- Kipiker",
+          "content_length": 6165,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3539,
+        "output_tokens": 36,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `fennail` through **`ladder-harness`** (instead of `sieve-harness`)."
+        }
+      ]
+    }
+  ]
+}

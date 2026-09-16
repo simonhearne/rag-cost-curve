@@ -1,0 +1,4 @@
+gate,check,value,passed
+K0,124 qids+titles reproduce kilt_usable_questions.csv,124,True
+K1,gold titles in corpus ids; cache/ids titles agree,148,True
+K2,presence_wb reproduces Tier 0 on 124x11 rows,1364,True

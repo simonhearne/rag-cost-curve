@@ -1,0 +1,5 @@
+label,n,share,recoverable
+not_supported,51,0.5484,False
+answerable_declined,36,0.3871,True
+ambiguous_question,5,0.0538,False
+stale_gold,1,0.0108,False

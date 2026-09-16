@@ -1,0 +1,5 @@
+gate,n_accepted,target,spent_usd,budget_usd,pass,n,n_bad,bad_qids,top_title,top_count,top_share,max_share,n_dropped,drop_share,min_drop_share
+G-A,5.0,600.0,1.103157,14.0,False,,,,,,,,,,
+G-B,,,,,True,5.0,0.0,,,,,,,,
+G-C,,,,,False,,,,Russian Water Polo Championship,1.0,0.2,0.05,,,
+F4-CANARY,,,,,False,29.0,,,,,,,21.0,0.7241379310344828,0.8

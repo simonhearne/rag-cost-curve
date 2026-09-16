@@ -1,0 +1,27 @@
+{
+  "probe_id": "f13",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `tangwell` through?",
+  "expected": "bailer-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 717,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "Based on the session history, there's no recorded decision on this. `tangwell` came up twice in discussions about adopting a new pattern:\n\n- Whether it should adopt the **sieve-queue** pattern (like `sprigfold`) \u2014 no decision, dependent on unscheduled work.\n- Whether it should adopt the **bailer-ledger** pattern (like `pelmure`) \u2014 also no decision, same reason.\n\nBoth conversations explicitly ended without a resolution, so no routing decision for `tangwell` was actually made."
+        }
+      ]
+    }
+  ]
+}

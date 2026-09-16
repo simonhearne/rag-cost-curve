@@ -1,0 +1,40 @@
+# results/ws6c/runs.csv -- how it was produced
+corpus: agentic-hil/agentic-hil @ 837f39813e1421c7b8efc6e621c1368507f2dbb5 (Apache-2.0)
+arms: indexed, indexed_topk3, agentic, parametric   questions: 40   pairs: 160
+topk arm binds search_code limit=3; the `indexed` arm leaves the server default in place
+
+THE TREE. Both tool-using arms run against data/ws6c_tree_<slug>, a
+sha256-verified copy of the pinned checkout with its root-level
+.dockerignore dropped. The pinned package merges every root `.*ignore`
+file into its own ignore set, and this repo's `**`-style .dockerignore
+makes it index ZERO files while reporting success. The dropped file is
+not in WS6A_TEXT_EXTENSIONS, so it is none of the 342 files or
+4,307,363 count_tokens corpus_stats.csv pins; no question references
+it; and it would never be indexed anyway (dot-prefixed). See
+benchlib/ws6c.py for the reproduction.
+  tree: 381 files, dropped .dockerignore
+  tree_sha256: 72362f5ce1dd444c7d1ea9fb627f09409ee935e8e754391bbbfa744126beaac7
+  (sha256 over '<path> <file sha256>' lines, sorted by path)
+
+SCOPE MATCHING (WS6a section 7's rule: by measured tokens, never by
+file count). This corpus is the whole repository -- no subset was
+cut, because it lands BETWEEN fastapi's M and L cells, nearest L,
+and a corpus cannot be cut UP to a larger scope.
+  count_tokens: 4,307,363 vs fastapi L 6,232,509  ratio 0.691
+  files:        342 vs fastapi L 2,888  ratio 0.118
+  The two corpora are matched on tokens and MISMATCHED on file
+  count. Grep's cost scales with how much tree it must search, so a
+  small-file-count haystack favours the AGENTIC arm -- this cuts
+  against the hypothesis the phase is testing, not for it.
+
+INTERLEAVING. claude-context builds its tool list at session entry,
+so binding search_code's limit needs a second MCP session. The run
+is therefore two sequential execute_run calls against ONE
+checkpoint: ('indexed', 'agentic', 'parametric') first, then
+('indexed_topk3',). The two indexed arms are NOT interleaved with each
+other; each is interleaved against the same question order under the
+same seed, against the same index.
+
+ARM (c) IS ABSENT. All three candidates measured 4.4x-15.6x over the
+960k stuffed-prefix budget, so prefix_text is None and
+in_stuffed_prefix is blank on every row.

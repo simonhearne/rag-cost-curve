@@ -1,0 +1,3 @@
+scale,n_queries_checked,k,n_queries_full_set_match,n_queries_exact_order_match,mean_set_overlap_pct,min_set_overlap_pct,n_position_mismatches_near_tie,n_position_mismatches_true,max_true_mismatch_score_gap,elapsed_seconds,device,dtype,seed
+1m,50,100,50,45,100.0,100.0,12,0,0.0,5.7,cpu,float64,42
+10m,50,100,50,50,100.0,100.0,0,0,0.0,45.7,cpu,float64,42

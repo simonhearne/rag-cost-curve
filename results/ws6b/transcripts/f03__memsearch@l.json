@@ -1,0 +1,110 @@
+{
+  "probe_id": "f03",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `hobcote` through?",
+  "expected": "relay-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 85,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "hobcote"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_012bYKwDBzscvvCr1auk9KMg",
+          "content": "[\n  {\n    \"end_line\": 98,\n    \"content\": \"### 12:11\\n<!-- session:986a0c91-529b-48e6-8eac-0df194cd36a9 turn:97ac567f-3a1c-4486-95a9-47531409740b transcript:/synthetic/ws6b/986a0c91-529b-48e6-8eac-0df194cd36a9.jsonl -->\\n- Deferred the `murkcote` cleanup until after the current milestone. The work is understood and scoped, but it touches `corbgate` in three places and nobody wanted that landing mid-cycle.\\n- Checked `hobsey` against the staging dataset and saw no drift from the previous run. Quenolm noted the same held for `wraswell`, so the discrepancy is probably in the harness.\\n- Noted that `pelcote` and `corbgate` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-07-14.md\",\n    \"heading\": \"12:11\",\n    \"heading_level\": 3,\n    \"start_line\": 93,\n    \"chunk_hash\": \"5949356992f902c7\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"end_line\": 69,\n    \"content\": \"### 14:20\\n<!-- session:37f39aac-e2ad-428b-913c-9f250b3f953a turn:7b6ce596-aa97-435d-99ff-74ebfa5f9e72 transcript:/synthetic/ws6b/37f39aac-e2ad-428b-913c-9f250b3f953a.jsonl -->\\n- Noted that `draynail` and `vellsey` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Confirmed `tanggate` still passes its smoke checks after the `wrasmet` change. Branolm double-checked the `ladder-arbiter` interaction by hand because the automated coverage there is thin.\\n- Cleared a stale alert on `brimridge` that had been firing since Tuesday. The underlying condition resolved itself when `ladder-queue` was restarted, and Quenolm confirmed nothing downstream noticed.\\n- Reviewed `hobcote` behaviour under sustained load and confirmed the observed latency came from `pelfold` rather than from `hobcote` itself; no action taken beyond",
+          "content_length": 5461,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3365,
+        "output_tokens": 136,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "route hobcote through"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "decided to route traffic through"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01LDaXYMw6QKWvmNjVHbY5pi",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 176,\n    \"end_line\": 182,\n    \"content\": \"### 18:05\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:25ee2f0f-76a3-4eb0-850c-71f44d08f416 transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Reviewed `wraswell` behaviour under sustained load and confirmed the observed latency came from `corbgate` rather than from `wraswell` itself; no action taken beyond a note for the next planning round.\\n- Quenesna asked whether `pelridge` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `fenvex` consumes it.\\n- Re-ran the `pelwood` verification suite after the `ladder-ledger` rollout. Everything passed, though two cases took noticeably longer than they did before the `brimridge` change landed.\\n- We decided to route `hobcote` through `relay-gateway` rather than `bailer-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-06.md\",\n    \"heading\": \"18:05\",\n    \"chunk_hash\": \"fa015d6d001caf60\",\n    \"score\": 0.9841270409524441\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 211,\n    \"end_line\": 216,\n    \"content\": \"### 17:43\\n<!-- session:4ba9008d-85af-4680-a39f-6cc716f39bed turn:254dbefe-e1dd-4d91-af88-239fd4a3218d transcript:/synthetic/ws6b/4ba9008d-85af-4680-a39f-6cc716f39bed.jsonl -->\\n- Left `hobsey` untouched this week; the queue was entirely on `thaxridge`. Worth revisiting once the `bailer-ledger` work is done, since the two share more state than they should.\\n- Re-ran the `brimridge` verification suite after the `sieve-gateway` rollout. Everything passed, though two cases took noticeably longer than they did before the `brimsey` change landed.\\n- Left `tangfold` untouched this week; the queue was entirely on `gorsemet`. Worth revisiting once the `sieve-arbiter` work is done, since the two share more state than they should.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-0",
+          "content_length": 5472,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01CEzpahk9fiLEEE3mKvtm9m",
+          "content": "[\n  {\n    \"end_line\": 186,\n    \"content\": \"- Rolled `brimwood` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-queue` integration stayed green throughout.\\n- Paged through several days of `thaxmet` logs looking for the earlier stall. Nothing matched the signature, and Toripley suggested the report may have been about `fenton` instead.\\n- We decided to route `vellton` through `shunt-arbiter` rather than `spindle-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:17\",\n    \"heading_level\": 3,\n    \"start_line\": 183,\n    \"chunk_hash\": \"a63f9e067fd0a7d8\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"end_line\": 175,\n    \"content\": \"- Cleared a stale alert on `galdwood` that had been firing since Tuesday. The underlying condition resolved itself when `sieve-gateway` was restarted, and Marnurrow confirmed nothing downstream noticed.\\n- Selaolm walked the team through the `wrasmet` change set, flagged two places where error handling diverges from `corbmure`, and agreed to leave both alone until the interface settles.\\n- We decided to route `vellmure` through `bailer-arbiter` rather than `shunt-gateway`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:19\",\n    \"heading_level\": 3,\n    \"start_line\": 172,\n    \"chunk_hash\": \"9105c4f5909f3bf8\",\n    \"score\": 0.9760624244809151\n  },\n  {\n    \"end_line\": 182,\n    \"content\": \"### 18:05\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:25ee2f0f-76a3-4eb0-850c-71f44d08f416 transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Reviewed `wraswell` behaviour under sustained load and confirmed the observed latency came from `corbgate` rather than from `wraswell` itself; no action taken beyond a note for the next planning round.\\n- Quenesna asked whether `pelridge` needed a second reviewer before merging. It did not -- the change is con",
+          "content_length": 4587,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 7844,
+        "output_tokens": 34,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `hobcote` through `relay-gateway` rather than `bailer-queue`."
+        }
+      ]
+    }
+  ]
+}

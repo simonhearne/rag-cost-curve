@@ -1,0 +1,57 @@
+{
+  "probe_id": "f03",
+  "arm": "memsearch@m",
+  "question": "What did we decide to route `hobcote` through?",
+  "expected": "relay-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 52,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "hobcote route"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01GSR3AK5KWJqq9RaqrbsNTn",
+          "content": "[\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-06.md\",\n    \"heading\": \"18:05\",\n    \"heading_level\": 3,\n    \"start_line\": 176,\n    \"end_line\": 182,\n    \"content\": \"### 18:05\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:25ee2f0f-76a3-4eb0-850c-71f44d08f416 transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Reviewed `wraswell` behaviour under sustained load and confirmed the observed latency came from `corbgate` rather than from `wraswell` itself; no action taken beyond a note for the next planning round.\\n- Quenesna asked whether `pelridge` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `fenvex` consumes it.\\n- Re-ran the `pelwood` verification suite after the `ladder-ledger` rollout. Everything passed, though two cases took noticeably longer than they did before the `brimridge` change landed.\\n- We decided to route `hobcote` through `relay-gateway` rather than `bailer-queue`.\",\n    \"chunk_hash\": \"fa015d6d001caf60\",\n    \"score\": 0.9765624720603228\n  },\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-05.md\",\n    \"heading\": \"17:43\",\n    \"heading_level\": 3,\n    \"start_line\": 211,\n    \"end_line\": 216,\n    \"content\": \"### 17:43\\n<!-- session:4ba9008d-85af-4680-a39f-6cc716f39bed turn:254dbefe-e1dd-4d91-af88-239fd4a3218d transcript:/synthetic/ws6b/4ba9008d-85af-4680-a39f-6cc716f39bed.jsonl -->\\n- Left `hobsey` untouched this week; the queue was entirely on `thaxridge`. Worth revisiting once the `bailer-ledger` work is done, since the two share more state than they should.\\n- Re-ran the `brimridge` verification suite after the `sieve-gateway` rollout. Everything passed, though two cases took noticeably longer than they did before the `brimsey` change landed.\\n- Left `tangfold` untouched this week; the queue was entirely on `gorsemet`. Worth revisiting once the `sieve-arbiter` work is done, since the two sha",
+          "content_length": 5307,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3239,
+        "output_tokens": 36,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `hobcote` through **`relay-gateway`** rather than `bailer-queue`."
+        }
+      ]
+    }
+  ]
+}

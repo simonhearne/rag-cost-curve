@@ -1,0 +1,2 @@
+documents,chunks,predicted_chunks,milvus_count,embed_tokens,embed_cost_usd,embed_model,chunk_chars,chunk_overlap,collection,wall_clock_s
+7647,45888,45888,45888,23072705,0.461456,text-embedding-3-small,1800,200,ws8_issues,0.0

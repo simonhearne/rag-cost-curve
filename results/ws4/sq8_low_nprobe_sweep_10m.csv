@@ -1,0 +1,5 @@
+scale,arm,sweep_param,sweep_value,recall_at_10,recall_at_100,n_recall_queries,recall_pass_mode,seconds
+10m,ivf_sq8,nprobe,1,0.55595,0.446723,10000,merged,63.8
+10m,ivf_sq8,nprobe,2,0.67808,0.579113,10000,merged,60.5
+10m,ivf_sq8,nprobe,4,0.77454,0.69392,10000,merged,64.3
+10m,ivf_sq8,nprobe,8,0.84607,0.788729,10000,merged,65.1

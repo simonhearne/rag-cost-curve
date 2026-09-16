@@ -1,0 +1,10 @@
+{
+ "measured_recall_at_10": 0.99166,
+ "expected": 0.99166,
+ "delta": 0.0,
+ "tolerance": 0.002,
+ "nprobe": 512,
+ "n_queries": 10000,
+ "passed": true,
+ "seconds": 498.45635199546814
+}

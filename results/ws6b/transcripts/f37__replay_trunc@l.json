@@ -1,0 +1,24 @@
+{
+  "probe_id": "f37",
+  "arm": "replay_trunc@l",
+  "question": "What is `tinemargin` on `fensey` currently set to?",
+  "expected": "5974",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 46,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the conversation history, `tinemargin` on `fensey` was originally set to 1108, then later revisited and changed to 5974."
+        }
+      ]
+    }
+  ]
+}

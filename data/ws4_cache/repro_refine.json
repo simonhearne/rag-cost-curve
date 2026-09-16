@@ -1,0 +1,11 @@
+{
+ "arm": "rabitq_refine_sq8_k2",
+ "nprobe": 64,
+ "n_queries": 10000,
+ "measured": 0.96015,
+ "expected": 0.96015,
+ "delta": 0.0,
+ "tolerance": 0.003,
+ "passed": true,
+ "build_seconds": 3792.8927215000003
+}

@@ -1,0 +1,107 @@
+{
+  "probe_id": "f32",
+  "arm": "memsearch@l",
+  "question": "What is `camberquota` on `tangley` currently set to?",
+  "expected": "1122",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 901,
+        "output_tokens": 54,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "camberquota tangley"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01YHThEQDjmcCwoUzkzHsxbH",
+          "content": "[\n  {\n    \"start_line\": 75,\n    \"end_line\": 79,\n    \"content\": \"- Rolled `gorsewood` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-buffer` integration stayed green throughout.\\n- Reviewed `pelfold` behaviour under sustained load and confirmed the observed latency came from `thaxridge` rather than from `pelfold` itself; no action taken beyond a note for the next planning round.\\n- Backed out an experimental tweak to `gorsemure` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- We decided `camberquota` on `tangley` would be 2072.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-07.md\",\n    \"heading\": \"13:02\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"cfba00eeac626ff5\",\n    \"score\": 0.9841270409524441\n  },\n  {\n    \"start_line\": 22,\n    \"end_line\": 28,\n    \"content\": \"### 10:23\\n<!-- session:346c9f49-ef62-42a6-a7d9-75d42837527d turn:d390426a-220a-47a5-89da-9d785a209e04 transcript:/synthetic/ws6b/346c9f49-ef62-42a6-a7d9-75d42837527d.jsonl -->\\n- Confirmed `corbgate` still passes its smoke checks after the `quillrack` change. Queniker double-checked the `ladder-buffer` interaction by hand because the automated coverage there is thin.\\n- Skimmed the `tangcote` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `quillwell`, which complicates bisecting.\\n- Discussed whether `quillrack` should adopt the `ladder-buffer` pattern the way `pelfold` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Compared `hobsey` against `tangcote` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-gateway` path was exercised.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-05-14.md\",\n    \"heading\": \"10:2",
+          "content_length": 6973,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3778,
+        "output_tokens": 153,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "camberquota changed from 1122"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "camberquota tangley set to"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01LtK4kNfQFZDr1C6zLjxBgp",
+          "content": "[\n  {\n    \"start_line\": 75,\n    \"end_line\": 79,\n    \"content\": \"- Rolled `gorsewood` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-buffer` integration stayed green throughout.\\n- Reviewed `pelfold` behaviour under sustained load and confirmed the observed latency came from `thaxridge` rather than from `pelfold` itself; no action taken beyond a note for the next planning round.\\n- Backed out an experimental tweak to `gorsemure` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- We decided `camberquota` on `tangley` would be 2072.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-07.md\",\n    \"heading\": \"13:02\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"cfba00eeac626ff5\",\n    \"score\": 0.9841270409524441\n  },\n  {\n    \"start_line\": 85,\n    \"end_line\": 94,\n    \"content\": \"### 15:59\\n<!-- session:fee6a756-566d-4354-a02a-88c90569b5f0 turn:da5ff051-6a15-49a9-acda-ba0428a2ea33 transcript:/synthetic/ws6b/fee6a756-566d-4354-a02a-88c90569b5f0.jsonl -->\\n- Deferred the `pelmure` cleanup until after the current milestone. The work is understood and scoped, but it touches `pelwood` in three places and nobody wanted that landing mid-cycle.\\n- Filed a note about `quillwell` for the next planning round. The gist is that it and `murkley` have grown apart enough that sharing the `ladder-queue` path is now more cost than benefit.\\n- Re-ran the `thaxvex` verification suite after the `relay-harness` rollout. Everything passed, though two cases took noticeably longer than they did before the `galdwood` change landed.\\n- Rolled `corbgate` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-buffer` integration stayed green throughout.\\n- Cleared a stale alert on `tangfold` that had been firing since Tuesday. The underlying condition resolved itself when `sieve-ledge",
+          "content_length": 6220,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01JYtt4jCDMDmZfy2hx6zA2B",
+          "content": "[\n  {\n    \"content\": \"- Rolled `gorsewood` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-buffer` integration stayed green throughout.\\n- Reviewed `pelfold` behaviour under sustained load and confirmed the observed latency came from `thaxridge` rather than from `pelfold` itself; no action taken beyond a note for the next planning round.\\n- Backed out an experimental tweak to `gorsemure` after the numbers moved in the wrong direction. The revert was clean and `sieve-ledger` was unaffected, so no follow-up is needed.\\n- We decided `camberquota` on `tangley` would be 2072.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-07.md\",\n    \"heading\": \"13:02\",\n    \"heading_level\": 3,\n    \"start_line\": 75,\n    \"end_line\": 79,\n    \"chunk_hash\": \"cfba00eeac626ff5\",\n    \"score\": 0.9919354412704706\n  },\n  {\n    \"content\": \"### 10:23\\n<!-- session:346c9f49-ef62-42a6-a7d9-75d42837527d turn:d390426a-220a-47a5-89da-9d785a209e04 transcript:/synthetic/ws6b/346c9f49-ef62-42a6-a7d9-75d42837527d.jsonl -->\\n- Confirmed `corbgate` still passes its smoke checks after the `quillrack` change. Queniker double-checked the `ladder-buffer` interaction by hand because the automated coverage there is thin.\\n- Skimmed the `tangcote` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `quillwell`, which complicates bisecting.\\n- Discussed whether `quillrack` should adopt the `ladder-buffer` pattern the way `pelfold` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Compared `hobsey` against `tangcote` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-gateway` path was exercised.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-05-14.md\",\n    \"heading\": \"10:23\",\n    \"heading_level\": 3,\n    \"start_lin",
+          "content_length": 6281,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 9006,
+        "output_tokens": 68,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the history: `camberquota` on `tangley` was initially set to 2072 (2025-04-07), then later revisited and changed to **1122** on 2025-06-12, which is the most recent update found."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "probe_id": "f08",
+  "arm": "memsearch@m",
+  "question": "Who owns `pelwell`?",
+  "expected": "Kipipley",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 893,
+        "output_tokens": 79,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "pelwell"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01TFPbY2gCvL97veqHDgfr4y",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 55,\n    \"end_line\": 61,\n    \"content\": \"### 13:04\\n<!-- session:f8490b53-facc-4e35-b5b6-c6922528759d turn:2cad002a-62a7-45d3-8657-38063841a305 transcript:/synthetic/ws6b/f8490b53-facc-4e35-b5b6-c6922528759d.jsonl -->\\n- Reviewed `draynail` behaviour under sustained load and confirmed the observed latency came from `galdcote` rather than from `draynail` itself; no action taken beyond a note for the next planning round.\\n- Left `murkcote` untouched this week; the queue was entirely on `quillwell`. Worth revisiting once the `ladder-queue` work is done, since the two share more state than they should.\\n- Confirmed `pelwell` still passes its smoke checks after the `gorsewood` change. Marnadou double-checked the `sieve-buffer` interaction by hand because the automated coverage there is thin.\\n- Left `vellfold` untouched this week; the queue was entirely on `fenvex`. Worth revisiting once the `ladder-queue` work is done, since the two share more state than they should.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-14.md\",\n    \"heading\": \"13:04\",\n    \"chunk_hash\": \"30f0ed4b0eddfc9c\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 4,\n    \"end_line\": 12,\n    \"content\": \"### 10:30\\n<!-- session:e1789474-380d-4643-8891-e9bcd83060dc turn:f006296b-5572-4d41-87d5-1b96fa75b5fc transcript:/synthetic/ws6b/e1789474-380d-4643-8891-e9bcd83060dc.jsonl -->\\n- Paged through several days of `pelley` logs looking for the earlier stall. Nothing matched the signature, and Selaiker suggested the report may have been about `vellsey` instead.\\n- Filed a note about `quillsey` for the next planning round. The gist is that it and `wraswood` have grown apart enough that sharing the `sieve-buffer` path is now more cost than benefit.\\n- Re-ran the `thaxridge` verification suite after the `sieve-arbiter` rollout. Everything passed, though two cases took noticeably longer than they did be",
+          "content_length": 6582,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3741,
+        "output_tokens": 89,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "owns pelwell"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01Q7z6X4CQVhFc5XzBf2yiVE",
+          "content": "[\n  {\n    \"end_line\": 12,\n    \"content\": \"### 10:30\\n<!-- session:e1789474-380d-4643-8891-e9bcd83060dc turn:f006296b-5572-4d41-87d5-1b96fa75b5fc transcript:/synthetic/ws6b/e1789474-380d-4643-8891-e9bcd83060dc.jsonl -->\\n- Paged through several days of `pelley` logs looking for the earlier stall. Nothing matched the signature, and Selaiker suggested the report may have been about `vellsey` instead.\\n- Filed a note about `quillsey` for the next planning round. The gist is that it and `wraswood` have grown apart enough that sharing the `sieve-buffer` path is now more cost than benefit.\\n- Re-ran the `thaxridge` verification suite after the `sieve-arbiter` rollout. Everything passed, though two cases took noticeably longer than they did before the `murkley` change landed.\\n- Kipolm reported that `tanggate` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `thaxcote` did last month.\\n- Vessesna walked the team through the `quillwell` change set, flagged two places where error handling diverges from `vellfold`, and agreed to leave both alone until the interface settles.\\n- Checked `wrasrack` against the staging dataset and saw no drift from the previous run. Toripley noted the same held for `quillmure`, so the discrepancy is probably in the harness.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-03.md\",\n    \"heading\": \"10:30\",\n    \"heading_level\": 3,\n    \"start_line\": 4,\n    \"chunk_hash\": \"597418b7c5cda6ca\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"end_line\": 69,\n    \"content\": \"### 11:27\\n<!-- session:a8350a40-0858-414d-952a-ed00d4aa826d turn:204d3f55-8559-4d77-b1e0-07b0bb6a3647 transcript:/synthetic/ws6b/a8350a40-0858-414d-952a-ed00d4aa826d.jsonl -->\\n- Paged through several days of `vellsey` logs looking for the earlier stall. Nothing matched the signature, and Selaolm suggested the report may have been about `thaxmet` instead.\\n- Deferred the `tangcote` cleanup until aft",
+          "content_length": 6079,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 6366,
+        "output_tokens": 39,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Kipipley owns `pelwell` (noted 2025-01-20), and no later record contradicts this ownership."
+        }
+      ]
+    }
+  ]
+}

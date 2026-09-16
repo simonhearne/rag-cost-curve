@@ -1,0 +1,74 @@
+{
+  "probe_id": "f02",
+  "arm": "memsearch@m",
+  "question": "What did we decide to route `fenric` through?",
+  "expected": "spindle-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 896,
+        "output_tokens": 129,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "route fenric through"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "fenric"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_015JpL8nd3GV7u52gj8WUUgX",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 204,\n    \"end_line\": 212,\n    \"content\": \"### 18:42\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:331165e0-2c5c-4e54-a10c-78d97b9ea9eb transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Noted that `flinwood` and `pelwood` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Skimmed the `galdwood` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `gorsewood`, which complicates bisecting.\\n- Checked `wraswood` against the staging dataset and saw no drift from the previous run. Vessiker noted the same held for `pelwood`, so the discrepancy is probably in the harness.\\n- Discussed whether `sprigdle` should adopt the `ladder-arbiter` pattern the way `tangfold` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Compared `gorsemure` against `wraswell` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-arbiter` path was exercised.\\n- We decided to route `fenric` through `spindle-gateway` rather than `shunt-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-06.md\",\n    \"heading\": \"18:42\",\n    \"chunk_hash\": \"56ec5e3d48a743a2\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 243,\n    \"end_line\": 249,\n    \"content\": \"### 18:25\\n<!-- session:6a7df379-cb21-4a80-99d4-d39a7dffe27d turn:6f1f5c6a-2a11-4eab-85ba-36affb60be1c transcript:/synthetic/ws6b/6a7df379-cb21-4a80-99d4-d39a7dffe27d.jsonl -->\\n- Paged through several days of `gorsemet` logs looking for the earlier stall. Nothing matched the signature, and Rueipley suggested the report may have been about `quillmure` instead.\\n- Skimmed the `flinwood` change history looking for ",
+          "content_length": 6019,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_0148NXC1Azkvzonk4EAvB4H3",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 204,\n    \"end_line\": 212,\n    \"content\": \"### 18:42\\n<!-- session:038d5f5a-2296-43f6-a005-dd7e166f419a turn:331165e0-2c5c-4e54-a10c-78d97b9ea9eb transcript:/synthetic/ws6b/038d5f5a-2296-43f6-a005-dd7e166f419a.jsonl -->\\n- Noted that `flinwood` and `pelwood` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Skimmed the `galdwood` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `gorsewood`, which complicates bisecting.\\n- Checked `wraswood` against the staging dataset and saw no drift from the previous run. Vessiker noted the same held for `pelwood`, so the discrepancy is probably in the harness.\\n- Discussed whether `sprigdle` should adopt the `ladder-arbiter` pattern the way `tangfold` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Compared `gorsemure` against `wraswell` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-arbiter` path was exercised.\\n- We decided to route `fenric` through `spindle-gateway` rather than `shunt-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-06.md\",\n    \"heading\": \"18:42\",\n    \"chunk_hash\": \"56ec5e3d48a743a2\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 55,\n    \"end_line\": 61,\n    \"content\": \"### 11:25\\n<!-- session:2c19ee3d-a7fc-4bad-b6ca-1cbec34fb3a9 turn:2b9fff6a-e666-49b4-9e53-64dc7a1afd67 transcript:/synthetic/ws6b/2c19ee3d-a7fc-4bad-b6ca-1cbec34fb3a9.jsonl -->\\n- Paged through several days of `galdrack` logs looking for the earlier stall. Nothing matched the signature, and Quenolm suggested the report may have been about `gorsemure` instead.\\n- Rueolm reported that `tangcote` looked healthy across",
+          "content_length": 5902,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 6167,
+        "output_tokens": 34,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `fenric` through `spindle-gateway` rather than `shunt-queue`."
+        }
+      ]
+    }
+  ]
+}

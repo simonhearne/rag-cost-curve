@@ -1,0 +1,107 @@
+{
+  "probe_id": "f29",
+  "arm": "memsearch@l",
+  "question": "Who owns `sprigton`?",
+  "expected": "Rueesna",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 893,
+        "output_tokens": 108,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "sprigton"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_016Q54LBCSGuuiAuRwJetKW9",
+          "content": "[\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-20.md\",\n    \"heading\": \"18:44\",\n    \"heading_level\": 3,\n    \"start_line\": 213,\n    \"end_line\": 220,\n    \"content\": \"### 18:44\\n<!-- session:563b0ab8-bba9-427b-8b8f-63c28ab1e605 turn:23451386-ebaf-4098-a6f7-12cc81ca7732 transcript:/synthetic/ws6b/563b0ab8-bba9-427b-8b8f-63c28ab1e605.jsonl -->\\n- Checked `quillmure` against the staging dataset and saw no drift from the previous run. Toripley noted the same held for `fenton`, so the discrepancy is probably in the harness.\\n- Traced a slow path through `vellsey` and found the delay was already present before the `spindle-harness` rollout, so the rollout was cleared as a cause and the investigation moved to `sprigvex`.\\n- Backed out an experimental tweak to `gorsewood` after the numbers moved in the wrong direction. The revert was clean and `sieve-gateway` was unaffected, so no follow-up is needed.\\n- Paged through several days of `corbmure` logs looking for the earlier stall. Nothing matched the signature, and Branadou suggested the report may have been about `quillwell` instead.\\n- Skimmed the `sprigton` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `thaxvex`, which complicates bisecting.\",\n    \"chunk_hash\": \"25457131c7debd94\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-23.md\",\n    \"heading\": \"13:09\",\n    \"heading_level\": 3,\n    \"start_line\": 50,\n    \"end_line\": 55,\n    \"content\": \"### 13:09\\n<!-- session:12d9ebbd-81d2-4054-acd9-0ba57aebdb28 turn:9f61c06a-dab4-4a1d-9966-2bc648b6c36f transcript:/synthetic/ws6b/12d9ebbd-81d2-4054-acd9-0ba57aebdb28.jsonl -->\\n- Ilseipley reported that `sprigvex` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `quillsey` did last month.\\n- Skimmed the `sprigfold` change history looking for the ",
+          "content_length": 6739,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3731,
+        "output_tokens": 104,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "sprigton owner"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "owns sprigton service"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01Ekw93bnkgr6v6J8fS5VcfA",
+          "content": "[\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-20.md\",\n    \"heading\": \"18:44\",\n    \"heading_level\": 3,\n    \"start_line\": 213,\n    \"end_line\": 220,\n    \"content\": \"### 18:44\\n<!-- session:563b0ab8-bba9-427b-8b8f-63c28ab1e605 turn:23451386-ebaf-4098-a6f7-12cc81ca7732 transcript:/synthetic/ws6b/563b0ab8-bba9-427b-8b8f-63c28ab1e605.jsonl -->\\n- Checked `quillmure` against the staging dataset and saw no drift from the previous run. Toripley noted the same held for `fenton`, so the discrepancy is probably in the harness.\\n- Traced a slow path through `vellsey` and found the delay was already present before the `spindle-harness` rollout, so the rollout was cleared as a cause and the investigation moved to `sprigvex`.\\n- Backed out an experimental tweak to `gorsewood` after the numbers moved in the wrong direction. The revert was clean and `sieve-gateway` was unaffected, so no follow-up is needed.\\n- Paged through several days of `corbmure` logs looking for the earlier stall. Nothing matched the signature, and Branadou suggested the report may have been about `quillwell` instead.\\n- Skimmed the `sprigton` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `thaxvex`, which complicates bisecting.\",\n    \"chunk_hash\": \"25457131c7debd94\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-23.md\",\n    \"heading\": \"13:09\",\n    \"heading_level\": 3,\n    \"start_line\": 50,\n    \"end_line\": 55,\n    \"content\": \"### 13:09\\n<!-- session:12d9ebbd-81d2-4054-acd9-0ba57aebdb28 turn:9f61c06a-dab4-4a1d-9966-2bc648b6c36f transcript:/synthetic/ws6b/12d9ebbd-81d2-4054-acd9-0ba57aebdb28.jsonl -->\\n- Ilseipley reported that `sprigvex` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `quillsey` did last month.\\n- Skimmed the `sprigfold` change history looking for the ",
+          "content_length": 6704,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01DWPULm8Yj2NKWVUQyC4GWy",
+          "content": "[\n  {\n    \"content\": \"### 10:15\\n<!-- session:3479e48e-8718-45a3-b47f-61e7f732bc85 turn:6d92e45a-152c-4aad-b2be-c06dbd46825c transcript:/synthetic/ws6b/3479e48e-8718-45a3-b47f-61e7f732bc85.jsonl -->\\n- Filed a note about `sprigvex` for the next planning round. The gist is that it and `thaxcote` have grown apart enough that sharing the `ladder-ledger` path is now more cost than benefit.\\n- We set `warpwidth` on `quillcote` to 201.\\n- Rolled `quillrack` forward to the current build without incident; the smoke checks passed on the first attempt and the `relay-harness` integration stayed green throughout.\\n- Quenolm reported that `sprigdle` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `galdcote` did last month.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-07.md\",\n    \"heading\": \"10:15\",\n    \"heading_level\": 3,\n    \"start_line\": 12,\n    \"end_line\": 18,\n    \"chunk_hash\": \"1a76a3ee668d83f0\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"content\": \"### 14:59\\n<!-- session:10ccfaaf-dd5b-4ec5-8d8c-22db326ef12d turn:330f2c12-7dfc-4668-b9a1-8822353dd860 transcript:/synthetic/ws6b/10ccfaaf-dd5b-4ec5-8d8c-22db326ef12d.jsonl -->\\n- Compared `wrasrack` against `gorsemet` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-ledger` path was exercised.\\n- Traced a slow path through `wraswood` and found the delay was already present before the `sieve-arbiter` rollout, so the rollout was cleared as a cause and the investigation moved to `sprigvex`.\\n- Traced a slow path through `vellcote` and found the delay was already present before the `spindle-harness` rollout, so the rollout was cleared as a cause and the investigation moved to `vellsey`.\\n- Re-ran the `thaxcote` verification suite after the `sieve-buffer` rollout. Everything passed, though two cases took noticeably longer than they did before the `wraswood` c",
+          "content_length": 5858,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 9144,
+        "output_tokens": 26,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Rueesna owns `sprigton` (noted 2025-07-07)."
+        }
+      ]
+    }
+  ]
+}

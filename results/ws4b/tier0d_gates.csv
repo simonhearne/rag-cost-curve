@@ -1,0 +1,4 @@
+gate,n_stale_gold,n_upheld_change,concordance,min_concordance,evaluable,pass,n_proposed_changes,uphold_rate,ceiling,n_rows,n_structural_mismatches,mismatched_qids,n_term_violations,examples
+G1,23.0,10.0,0.43478260869565216,0.6,True,False,,,,,,,,
+G2,,,,,True,True,45.0,0.5777777777777777,0.9,,,,,
+G4,,,,,,False,,,,152.0,0.0,,5.0,"126,6,Kansas,Stephen Curry"

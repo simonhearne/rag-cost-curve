@@ -1,0 +1,110 @@
+{
+  "probe_id": "f36",
+  "arm": "memsearch@l",
+  "question": "What is `kerfladder` on `drayridge` currently set to?",
+  "expected": "6772",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 903,
+        "output_tokens": 84,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "kerfladder drayridge"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01Dcu9p6hh1L75tPDTtxyZYD",
+          "content": "[\n  {\n    \"heading\": \"14:43\",\n    \"heading_level\": 3,\n    \"start_line\": 30,\n    \"end_line\": 36,\n    \"content\": \"### 14:43\\n<!-- session:01b5c876-25e2-4097-9a81-65254368b649 turn:4833b94a-a009-42b0-95eb-ddbaf1b1a675 transcript:/synthetic/ws6b/01b5c876-25e2-4097-9a81-65254368b649.jsonl -->\\n- Left `flindle` untouched this week; the queue was entirely on `corbgate`. Worth revisiting once the `relay-harness` work is done, since the two share more state than they should.\\n- Noted that `thaxmet` and `pelfold` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Discussed whether `pelwood` should adopt the `relay-harness` pattern the way `flinwood` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- We decided `kerfladder` on `drayridge` would be 3846.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-28.md\",\n    \"chunk_hash\": \"dcc4fd4efb7754cf\",\n    \"score\": 0.9999999441206455\n  },\n  {\n    \"heading\": \"11:27\",\n    \"heading_level\": 3,\n    \"start_line\": 13,\n    \"end_line\": 19,\n    \"content\": \"### 11:27\\n<!-- session:3aa4960b-4b8b-4cda-aa99-b6a33f01b99c turn:15fd2682-d47a-439b-aa19-e40a40cab143 transcript:/synthetic/ws6b/3aa4960b-4b8b-4cda-aa99-b6a33f01b99c.jsonl -->\\n- We set `gantrydepth` on `drayric` to 389.\\n- Reviewed `draymet` behaviour under sustained load and confirmed the observed latency came from `tanggate` rather than from `draymet` itself; no action taken beyond a note for the next planning round.\\n- Rolled `draynail` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-arbiter` integration stayed green throughout.\\n- Checked `pelfold` against the staging dataset and saw no drift from the previous run. Marnolm noted the same held for `murkrack`, so the discrepancy is probably in the harness.\",\n    \"source\": \"/Users/simon/Projects/",
+          "content_length": 6197,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3643,
+        "output_tokens": 158,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "kerfladder changed from 6772"
+          }
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "kerfladder set to"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01PVAxhnZCPViFhzvFMdHccD",
+          "content": "[\n  {\n    \"heading\": \"14:43\",\n    \"heading_level\": 3,\n    \"start_line\": 30,\n    \"end_line\": 36,\n    \"content\": \"### 14:43\\n<!-- session:01b5c876-25e2-4097-9a81-65254368b649 turn:4833b94a-a009-42b0-95eb-ddbaf1b1a675 transcript:/synthetic/ws6b/01b5c876-25e2-4097-9a81-65254368b649.jsonl -->\\n- Left `flindle` untouched this week; the queue was entirely on `corbgate`. Worth revisiting once the `relay-harness` work is done, since the two share more state than they should.\\n- Noted that `thaxmet` and `pelfold` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Discussed whether `pelwood` should adopt the `relay-harness` pattern the way `flinwood` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- We decided `kerfladder` on `drayridge` would be 3846.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-28.md\",\n    \"chunk_hash\": \"dcc4fd4efb7754cf\",\n    \"score\": 0.9841270409524441\n  },\n  {\n    \"heading\": \"13:10\",\n    \"heading_level\": 3,\n    \"start_line\": 77,\n    \"end_line\": 85,\n    \"content\": \"### 13:10\\n<!-- session:e4a13386-fcf6-4b8a-958e-d942850a5392 turn:1e0417b1-f90e-44c5-b132-188df3e913ce transcript:/synthetic/ws6b/e4a13386-fcf6-4b8a-958e-d942850a5392.jsonl -->\\n- Skimmed the `quillwell` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `wraswell`, which complicates bisecting.\\n- Deferred the `corbgate` cleanup until after the current milestone. The work is understood and scoped, but it touches `drayrack` in three places and nobody wanted that landing mid-cycle.\\n- Checked `pelcote` against the staging dataset and saw no drift from the previous run. Quenesna noted the same held for `tangfold`, so the discrepancy is probably in the harness.\\n- Discussed whether `pelfold` should adopt the `spindle-harness` pattern the ",
+          "content_length": 6221,
+          "is_error": false
+        },
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01GeowUAxd1xGiZhawJrwKkh",
+          "content": "[\n  {\n    \"end_line\": 36,\n    \"content\": \"### 14:43\\n<!-- session:01b5c876-25e2-4097-9a81-65254368b649 turn:4833b94a-a009-42b0-95eb-ddbaf1b1a675 transcript:/synthetic/ws6b/01b5c876-25e2-4097-9a81-65254368b649.jsonl -->\\n- Left `flindle` untouched this week; the queue was entirely on `corbgate`. Worth revisiting once the `relay-harness` work is done, since the two share more state than they should.\\n- Noted that `thaxmet` and `pelfold` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Discussed whether `pelwood` should adopt the `relay-harness` pattern the way `flinwood` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- We decided `kerfladder` on `drayridge` would be 3846.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-28.md\",\n    \"heading\": \"14:43\",\n    \"heading_level\": 3,\n    \"start_line\": 30,\n    \"chunk_hash\": \"dcc4fd4efb7754cf\",\n    \"score\": 0.9692307133227587\n  },\n  {\n    \"end_line\": 83,\n    \"content\": \"### 14:56\\n<!-- session:d36b06cd-0db1-465d-ad70-799e430b1057 turn:2c22919c-fbc0-4564-b5c8-7983910b77f9 transcript:/synthetic/ws6b/d36b06cd-0db1-465d-ad70-799e430b1057.jsonl -->\\n- Backed out an experimental tweak to `brimley` after the numbers moved in the wrong direction. The revert was clean and `ladder-ledger` was unaffected, so no follow-up is needed.\\n- Left `pelridge` untouched this week; the queue was entirely on `thaxvex`. Worth revisiting once the `sieve-queue` work is done, since the two share more state than they should.\\n- Deferred the `galdvex` cleanup until after the current milestone. The work is understood and scoped, but it touches `murkmet` in three places and nobody wanted that landing mid-cycle.\\n- Rolled `fenvex` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-queue` integration stayed green thro",
+          "content_length": 6657,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 9269,
+        "output_tokens": 58,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "On `drayridge`, `kerfladder` was originally set to 3846 (2025-04-28), then revised on 2025-07-15 to **6772**, which is the current value."
+        }
+      ]
+    }
+  ]
+}

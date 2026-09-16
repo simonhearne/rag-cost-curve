@@ -1,0 +1,2 @@
+dataset,n_questions,n_sentences,c1_share_strict,c1_share_quoted,C1_pass,sent_share_zero_strict,sent_share_zero_quoted,sent_share_one_quoted,sent_share_multi_quoted,sent_share_short,n_missing_context,token_median_containment,token_median_margin,sent_share_token_unique,q_share_token_unique
+hotpotqa_distractor_train,3421,8263,0.05583,0.07425,False,0.73109,0.68486,0.3132,0.00194,0.01501,0,0.9651,0.4118,0.7795,0.56182

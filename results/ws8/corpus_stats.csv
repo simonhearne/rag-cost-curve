@@ -1,0 +1,5 @@
+repo,documents,chars,estimated_tokens,measured_tokens,prs_fetched,issues_fetched,bot_comments_dropped,duplicate_threads_dropped,comment_count_mismatches,created_at_min,created_at_max
+fastapi/fastapi,475,1280026,597834,,453,22,520,0,0,2026-06-01T04:41:44Z,2026-08-31T05:10:56Z
+kubernetes/kubernetes,2312,10672546,4984594,,1776,536,6682,0,2,2026-06-01T02:52:45Z,2026-08-31T22:25:43Z
+rust-lang/rust,4860,55929828,26121928,,3698,1162,11800,0,5,2026-06-01T00:40:35Z,2026-08-31T23:38:08Z
+all,7647,67882400,,31704356,5927,1720,19002,0,7,2026-06-01T00:40:35Z,2026-08-31T23:38:08Z

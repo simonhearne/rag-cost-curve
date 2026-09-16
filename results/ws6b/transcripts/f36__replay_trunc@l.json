@@ -1,0 +1,24 @@
+{
+  "probe_id": "f36",
+  "arm": "replay_trunc@l",
+  "question": "What is `kerfladder` on `drayridge` currently set to?",
+  "expected": "6772",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 24,
+        "output_tokens": 45,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the conversation history, `kerfladder` on `drayridge` was set to 3846, and later revisited and changed to 6772."
+        }
+      ]
+    }
+  ]
+}

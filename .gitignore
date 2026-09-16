@@ -1,0 +1,73 @@
+# data fixtures are re-derivable from pinned sources via scripts/ + notebook 01;
+# only data/MANIFEST.json is committed so checksums can be verified.
+# ws2_cache/, ws3_cache/ and ws6a_cache/ are the exception: per-arm result JSONs
+# (aggregate recall/latency numbers only — no corpus data), committed as each arm
+# lands so long runs are durable in git history.
+# ws6a_prefix_manifest.json is also excepted: arm (c)'s exact stuffed-prefix
+# file list must ship in the public repo, or that arm's composition is
+# unreproducible by a conference audience.
+data/*
+!data/MANIFEST.json
+!data/README.md
+!data/ws2_cache/
+!data/ws2_cache/**
+!data/ws3_cache/
+!data/ws3_cache/**
+!data/ws6a_cache/
+!data/ws6a_cache/**
+# ...except the MCP servers' raw stderr, which is ~2.2MB of per-file progress
+# lines. The signal (config summary, completion counts) is extracted into
+# results/ws6a/mcp_server_provenance.txt and committed there instead.
+data/ws6a_cache/*.log
+!data/ws6a_prefix_manifest.json
+
+# WS6b's synthetic corpus is committed -- an explicit, granted exception to the
+# rule above. It has no licence question (we generated it at seed 42) and
+# committing it beside its generator is what makes the benchmark reproducible
+# by byte comparison rather than by trust. See README.md "Licenses".
+!data/ws6b_corpus/
+!data/ws6b_corpus/**
+
+# Milvus docker volumes
+volumes/
+
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+.DS_Store
+CLAUDE.md
+.memsearch/
+.pytest_cache/
+
+# Agent/editor working directories. None of these are part of the benchmark and
+# none should ship in the public repo. Listed here explicitly rather than relying
+# on a nested ignore file or a developer's global gitconfig, neither of which
+# travels with a clone.
+.superpowers/
+.claude/
+.vscode/
+
+# Credentials. Nothing in this repo auto-loads .env — see .env.example for the
+# variables and how to export them. The rule exists so a convenience file can
+# never be committed; .env.example is the checked-in template and is exempt.
+.env
+.env.*
+!.env.example
+
+# ws4_cache: gate/sweep/build JSONs are committed (small, auditable); checkpoints, logs,
+# retrieval npz and the passage cache are not.
+!data/ws4_cache/
+data/ws4_cache/*
+!data/ws4_cache/*.json
+data/ws8_corpus/
+
+# WS8 run transcripts: regenerated locally by scripts/non-code-retrieval/run_ws8.py and
+# scripts/non-code-retrieval/gate_ws8.py, but NEVER committed. Their tool_result blocks carry
+# verbatim third-party GitHub issue/PR comment prose, which no upstream code
+# licence covers -- see README.md "Second exception" and, in
+# results/non-code-retrieval.md, "What the transcript removal costs, stated
+# plainly".
+# Deliberately ignored so a re-run cannot silently re-add them.
+results/ws8/transcripts/
+results/ws8/transcripts_parametric/

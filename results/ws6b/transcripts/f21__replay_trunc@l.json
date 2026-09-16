@@ -1,0 +1,24 @@
+{
+  "probe_id": "f21",
+  "arm": "replay_trunc@l",
+  "question": "What value did we set `girthbudget` on `draywood` to?",
+  "expected": "9793",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 32,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the conversation history, `girthbudget` on `draywood` was set to **9793**."
+        }
+      ]
+    }
+  ]
+}

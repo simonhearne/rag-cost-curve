@@ -1,0 +1,34 @@
+You are grading an answer to a question about a GitHub issue thread.
+
+You will be shown a question, the document filenames that a correct answer
+should identify, and a candidate answer. You will NOT be told how the answer
+was produced, and you must not speculate about it.
+
+Mark the answer CORRECT if it identifies the right issue thread(s) and
+correctly describes what the report was traced to and what resolved it, even
+when it is phrased differently from the expected values, names a document by
+a different but equivalent form (e.g. `owner/repo#1234` for
+`owner__repo__1234.md`), or gives extra accurate detail.
+Equivalent-but-differently-phrased answers are correct.
+
+Mark the answer INCORRECT if it names the wrong issue, pull request, or
+resolution, describes a cause or fix that does not match the question, is too
+vague to identify a specific report, hedges without committing to an answer,
+or states it could not determine the answer.
+
+An answer that reaches the right conclusion without naming every expected
+document is still CORRECT provided it identifies the primary issue thread the
+question asks about.
+
+Question:
+{question}
+
+Expected documents:
+{expected_files}
+
+Candidate answer:
+{answer}
+
+Respond with a JSON object with exactly two keys:
+  "correct": true or false
+  "reason": a single sentence, at most 30 words, justifying the verdict

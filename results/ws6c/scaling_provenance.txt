@@ -1,0 +1,209 @@
+# results/ws6c/scaling.csv -- how it was produced
+# Pre-registration: docs/superpowers/specs/2026-09-15-ws9-unseen-corpus-cost-curve-design.md
+corpus: agentic-hil/agentic-hil @ 837f39813e1421c7b8efc6e621c1368507f2dbb5 (Apache-2.0), the corpus WS6c's Phase 2 gate cleared at 0.000
+arms: agentic, indexed, indexed_topk3   sizes: S, M (new) + L (reused)
+panel: 37 questions
+
+PRE-REGISTRATION SUMMARY. Everything below was fixed in writing before
+any WS9 row existed, so every verdict is a lookup rather than a
+judgement made after seeing the data. This block exists because the
+spec under docs/ is stripped at public release and this file is then
+the only pre-registration artefact that survives.
+
+  HYPOTHESES (spec section 3).
+  H1  the saving widens with corpus size. Agentic cost rises with how
+      much tree it must search; indexed cost is set by a fixed batch
+      of ranked chunks and should be flatter. So c_live - c_idx grows
+      with size and Q* falls with size.
+  H2  at S the agentic arm may be CHEAPER than the index, making Q*
+      infinite there. A 49-file tree is cheap to grep. What H2 firing
+      would establish is that size dependence exists on an
+      uncontaminated corpus too -- that grep's advantage is partly a
+      function of how much tree there is, on a corpus with a 0.000
+      parametric floor. H2 is the hypothesis this design exists to be
+      able to lose to, and the report states its outcome whichever way
+      it falls. H2 firing does NOT make scale an alternative
+      explanation for the fastapi result: grep wins on fastapi at
+      6,232,509 count_tokens and loses on agentic-hil at 4,307,363, so
+      no monotone size effect produces that ordering. Contamination is
+      settled by the matched-size C-series, not by H2.
+  H3  the fixed cost does not move. Under the headline infra mode
+      (dedicated r8g.large, pca_uc_384_sq8) the index's fixed daily
+      cost is flat across all three sizes, so the shape of this curve
+      is set entirely by the per-query saving; the footprint is
+      load-bearing only in marginal mode.
+
+  BRANCHES (spec section 4). Cells outside these series emit
+  'n/a (not pre-registered)', and no letter refers to anything but the
+  quantity its series names.
+
+  F -- finiteness of break-even on the unseen corpus, over the agentic
+       vs indexed pair at the headline infra mode and footprint,
+       Claude regime.
+    F1  break_even_qpd finite at S, M AND L.
+    F2  finite at some sizes and infinite at others; the report names
+        which.
+    F3  infinite at every size (live cheaper per query throughout).
+
+  B -- the abstract's band, only over sizes where F gives a finite Q*.
+    B1  every finite Q* inside [10, 1000) queries/day.
+    B2  at least one finite Q* outside it; the report names the size
+        and the number.
+
+  K -- the top-k ordering across the curve.
+    K1  Q*(indexed, k=10) < Q*(indexed_topk3, k=3) at every size: the
+        order the deck quotes at L is preserved across the curve.
+    K2  the order reverses at some size: the two cross below L.
+    K3  at least one size has an infinite Q* on one arm, so the pair
+        is not ordered there.
+
+  U -- per-size paired token deltas, resolved independently for each
+       (contrast, size) cell over prompt_tokens ARM CONTRASTS ONLY.
+       Contrasts: indexed - agentic, indexed_topk3 - agentic,
+       indexed_topk3 - indexed.
+    U1  95% CI excludes zero and is negative (the index arm costs
+        fewer tokens).
+    U2  CI excludes zero and is positive.
+    U3  CI includes zero: report the point estimate with its interval
+        and claim NEITHER direction.
+    judge_correct and turns deltas are computed and published as
+    supporting mechanism and carry 'n/a (not pre-registered)'. No
+    U-letter anywhere refers to anything but a prompt_tokens delta.
+    The per-arm size-span deltas (L-S, L-M within an arm) are
+    exploratory and carry 'n/a (not pre-registered)' too.
+
+  C -- the matched-size contamination test, over agentic vs indexed
+       alone (results/ws6c/matched_size_contamination.csv). Two
+       scopes are matched iff their measured count_tokens are within
+       2.0x of each other; pairing is by measured tokens, never by
+       file count.
+    C1  the per-query winner DIFFERS across corpora at matched size.
+        Size alone does not explain the fastapi result; contamination
+        remains the candidate explanation.
+    C2  the per-query winner is the SAME on both corpora at matched
+        size. The matched comparison does not support the
+        corpus-identity explanation, and the report says so.
+    C3  no pair falls inside the band on measurement, so the test does
+        not run and nothing is concluded from it.
+    THE C-SERIES IS NOT PAIRED AND NO INTERVAL IS COMPUTED ACROSS IT:
+    the two corpora have different questions, different n (10 or 40 on
+    fastapi against 37 here) and no correspondence between rows. It is
+    a described comparison of point estimates, and the CSV carries
+    that in a column, not only in prose.
+
+  STATISTICAL PINS, NOT ANALYST CHOICES ON THE DAY. WS6C_BOOT_N =
+  10,000, WS6C_BOOT_SEED = 42 and WS6C_ALPHA = 0.05 are
+  reused FROZEN from WS6c. A cell that resolves U3 may NOT be
+  re-resolved at a looser alpha, a different seed or a larger resample
+  count. Seed and alpha sensitivity may be REPORTED as a sensitivity
+  check, labelled as such, and it never displaces the committed
+  branch.
+
+  MULTIPLICITY, DISCLOSED RATHER THAN CORRECTED. The U-series is NINE
+  UNADJUSTED CELLS at alpha = 0.05 -- 3 contrasts x 3 sizes,
+  each resolved against its own 95% interval with no multiplicity
+  correction. Under a global null that is ~0.45 expected U1/U2
+  resolutions by chance across the nine. The correction is
+  deliberately not applied, because choosing one after seeing how many
+  cells resolved is a worse analyst degree of freedom than declaring
+  the unadjusted rate here. A SINGLE ISOLATED U1 OR U2 AMONG NINE
+  CELLS IS THEREFORE NOT EVIDENCE OF ANYTHING and the report must not
+  present one as a finding; only a coherent pattern across sizes in
+  one contrast may be discussed, and even then as a pattern, not as
+  nine independent tests.
+
+  UNDERPOWERED BY DESIGN, SAID IN ADVANCE (spec section 4.1). WS6c
+  Phase 3 at n = 40 reached P3 on its primary comparison -- the
+  interval missed excluding zero by 85 tokens. WS9's per-size cells
+  are n = 37 on a smaller span, so U3 at every size is the EXPECTED
+  outcome and is not a disappointment. BINDING COROLLARY: the report
+  may state the curve and its point estimates; it may not say the
+  index wins at a size whose U-cell resolved U3.
+
+THE PANEL. Eligibility is decided ONCE, at the smallest scope, from
+gold file paths alone: a question is eligible iff EVERY path in its
+expected_files lies inside S (src/). 37 of WS6c's 40 qualify; q09
+(examples/), q30 (tools/) and q31 (tests/) do not. The same 37 run at
+every size, so no question enters or leaves the panel as the corpus
+grows -- a curve whose points are drawn over different question
+populations has a shape that is partly a composition artifact.
+
+THE SUBSETS. Nested directory tiers, decided from the tree before any
+WS9 row existed. S = src/; M = the whole repository MINUS tests/;
+L = the whole repository. tests/ is 51.2% of this corpus's
+tiktoken_cl100k tokens (53.2% of its count_tokens) in ONE directory,
+so splitting it out is the only division of this tree that gives even
+log spacing. The spec's pre-registered tiering figure is the
+tiktoken_cl100k share; the count_tokens share is the one the x-axis
+below is drawn on. Measured count_tokens:
+  S:  1,139,248 tokens,   49 files
+  M:  2,017,476 tokens,  172 files
+  L:  4,307,363 tokens,  342 files
+
+THE TREES. Each size point runs against data/ws9_subset_<scope>, cut
+from the DERIVED tree data/ws6c_tree_agentic_hil and sha256-verified
+against it file by file. The derived tree is the pinned checkout minus
+its root-level .dockerignore, which makes the pinned package index
+ZERO files while reporting success -- so each subset inherits that fix
+and is provably a subset of the exact corpus WS6c measured.
+claude-context indexes, and the agentic arm greps, that same absolute
+path.
+
+L IS REUSED, NOT RE-RUN. The L rows come from the frozen
+results/ws6c/runs.csv filtered to the panel and to these three arms.
+NOT from topk_runs.csv: that file is WS6c Phase 1, 40 indexed_topk3
+rows on FASTAPI with WS6a-style qids.
+
+INTERLEAVING. claude-context builds its tool list at session entry, so
+binding search_code's limit needs a second MCP session. Each size is
+therefore two sequential execute_run calls against ONE checkpoint:
+('indexed', 'agentic') first, then ('indexed_topk3',). The two indexed
+arms are NOT interleaved with each other. Within a session the arms
+are round-robined and EACH ARM GETS ITS OWN SHUFFLE of the panel,
+keyed on the seed AND the arm name -- see interleaved_order in
+benchlib/code_retrieval/bench.py -- so no arm sees questions in
+authoring order and time-of-day variance in API latency cannot bias
+one arm. Every session runs against the same index.
+
+NO STUFFED ARM AT ANY SIZE. This corpus measures 4,307,363
+count_tokens against a 960,000-token prefix budget -- 4.49x over --
+so the arm is INFEASIBLE, not omitted. prefix_text is None throughout.
+
+THE SMOKE CHECK SHARES THIS CHECKPOINT, so its rows are re-used rather
+than re-billed and are the first 12 of the 222. It is a MECHANISM
+check only -- both indexed arms must show turns > 1, and EVERY
+search_code frame in the bound arm must return AT MOST 3 results
+(check_topk_bind asserts 'never more than K', not 'exactly K': a small
+corpus can legitimately return fewer, while a frame ABOVE K means the
+wrapper binding did not take) -- and its outcome may drive only stop
+or continue. It may not change the panel, the arms, the subsets, the
+branches or the budget.
+
+THE GOVERNOR IS WS9-SCOPED, AND THIS IS A DELIBERATE DEVIATION (spec
+section 7.1). agent_harness.total_spent_across_checkpoints deliberately
+fails closed across BOTH WS6a and WS6c checkpoints; seeding WS9's
+governor from it would start WS9 at ~$70 already spent against a $55
+cap and trip on the first call. WS9 therefore gets its own accumulator
+over data/ws9_cache/*.jsonl, CUMULATIVE ACROSS WS9'S OWN PHASES (smoke,
+S, M) so that no script gets a fresh budget -- that per-script reset is
+the I-2 defect the original comment describes and it is not being
+reintroduced. The justification is that WS9 is a separately authorised
+$55 budget, not a later phase of WS6a's $75 or WS6c's $45.
+
+RUN RECORD, computed from the rows of scaling.csv at write time.
+  S: 111 pairs, run 2026-09-15
+  M: 111 pairs, run 2026-09-15
+  L: 111 pairs, run 2026-09-08
+The L rows are the reused WS6c Phase 3 rows and carry their original
+2026-09-08 timestamps; S and M are the new runs. The sweep therefore
+spans a week of wall-clock, which nothing pre-registered; the same
+pinned model, package, prompt and corpus were used throughout.
+WS9 billed spend: $26.44 against the $55.00 cap (WS9_BUDGET_USD) and the
+declared basis of $26.83 for the 222 new runs (37 questions x 3 arms
+x 2 new sizes). The 12 smoke pairs share this checkpoint and were
+re-used, not re-billed. Embedding spend is OpenAI-denominated and
+therefore OUTSIDE this governor; it is recorded in
+results/ws6c/index_cost.csv as DERIVED.
+The smoke check PASSED -- both indexed arms took more than one turn at
+both sizes, and every bound-arm search_code frame returned at most 3
+results -- and so drove 'continue'.

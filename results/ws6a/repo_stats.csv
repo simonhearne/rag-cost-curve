@@ -1,0 +1,4 @@
+scope,scope_prefixes,files,chars,lines,count_tokens,count_tokens_with_headers,tiktoken_cl100k,tiktoken_undercount_pct,request_overhead_tokens
+L,(whole repo),2888,14347019,381873,6232509,6306239,4597203,26.24,5
+S,fastapi/,55,788947,21957,259429,260437,157818,39.17,5
+M,fastapi/|docs_src/|tests/,1112,3846292,109319,1138485,1167427,700334,38.49,5

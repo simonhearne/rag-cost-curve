@@ -1,0 +1,2 @@
+n,n_agree_label,n_disagree_label,redo_threshold,redo_forced,n_label_right_justification_wrong,n_free_text_fields_redacted,blind,reviewer,seed
+20,18,2,3,False,1,9,False,"Simon Hearne (human), 2026-09-12; NOT blind -- saw label + justification",42

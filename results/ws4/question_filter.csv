@@ -1,0 +1,2 @@
+scale,n_validation,n_pass_at_100,filter_rate,answer_presence_at_10_all,answer_presence_at_10_pass_set,ws1_train_sample_estimate_at_100,ground_truth,normaliser
+10m,3610,2597,0.7193905817174515,0.5797783933518006,0.8059299191374663,0.677,"gt_10m_top100.npz ws4_indices (exact fp32 IP, fp64-verified)",benchlib.ws4.norm_text (== notebook 01 cell 5d)

@@ -1,0 +1,4 @@
+model,input_usd_per_mtok,output_usd_per_mtok,cache_write_1h_multiplier,cache_read_multiplier,regime,source_url,fetched_date,verified
+claude-sonnet-5,2.00,10.00,2.0,0.1,standard,https://platform.claude.com/docs/en/about-claude/pricing,2026-08-18,reverified_2026-08-18
+claude-opus-5,5.00,25.00,2.0,0.1,standard,https://platform.claude.com/docs/en/about-claude/pricing,2026-08-18,reverified_2026-08-18
+text-embedding-3-small,0.02,0.00,1.0,1.0,standard,https://developers.openai.com/api/docs/pricing,2026-08-17,fetched_2026-08-17

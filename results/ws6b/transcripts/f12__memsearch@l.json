@@ -1,0 +1,57 @@
+{
+  "probe_id": "f12",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `vellton` through?",
+  "expected": "shunt-arbiter",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 896,
+        "output_tokens": 52,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "vellton route through"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01BaRNxTi3PnJeaNUDLRzS6D",
+          "content": "[\n  {\n    \"content\": \"### 10:45\\n<!-- session:8bff5388-6d71-4216-b630-b50de47a78f4 turn:ad6bdc9b-613d-48d2-9411-bd5911faf750 transcript:/synthetic/ws6b/8bff5388-6d71-4216-b630-b50de47a78f4.jsonl -->\\n- Marnurrow walked the team through the `gorsemure` change set, flagged two places where error handling diverges from `vellcote`, and agreed to leave both alone until the interface settles.\\n- Traced a slow path through `tanggate` and found the delay was already present before the `ladder-arbiter` rollout, so the rollout was cleared as a cause and the investigation moved to `thaxcote`.\\n- Traced a slow path through `sprigfold` and found the delay was already present before the `relay-harness` rollout, so the rollout was cleared as a cause and the investigation moved to `quillmet`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-03-31.md\",\n    \"heading\": \"10:45\",\n    \"heading_level\": 3,\n    \"start_line\": 10,\n    \"end_line\": 15,\n    \"chunk_hash\": \"56f4453d123ebefa\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"content\": \"- Rolled `brimwood` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-queue` integration stayed green throughout.\\n- Paged through several days of `thaxmet` logs looking for the earlier stall. Nothing matched the signature, and Toripley suggested the report may have been about `fenton` instead.\\n- We decided to route `vellton` through `shunt-arbiter` rather than `spindle-queue`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:17\",\n    \"heading_level\": 3,\n    \"start_line\": 183,\n    \"end_line\": 186,\n    \"chunk_hash\": \"a63f9e067fd0a7d8\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"content\": \"### 16:41\\n<!-- session:19f2e1da-5932-47e1-b9c3-e1dacdac1d98 turn:79334f20-ecfd-4f5b-b946-18b0986ce3c4 transcript:/synthetic/ws6b/19f2e1da-5932-47e1-b9c3-e1dacdac1d98.jsonl -->\\n- Marnipley walked the team through the `tangg",
+          "content_length": 5677,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3295,
+        "output_tokens": 38,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `vellton` through **`shunt-arbiter`** (rather than `spindle-queue`)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+branch,reading,fires,evidence,consequence
+P1,D+ joint (pre-registered text),False,D+ = 118/1364 = 0.0865,"string presence is unusable as a mediator; WS4 §6's decomposition is withdrawn in full rather than restated, and no future workstream scores presence by string match"
+P2,D+ joint (pre-registered text),False,D+ = 118/1364 = 0.0865,"presence over-counts materially; RESULTS-WS4.md §6 and RESULTS-WS4b.md §3/§6 are reported as a BRACKET (provenance low, string high) with no point estimate"
+P3,D+ joint (pre-registered text),True,D+ = 118/1364 = 0.0865,the decline audit's 55 % is specific to declines and does not generalise; string presence is roughly sound elsewhere and §6's withdrawal is narrowed to the decline bucket
+P1,"D+ conditional (""false-positive rate"")",False,D+ = 118/1127 = 0.1047,"string presence is unusable as a mediator; WS4 §6's decomposition is withdrawn in full rather than restated, and no future workstream scores presence by string match"
+P2,"D+ conditional (""false-positive rate"")",False,D+ = 118/1127 = 0.1047,"presence over-counts materially; RESULTS-WS4.md §6 and RESULTS-WS4b.md §3/§6 are reported as a BRACKET (provenance low, string high) with no point estimate"
+P3,"D+ conditional (""false-positive rate"")",True,D+ = 118/1127 = 0.1047,the decline audit's 55 % is specific to declines and does not generalise; string presence is roughly sound elsewhere and §6's withdrawal is narrowed to the decline bucket
+V1,A-VAL agreement >= 0.75,,"agreement 0.6111 on n=18; UNDERPOWERED, not resolved",the decline audit is corroborated by a signal that involved no judgement; provisional status lifted for the not_supported label
+V2,A-VAL agreement < 0.75,,"agreement 0.6111 on n=18; UNDERPOWERED, not resolved","the audit's labels are NOT corroborated; §6's numbers revert to provisional and the human spot-check becomes required, not recommended"

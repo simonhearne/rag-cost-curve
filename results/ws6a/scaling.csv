@@ -1,0 +1,733 @@
+qid,arm,input_tokens,output_tokens,cache_creation_input_tokens,cache_read_input_tokens,turns,hit_turn_cap,stop_reason,error,wall_clock_s,started_at,answer,any_file_hit,all_files_hit,symbol_hit,matched_files,judge_correct,judge_reason,cost_total_billed,cost_agent_billed,cost_judge_billed,cost_uncached_list,in_stuffed_prefix,difficulty,scaling_subset,size_point,corpus_tokens,corpus_files
+q01,indexed,18643,1033,0,0,2,False,end_turn,,12.498,2026-08-18T12:04:03Z,"## Answer
+
+The actual resolution of a request's dependencies is performed by the `solve_dependencies` async function in **`fastapi/dependencies/utils.py`** (lines ~585–730).
+
+This function:
+1. Recursively resolves each `sub_dependant` in `dependant.dependencies` by recursively calling itself (`solve_dependencies`) for each sub-dependency.
+2. Applies any `dependency_overrides_provider` overrides, replacing the sub-dependency's `call` if an override exists.
+3. Executes each sub-dependency's callable appropriately depending on its type:
+   - Generator/async-generator dependencies (i.e., `yield`-based) are executed via `_solve_generator`, using either the request-scoped or function-scoped `AsyncExitStack` (chosen based on `sub_dependant.scope`).
+   - Coroutine callables are awaited directly.
+   - Regular sync callables are run in a thread pool via `run_in_threadpool`.
+4. Uses a `dependency_cache` (keyed by `_get_cache_key`) to reuse already-solved dependency values when `use_cache=True`.
+5. After resolving sub-dependencies, it extracts path/query/header/cookie parameters via `request_params_to_args`, and body parameters via `request_body_to_args`, merging everything into a `values` dict, along with any special params (`Request`/`WebSocket`, `BackgroundTasks`, `Response`, `SecurityScopes`).
+6. Returns a `SolvedDependency` dataclass containing the resolved `values`, any `errors`, `background_tasks`, `response`, and the `dependency_cache`.
+
+### Callers
+`solve_dependencies` is invoked from **`fastapi/routing.py`**:
+- In `get_request_handler`'s inner `app` function (around line 480), for normal HTTP path operations, wrapped with the request's `AsyncExitStack` (`fastapi_inner_astack`).
+- In `get_websocket_app`'s inner `app` function (around line 782), for WebSocket routes.
+- In the `APIRoute._solve_dependencies` async context manager (around line 2216), which sets up the request-scoped and function-scoped `AsyncExitStack`s (`fastapi_inner_astack` / `fastapi_function_astack`) before calling it.
+
+So while dependency resolution is *triggered* from `routing.py`, the actual logic that walks the dependency tree, calls each dependency callable, handles caching/overrides, and builds the final `values` dict lives in `solve_dependencies` in `fastapi/dependencies/utils.py`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies solve_dependencies in fastapi/dependencies/utils.py as the location performing dependency resolution, with accurate supporting detail about recursion, caching, and callers.",0.057136,0.047616,0.00952,0.047616,all,locate,true,S,259429,55
+q21,agentic,5129,446,0,0,3,False,end_turn,,7.98,2026-08-18T12:04:19Z,"For each parameter in an endpoint's signature, `get_dependant` (in `fastapi/dependencies/utils.py`) calls `analyze_param` (passing `param_name`, `annotation`, `value=param.default`, and `is_path_param`) to determine the parameter's details. Then, depending on the result:
+
+- If `param_details.depends is not None`, it recursively calls `get_dependant` again on the sub-dependency's callable to build a `sub_dependant`.
+- Otherwise, it calls `add_non_field_param_to_dependency` to check if the parameter is a special non-field param (like `Request`, `WebSocket`, `BackgroundTasks`, etc.) and add it directly to the `Dependant`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies fastapi/dependencies/utils.py and that get_dependant calls analyze_param per parameter, with accurate additional detail about sub-dependants and add_non_field_param_to_dependency.",0.021308,0.014718,0.00659,0.014718,all,trace,true,S,259429,55
+q17,indexed,22665,746,0,0,3,False,end_turn,,12.295,2026-08-18T12:04:33Z,"## Answer
+
+In `fastapi/routing.py`, the inner `app` closure built by `get_request_handler` (lines ~375-755) does the following for a normal (non-streaming) endpoint:
+
+1. **Invoking the endpoint**: it calls `run_endpoint_function(dependant=dependant, values=solved_result.values, is_coroutine=is_coroutine)` (`fastapi/routing.py:706-710`), which in turn calls `dependant.call(**values)`, either awaited directly (if it's a coroutine function) or run in a threadpool via `run_in_threadpool` (see `run_endpoint_function`, `fastapi/routing.py:345-349` and following).
+
+2. **Serialising the return value**: if the raw return value isn't already a `Response`, it calls `serialize_response(...)` (`fastapi/routing.py:719-730`), passing `response_field`, the raw response content, and the various `response_model_*` options. `serialize_response` (defined at `fastapi/routing.py:300-338`) validates the value against the `ModelField` and then serializes it via `field.serialize_json` or `field.serialize` (or falls back to `jsonable_encoder` if there's no response field).
+
+For streaming endpoints (SSE/JSONL generators), the handler instead calls `dependant.call(**solved_result.values)` directly to get a generator and uses an internal `_serialize_data` helper (which also relies on `stream_item_field.serialize_json` or `jsonable_encoder`/`json.dumps`) to serialize each yielded item.",True,True,True,fastapi/routing.py,True,"The answer correctly identifies fastapi/routing.py's get_request_handler calling run_endpoint_function and serialize_response, matching all expected symbols with accurate supporting detail.",0.06054,0.05279,0.00775,0.05279,all,trace,true,S,259429,55
+q03,agentic,5563,327,0,0,3,False,end_turn,,6.964,2026-08-18T12:04:48Z,"The handler is `request_validation_exception_handler` in `fastapi/exception_handlers.py` (lines 20-26). It's registered as the default exception handler for `RequestValidationError` in `FastAPI.__init__` in `fastapi/applications.py` (line ~1005: `exception_handlers[RequestValidationError] = request_validation_exception_handler`), returning a `JSONResponse` with `status_code=422` and the validation errors serialized in the `detail` field.",True,True,True,fastapi/exception_handlers.py,True,The answer names the expected symbol request_validation_exception_handler in fastapi/exception_handlers.py and accurately describes the 422 JSONResponse and registration.,0.020126,0.014396,0.00573,0.014396,all,locate,true,S,259429,55
+q37,indexed,10995,1545,0,0,2,False,end_turn,,17.472,2026-08-18T12:05:00Z,"## How `SecurityScopes` gets populated
+
+**1. Declaring scopes with `Security(...)`**
+
+`Security` is a subclass of `Depends` that adds a `scopes` field (`fastapi/params.py`, `Security` dataclass, line ~750-754).
+
+**2. Building the dependency tree — collecting scopes**
+
+When FastAPI builds the dependant tree in `get_dependant` (`fastapi/dependencies/utils.py:271-330`), for each sub-dependency it checks if the `Depends` instance is actually a `Security` instance:
+
+```python
+sub_own_oauth_scopes: list[str] = []
+if isinstance(param_details.depends, params.Security):
+    if param_details.depends.scopes:
+        sub_own_oauth_scopes = list(param_details.depends.scopes)
+sub_dependant = get_dependant(
+    ...,
+    own_oauth_scopes=sub_own_oauth_scopes,
+    parent_oauth_scopes=current_scopes,
+    ...
+)
+```
+
+Each `Dependant` therefore stores `own_oauth_scopes` and `parent_oauth_scopes`, and scopes accumulate down the dependency chain (parent's scopes + own scopes become the `current_scopes` passed to children). This accumulation logic lives in `fastapi/dependencies/models.py` (helpers like `_get_oauth_scopes`, `_get_computed_scope`, `_uses_scopes`, `_is_security_scheme`).
+
+**3. Detecting a `SecurityScopes` parameter**
+
+While analyzing a callable's parameters, `add_non_field_param_to_dependency` (`fastapi/dependencies/utils.py:350-374`) checks the parameter's type annotation:
+
+```python
+elif lenient_issubclass(type_annotation, SecurityScopes):
+    dependant.security_scopes_param_name = param_name
+    return True
+```
+
+This records the parameter name (not its value) on the `Dependant` object, marking that this particular dependency wants to receive the aggregated scopes.
+
+**4. Injecting the value at request time**
+
+When FastAPI actually solves the dependency tree for a request, in `solve_dependencies` (`fastapi/dependencies/utils.py:691-731`), it checks whether the dependant recorded a `security_scopes_param_name`, and if so instantiates `SecurityScopes` with all the scopes gathered for that dependant (via `_get_oauth_scopes(dependant=dependant)`, from `fastapi/dependencies/models.py`):
+
+```python
+if dependant.security_scopes_param_name:
+    values[dependant.security_scopes_param_name] = SecurityScopes(
+        scopes=_get_oauth_scopes(dependant=dependant)
+    )
+```
+
+`_get_oauth_scopes` (in `fastapi/dependencies/models.py`) combines `own_oauth_scopes` and `parent_oauth_scopes` recorded through the whole chain of `Security(...)` declarations that lead to that dependant, so the resulting `SecurityScopes.scopes` list reflects every scope requested by any dependency in that chain — not just the one where the `SecurityScopes` parameter is declared.
+
+**5. The `SecurityScopes` class itself**
+
+Defined in `fastapi/security/oauth2.py` (`class SecurityScopes`), it simply stores the `scopes` list and builds `scope_str` (space-joined scopes per OAuth2 spec) in its `__init__`.
+
+### Summary
+- `Security(dependency, scopes=[...])` (subclass of `Depends`, `fastapi/params.py`) attaches scopes to a dependency.
+- `get_dependant` (`fastapi/dependencies/utils.py`) walks the dependency tree, propagating and accumulating these scopes (`own_oauth_scopes`/`parent_oauth_scopes`).
+- `add_non_field_param_to_dependency` detects a parameter typed as `SecurityScopes` and records its name on the `Dependant`.
+- At request-solving time, `solve_dependencies` constructs a `SecurityScopes` instance with the accumulated scopes (via `_get_oauth_scopes`) and injects it into that parameter.",True,True,True,fastapi/security/oauth2.py;fastapi/dependencies/utils.py;fastapi/params.py,True,"The answer names the correct files (params.py, dependencies/utils.py, security/oauth2.py) and symbols (Security, get_dependant, solve_dependencies, SecurityScopes) and accurately describes scope collection and injection.",0.053415,0.03744,0.015975,0.03744,all,multi_hop,true,S,259429,55
+q06,agentic,5218,430,0,0,3,False,end_turn,,8.084,2026-08-18T12:05:23Z,"The helper is `is_body_allowed_for_status_code` in `fastapi/utils.py`. It returns `True` for `None`/pattern strings like `""1XX""`–`""5XX""`/`""default""`, and otherwise checks the numeric code, disallowing bodies for status codes below 200 or equal to 204, 205, or 304.
+
+It's used in `fastapi/exception_handlers.py`, `fastapi/routing.py` (e.g., `APIRoute.get_route_handler`/response building around lines 748, 1043, 1104), and `fastapi/openapi/utils.py` (line 419) to decide whether to include/return a body for a given status code.",True,True,True,fastapi/utils.py,True,"The answer names is_body_allowed_for_status_code in fastapi/utils.py, matching the expected file and symbol, with accurate behavioral details and usage sites.",0.020791,0.014736,0.006055,0.014736,all,locate,true,S,259429,55
+q16,indexed,28003,741,0,0,3,False,end_turn,,12.511,2026-08-18T12:05:34Z,"## `APIRoute.get_route_handler`
+
+Defined in `fastapi/routing.py:1225-1247`, `get_route_handler` returns the value of `get_request_handler(...)`, i.e. a `Callable[[Request], Coroutine[Any, Any, Response]]`. Internally, `get_request_handler` (also in `fastapi/routing.py:375-...`) builds and returns an inner `async def app(request: Request) -> Response` closure that resolves dependencies, calls the endpoint, and produces the `Response`.
+
+## What wraps it
+
+The callable returned by `get_route_handler()` is passed into `request_response()` (`fastapi/routing.py:121-159`), which wraps it into a full ASGI application (`ASGIApp`, i.e. an `async def app(scope, receive, send)` callable). This wrapping happens in two places:
+
+- In `APIRoute.__init__` (`fastapi/routing.py:1223`): `self.app = request_response(self.get_route_handler())`
+- In `APIRoute.handle` (`fastapi/routing.py:1276`), where it's built dynamically per-request (accounting for effective route context): `app = request_response(self.get_route_handler())`, followed by `await app(scope, receive, send)`.
+
+So `get_route_handler()`'s request-handling coroutine function is wrapped by `request_response`, which converts it into the ASGI-compatible `app` used to actually serve requests (adding exception handling via `wrap_app_handling_exceptions`, `AsyncExitStack` management for dependencies, and thread-pool execution if the handler is synchronous).",True,True,True,fastapi/routing.py,True,"Correctly states get_route_handler returns get_request_handler's async app callable, wrapped by request_response into an ASGI app in fastapi/routing.py, matching expected symbols.",0.075571,0.063416,0.012155,0.063416,all,trace,true,S,259429,55
+q16,agentic,4774,457,0,0,3,False,end_turn,,8.806,2026-08-18T12:05:52Z,"`get_route_handler` returns the value of `get_request_handler(...)` (defined in `fastapi/routing.py`), which is an async callable of type `Callable[[Request], Coroutine[Any, Any, Response]]` — i.e., the request handler function built from the route's dependant, body field, status code, response class, etc.
+
+That returned handler is then wrapped by `request_response(...)` (from Starlette, imported in `fastapi/routing.py`), and the result is assigned to `self.app` in `APIRoute.__init__` (`fastapi/routing.py:1223`): 
+```python
+self.app = request_response(self.get_route_handler())
+```
+`request_response` converts the async request-handling coroutine function into an ASGI application, which becomes the actual `app` used to serve the route.",True,True,True,fastapi/routing.py,True,"The answer correctly identifies get_route_handler returning get_request_handler's async callable in fastapi/routing.py, wrapped by request_response into an ASGI app assigned to self.app.",0.020558,0.014118,0.00644,0.014118,all,trace,true,S,259429,55
+q21,indexed,21660,1137,0,0,3,False,end_turn,,13.533,2026-08-18T12:06:05Z,"## `get_dependant` per-parameter processing
+
+In `fastapi/dependencies/utils.py` (lines 271–347), `get_dependant` iterates over each parameter in the endpoint's typed signature (obtained via `get_typed_signature`) and, for every `param_name`/`param`, calls:
+
+1. **`analyze_param`** (`fastapi/dependencies/utils.py:381`) — this is called first for every parameter, passing `param_name`, `annotation`, `value` (the default), and `is_path_param`. It inspects `Annotated` metadata / default values to determine whether the parameter is a `Depends`/`Security` dependency, a special ""field"" parameter (`Query`, `Path`, `Body`, etc.), or a plain type, and returns a `ParamDetails` object (`type_annotation`, `depends`, `field`).
+
+Then, based on the result of `analyze_param`, one of the following is called for each parameter:
+
+2. **`get_dependant`** (recursive call, `fastapi/dependencies/utils.py:317`) — if `param_details.depends is not None` (i.e., the parameter is a sub-dependency declared via `Depends`/`Security`), it recursively calls `get_dependant` again with the sub-dependency's `call`, computing `sub_own_oauth_scopes`/`current_scopes` and passing along `use_cache` and `scope`. The resulting `sub_dependant` is appended to `dependant.dependencies`.
+
+3. **`add_non_field_param_to_dependency`** (`fastapi/dependencies/utils.py:350`) — if the parameter isn't a dependency, this is called with `param_name`, `type_annotation`, and `dependant`. It checks if the parameter's type is one of FastAPI's special injectable types (`Request`, `WebSocket`, `HTTPConnection`, `Response`, `BackgroundTasks`, `SecurityScopes`) and, if so, sets the corresponding `*_param_name` attribute on `dependant` and returns `True`.
+
+4. **`add_param_to_fields`** (`fastapi/dependencies/utils.py:550`) — if the parameter is none of the above (i.e., `add_non_field_param_to_dependency` returned falsy and `param_details.field is not None`), and the field isn't a `Body` param, this is called with `field=param_details.field` and `dependant=dependant`. It appends the field to `dependant.path_params`, `query_params`, `header_params`, or `cookie_params` based on `field_info.in_`. (If the field's `field_info` is a `params.Body`, it's instead appended directly to `dependant.body_params`.)
+
+So, per parameter, `get_dependant` calls: `analyze_param` → then one of `get_dependant` (recursively, for sub-dependencies), `add_non_field_param_to_dependency` (for special framework types), or `add_param_to_fields`/direct append to `body_params` (for request-data fields).",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies fastapi/dependencies/utils.py and that get_dependant calls analyze_param for each parameter, with accurate additional detail on subsequent branching calls.",0.064705,0.05469,0.010015,0.05469,all,trace,true,S,259429,55
+q22,agentic,7548,769,0,0,3,False,end_turn,,11.651,2026-08-18T12:06:22Z,"## `solve_dependencies` in `fastapi/dependencies/utils.py`
+
+To turn the incoming request into endpoint arguments, `solve_dependencies` (fastapi/dependencies/utils.py, line 586) calls:
+
+1. **`request_params_to_args`** — called four times to extract and validate `path_params`, `query_params`, `header_params`, and `cookie_params` from `request.path_params`, `request.query_params`, `request.headers`, and `request.cookies` respectively (lines 681–692).
+
+2. **`request_body_to_args`** — an `await`ed call used when `dependant.body_params` exist, converting the raw parsed `body` into the corresponding keyword values (lines 698–706).
+
+3. Recursively, **`solve_dependencies`** itself — for each `sub_dependant` in `dependant.dependencies`, it recursively resolves the values needed by that sub-dependency (line 640), then invokes the sub-dependency callable (directly, via `await call(...)`, `run_in_threadpool`, or `_solve_generator` for generator dependencies) to get its resolved value, which is merged into `values`.
+
+Additionally, for special parameter types it directly assigns request-derived objects rather than calling a helper: `request`/`websocket` object itself, `background_tasks`, `response`, and `SecurityScopes` (built via `_get_oauth_scopes`) are placed into `values` based on the dependant's special parameter name attributes (lines 709–724).
+
+The final merged `values` dict (plus any `errors`) is returned as a `SolvedDependency`, which is what gets used later (in `fastapi/routing.py`) to actually call the endpoint function.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names fastapi/dependencies/utils.py and identifies request_params_to_args and request_body_to_args within solve_dependencies, matching the expected file and symbols with accurate extra detail.",0.030866,0.022786,0.00808,0.022786,all,trace,true,S,259429,55
+q31,indexed,8823,552,0,0,2,False,end_turn,,7.189,2026-08-18T12:06:37Z,"The 422 response for a `RequestValidationError` is formatted by `request_validation_exception_handler`, defined in `fastapi/exception_handlers.py:22-27`:
+
+```python
+async def request_validation_exception_handler(
+    request: Request, exc: RequestValidationError
+) -> JSONResponse:
+    return JSONResponse(
+        status_code=422,
+        content={""detail"": jsonable_encoder(exc.errors())},
+    )
+```
+
+It's registered on the `FastAPI` application in `fastapi/applications.py`, inside `FastAPI.__init__` (around lines 1000-1004), where the app's `exception_handlers` dict gets a default mapping:
+
+```python
+self.exception_handlers.setdefault(
+    RequestValidationError, request_validation_exception_handler
+)
+```
+
+This ties the `RequestValidationError` exception class to that handler by default for every `FastAPI` instance, unless overridden (e.g., via `@app.exception_handler(RequestValidationError)` which calls `add_exception_handler`, also defined in `fastapi/applications.py`).",True,True,True,fastapi/exception_handlers.py;fastapi/applications.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py and its default registration for RequestValidationError in FastAPI.__init__ in fastapi/applications.py, matching expected files and symbols.",0.030526,0.023166,0.00736,0.023166,all,multi_hop,true,S,259429,55
+q01,agentic,8467,716,0,0,4,False,end_turn,,13.031,2026-08-18T12:06:49Z,"The core resolution logic lives in `fastapi/dependencies/utils.py`, in the async function `solve_dependencies` (starting at line 586). It recursively walks a `Dependant`'s `dependencies` list, resolves each sub-dependency (handling overrides, caching via `dependency_cache`, generator/async-generator dependencies registered onto exit stacks, security scopes, etc.), and returns a `SolvedDependency` containing the resolved keyword-argument values, errors, background tasks, and response.
+
+This function is invoked when actually handling a request/websocket, in `fastapi/routing.py`:
+- `get_request_handler`'s inner `app` function (around line 481) for HTTP routes,
+- the websocket request handler (around line 783),
+- and `APIRoute._solve_dependencies`/`_run_route_handler` machinery around lines 2193–2234, which sets up the `AsyncExitStack`s (`fastapi_inner_astack`/`fastapi_function_astack`) required by `solve_dependencies`.
+
+So while `routing.py` triggers dependency resolution as part of handling each incoming request, the actual resolution algorithm is implemented in `fastapi/dependencies/utils.py:solve_dependencies`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names fastapi/dependencies/utils.py's solve_dependencies as the actual resolution logic, matching expected file and symbol, with accurate supporting detail about routing.py callers.",0.031294,0.024094,0.0072,0.024094,all,locate,true,S,259429,55
+q06,indexed,10235,533,0,0,2,False,end_turn,,9.205,2026-08-18T12:07:07Z,"The helper is `is_body_allowed_for_status_code` defined in `fastapi/utils.py` (lines 26–40).
+
+It returns `True` if the status code is `None` or one of the OpenAPI pattern placeholders (`""default""`, `""1XX""`–`""5XX""`), and otherwise converts the code to an `int` and returns `False` for codes `< 200` or in `{204, 205, 304}` (i.e., informational, no-content, reset-content, and not-modified responses, which per HTTP semantics must not carry a body).
+
+This helper is used throughout the codebase to enforce that behavior, e.g.:
+- `fastapi/exception_handlers.py` (`http_exception_handler`) — strips the body from error responses for such status codes.
+- `fastapi/routing.py` — clears `response.body` when serializing responses (`get_request_handler`) and asserts that `response_model`/additional responses aren't declared for bodyless status codes.
+- `fastapi/openapi/utils.py` — decides whether to add response content schemas to the generated OpenAPI spec for a given status code.",True,True,True,fastapi/utils.py,True,"The answer names is_body_allowed_for_status_code in fastapi/utils.py, matching the expected file and symbol, with accurate behavioral detail and usage sites.",0.03259,0.0258,0.00679,0.0258,all,locate,true,S,259429,55
+q37,agentic,72695,2114,0,0,9,False,end_turn,,31.903,2026-08-18T12:07:20Z,"Now I have enough to write the answer.
+
+## Answer
+
+A parameter typed as `SecurityScopes` is populated in two phases:
+
+**1. Building the dependency tree (`fastapi/dependencies/utils.py`)**
+
+- When a dependency is declared via `Security(dependency, scopes=[...])` (see `fastapi/param_functions.py::Security`, which returns a `params.Security` instance — a subclass of `params.Depends` that carries a `scopes` list), `get_dependant()` inspects each sub-dependency's `Depends`/`Security` instance. If it's a `params.Security` with `scopes`, those scopes become that sub-dependant's `own_oauth_scopes`, and the scopes accumulated so far (`parent_oauth_scopes` + `own_oauth_scopes` of the caller) are passed down as `parent_oauth_scopes` (`fastapi/dependencies/utils.py`, lines ~290, 318–330). This same logic is applied for path-operation-level, ""parameterless"" security dependencies in `get_parameterless_sub_dependant` (`fastapi/dependencies/utils.py:132-144`).
+- Separately, when scanning a dependency's own parameters, `analyze_param`/`add_non_field_param_to_dependency` detects any parameter annotated as `SecurityScopes` and records its name on the `Dependant` as `security_scopes_param_name` (`fastapi/dependencies/utils.py:368-370`, also asserted at line ~484). This marking is independent of the scope values themselves — it just flags ""this dependency wants the accumulated scopes injected.""
+
+**2. Resolving values (`fastapi/dependencies/utils.py::solve_dependencies`)**
+
+- While solving dependencies at request time, for each dependant that has `security_scopes_param_name` set, FastAPI computes the full scope list via `_get_oauth_scopes(dependant=dependant)` (`fastapi/dependencies/models.py:71-79`), which concatenates `dependant.parent_oauth_scopes` and `dependant.own_oauth_scopes` (deduplicated, order-preserving).
+- It then constructs `SecurityScopes(scopes=<that list>)` and stores it in `values[dependant.security_scopes_param_name]` (`fastapi/dependencies/utils.py:721-724`), so it gets passed as the argument when the dependency callable is invoked.
+
+So effectively: `Security(...)`'s `scopes` argument propagates down through nested dependencies as `own_oauth_scopes`/`parent_oauth_scopes` on each `Dependant` node (`fastapi/dependencies/utils.py`, `fastapi/dependencies/models.py`), and any dependency function that declares a `SecurityScopes`-typed parameter automatically receives a `SecurityScopes` instance containing the union of all scopes accumulated from its own `Security(...)` declaration and those of its ancestors in the dependency tree.",True,False,True,fastapi/dependencies/utils.py,True,"It correctly identifies get_dependant marking security_scopes_param_name, Security/params.Security carrying scopes, and solve_dependencies injecting a SecurityScopes instance; missing oauth2.py naming is minor.",0.182105,0.16653,0.015575,0.16653,all,multi_hop,true,S,259429,55
+q22,indexed,9856,709,0,0,2,False,end_turn,,10.909,2026-08-18T12:07:57Z,"In `fastapi/dependencies/utils.py`, `solve_dependencies` builds the endpoint's keyword-argument dict (`values`) by calling several helper functions on the incoming `Request`/`WebSocket`:
+
+1. **`request_params_to_args`** – called four times to extract `dependant.path_params`, `dependant.query_params`, `dependant.header_params`, and `dependant.cookie_params` from `request.path_params`, `request.query_params`, `request.headers`, and `request.cookies` respectively.
+2. **`request_body_to_args`** – awaited when `dependant.body_params` is non-empty, converting the parsed request `body` into keyword args (handling the `embed_body_fields` flag).
+3. It also recursively calls **`solve_dependencies`** itself for each `sub_dependant` in `dependant.dependencies` to resolve nested `Depends(...)` values, and uses **`_solve_generator`** to handle generator/async-generator dependencies (registering them on the appropriate `AsyncExitStack`).
+4. Special request-derived objects are inserted directly into `values` for parameters like `http_connection_param_name`, `request_param_name`/`websocket_param_name`, `background_tasks_param_name`, `response_param_name`, and `security_scopes_param_name` (the latter using `_get_oauth_scopes`).
+
+All of these results are merged into the `values` dict and returned inside a `SolvedDependency` object, which is what `fastapi/routing.py`'s route-handling code (`app`, `_solve_dependencies`, `get_websocket_app`, etc.) unpacks with `**solved_result.values` to call the actual endpoint function.",True,True,True,fastapi/dependencies/utils.py,True,"It names fastapi/dependencies/utils.py and the expected helpers request_params_to_args and request_body_to_args used by solve_dependencies, with accurate supporting detail.",0.036532,0.026802,0.00973,0.026802,all,trace,true,S,259429,55
+q02,agentic,2394,171,0,0,2,False,end_turn,,4.752,2026-08-18T12:08:13Z,"The function is `jsonable_encoder` defined in `fastapi/encoders.py`. It recursively converts arbitrary Python objects (Pydantic models, dataclasses, enums, datetimes, sets, etc.) into JSON-compatible types (dict, list, str, int, float, bool, None) before FastAPI serializes them into a response.",True,True,True,fastapi/encoders.py,True,The answer correctly names jsonable_encoder in fastapi/encoders.py and accurately describes its recursive conversion of Python objects into JSON-compatible types.,0.012033,0.006498,0.005535,0.006498,all,locate,true,S,259429,55
+q02,indexed,9954,380,0,0,2,False,end_turn,,9.176,2026-08-18T12:08:21Z,"The function is **`jsonable_encoder`**, defined in `fastapi/encoders.py`.
+
+It takes an arbitrary Python object (`obj`) and recursively converts it into JSON-compatible types (dicts, lists, strings, numbers, `None`, etc.), handling special cases such as Pydantic `BaseModel` instances, dataclasses, `Enum`, `PurePath`, dictionaries, and various iterable types (`list`, `set`, `frozenset`, `GeneratorType`, `tuple`, `deque`). It also supports custom encoders and type-based encoder maps (`ENCODERS_BY_TYPE`), falling back to `dict(obj)` or `vars(obj)` for arbitrary objects.
+
+FastAPI uses this internally (as its docstring states) ""to make sure anything you return can be encoded as JSON before it is sent to the client,"" i.e., before serializing path operation return values into the HTTP response.",True,True,True,fastapi/encoders.py,True,The answer correctly names jsonable_encoder in fastapi/encoders.py with accurate behavioural details matching the expected file and symbol.,0.030038,0.023708,0.00633,0.023708,all,locate,true,S,259429,55
+q17,agentic,25773,1040,0,0,6,False,end_turn,,18.07,2026-08-18T12:08:35Z,"The handler in `fastapi/routing.py` (`get_request_handler`, in its inner `app` function) invokes the endpoint and serializes its result via two dedicated module-level helpers:
+
+- **`run_endpoint_function`** (fastapi/routing.py, line 344) — called at line 706 as `raw_response = await run_endpoint_function(dependant=dependant, values=solved_result.values, is_coroutine=is_coroutine)`. Internally it either `await`s `dependant.call(**values)` directly (for coroutine endpoints) or runs it via `run_in_threadpool(dependant.call, **values)` for sync endpoints.
+
+- **`serialize_response`** (fastapi/routing.py, line 301) — called at line 727 as `content = await serialize_response(field=response_field, response_content=raw_response, ...)`. It validates the raw response against the route's `response_field` (using `field.validate`, run in a thread pool if the endpoint is synchronous) and then serializes it with `field.serialize_json`/`field.serialize`; if there is no response field, it falls back to `jsonable_encoder(response_content)`.
+
+(Note: for streaming/SSE responses the handler takes a different path, calling `dependant.call(**solved_result.values)` directly to get a generator and serializing individual items with an inline `_serialize_data`/`_serialize_sse_item` helper rather than `serialize_response`.)",True,True,True,fastapi/routing.py,True,"The answer names fastapi/routing.py with get_request_handler calling run_endpoint_function and serialize_response, matching the expected files and symbols with accurate extra detail.",0.069366,0.061946,0.00742,0.061946,all,trace,true,S,259429,55
+q03,indexed,9559,420,0,0,2,False,end_turn,,6.767,2026-08-18T12:08:57Z,"The handler is `request_validation_exception_handler`, defined in `fastapi/exception_handlers.py` (lines 22-27):
+
+```python
+async def request_validation_exception_handler(
+    request: Request, exc: RequestValidationError
+) -> JSONResponse:
+    return JSONResponse(
+        status_code=422,
+        content={""detail"": jsonable_encoder(exc.errors())},
+    )
+```
+
+It is registered as the default handler for `RequestValidationError` in `fastapi/applications.py`, within `FastAPI.__init__`:
+
+```python
+self.exception_handlers.setdefault(
+    RequestValidationError, request_validation_exception_handler
+)
+```
+
+(see `fastapi/applications.py` around lines 1000-1005, imported from `fastapi.exception_handlers` at the top of the file).",True,True,True,fastapi/exception_handlers.py,True,"The answer names the expected file fastapi/exception_handlers.py and symbol request_validation_exception_handler, with accurate extra detail about its registration in applications.py.",0.029613,0.023318,0.006295,0.023318,all,locate,true,S,259429,55
+q31,agentic,6518,702,0,0,3,False,end_turn,,10.275,2026-08-18T12:09:10Z,"## Answer
+
+The 422 response for request validation errors is formatted by **`request_validation_exception_handler`**, defined in `fastapi/exception_handlers.py`. It builds a `JSONResponse` with `status_code=422` and a body of `{""detail"": jsonable_encoder(exc.errors())}`.
+
+It is registered on the `FastAPI` application in `fastapi/applications.py`, inside `FastAPI.__init__` (around line 1000-1006), where the app's `exception_handlers` dict is populated:
+
+```python
+self.exception_handlers.setdefault(
+    RequestValidationError, request_validation_exception_handler
+)
+```
+
+This makes it the default handler for `fastapi.exceptions.RequestValidationError` (which is raised, e.g., in `fastapi/routing.py` when parameter/body validation fails), unless the user overrides it by passing their own `exception_handlers` argument to `FastAPI()`.
+
+There is also a corresponding handler for WebSocket validation errors, `websocket_request_validation_exception_handler` (same file), registered right after it for `WebSocketRequestValidationError`.",True,True,True,fastapi/exception_handlers.py;fastapi/applications.py,True,"The answer correctly names request_validation_exception_handler in fastapi/exception_handlers.py and its registration for RequestValidationError in FastAPI.__init__ in fastapi/applications.py, matching expected files and symbols.",0.027531,0.020056,0.007475,0.020056,all,multi_hop,true,S,259429,55
+q01,indexed,16655,887,0,0,2,False,end_turn,,12.222,2026-08-18T12:09:24Z,"## Answer
+
+The actual resolution of a request's dependencies is performed by the `solve_dependencies` async function in **`fastapi/dependencies/utils.py`** (defined around line 585).
+
+This function:
+- Recursively iterates over `dependant.dependencies` (the sub-dependencies), calling itself for each sub-dependant to resolve nested dependencies first.
+- Applies any `dependency_overrides_provider` overrides.
+- Calls each dependency's callable — via `run_in_threadpool` (sync), direct `await call(...)` (async coroutine), or `_solve_generator` (for generator/yield-based dependencies with the appropriate `AsyncExitStack`, chosen based on `scope` — `""function""` vs `""request""`).
+- Caches resolved values in `dependency_cache` (respecting `use_cache`).
+- Extracts path, query, header, cookie, and body parameters into typed values via `request_params_to_args` and `request_body_to_args`.
+- Assembles everything into a `SolvedDependency` dataclass containing `values`, `errors`, `background_tasks`, `response`, and `dependency_cache`.
+
+It is invoked from several call sites depending on context:
+- **`fastapi/routing.py`** in `get_request_handler` (around line 480) for standard HTTP path operations, right before calling `dependant.call(**solved_result.values)`.
+- **`fastapi/routing.py`** in `get_websocket_app` (around line 782) for WebSocket endpoints.
+- **`fastapi/routing.py`** in `APIRoute._solve_dependencies` (around line 2215), an `asynccontextmanager` wrapper used when handling routes with `dependant.dependencies` at the router/route-group level, which sets up the `fastapi_inner_astack`/`fastapi_function_astack` exit stacks in the ASGI scope before calling `solve_dependencies`.
+
+So while several wrapper methods in `fastapi/routing.py` orchestrate *when* dependencies get solved (per-request, per-websocket, per-route-group), the actual dependency-solving logic lives in `solve_dependencies` in `fastapi/dependencies/utils.py`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies solve_dependencies in fastapi/dependencies/utils.py as the location where request dependency resolution occurs, with accurate supporting detail.",0.05079,0.04218,0.00861,0.04218,all,locate,true,M,1138485,1112
+q21,agentic,5639,699,0,0,3,False,end_turn,,10.096,2026-08-18T12:09:42Z,"For each parameter in the endpoint's signature, `get_dependant` (in `fastapi/dependencies/utils.py`) calls:
+
+1. **`analyze_param`** — for every parameter, passing `param_name`, `annotation`, `value` (the default), and `is_path_param` (determined via `get_path_param_names(path)`). This returns a `param_details` object describing whether the parameter is a sub-dependency (`Depends`/`Security`), a special non-field type, or a regular field.
+
+2. Depending on the result of `analyze_param`:
+   - If `param_details.depends is not None`, it recursively calls **`get_dependant`** again (with `call=param_details.depends.dependency`) to build a `sub_dependant`, which is appended to `dependant.dependencies`.
+   - Otherwise, it calls **`add_non_field_param_to_dependency`** (passing `param_name`, `type_annotation=param_details.type_annotation`, and `dependant`) to check if the parameter is a special type like `Request`, `WebSocket`, `HTTPConnection`, etc.
+   - If that returns falsy, it asserts `param_details.field is not None` and either appends the field to `dependant.body_params` (if it's a `params.Body`) or calls **`add_param_to_fields`** (passing `field=param_details.field` and `dependant`) to classify it into path/query/header/cookie params.",True,True,True,fastapi/dependencies/utils.py,True,"Correctly names analyze_param in fastapi/dependencies/utils.py as what get_dependant calls per parameter, with accurate surrounding detail despite minor imprecision about the sub-dependant helper.",0.036268,0.018268,0.018,0.018268,all,trace,true,M,1138485,1112
+q17,indexed,15655,745,0,0,3,False,end_turn,,12.06,2026-08-18T12:10:00Z,"## Answer
+
+In `fastapi/routing.py`, the `app` closure built and returned by `get_request_handler` (lines 375-746+):
+
+1. **Invoking the endpoint**: it calls `await run_endpoint_function(dependant=dependant, values=solved_result.values, is_coroutine=is_coroutine)` (see `fastapi/routing.py:699-709`). `run_endpoint_function` (defined right after `serialize_response`, `fastapi/routing.py:341`+) is the function that actually calls `dependant.call(...)`, either awaiting it directly or running it in a threadpool depending on whether it's a coroutine function.
+
+2. **Serialising the return value**: if the raw result from `run_endpoint_function` isn't already a `Response` instance, the handler calls `await serialize_response(field=response_field, response_content=raw_response, ...)` (`fastapi/routing.py:718-732`). `serialize_response` (`fastapi/routing.py:300-341`) validates the value against the route's response `ModelField` and serializes it (via `field.serialize_json`/`field.serialize`), falling back to `jsonable_encoder(response_content)` when there's no response field.
+
+For streaming/SSE endpoints, the same `app` function uses an internal `_serialize_data` helper (`fastapi/routing.py:492-514`) that validates against `stream_item_field` and serializes with `stream_item_field.serialize_json`, or falls back to `jsonable_encoder` + `json.dumps`.",True,True,True,fastapi/routing.py,True,"The answer correctly identifies fastapi/routing.py's get_request_handler closure calling run_endpoint_function to invoke the endpoint and serialize_response to serialise the result, matching all expected symbols.",0.046645,0.03876,0.007885,0.03876,all,trace,true,M,1138485,1112
+q03,agentic,10513,276,0,0,3,False,end_turn,,6.106,2026-08-18T12:10:16Z,"The handler is `request_validation_exception_handler` in `fastapi/exception_handlers.py` (lines 20-26), which returns a `JSONResponse` with `status_code=422`. It's registered as the default handler for `RequestValidationError` in `fastapi/applications.py` (around line 1005, inside `FastAPI.__init__`, via `self.exception_handlers` / `self.add_exception_handler`).",True,True,True,fastapi/exception_handlers.py,True,"The answer names the expected symbol request_validation_exception_handler in fastapi/exception_handlers.py returning a 422 JSONResponse, with accurate extra detail on registration.",0.029541,0.023786,0.005755,0.023786,all,locate,true,M,1138485,1112
+q37,indexed,43207,1788,0,0,4,False,end_turn,,25.517,2026-08-18T12:10:26Z,"## How a `SecurityScopes` parameter gets populated
+
+There are three stages involved, all in `fastapi/dependencies/utils.py` and `fastapi/dependencies/models.py`:
+
+**1. Detecting the parameter (`get_dependant`, `add_non_field_param_to_dependency` — `fastapi/dependencies/utils.py`)**
+
+When FastAPI builds the `Dependant` tree for a callable (`get_dependant`), each parameter is analyzed. If a parameter's type annotation is (a subclass of) `SecurityScopes`, `add_non_field_param_to_dependency` records its name:
+
+```python
+elif lenient_issubclass(type_annotation, SecurityScopes):
+    dependant.security_scopes_param_name = param_name
+    return True
+```
+
+This stores the parameter name on `dependant.security_scopes_param_name` (defined on the `Dependant` dataclass in `fastapi/dependencies/models.py`), rather than treating it as a normal request field.
+
+**2. Propagating OAuth2 scopes through the dependency tree (`get_dependant`, `_get_oauth_scopes` — `fastapi/dependencies/models.py`)**
+
+Each dependency declared with `Security(dependency, scopes=[...])` (rather than plain `Depends`) contributes its `scopes` list. In `get_dependant`, when a sub-dependency is a `params.Security` instance, its `scopes` become that sub-dependant's `own_oauth_scopes`, and the scopes accumulated from ancestors are passed down as `parent_oauth_scopes`:
+
+```python
+sub_own_oauth_scopes: list[str] = []
+if isinstance(param_details.depends, params.Security):
+    if param_details.depends.scopes:
+        sub_own_oauth_scopes = list(param_details.depends.scopes)
+sub_dependant = get_dependant(
+    ...
+    own_oauth_scopes=sub_own_oauth_scopes,
+    parent_oauth_scopes=current_scopes,
+    ...
+)
+```
+
+The helper `_get_oauth_scopes(dependant)` (in `fastapi/dependencies/models.py`) combines a dependant's own scopes with its inherited parent scopes into the final ordered list of scopes for that dependant.
+
+**3. Filling in the value at request-solving time (`solve_dependencies` — `fastapi/dependencies/utils.py`)**
+
+When dependencies are actually solved for a request, if `dependant.security_scopes_param_name` is set, FastAPI builds a `SecurityScopes` instance using the accumulated scopes and injects it as the parameter value:
+
+```python
+if dependant.security_scopes_param_name:
+    values[dependant.security_scopes_param_name] = SecurityScopes(
+        scopes=_get_oauth_scopes(dependant=dependant)
+    )
+```
+
+`SecurityScopes.__init__` (`fastapi/security/oauth2.py`) then stores `self.scopes` (list) and `self.scope_str` (space-joined string).
+
+### Summary
+- `get_dependant`/`add_non_field_param_to_dependency` recognize the `SecurityScopes`-typed parameter and remember its name (`Dependant.security_scopes_param_name`).
+- `Security(...)`'s `scopes` argument attaches ""own"" scopes to that dependency node; `get_dependant` threads parent scopes down so nested dependencies accumulate scopes from all `Security(...)` declarations in the chain (`own_oauth_scopes`/`parent_oauth_scopes`, combined via `_get_oauth_scopes`).
+- `solve_dependencies` builds the `SecurityScopes` object with the combined scope list and injects it into the dependency call's arguments at the parameter name discovered in step 1.",True,False,True,fastapi/security/oauth2.py;fastapi/dependencies/utils.py,True,"It correctly names get_dependant (recording security_scopes_param_name), solve_dependencies (constructing SecurityScopes), params.Security scopes, and SecurityScopes in fastapi/security/oauth2.py.",0.121909,0.104294,0.017615,0.104294,all,multi_hop,true,M,1138485,1112
+q06,agentic,7106,547,0,0,3,False,end_turn,,10.191,2026-08-18T12:10:56Z,"The helper is `is_body_allowed_for_status_code(status_code)` defined in `fastapi/utils.py` (lines 26–40).
+
+It returns `True` if `status_code` is `None` or one of the OpenAPI patterned range strings (`""default""`, `""1XX""`–`""5XX""`); otherwise it converts to `int` and returns `False` for codes `< 200` or in `{204, 205, 304}` (i.e., informational, no-content, reset-content, and not-modified codes, which per HTTP semantics must not carry a body), `True` otherwise.
+
+It's used throughout the codebase to guard body-related behavior, e.g.:
+- `fastapi/exception_handlers.py` (`http_exception_handler`) to decide whether to include content in the error response.
+- `fastapi/routing.py` (in `serialize_response`/route setup) to skip serializing a body or to assert that additional status codes support bodies.
+- `fastapi/openapi/utils.py` (`get_openapi_path`) to decide whether to add a response body schema for a given status code in the generated OpenAPI docs.",True,True,True,fastapi/utils.py,True,"The answer names is_body_allowed_for_status_code in fastapi/utils.py with accurate behavior details, matching the expected file and symbol.",0.026287,0.019682,0.006605,0.019682,all,locate,true,M,1138485,1112
+q16,indexed,9762,415,0,0,3,False,end_turn,,9.887,2026-08-18T12:11:11Z,"`APIRoute.get_route_handler()` (in `fastapi/routing.py`) returns the request-handling coroutine function produced by `get_request_handler(...)` — i.e. a `Callable[[Request], Coroutine[Any, Any, Response]]` built from the route's dependant, body field, status code, response class/field, response-model settings, dependency overrides provider, embedded body fields, strict content type, and streaming fields.
+
+That returned handler is then wrapped by `request_response()` when `APIRoute.__init__` sets `self.app = request_response(self.get_route_handler())` (`fastapi/routing.py`, around line 1223), turning the request handler into an ASGI application (`self.app`) that Starlette can call.",True,True,True,fastapi/routing.py,True,"The answer correctly names fastapi/routing.py, get_route_handler returning get_request_handler's coroutine, and request_response wrapping it in __init__ as self.app, matching expected files and symbols.",0.030154,0.023674,0.00648,0.023674,all,trace,true,M,1138485,1112
+q16,agentic,5216,443,0,0,3,False,end_turn,,9.085,2026-08-18T12:11:25Z,"`APIRoute.get_route_handler()` returns the value of `get_request_handler(...)` (defined in `fastapi/routing.py`), which is a coroutine function `app(request: Request) -> Response`. This returned handler is then wrapped by Starlette's `request_response()` helper (imported from `starlette.routing`) in `APIRoute.__init__`:
+
+```python
+self.app = request_response(self.get_route_handler())
+```
+
+So `request_response` wraps the coroutine produced by `get_route_handler`, converting it into an ASGI application that becomes `self.app` for the route (`fastapi/routing.py`, lines ~1223-1236).",True,True,True,fastapi/routing.py,True,"It correctly names fastapi/routing.py, get_route_handler returning get_request_handler's async app, wrapped by Starlette's request_response in APIRoute.__init__.",0.023042,0.014862,0.00818,0.014862,all,trace,true,M,1138485,1112
+q21,indexed,20849,991,0,0,3,False,end_turn,,13.745,2026-08-18T12:11:39Z,"In `get_dependant` (`fastapi/dependencies/utils.py:271-347`), for each parameter in the endpoint's signature it iterates `endpoint_signature.parameters.items()` and calls, in order:
+
+1. **`analyze_param(param_name=..., annotation=param.annotation, value=param.default, is_path_param=...)`** — this inspects the parameter's type annotation/`Annotated` metadata and default value to classify it, returning a `ParamDetails` (with `type_annotation`, `depends`, and `field`).
+
+2. If `param_details.depends is not None` (i.e., the parameter is a `Depends`/`Security`):
+   - It recursively calls **`get_dependant(...)`** again (with the sub-dependency's `call`, propagated `path`, `own_oauth_scopes`, `parent_oauth_scopes`, `use_cache`, and `scope`) to build a **`sub_dependant`**, which is appended to `dependant.dependencies`.
+
+3. Otherwise, it calls **`add_non_field_param_to_dependency(param_name=..., type_annotation=param_details.type_annotation, dependant=dependant)`** — this checks if the parameter type is one of FastAPI's special non-field types (`Request`, `WebSocket`, `HTTPConnection`, `Response`, `BackgroundTasks`, `SecurityScopes`) and, if so, sets the corresponding `*_param_name` attribute on `dependant`.
+
+4. If it's not a special non-field param, then (asserting `param_details.field is not None`) it either:
+   - appends the field to `dependant.body_params` if it's a `params.Body` field, or
+   - calls **`add_param_to_fields(field=param_details.field, dependant=dependant)`** — which routes the `ModelField` into `dependant.path_params`, `query_params`, `header_params`, or `cookie_params` based on the field's `field_info.in_` (`ParamTypes`).
+
+So the three functions called per parameter are: `analyze_param`, then either `get_dependant` (recursively, for sub-dependencies) or `add_non_field_param_to_dependency`, and finally `add_param_to_fields` (for non-body fields) — all defined in `fastapi/dependencies/utils.py`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies analyze_param being called per parameter in get_dependant in fastapi/dependencies/utils.py, with accurate additional detail about subsequent handling.",0.060433,0.051608,0.008825,0.051608,all,trace,true,M,1138485,1112
+q22,agentic,6959,594,0,0,3,False,end_turn,,10.401,2026-08-18T12:11:57Z,"Based on `fastapi/dependencies/utils.py`, `solve_dependencies` (lines 586–731) calls:
+
+- **`request_params_to_args`** — three times, to convert `dependant.path_params`, `dependant.query_params`, `dependant.header_params`, and `dependant.cookie_params` (matched against `request.path_params`, `request.query_params`, `request.headers`, `request.cookies`) into keyword argument values/errors.
+- **`request_body_to_args`** — (awaited) to convert the parsed `body_params` and the received `body` into argument values/errors when `dependant.body_params` is set.
+- Recursively itself (`solve_dependencies`) for each `sub_dependant` in `dependant.dependencies`, plus `get_dependant` (when dependency overrides are used) and `_solve_generator` for generator-based sub-dependencies, whose resolved results are merged into `values`.
+
+Together these populate the `values` dict (plus special injections like `request`, `response`, `background_tasks`, `SecurityScopes`) that becomes the endpoint's call arguments, returned as part of the `SolvedDependency` result.",True,True,True,fastapi/dependencies/utils.py,True,Names the right file and the key helpers request_params_to_args and request_body_to_args within solve_dependencies; the minor 'three times' miscount doesn't affect the identified location or behavior.,0.028288,0.019858,0.00843,0.019858,all,trace,true,M,1138485,1112
+q31,indexed,16848,579,0,0,3,False,end_turn,,10.207,2026-08-18T12:12:12Z,"The default handler is `request_validation_exception_handler` in `fastapi/exception_handlers.py` (lines 22-28), which returns a `JSONResponse` with `status_code=422` and `content={""detail"": jsonable_encoder(exc.errors())}`.
+
+It is registered on the application in `fastapi/applications.py`, inside `FastAPI.__init__`, where:
+
+```python
+self.exception_handlers.setdefault(
+    RequestValidationError, request_validation_exception_handler
+)
+```
+
+This sets it as the default handler in the app's `exception_handlers` dict (around lines 973-1005 of `fastapi/applications.py`), unless the user overrides it (e.g., via `@app.exception_handler(RequestValidationError)`, as shown in `docs_src/handling_errors/tutorial005_py310.py` and `tutorial006_py310.py`).",True,True,True,fastapi/exception_handlers.py;fastapi/applications.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py and its setdefault registration with RequestValidationError in FastAPI.__init__ in fastapi/applications.py, matching expectations.",0.046466,0.039486,0.00698,0.039486,all,multi_hop,true,M,1138485,1112
+q01,agentic,9785,749,0,0,4,False,end_turn,,12.691,2026-08-18T12:12:25Z,"The dependency resolution logic itself lives in `fastapi/dependencies/utils.py`, in the async function `solve_dependencies` (with the helper `_solve_generator` for generator-based dependencies). This function:
+
+- Recursively resolves each `sub_dependant` in `dependant.dependencies` (calling itself recursively), applying dependency overrides if configured.
+- Calls the dependency callable appropriately: via `_solve_generator` (using an `AsyncExitStack`) for generator/async-generator dependencies, via `await call(...)` for coroutine functions, or via `run_in_threadpool` for plain sync functions.
+- Uses a `dependency_cache` to avoid recomputation when `use_cache` is set.
+- Returns a `SolvedDependency` dataclass containing resolved `values`, any `errors`, `background_tasks`, `response`, and the updated `dependency_cache`.
+
+This function is then invoked from the actual request-handling code in `fastapi/routing.py` — e.g. in `get_request_handler`'s inner `app` function (around line 481), in the WebSocket handler (around line 783), and in `APIRoute._solve_dependencies`/`_dependant_call` handling (around lines 2193–2234), which call `solve_dependencies` with the actual `Request`/`WebSocket` object to produce the values ultimately passed into the endpoint function.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names fastapi/dependencies/utils.py and solve_dependencies as the location of dependency resolution, matching the expected file and symbol, with accurate supporting detail.",0.034365,0.02706,0.007305,0.02706,all,locate,true,M,1138485,1112
+q06,indexed,5292,391,0,0,2,False,end_turn,,7.718,2026-08-18T12:12:42Z,"The helper is `is_body_allowed_for_status_code(status_code)` defined in `fastapi/utils.py` (lines 26-40).
+
+It works as follows:
+- Returns `True` if `status_code` is `None`.
+- Returns `True` if `status_code` is one of the OpenAPI-style pattern strings (`""default""`, `""1XX""`, `""2XX""`, `""3XX""`, `""4XX""`, `""5XX""`).
+- Otherwise converts to `int` and returns `False` for status codes `< 200` or in `{204, 205, 304}` (i.e., codes that per HTTP semantics must not have a body), and `True` otherwise.
+
+This helper is used in:
+- `fastapi/exception_handlers.py` (`http_exception_handler`) to decide whether to return a body-less `Response` or a `JSONResponse` with detail.
+- `fastapi/routing.py` (in the response serialization logic) to blank out `response.body` when the status code doesn't allow a body.",True,True,True,fastapi/utils.py,True,"The answer names is_body_allowed_for_status_code in fastapi/utils.py with accurate behavior details, matching the expected file and symbol.",0.020939,0.014494,0.006445,0.014494,all,locate,true,M,1138485,1112
+q37,agentic,66910,2042,0,0,8,False,end_turn,,32.155,2026-08-18T12:12:53Z,"I now have the full picture.
+
+## How `SecurityScopes` gets populated
+
+**1. Detection during signature analysis** (`fastapi/dependencies/utils.py`):
+- `analyze_param()` treats a parameter annotated as `SecurityScopes` as a ""non-field"" special parameter (like `Request`, `Response`, etc.) rather than a normal query/body param (lines ~476‑489).
+- `add_non_field_param_to_dependency()` checks `lenient_issubclass(type_annotation, SecurityScopes)` and records the parameter's name on `dependant.security_scopes_param_name` (line 368‑370).
+
+**2. Scope accumulation while building the dependency tree** (`get_dependant()` in `fastapi/dependencies/utils.py`, and `Dependant` in `fastapi/dependencies/models.py`):
+- When a sub-dependency is declared via `Security(dependency, scopes=[...])` (a `params.Security` instance, subclass of `params.Depends`), `get_dependant()` extracts `param_details.depends.scopes` into `sub_own_oauth_scopes` and passes it as `own_oauth_scopes` to the recursive `get_dependant()` call for that sub-dependant (lines 318‑330). It also passes down `parent_oauth_scopes=current_scopes`, where `current_scopes` is the accumulation of the current dependant's own + inherited scopes (line 290).
+- Each `Dependant` therefore stores `own_oauth_scopes` (scopes declared on this specific `Security(...)`) and `parent_oauth_scopes` (scopes inherited from dependants above it in the tree).
+- `_get_oauth_scopes(dependant)` in `fastapi/dependencies/models.py` combines `parent_oauth_scopes` + `own_oauth_scopes` (deduplicated, order preserved) to compute the full effective scope list for a given dependant.
+
+**3. Injection at solve time** (`solve_dependencies()` in `fastapi/dependencies/utils.py`, lines 721‑724):
+```python
+if dependant.security_scopes_param_name:
+    values[dependant.security_scopes_param_name] = SecurityScopes(
+        scopes=_get_oauth_scopes(dependant=dependant)
+    )
+```
+So whichever function/dependency has a `SecurityScopes`-typed parameter gets a `SecurityScopes` instance built from `_get_oauth_scopes`, i.e. the merged scopes declared by every `Security(...)` in the chain from the path operation down to (and including) that dependant.
+
+This is why in typical usage you declare `security_scopes: SecurityScopes` inside a dependency function that is itself used via `Security(get_current_user, scopes=[...])` at various points in the dependency tree — each usage's scopes get merged and passed in.
+
+**Key files/symbols**: `fastapi/params.py` (`Security` class), `fastapi/param_functions.py` (`Security()` factory), `fastapi/dependencies/utils.py` (`analyze_param`, `add_non_field_param_to_dependency`, `get_dependant`, `solve_dependencies`), `fastapi/dependencies/models.py` (`Dependant`, `_get_oauth_scopes`), `fastapi/security/oauth2.py` (`SecurityScopes` class definition).",True,True,True,fastapi/security/oauth2.py;fastapi/dependencies/utils.py;fastapi/params.py,True,"It identifies SecurityScopes in fastapi/security/oauth2.py, Security in params.py, and get_dependant/solve_dependencies in dependencies/utils.py, correctly describing scope accumulation and injection.",0.167835,0.15424,0.013595,0.15424,all,multi_hop,true,M,1138485,1112
+q22,indexed,23957,647,0,0,3,False,end_turn,,12.841,2026-08-18T12:13:30Z,"## Answer
+
+In `fastapi/dependencies/utils.py`, `solve_dependencies` turns the incoming `Request`/`WebSocket` into endpoint call arguments (the `values` dict) by calling:
+
+1. **`request_params_to_args`** — called four times to extract and validate `path_params`, `query_params`, `header_params`, and `cookie_params` from the request (`request.path_params`, `request.query_params`, `request.headers`, `request.cookies`), merging results into `values` via `values.update(...)`.
+
+2. **`request_body_to_args`** — called (only if `dependant.body_params` is non-empty) to parse/validate the request body (`body`) into the corresponding argument values, using `embed_body_fields` to determine whether to treat the body as a single field or embedded fields.
+
+3. It also recursively calls itself, **`solve_dependencies`**, for each sub-dependency in `dependant.dependencies`, resolving nested `Depends()` values and merging their results into `values` before assembling path/query/header/cookie/body args for the current dependant.
+
+After these calls, it directly assigns special values (request/websocket object, `BackgroundTasks`, `Response`, `SecurityScopes`) into `values` and returns a `SolvedDependency(values=values, errors=errors, ...)`, which callers (e.g. `fastapi/routing.py`'s `get_request_handler`/`get_websocket_app`) then use as `dependant.call(**solved_result.values)`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names the correct file and both expected helper functions, request_params_to_args and request_body_to_args, with accurate detail on how values are assembled.",0.061699,0.054384,0.007315,0.054384,all,trace,true,M,1138485,1112
+q02,agentic,2428,233,0,0,2,False,end_turn,,8.136,2026-08-18T12:13:47Z,"The function is **`jsonable_encoder`**, defined in `fastapi/encoders.py`. It recursively converts arbitrary Python objects (Pydantic models, dataclasses, enums, datetime types, sets, etc.) into JSON-compatible types (dict, list, str, int, float, bool, None) before responses are serialized (e.g., used internally by `fastapi.responses.JSONResponse`/route response handling).",True,True,True,fastapi/encoders.py,True,"The answer names jsonable_encoder in fastapi/encoders.py, matching the expected file and symbol, with accurate description of its recursive conversion behaviour.",0.012831,0.007186,0.005645,0.007186,all,locate,true,M,1138485,1112
+q02,indexed,8960,250,0,0,2,False,end_turn,,7.1,2026-08-18T12:13:58Z,"The function is `jsonable_encoder` defined in `fastapi/encoders.py`. It recursively converts arbitrary Python objects (Pydantic models, dataclasses, enums, paths, dicts, lists/sets/tuples, and other types via registered encoders) into JSON-compatible types (`str`, `int`, `float`, `bool`, `None`, `dict`, `list`) so they can be safely serialized into a response. FastAPI uses it internally before encoding responses, as shown in `docs_src/encoder/tutorial001_py310.py`.",True,True,True,fastapi/encoders.py,True,The answer correctly names jsonable_encoder in fastapi/encoders.py and accurately describes its recursive conversion of objects into JSON-compatible types before response serialization.,0.026385,0.02042,0.005965,0.02042,all,locate,true,M,1138485,1112
+q17,agentic,19403,789,0,0,5,False,end_turn,,15.095,2026-08-18T12:14:09Z,"For the standard (non-streaming) code path, the handler created in `fastapi/routing.py`'s `get_request_handler` (the inner `app` function) does two things:
+
+1. **Invokes the endpoint** by calling `run_endpoint_function(dependant=dependant, values=solved_result.values, is_coroutine=is_coroutine)` (defined at `fastapi/routing.py:344`), which awaits the dependant's `call` if it's a coroutine or runs it in a thread pool otherwise.
+
+2. **Serialises the return value** by calling `serialize_response(field=response_field, response_content=raw_response, ...)` (defined at `fastapi/routing.py:301`), unless the raw response is already a `Response` instance, in which case it's used directly.
+
+(For streaming/SSE endpoints there's a separate path using `_serialize_data`/`_serialize_sse_item`, which calls `stream_item_field.serialize_json` or `jsonable_encoder`/`json.dumps`, but the core ""invoke + serialize"" calls are `run_endpoint_function` and `serialize_response`.)",True,True,True,fastapi/routing.py,True,"The answer correctly names fastapi/routing.py's get_request_handler calling run_endpoint_function to invoke the endpoint and serialize_response to serialise the result, matching expected symbols.",0.053766,0.046696,0.00707,0.046696,all,trace,true,M,1138485,1112
+q03,indexed,3954,312,0,0,2,False,end_turn,,5.431,2026-08-18T12:14:28Z,"The default handler that converts a `RequestValidationError` into a 422 JSON response is `request_validation_exception_handler`, defined in **`fastapi/exception_handlers.py`**:
+
+```python
+async def request_validation_exception_handler(
+    request: Request, exc: RequestValidationError
+) -> JSONResponse:
+    return JSONResponse(
+        status_code=422,
+        content={""detail"": jsonable_encoder(exc.errors())},
+    )
+```
+
+This is the function FastAPI registers by default (and that examples like `docs_src/handling_errors/tutorial006_py310.py` call directly) to produce the 422 response for validation errors. There's also a companion `websocket_request_validation_exception_handler` in the same file for WebSocket validation errors.",True,True,True,fastapi/exception_handlers.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py, matching the expected file and symbol, with accurate supporting detail.",0.017128,0.011028,0.0061,0.011028,all,locate,true,M,1138485,1112
+q31,agentic,8640,609,0,0,3,False,end_turn,,10.071,2026-08-18T12:14:36Z,"## Answer
+
+The 422 response is formatted by `request_validation_exception_handler`, defined in `fastapi/exception_handlers.py`. When a `RequestValidationError` is raised, this async function returns a `JSONResponse` with `status_code=422` and a `{""detail"": jsonable_encoder(exc.errors())}` body.
+
+It is registered as the default handler for `RequestValidationError` on the `FastAPI` application in `fastapi/applications.py`, inside the `FastAPI.__init__` method:
+
+```python
+self.exception_handlers.setdefault(
+    RequestValidationError, request_validation_exception_handler
+)
+```
+
+This sets it as a default entry in `self.exception_handlers` (a dict on the app instance), so it is used unless the user overrides it with their own `@app.exception_handler(RequestValidationError)` handler.",True,True,True,fastapi/exception_handlers.py;fastapi/applications.py,True,"The answer correctly names request_validation_exception_handler in fastapi/exception_handlers.py and its registration for RequestValidationError in FastAPI.__init__ in fastapi/applications.py, matching expected files and symbols.",0.030385,0.02337,0.007015,0.02337,all,multi_hop,true,M,1138485,1112
+q06,agentic,7853,301,0,0,3,False,end_turn,,8.799,2026-08-18T09:30:13Z,"The helper is `is_body_allowed_for_status_code(status_code)` defined in `fastapi/utils.py`. It's used in `fastapi/routing.py`, `fastapi/exception_handlers.py`, and `fastapi/openapi/utils.py` to determine if a status code (e.g., 204, 304, or 1xx codes) permits a response body.",True,True,True,fastapi/utils.py,True,"The answer names is_body_allowed_for_status_code in fastapi/utils.py, matching the expected file and symbol, with accurate extra detail about its usage.",0.024221,0.018716,0.005505,0.018716,all,locate,True,L,6232509,2888
+q02,indexed,15088,421,0,0,2,False,end_turn,,7.484,2026-08-18T09:30:43Z,"The function is `jsonable_encoder`, defined in `fastapi/encoders.py` (starting around line 130). 
+
+It converts an arbitrary Python object—Pydantic models, dataclasses, enums, paths, dicts, lists/sets/tuples/deques, and other types with registered encoders (`ENCODERS_BY_TYPE`)—into JSON-compatible standard Python types (`dict`, `list`, `str`, `int`, `float`, `None`, etc.). As noted in the docstring in `fastapi/encoders.py`:
+
+> ""Convert any object to something that can be encoded in JSON. This is used internally by FastAPI to make sure anything you return can be encoded as JSON before it is sent to the client.""
+
+This is confirmed by the docs at `docs/en/docs/tutorial/encoder.md`, which state that `jsonable_encoder` is used internally by FastAPI to convert data before serialization.",True,True,True,fastapi/encoders.py,True,"The answer correctly identifies jsonable_encoder in fastapi/encoders.py, matching the expected file and symbol, with accurate supporting detail.",0.040776,0.034386,0.00639,0.034386,all,locate,True,L,6232509,2888
+q03,indexed,3929,385,0,0,2,False,end_turn,,5.821,2026-08-18T09:31:39Z,"The default handler that converts a `RequestValidationError` into a 422 JSON response is `request_validation_exception_handler`, defined in **`fastapi/exception_handlers.py`**:
+
+```python
+async def request_validation_exception_handler(
+    request: Request, exc: RequestValidationError
+) -> JSONResponse:
+    return JSONResponse(
+        status_code=422,
+        content={""detail"": jsonable_encoder(exc.errors())},
+    )
+```
+
+This is the built-in FastAPI handler registered by default for `RequestValidationError` in the app. (The same file also defines `websocket_request_validation_exception_handler` for the WebSocket equivalent.)
+
+Custom/example overrides of this handler exist in the docs examples, e.g. `docs_src/handling_errors/tutorial005_py310.py` and `docs_src/handling_errors/tutorial006_py310.py`, but the canonical framework-level definition is in `fastapi/exception_handlers.py`.",True,True,True,fastapi/exception_handlers.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py, matching the expected file and symbol, with accurate supporting detail.",0.018173,0.011708,0.006465,0.011708,all,locate,True,L,6232509,2888
+q01,agentic,13611,691,0,0,5,False,end_turn,,16.039,2026-08-18T09:32:42Z,"Dependency resolution for a request happens in `fastapi/dependencies/utils.py`, specifically the async function `solve_dependencies` (line 586), which recursively walks the `Dependant` tree, calling itself for each sub-dependency, invoking the dependency callables (handling sync/async/generator dependencies via `_solve_generator`), and populating a `SolvedDependency` with resolved `values`, `errors`, `background_tasks`, `response`, and a `dependency_cache`.
+
+This function is invoked from `fastapi/routing.py` in the request-handling paths, e.g. `APIRoute.get_route_handler`'s `app` function (around line 481) and the WebSocket route handler (around line 783), as well as in `APIRoute._solve_dependencies` (line 2216) used for dependency-only routes — all of which call `solve_dependencies` from `fastapi/dependencies/utils.py` to actually perform the resolution when a request comes in.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names fastapi/dependencies/utils.py and the solve_dependencies function, matching the expected file and symbol, with accurate supporting detail about recursion and call sites.",0.040732,0.034132,0.0066,0.034132,all,locate,True,L,6232509,2888
+q16,indexed,11508,461,0,0,3,False,end_turn,,22.83,2026-08-18T09:36:59Z,"`APIRoute.get_route_handler` (in `fastapi/routing.py`) returns the result of `get_request_handler(...)`, which is an async callable of type `Callable[[Request], Coroutine[Any, Any, Response]]` — i.e., a coroutine function that takes a Starlette `Request` and returns a `Response`, built from the route's dependant, body field, status code, response class/model settings, dependency overrides, etc.
+
+In `APIRoute.__init__` (`fastapi/routing.py`, line ~1223), this returned handler is wrapped by Starlette's `request_response` function: 
+
+```python
+self.app = request_response(self.get_route_handler())
+```
+
+So `request_response` (from Starlette, imported in `fastapi/routing.py`) wraps the coroutine handler returned by `get_route_handler` into an ASGI application, which is stored as `self.app` and used to actually serve requests for that route.",True,True,True,fastapi/routing.py,True,"The answer correctly identifies get_route_handler in fastapi/routing.py returning get_request_handler's async Request->Response callable, wrapped by Starlette's request_response into self.app.",0.034296,0.027626,0.00667,0.027626,all,trace,True,L,6232509,2888
+q17,agentic,21619,791,0,0,5,False,end_turn,,14.799,2026-08-18T11:21:31Z,"Based on `fastapi/routing.py`, the inner `app` function built by `get_request_handler` (lines 375–761):
+
+- **Invokes the endpoint** by calling `run_endpoint_function(dependant=dependant, values=solved_result.values, is_coroutine=is_coroutine)` (for the normal, non-streaming case, line 706). For streaming/generator endpoints (SSE, JSONL, or raw streaming responses), it instead calls `dependant.call(**solved_result.values)` directly (lines 522, 649, 687) to get a generator.
+
+- **Serializes the return value** via `serialize_response(field=response_field, response_content=raw_response, ...)` (line 727), which converts the raw response into JSON-encodable content (optionally using Pydantic's fast `dump_json` path). For streaming responses, serialization instead happens per-item through the internal `_serialize_data`/`_serialize_item`/`_serialize_sse_item` helpers, which use `stream_item_field.serialize_json(...)` or fall back to `jsonable_encoder` + `json.dumps`.",True,True,True,fastapi/routing.py,True,"The answer names fastapi/routing.py and correctly identifies run_endpoint_function for invoking the endpoint and serialize_response for serialising the return value, with accurate extra detail.",0.058143,0.051148,0.006995,0.051148,all,trace,True,L,6232509,2888
+q01,indexed,11215,818,0,0,2,False,end_turn,,13.221,2026-08-18T11:25:34Z,"The core dependency-resolution logic lives in the `solve_dependencies` function in `fastapi/dependencies/utils.py` (lines ~586–730). This async function:
+
+- Iterates over `dependant.dependencies` (sub-dependencies), applies any `dependency_overrides`, recursively calls itself (`solve_dependencies`) to resolve each sub-dependency's own parameters, then actually invokes the sub-dependency callable — via `_solve_generator` for generator/async-generator dependencies (context-manager style, entered onto the appropriate `AsyncExitStack`), via direct `await call(...)` for coroutine functions, or via `run_in_threadpool(call, ...)` for regular sync functions — caching results in `dependency_cache` when `use_cache` is set.
+- Extracts path/query/header/cookie parameters using `request_params_to_args`, and body parameters using `request_body_to_args`.
+- Populates special parameters (`Request`/`WebSocket`, `BackgroundTasks`, `Response`, `SecurityScopes`).
+- Returns a `SolvedDependency` dataclass containing `values`, `errors`, `background_tasks`, `response`, and `dependency_cache`.
+
+This function is invoked from two call sites that set up the request's `AsyncExitStack`s and trigger the actual resolution for a given request:
+
+- `APIRoute`/route-group handling in `fastapi/routing.py`, in the `_solve_dependencies` async context manager (around line 2209), which sets up `fastapi_inner_astack`/`fastapi_function_astack` in the ASGI scope and calls `solve_dependencies`.
+- The path-operation execution code in `fastapi/routing.py` (around line 475–522), which pulls the exit stacks from `request.scope`, calls `solve_dependencies` again with the resolved values, and then calls `dependant.call(**solved_result.values)` to actually run the endpoint.
+
+So the actual, low-level resolution work happens in `solve_dependencies` in `fastapi/dependencies/utils.py`, while `fastapi/routing.py` is where it's invoked to process an incoming request.",True,True,True,fastapi/dependencies/utils.py,True,"The answer identifies solve_dependencies in fastapi/dependencies/utils.py as the location of dependency resolution, matching the expected file and symbol, with accurate supporting detail.",0.03926,0.03061,0.00865,0.03061,all,locate,True,L,6232509,2888
+q37,agentic,81495,2228,0,0,8,False,end_turn,,30.689,2026-08-18T11:28:35Z,"Now I have full picture. Let me write the answer.
+
+## Answer
+
+There are two collaborating mechanisms in `fastapi/dependencies/utils.py`:
+
+**1. Recognizing the `SecurityScopes` parameter**
+
+When FastAPI builds the `Dependant` for a callable (`get_dependant`, `fastapi/dependencies/utils.py:271`), each parameter is analyzed with `analyze_param`. If a parameter's type annotation is (a subclass of) `fastapi.security.oauth2.SecurityScopes`, `add_non_field_param_to_dependency` (`fastapi/dependencies/utils.py:350-371`) records its name:
+
+```python
+elif lenient_issubclass(type_annotation, SecurityScopes):
+    dependant.security_scopes_param_name = param_name
+    return True
+```
+
+So instead of treating it as a query/body field, the parameter name is stashed on `dependant.security_scopes_param_name` (`fastapi/dependencies/models.py`, `Dependant.security_scopes_param_name`).
+
+**2. Accumulating the scopes for that dependency**
+
+When a dependency is declared via `Security(dependency, scopes=[...])` (a `params.Security` object, a subclass of `params.Depends` defined in `fastapi/params.py:753`), `get_dependant` notices the `scopes` attribute while building the sub-dependant (`fastapi/dependencies/utils.py:318-330`):
+
+```python
+if isinstance(param_details.depends, params.Security):
+    if param_details.depends.scopes:
+        sub_own_oauth_scopes = list(param_details.depends.scopes)
+sub_dependant = get_dependant(
+    ...,
+    own_oauth_scopes=sub_own_oauth_scopes,
+    parent_oauth_scopes=current_scopes,
+    ...
+)
+```
+
+Each `Dependant` stores `own_oauth_scopes` (the scopes attached directly to it via `Security(..., scopes=...)`) and `parent_oauth_scopes` (accumulated scopes from the dependency chain above it). The same logic also applies to parameterless dependencies (`get_parameterless_sub_dependant`, lines 132-144).
+
+`_get_oauth_scopes` (`fastapi/dependencies/models.py:71-79`) merges parent + own scopes for a given `Dependant`, preserving order and de-duplicating.
+
+**3. Populating the value at request time**
+
+During dependency resolution, `solve_dependencies` (`fastapi/dependencies/utils.py`) processes each `Dependant`; after computing all other values for that dependant, if it has a `security_scopes_param_name`, it builds and injects the `SecurityScopes` instance:
+
+```python
+if dependant.security_scopes_param_name:
+    values[dependant.security_scopes_param_name] = SecurityScopes(
+        scopes=_get_oauth_scopes(dependant=dependant)
+    )
+```
+(`fastapi/dependencies/utils.py:721-724`)
+
+So, for a function like:
+
+```python
+def dep(security_scopes: SecurityScopes, token: str = Depends(oauth2_scheme)): ...
+```
+used as `Security(dep, scopes=[""items:read""])` and possibly nested under another `Security(...)` dependency with its own scopes, `solve_dependencies` fills `security_scopes` with a `SecurityScopes` object whose `.scopes` list is the concatenation of all `own_oauth_scopes` from that dependency up through its parent chain (`parent_oauth_scopes`), and whose `.scope_str` is those scopes joined by spaces (`fastapi/security/oauth2.py:653+`, `SecurityScopes.__init__`).",True,True,True,fastapi/security/oauth2.py;fastapi/dependencies/utils.py;fastapi/params.py,True,"It correctly identifies SecurityScopes detection in get_dependant/analyze_param, params.Security scope accumulation, and injection in solve_dependencies across the expected files.",0.200275,0.18527,0.015005,0.18527,all,multi_hop,True,L,6232509,2888
+q21,indexed,39277,1253,0,0,3,False,end_turn,,19.22,2026-08-18T11:29:29Z,"## `get_dependant`'s per-parameter processing
+
+`get_dependant` (in `fastapi/dependencies/utils.py`) first computes the endpoint's typed signature with `get_typed_signature(call)`, then iterates over `signature_params.items()`. For **each parameter** it calls, in order:
+
+1. **`analyze_param(param_name=..., annotation=param.annotation, value=param.default, is_path_param=...)`**
+   This inspects the annotation (unwrapping `Annotated[...]`), looks for a `params.Depends`/`params.Security` instance or a `FieldInfo` (`Query`, `Path`, `Body`, etc.), builds a `ModelField` via `create_model_field` when relevant, and returns a `ParamDetails` object (`type_annotation`, `depends`, `field`).
+
+2. Based on the result of `analyze_param`, three possible branches follow:
+   - **If `param_details.depends is not None`** (the parameter is a sub-dependency): it recursively calls **`get_dependant(...)`** again for `param_details.depends.dependency`, producing a `sub_dependant`, which is appended to `dependant.dependencies`.
+   - **Otherwise**, it calls **`add_non_field_param_to_dependency(param_name=..., type_annotation=param_details.type_annotation, dependant=dependant)`**. This checks if the parameter's type is one of FastAPI/Starlette's special types (`Request`, `WebSocket`, `HTTPConnection`, `Response`, `StarletteBackgroundTasks`, `SecurityScopes`) and if so records the parameter name on the corresponding `dependant.*_param_name` attribute, returning `True`.
+   - **If neither of the above applies** (so `param_details.field is not None`): it either appends the field to `dependant.body_params` (when `field.field_info` is a `params.Body`) or calls **`add_param_to_fields(field=param_details.field, dependant=dependant)`**, which routes the field into `dependant.path_params`, `query_params`, `header_params`, or `cookie_params` depending on `field_info.in_`.
+
+So, for each parameter, `get_dependant` calls: `analyze_param` → then one of `get_dependant` (recursive, for sub-dependencies), `add_non_field_param_to_dependency` (for special injected objects like `Request`/`Response`/etc.), or `add_param_to_fields`/direct append to `body_params` (for regular path/query/header/cookie/body fields).",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies fastapi/dependencies/utils.py and that get_dependant calls analyze_param for each parameter, with accurate detail on subsequent branching.",0.100294,0.091084,0.00921,0.091084,all,trace,True,L,6232509,2888
+q17,indexed,16616,747,0,0,3,False,end_turn,,16.406,2026-08-18T11:31:46Z,"## Answer
+
+In `fastapi/routing.py`, the `app` closure created inside `get_request_handler` (lines ~375-746) does the following for the non-streaming case:
+
+1. **Invoking the endpoint**: it calls `await run_endpoint_function(dependant=dependant, values=solved_result.values, is_coroutine=is_coroutine)` to actually execute the path operation function (`dependant.call`), producing `raw_response`.
+
+2. **Serialising the return value**: if `raw_response` isn't already a `Response` instance, it calls `await serialize_response(field=response_field, response_content=raw_response, ...)` to validate/serialize the return value (via Pydantic's `ModelField.serialize`/`serialize_json`, or `jsonable_encoder` if there's no response field) before building the final `Response`.
+
+(For streaming/SSE/JSONL endpoints, the handler instead calls `dependant.call(**solved_result.values)` directly to get a generator and uses an internal `_serialize_data`/`_serialize_item` helper built on `stream_item_field.serialize_json` or `jsonable_encoder` + `json.dumps` to serialize each chunk.)
+
+Key functions/locations:
+- `run_endpoint_function` — defined in `fastapi/routing.py` (right after `serialize_response`), called from within `get_request_handler`'s `app` function.
+- `serialize_response` — defined in `fastapi/routing.py`, called from within the same `app` function to serialize `raw_response` into `content`.",True,True,True,fastapi/routing.py,True,The answer names fastapi/routing.py and correctly identifies run_endpoint_function for invoking the endpoint and serialize_response for serialising the return value within get_request_handler's app closure.,0.048457,0.040702,0.007755,0.040702,all,trace,True,L,6232509,2888
+q31,agentic,8600,549,0,0,3,False,end_turn,,9.971,2026-08-18T11:33:04Z,"The 422 response is formatted by `request_validation_exception_handler` in `fastapi/exception_handlers.py`, which builds a `JSONResponse` with `status_code=422` and a `{""detail"": jsonable_encoder(exc.errors())}` body.
+
+It is registered as the default handler for `RequestValidationError` in `FastAPI.__init__` (`fastapi/applications.py`, around lines 1000–1006), via `self.exception_handlers.setdefault(RequestValidationError, request_validation_exception_handler)`. This mapping is later used by Starlette's exception middleware to dispatch the handler whenever a route raises `RequestValidationError` (raised e.g. in `fastapi/routing.py` when request parameter/body validation fails).",True,True,True,fastapi/exception_handlers.py;fastapi/applications.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py and its setdefault registration for RequestValidationError in FastAPI.__init__ in fastapi/applications.py, matching expectations.",0.029485,0.02269,0.006795,0.02269,all,multi_hop,True,L,6232509,2888
+q03,agentic,5455,356,0,0,3,False,end_turn,,7.682,2026-08-18T11:38:37Z,"The handler is `request_validation_exception_handler` in `fastapi/exception_handlers.py` (lines 20–26). It catches `RequestValidationError` and returns a `JSONResponse` with `status_code=422` and a `{""detail"": ...}` body containing the encoded validation errors.
+
+It's registered as the default exception handler for `RequestValidationError` in `FastAPI.__init__` in `fastapi/applications.py` (around line 1005), via `self.exception_handlers` / `self.add_exception_handler(RequestValidationError, request_validation_exception_handler)`.",True,True,True,fastapi/exception_handlers.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py, matching the expected file and symbol, with accurate additional detail about registration.",0.02033,0.01447,0.00586,0.01447,all,locate,True,L,6232509,2888
+q21,agentic,8448,958,0,0,4,False,end_turn,,13.242,2026-08-18T11:41:41Z,"For each parameter in the endpoint's signature, `get_dependant` (in `fastapi/dependencies/utils.py`) does the following, iterating over `endpoint_signature.parameters` (obtained via `get_typed_signature(call)`):
+
+1. **`analyze_param(param_name=..., annotation=param.annotation, value=param.default, is_path_param=...)`** — this is called for *every* parameter to inspect its annotation/default and classify it (returns a `ParamDetails` with `depends`, `type_annotation`, and `field`).
+
+2. If `param_details.depends is not None` (i.e., the parameter is a `Depends`/`Security`), it recursively calls **`get_dependant(...)`** again for the sub-dependency's callable, building a `sub_dependant` that is appended to `dependant.dependencies`.
+
+3. Otherwise, it calls **`add_non_field_param_to_dependency(param_name=..., type_annotation=..., dependant=dependant)`** to check whether the parameter is one of the special non-field types (`Request`, `WebSocket`, `HTTPConnection`, `Response`, `BackgroundTasks`, `SecurityScopes`, etc.) and, if so, assigns it to the corresponding `dependant.*_param_name` attribute.
+
+4. If it's not a special/non-field param, it falls through to treating it as a regular field: if `param_details.field.field_info` is a `params.Body`, it's appended to `dependant.body_params`; otherwise it calls **`add_param_to_fields(field=param_details.field, dependant=dependant)`**, which sorts it into the dependant's query/header/cookie/path param lists based on its `field_info` type.
+
+So per-parameter, the calls are: `analyze_param` (always), then either `get_dependant` (recursive, for sub-dependencies) or `add_non_field_param_to_dependency` and possibly `add_param_to_fields`.",True,True,True,fastapi/dependencies/utils.py,True,"The answer correctly identifies get_dependant in fastapi/dependencies/utils.py calling analyze_param for every parameter, plus accurate detail on subsequent branching calls.",0.034746,0.026476,0.00827,0.026476,all,trace,True,L,6232509,2888
+q02,agentic,2394,158,0,0,2,False,end_turn,,4.412,2026-08-18T11:42:35Z,"`jsonable_encoder` in `fastapi/encoders.py` is the function that converts arbitrary Python objects (Pydantic models, dataclasses, dates, enums, etc.) into JSON-compatible types (dicts, lists, str, int, float, bool, None) before they are serialized into a response.",True,True,True,fastapi/encoders.py,True,"The answer names jsonable_encoder in fastapi/encoders.py, matching the expected file and symbol, with accurate description of its conversion behaviour.",0.011738,0.006368,0.00537,0.006368,all,locate,True,L,6232509,2888
+q37,indexed,37000,1902,0,0,3,False,end_turn,,23.103,2026-08-18T11:44:43Z,"A `SecurityScopes`-annotated parameter is populated by a multi-step process in `fastapi/dependencies/utils.py` and `fastapi/dependencies/models.py`:
+
+**1. Recognizing the parameter type**
+When building a `Dependant` for a callable, `get_dependant()` (`fastapi/dependencies/utils.py`) inspects each parameter via `analyze_param`, then calls `add_non_field_param_to_dependency()`. That function checks `lenient_issubclass(type_annotation, SecurityScopes)` and, if true, stores the parameter's name on the dependant:
+
+```python
+elif lenient_issubclass(type_annotation, SecurityScopes):
+    dependant.security_scopes_param_name = param_name
+    return True
+```
+
+This means the parameter is *not* treated as a normal field to resolve from the request — it's a special ""non-field"" param, just like `Request` or `BackgroundTasks`.
+
+**2. Accumulating scopes as the dependency tree is built**
+Still inside `get_dependant()`, when a sub-dependency is declared with `Security(...)` rather than plain `Depends(...)`, the scopes given to `Security(scopes=[...])` (defined in `fastapi/params.py` as `Security(Depends)` with a `scopes` field) are captured:
+
+```python
+sub_own_oauth_scopes: list[str] = []
+if isinstance(param_details.depends, params.Security):
+    if param_details.depends.scopes:
+        sub_own_oauth_scopes = list(param_details.depends.scopes)
+sub_dependant = get_dependant(
+    ...,
+    own_oauth_scopes=sub_own_oauth_scopes,
+    parent_oauth_scopes=current_scopes,
+    ...
+)
+```
+
+Each `Dependant` (`fastapi/dependencies/models.py`) thus carries `own_oauth_scopes` (declared directly on that `Security(...)`) and `parent_oauth_scopes` (the scopes accumulated from all ancestor dependencies/path operation). This is how scopes declared at different levels of the dependency tree get combined for a given dependant.
+
+**3. Computing the final scope list**
+The helper `_get_oauth_scopes()` in `fastapi/dependencies/models.py` merges these two lists (parent scopes plus any own scopes not already present, preserving order):
+
+```python
+def _get_oauth_scopes(*, dependant: Dependant) -> list[str]:
+    scopes = dependant.parent_oauth_scopes.copy() if dependant.parent_oauth_scopes else []
+    for scope in dependant.own_oauth_scopes or []:
+        if scope not in scopes:
+            scopes.append(scope)
+    return scopes
+```
+
+**4. Instantiating `SecurityScopes` at solve time**
+Finally, when dependencies are actually resolved for a request, `solve_dependencies()` in `fastapi/dependencies/utils.py` checks whether the dependant recorded a `security_scopes_param_name`, and if so, builds a `SecurityScopes` instance and injects it into the values dict passed to the call:
+
+```python
+if dependant.security_scopes_param_name:
+    values[dependant.security_scopes_param_name] = SecurityScopes(
+        scopes=_get_oauth_scopes(dependant=dependant)
+    )
+```
+
+`SecurityScopes` itself (`fastapi/security/oauth2.py`) just stores the given list in `self.scopes` and also builds `self.scope_str` (space-joined scopes).
+
+**Summary of the flow:**
+- `Security(dependency, scopes=[...])` (a subclass of `Depends`, in `fastapi/params.py`) marks scopes for that specific sub-dependency.
+- `get_dependant()` walks the dependency tree, recording each dependant's `own_oauth_scopes` and `parent_oauth_scopes` (`fastapi/dependencies/utils.py`, `fastapi/dependencies/models.py`).
+- Any parameter typed `SecurityScopes` is detected via `add_non_field_param_to_dependency()` and its name stored as `security_scopes_param_name` on the `Dependant`.
+- At request-solving time, `solve_dependencies()` computes the merged scope list with `_get_oauth_scopes()` and constructs a `SecurityScopes(scopes=...)` object, injecting it as the value for that parameter — so the same ""root"" `SecurityScopes` parameter sees the union of scopes declared by itself and all dependants above it in the tree for that specific path operation.",True,True,True,fastapi/security/oauth2.py;fastapi/dependencies/utils.py;fastapi/params.py,True,"Answer identifies the correct locations and flow: SecurityScopes in security/oauth2.py, Security in params.py, detection in get_dependant, and injection in solve_dependencies.",0.10955,0.09302,0.01653,0.09302,all,multi_hop,True,L,6232509,2888
+q22,indexed,8690,865,0,0,2,False,end_turn,,12.641,2026-08-18T11:48:51Z,"`solve_dependencies` (in `fastapi/dependencies/utils.py`) turns the incoming `Request`/`WebSocket` into the keyword arguments for the endpoint by calling several helper functions:
+
+1. **`request_params_to_args`** – called four times, once each for `dependant.path_params`, `dependant.query_params`, `dependant.header_params`, and `dependant.cookie_params`, extracting values from `request.path_params`, `request.query_params`, `request.headers`, and `request.cookies` respectively.
+
+2. **`request_body_to_args`** – called (awaited) when `dependant.body_params` is non-empty, to parse the `body` (dict/`FormData`/bytes) into the body-parameter values.
+
+3. For sub-dependencies (`dependant.dependencies`), it recursively calls **`solve_dependencies`** itself for each `sub_dependant`, then resolves the sub-dependency's own callable via **`_solve_generator`** (for generator/async-generator dependencies) or by directly calling `call(**solved_result.values)` (sync/async), using **`get_dependant`** to rebuild the dependant when `dependency_overrides_provider` overrides are present, and **`_get_cache_key`** for dependency caching.
+
+4. It also directly assigns special values into `values` (not via a helper call) for `request`/`websocket`, `background_tasks`, `response`, and `security_scopes` based on the corresponding `dependant.*_param_name` attributes.
+
+Finally it packages everything into a `SolvedDependency` object.
+
+These pieces are combined and returned as `values`/`errors`, which is then used in `fastapi/routing.py` (e.g. `get_request_handler`/`get_websocket_app`) to call `dependant.call(**solved_result.values)` for the actual endpoint function.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names fastapi/dependencies/utils.py and correctly identifies request_params_to_args and request_body_to_args as the helpers solve_dependencies calls, with accurate extra detail.",0.03433,0.02603,0.0083,0.02603,all,trace,True,L,6232509,2888
+q16,agentic,4645,358,0,0,3,False,end_turn,,7.552,2026-08-18T11:52:17Z,"`APIRoute.get_route_handler()` returns the coroutine function produced by `get_request_handler(...)` (a `Callable[[Request], Coroutine[Any, Any, Response]]`), as seen in `fastapi/routing.py`.
+
+This returned handler is then wrapped by `request_response(...)` (from Starlette) when building `self.app = request_response(self.get_route_handler())` in `APIRoute.__init__` (`fastapi/routing.py`, line 1223), converting the async request handler into an ASGI application.",True,True,True,fastapi/routing.py,True,The answer correctly identifies get_route_handler returning get_request_handler's coroutine and its wrapping by request_response in fastapi/routing.py.,0.023355,0.01287,0.010485,0.01287,all,trace,True,L,6232509,2888
+q31,indexed,17180,527,0,0,3,False,end_turn,,11.867,2026-08-18T11:55:25Z,"The default 422 formatter is `request_validation_exception_handler` (in `fastapi/exception_handlers.py`), which returns `JSONResponse(status_code=422, content={""detail"": jsonable_encoder(exc.errors())})`.
+
+It is registered on the app in `fastapi/applications.py`, inside `FastAPI.__init__`, via:
+
+```python
+self.exception_handlers.setdefault(
+    RequestValidationError, request_validation_exception_handler
+)
+```
+
+This sets it as the default handler in the app's `exception_handlers` dict (which can be overridden by the user with `@app.exception_handler(RequestValidationError)`, as shown in the docs examples like `docs_src/handling_errors/tutorial004_py310.py` and `tutorial005_py310.py`).",True,True,True,fastapi/exception_handlers.py;fastapi/applications.py,True,"The answer names request_validation_exception_handler in fastapi/exception_handlers.py and its registration for RequestValidationError in FastAPI.__init__ in fastapi/applications.py, matching all expected files and symbols.",0.0465,0.03963,0.00687,0.03963,all,multi_hop,True,L,6232509,2888
+q06,indexed,6955,265,0,0,2,False,end_turn,,6.176,2026-08-18T11:56:36Z,"The helper is `is_body_allowed_for_status_code(status_code)`, defined in `fastapi/utils.py:26-40`. 
+
+It returns `True` if the status code is `None` or a pattern like `""default""`, `""1XX""`–`""5XX""`, and otherwise converts the status code to an int and returns `False` for codes below 200 or equal to 204, 205, or 304 (i.e., statuses that per HTTP semantics must not carry a body). It's used, for example, in `fastapi/routing.py` (in `APIRoute` setup) to validate that response models aren't declared for status codes that can't have a body.",True,True,True,fastapi/utils.py,True,The answer correctly names is_body_allowed_for_status_code in fastapi/utils.py and accurately describes its logic and usage.,0.024945,0.01656,0.008385,0.01656,all,locate,True,L,6232509,2888
+q22,agentic,7488,606,0,0,3,False,end_turn,,9.521,2026-08-18T11:56:47Z,"In `fastapi/dependencies/utils.py`, `solve_dependencies` (line 586) turns the incoming request into endpoint arguments by calling:
+
+- **`request_params_to_args`** — for `dependant.path_params`, `dependant.query_params`, `dependant.header_params`, and `dependant.cookie_params`, extracting values from `request.path_params`, `request.query_params`, `request.headers`, and `request.cookies` respectively.
+- **`request_body_to_args`** — (awaited) for `dependant.body_params`, converting the parsed `body` into keyword arguments.
+- It also recursively calls itself (`solve_dependencies`) for each `sub_dependant` in `dependant.dependencies`, and uses `get_dependant`/`_get_cache_key`/`_get_oauth_scopes` plus `_is_gen_callable`, `_is_async_gen_callable`, `_solve_generator`, and `_is_coroutine_callable` to actually invoke each dependency callable with its own solved values.
+- Special framework values (`Request`/`WebSocket`, `BackgroundTasks`, `Response`, `SecurityScopes`) are inserted directly based on the `dependant`'s special parameter-name attributes rather than through a helper function.",True,True,True,fastapi/dependencies/utils.py,True,"The answer names fastapi/dependencies/utils.py and identifies request_params_to_args and request_body_to_args called by solve_dependencies, matching the expected file and symbols with accurate extra detail.",0.028476,0.021036,0.00744,0.021036,all,trace,True,L,6232509,2888

@@ -1,0 +1,60 @@
+{
+  "probe_id": "f14",
+  "arm": "memsearch@l",
+  "question": "What did we decide to route `vellmure` through?",
+  "expected": "bailer-arbiter",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 87,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "vellmure"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01HCYstf5DQsD7BD2KH3u7bf",
+          "content": "[\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-02-27.md\",\n    \"heading\": \"12:07\",\n    \"heading_level\": 3,\n    \"start_line\": 58,\n    \"end_line\": 64,\n    \"content\": \"### 12:07\\n<!-- session:411e8bac-d192-4b21-b54c-54f93c7bfe7e turn:e2d4c43c-de0a-4e83-bba8-6e1e34a148ba transcript:/synthetic/ws6b/411e8bac-d192-4b21-b54c-54f93c7bfe7e.jsonl -->\\n- Filed a note about `corbmure` for the next planning round. The gist is that it and `galdnail` have grown apart enough that sharing the `sieve-gateway` path is now more cost than benefit.\\n- Confirmed `vellfold` still passes its smoke checks after the `thaxvex` change. Dorlurrow double-checked the `spindle-harness` interaction by hand because the automated coverage there is thin.\\n- Compared `pelmure` against `quillmure` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `sieve-queue` path was exercised.\\n- Re-ran the `galdcote` verification suite after the `ladder-queue` rollout. Everything passed, though two cases took noticeably longer than they did before the `fenvex` change landed.\",\n    \"chunk_hash\": \"3feb35398664e16d\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-23.md\",\n    \"heading\": \"18:19\",\n    \"heading_level\": 3,\n    \"start_line\": 172,\n    \"end_line\": 175,\n    \"content\": \"- Cleared a stale alert on `galdwood` that had been firing since Tuesday. The underlying condition resolved itself when `sieve-gateway` was restarted, and Marnurrow confirmed nothing downstream noticed.\\n- Selaolm walked the team through the `wrasmet` change set, flagged two places where error handling diverges from `corbmure`, and agreed to leave both alone until the interface settles.\\n- We decided to route `vellmure` through `bailer-arbiter` rather than `shunt-gateway`.\",\n    \"chunk_hash\": \"9105c4f5909f3bf8\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"source\": \"/Users/sim",
+          "content_length": 6007,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3468,
+        "output_tokens": 26,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "`bailer-arbiter` (rather than `shunt-gateway`)."
+        }
+      ]
+    }
+  ]
+}

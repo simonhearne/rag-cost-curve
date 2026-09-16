@@ -1,0 +1,10 @@
+{
+ "arm": "pca_uc_512_sq8",
+ "ceiling_10m_first_n": 0.9666,
+ "ceiling_1m": 0.96374,
+ "delta": 0.0028599999999999737,
+ "tolerance": 0.05,
+ "n_queries": 1000,
+ "passed": true,
+ "seconds": 18.85380721092224
+}

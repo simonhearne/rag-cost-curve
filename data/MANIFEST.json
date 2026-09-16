@@ -1,0 +1,3748 @@
+{
+  "files": {
+    "corpus_10m_fp32_norm.npy": {
+      "bytes": 40960000128,
+      "dim": 1024,
+      "normalized": true,
+      "recorded_at": "2026-08-11T15:03:58",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 10000000,
+      "sha256": "57533c40b714fcc89fb042be7a3910c9b844f926850edc92ff4307b337f084d5",
+      "source_dtype": [
+        "list<element: double>"
+      ]
+    },
+    "corpus_10m_ids.parquet": {
+      "bytes": 155421520,
+      "recorded_at": "2026-08-11T15:03:58",
+      "sha256": "69259e9e78309a648bcbe473b9865be20dffe19a63ece5aa5b52ca8a9dd2fbb9"
+    },
+    "corpus_1m_fp32_norm.npy": {
+      "bytes": 4096000128,
+      "dim": 1024,
+      "normalized": true,
+      "recorded_at": "2026-08-11T13:59:34",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 1000000,
+      "sha256": "aa555cef9aae6ab4cd10d595aa1feec793118472db86b421d6cb66ed948f26b1",
+      "source_dtype": [
+        "list<element: double>"
+      ]
+    },
+    "corpus_1m_ids.parquet": {
+      "bytes": 15547803,
+      "recorded_at": "2026-08-11T13:59:34",
+      "sha256": "60b28142dcd23ce84cd3c824b4f2da5b075de824ae1fb8e9497e555eb2f4d79f"
+    },
+    "corpus_shards/train-00000-of-00721.parquet": {
+      "bytes": 129768236,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "8a9cb009acee7ef32eaa377db78f8fb8d362a983aef7be59356eadef0ca94fd7",
+      "shard": 0
+    },
+    "corpus_shards/train-00001-of-00721.parquet": {
+      "bytes": 129999514,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "643a8b2e18aaa468862086566a04c95509dbcf37d648640903b606a8c6260ec5",
+      "shard": 1
+    },
+    "corpus_shards/train-00002-of-00721.parquet": {
+      "bytes": 130042561,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "f6a64367d2b27feda76c152041be4d18ffa0d3928ac3677bfe0866a5ed4824af",
+      "shard": 2
+    },
+    "corpus_shards/train-00003-of-00721.parquet": {
+      "bytes": 129984221,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2e9fa7778422df81f0fe46c488e297eff3160fd5aea30e04b42bd05704fd0d41",
+      "shard": 3
+    },
+    "corpus_shards/train-00004-of-00721.parquet": {
+      "bytes": 129873455,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "bc0b178be4ccdc6ca74f2455d32cbd05551a15c69080e22dec263f6fcf13a9d6",
+      "shard": 4
+    },
+    "corpus_shards/train-00005-of-00721.parquet": {
+      "bytes": 129929772,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "5bbc09bd8e7801c6ef14d9403c0e9f393ee809b986368402ff767ef139632091",
+      "shard": 5
+    },
+    "corpus_shards/train-00006-of-00721.parquet": {
+      "bytes": 129675719,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "5fd2f14c534bb7e81e6c13bf15344b3a6303b4a5cf4be83e1f267b9c6c31e3eb",
+      "shard": 6
+    },
+    "corpus_shards/train-00007-of-00721.parquet": {
+      "bytes": 129508378,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2717f1ea7ffddaae80806dac8a844d304b78c34a7979c827ef186b80e712ad45",
+      "shard": 7
+    },
+    "corpus_shards/train-00008-of-00721.parquet": {
+      "bytes": 128364815,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b1617cacf1f8b32af500cb7eba02d710e774d384b74d7935a69c6402fbad5749",
+      "shard": 8
+    },
+    "corpus_shards/train-00009-of-00721.parquet": {
+      "bytes": 130184080,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "32e29efd250847acdacc3de63ce0247cf307c21df10388cdba73bfee0127174b",
+      "shard": 9
+    },
+    "corpus_shards/train-00010-of-00721.parquet": {
+      "bytes": 130066205,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c946cb5acb994915faeab8ed975d551143ecbce130c1ca2588864ad77e34795c",
+      "shard": 10
+    },
+    "corpus_shards/train-00011-of-00721.parquet": {
+      "bytes": 130425108,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b7469fbf131631e5e87cd5602f13daf7a5f4196579ebbbe3dcb8943c800e562d",
+      "shard": 11
+    },
+    "corpus_shards/train-00012-of-00721.parquet": {
+      "bytes": 129986923,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "3cf07570b0fda86ab020bc1a5bd2214a7a157197eee295e16c4c551a3275cf45",
+      "shard": 12
+    },
+    "corpus_shards/train-00013-of-00721.parquet": {
+      "bytes": 130304540,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1d0260d5f0326b257114b2808904f0573d333f4611e62c7f2bdf4ef05a6a1212",
+      "shard": 13
+    },
+    "corpus_shards/train-00014-of-00721.parquet": {
+      "bytes": 130488477,
+      "recorded_at": "2026-08-11T15:14:59",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2ae00dff9f529edfbcdc58577d71d55f4a4ce7b5661cd0c6b6cbdb0b97ba93ff",
+      "shard": 14
+    },
+    "corpus_shards/train-00015-of-00721.parquet": {
+      "bytes": 130124821,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "deb53f5302ef671de53ded014af0e9363966150b65a6a376827b675240f8be01",
+      "shard": 15
+    },
+    "corpus_shards/train-00016-of-00721.parquet": {
+      "bytes": 129086173,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "38cf09cfa7467a9afccbc827c0ce7b043227ac56547b151d9b1e3030177a6cc9",
+      "shard": 16
+    },
+    "corpus_shards/train-00017-of-00721.parquet": {
+      "bytes": 130324687,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "6a8aa004ea51a4fa468a1263c1070036eb88c9fe6622b6ffce52cd04cd8195c2",
+      "shard": 17
+    },
+    "corpus_shards/train-00018-of-00721.parquet": {
+      "bytes": 129777826,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9d1819fa6308db33450d38f34db8d89fd4e9d9449791c2c496f33573972d0381",
+      "shard": 18
+    },
+    "corpus_shards/train-00019-of-00721.parquet": {
+      "bytes": 130693555,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "d46673338d21857680b49fc3cc3deaba8d2c4eab89411edbff3fdce291142719",
+      "shard": 19
+    },
+    "corpus_shards/train-00020-of-00721.parquet": {
+      "bytes": 129151918,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "484acd4fda12138de105dfebe0cb830b0026f94eb6a8d6e552212c47b152848f",
+      "shard": 20
+    },
+    "corpus_shards/train-00021-of-00721.parquet": {
+      "bytes": 130069850,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "332499d7bbf0d09d29854a9c0ed86e595e60f299a4589a6d7b587f555ac9b74d",
+      "shard": 21
+    },
+    "corpus_shards/train-00022-of-00721.parquet": {
+      "bytes": 130709738,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e21af18a1291975808aafd4c2cd409bc94a46b99bcdcb621e1704bb981133ddf",
+      "shard": 22
+    },
+    "corpus_shards/train-00023-of-00721.parquet": {
+      "bytes": 130668562,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "93189562780e87794fd7a4cb4e70ad2e1be442eb48404c4adacdaf3584f16816",
+      "shard": 23
+    },
+    "corpus_shards/train-00024-of-00721.parquet": {
+      "bytes": 130328274,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ce947ec520eb23a6f9842f427edba26c5a8780ca08add0264ffbecd18ddb75de",
+      "shard": 24
+    },
+    "corpus_shards/train-00025-of-00721.parquet": {
+      "bytes": 130368757,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "6df5803e8aebb22c72c10149f68a2a1069fb35a22575cf2e3a0d46404dbdc285",
+      "shard": 25
+    },
+    "corpus_shards/train-00026-of-00721.parquet": {
+      "bytes": 130088779,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1504d9a745dc43908d10d41f30670aadbd7ffa379f9b50f1890a3b2d72074fb1",
+      "shard": 26
+    },
+    "corpus_shards/train-00027-of-00721.parquet": {
+      "bytes": 129261896,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "25d16ae26c73df8a33116f7a1e41e732fb984511a3afd0402f70f3725641910b",
+      "shard": 27
+    },
+    "corpus_shards/train-00028-of-00721.parquet": {
+      "bytes": 130099984,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "4e0b4e2708829f1530b82004f85c9bae3a50b0dd429fbdebed6a7cfee7a2d050",
+      "shard": 28
+    },
+    "corpus_shards/train-00029-of-00721.parquet": {
+      "bytes": 130298292,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "900543f0b566b502ba24006195d3c36ce079ae98774be4792cb1236796bc05ca",
+      "shard": 29
+    },
+    "corpus_shards/train-00030-of-00721.parquet": {
+      "bytes": 130099636,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "52c82b802150f4f7be39bdb467b4f09d2f4ae12c2cdfde8785218cea45531c6b",
+      "shard": 30
+    },
+    "corpus_shards/train-00031-of-00721.parquet": {
+      "bytes": 128857837,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a16e9b983e1729b5ae31d8b4403e7ba4e1bb358870ffccbb71cbe7cc74416d16",
+      "shard": 31
+    },
+    "corpus_shards/train-00032-of-00721.parquet": {
+      "bytes": 130092177,
+      "recorded_at": "2026-08-11T15:15:00",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a51842ba52580f4d13ca956fea154f9be7abf913fcacc06a00b6e4d8f1649ccb",
+      "shard": 32
+    },
+    "corpus_shards/train-00033-of-00721.parquet": {
+      "bytes": 130295933,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "4d9f348df00f99e30ee9367341591e39b351e5f706633b7e7512829252fbea0e",
+      "shard": 33
+    },
+    "corpus_shards/train-00034-of-00721.parquet": {
+      "bytes": 130220366,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "8716a57c20443f016f6b9b61747f5b1e9e6450f5383e4579b07e6b97952c28c2",
+      "shard": 34
+    },
+    "corpus_shards/train-00035-of-00721.parquet": {
+      "bytes": 129935966,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "7a8e79fda8b6338f9af706fddc45b9427d852cb30868317b619f957a02388cb9",
+      "shard": 35
+    },
+    "corpus_shards/train-00036-of-00721.parquet": {
+      "bytes": 130271289,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "8a21e94b3a619cbb8e70a4a473a3ea314b6d5ee8d9588347a346b8631c4c64e8",
+      "shard": 36
+    },
+    "corpus_shards/train-00037-of-00721.parquet": {
+      "bytes": 130442405,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "697dc05c8f427cc7756bcd20854947eabf721b8a1f366940e813a9f87ecb1100",
+      "shard": 37
+    },
+    "corpus_shards/train-00038-of-00721.parquet": {
+      "bytes": 130498449,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1d0a22da365f19441a8610e3b24366de87a77ccd16fe1ffd9420ffa21323e0f3",
+      "shard": 38
+    },
+    "corpus_shards/train-00039-of-00721.parquet": {
+      "bytes": 130265207,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9c751a83cb0ea18a434189238865531f4eb18a4baf850686512ad08ca5a0bd61",
+      "shard": 39
+    },
+    "corpus_shards/train-00040-of-00721.parquet": {
+      "bytes": 130139066,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9163fd2f3f5385ef360c380e6de4ba5d05bfcaf36eb91f17509fc539f90d5c5c",
+      "shard": 40
+    },
+    "corpus_shards/train-00041-of-00721.parquet": {
+      "bytes": 129961722,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "977096baba945fff7bd11d297eaa910593d468e8f6eb22ad553dfd02093cb53a",
+      "shard": 41
+    },
+    "corpus_shards/train-00042-of-00721.parquet": {
+      "bytes": 130247001,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "f9d7428f0ca7caa7682f378fb48a4210d3d243d9b0b45137c5aa6ada45311a6b",
+      "shard": 42
+    },
+    "corpus_shards/train-00043-of-00721.parquet": {
+      "bytes": 130559684,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "8b452137903a37ba54edcd050641c2d4d0a9928dfe93d43c2bff19483032f8e5",
+      "shard": 43
+    },
+    "corpus_shards/train-00044-of-00721.parquet": {
+      "bytes": 129863288,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ab48aa4ebca1655d85b5e35f8d25a1d5b06a03fd0c4ff88e1cb3eedb01181cbc",
+      "shard": 44
+    },
+    "corpus_shards/train-00045-of-00721.parquet": {
+      "bytes": 129867700,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "fd826612def96e23fd0b488be18f410cc4f1cbbd4d6d8ebde39eed43e4a5ad72",
+      "shard": 45
+    },
+    "corpus_shards/train-00046-of-00721.parquet": {
+      "bytes": 130128561,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "4871b1cdbe11853408b91d0e32ab4df956e49496a83fff9f7d3a4f566f677112",
+      "shard": 46
+    },
+    "corpus_shards/train-00047-of-00721.parquet": {
+      "bytes": 130061013,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "7b819b80f3edd70a5ac11737319df1be40fccdf18d054d9b8b7e79b1b37bdc05",
+      "shard": 47
+    },
+    "corpus_shards/train-00048-of-00721.parquet": {
+      "bytes": 130180876,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c6314ca7c19f38995633ff0fb8c80376445ac0b7e954b359e9c4afabecdc71dc",
+      "shard": 48
+    },
+    "corpus_shards/train-00049-of-00721.parquet": {
+      "bytes": 130170425,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c0b88c4d5aa16bdc74363f850e20f2d88edc98dd7b7bf786bce69cb91d80ebe4",
+      "shard": 49
+    },
+    "corpus_shards/train-00050-of-00721.parquet": {
+      "bytes": 129282713,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "74e8019b3ac27953360fed13a94002c5fdaf0712a7f75a9a02fb4ca67d41af59",
+      "shard": 50
+    },
+    "corpus_shards/train-00051-of-00721.parquet": {
+      "bytes": 129744823,
+      "recorded_at": "2026-08-11T15:15:01",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c378df48d0a2602eee1b7a63091f75698f9111ade9d8972473284af4c8e26d4d",
+      "shard": 51
+    },
+    "corpus_shards/train-00052-of-00721.parquet": {
+      "bytes": 129583025,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c8de197cbb3add1b417334e3d9099d693e60b240b5a459ca82606a914d03118e",
+      "shard": 52
+    },
+    "corpus_shards/train-00053-of-00721.parquet": {
+      "bytes": 129737427,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "eda0e2f1be9a2772e894ffd32c06a0d90e1478b30c732ee112e6226dd85674e4",
+      "shard": 53
+    },
+    "corpus_shards/train-00054-of-00721.parquet": {
+      "bytes": 130096771,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "8849ffff0834e37aba353623e43d97e49b96ef946370acb4589ebac75235faeb",
+      "shard": 54
+    },
+    "corpus_shards/train-00055-of-00721.parquet": {
+      "bytes": 130058595,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1565d02377ab2c4e01423b50256d54304a61f9efd8d17daa7bd14a33f01b6e12",
+      "shard": 55
+    },
+    "corpus_shards/train-00056-of-00721.parquet": {
+      "bytes": 129943405,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "eaa60154ef9466dd6b888b0b5a1a6ea682ef485ee58f7d182b1c5675f61e2e4f",
+      "shard": 56
+    },
+    "corpus_shards/train-00057-of-00721.parquet": {
+      "bytes": 129910734,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2d51f4fe8909b2e3f1bc2661def6e8edcf0610ed409717b38bd3d8e293fe60c3",
+      "shard": 57
+    },
+    "corpus_shards/train-00058-of-00721.parquet": {
+      "bytes": 129945280,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b72038e0957a34a052777830fe285f733a9f7d0e88a3b8340cec508765adbc2a",
+      "shard": 58
+    },
+    "corpus_shards/train-00059-of-00721.parquet": {
+      "bytes": 130124236,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e85068fd9023a75c7e8068ac6706c7317836fb15410d6a1017344a4ac5b316b8",
+      "shard": 59
+    },
+    "corpus_shards/train-00060-of-00721.parquet": {
+      "bytes": 130198514,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "558074ea72e0643fe2f6b2b2ae48476f3e76bf185f10060e2860606e6bc2591f",
+      "shard": 60
+    },
+    "corpus_shards/train-00061-of-00721.parquet": {
+      "bytes": 130151663,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b80fd4f741c6f90e79f84c92dcef51b43091e6dffaac56a68effccb003d56ef7",
+      "shard": 61
+    },
+    "corpus_shards/train-00062-of-00721.parquet": {
+      "bytes": 130055263,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9180f9eafe16ba44b4d7a188b8560ceecaa5061cde0e990aba389e87b8379a9a",
+      "shard": 62
+    },
+    "corpus_shards/train-00063-of-00721.parquet": {
+      "bytes": 130236902,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "4c61dd27d124888c29b74815f031fbbd83cd301bf9b3f5c0b27d970b515ef4f3",
+      "shard": 63
+    },
+    "corpus_shards/train-00064-of-00721.parquet": {
+      "bytes": 130354215,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "81dd81a63aeb103938b057789772e26cd37102753c87dc21b1811774ad489525",
+      "shard": 64
+    },
+    "corpus_shards/train-00065-of-00721.parquet": {
+      "bytes": 130343852,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "0f640873f6580e1c872a8a8538329766f94265848ca29a4bf3ad5183d4df1839",
+      "shard": 65
+    },
+    "corpus_shards/train-00066-of-00721.parquet": {
+      "bytes": 130079635,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "efe7daa44bd4a20a23033cc34892e6f9cfa6abcc5b05edf0b158f291e181f5c4",
+      "shard": 66
+    },
+    "corpus_shards/train-00067-of-00721.parquet": {
+      "bytes": 130202480,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "83c0ff5b92d6042e24b0adb71fcd12f6f016087ed24604a4300f8d758cf6e5cf",
+      "shard": 67
+    },
+    "corpus_shards/train-00068-of-00721.parquet": {
+      "bytes": 130687236,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "f3316c6518f793fb8df40b37adff3ee1107c50468f827dc5c9c52440644ed8c6",
+      "shard": 68
+    },
+    "corpus_shards/train-00069-of-00721.parquet": {
+      "bytes": 130341103,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ebd763b47b2616e242f11959f7ae88c2bf8426aae02961232261f2d805a529fb",
+      "shard": 69
+    },
+    "corpus_shards/train-00070-of-00721.parquet": {
+      "bytes": 130593131,
+      "recorded_at": "2026-08-11T15:15:02",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9037bd2a8f2203b2dab8f97523056d8a1f0c49f95e4b4875e60b878cdfe13f8f",
+      "shard": 70
+    },
+    "corpus_shards/train-00071-of-00721.parquet": {
+      "bytes": 130721322,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1f490721fde3e521b3ba7a932ecc8cbd6794b1a70fbf1d3bd9e8314ab00b2019",
+      "shard": 71
+    },
+    "corpus_shards/train-00072-of-00721.parquet": {
+      "bytes": 130304763,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "d5449597e0bddcff98a27b62d807c126bd4c3f07de621b501cb45c0a7ac0bde4",
+      "shard": 72
+    },
+    "corpus_shards/train-00073-of-00721.parquet": {
+      "bytes": 129122996,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "0116aba41f59c67bae0da508e5ba6891133b56ed7b43246c96bb4b06986d6bb0",
+      "shard": 73
+    },
+    "corpus_shards/train-00074-of-00721.parquet": {
+      "bytes": 129639097,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "527cfabd038c96c675dcd75e08c20a998c2ed7327ef5e7c602b5b3aeb2bbb6ff",
+      "shard": 74
+    },
+    "corpus_shards/train-00075-of-00721.parquet": {
+      "bytes": 130113414,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "34c11bfb9226ae37facd7fa49297334f0507c6b03c482de246bcb38764b81147",
+      "shard": 75
+    },
+    "corpus_shards/train-00076-of-00721.parquet": {
+      "bytes": 129804856,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "95ef339ef9386d7901678edc063fb91d441fdd733dee92e1a0dc0776f3876259",
+      "shard": 76
+    },
+    "corpus_shards/train-00077-of-00721.parquet": {
+      "bytes": 129838990,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a418d6bad0b0bd9c4ec62db69ddd9171ab9f6ea68c59f9c12f12cebf59bb3137",
+      "shard": 77
+    },
+    "corpus_shards/train-00078-of-00721.parquet": {
+      "bytes": 129647812,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "f344db1d24a459bef323ff353b8e8e2584ccc72f695fc3b1ebe45f1a31e31625",
+      "shard": 78
+    },
+    "corpus_shards/train-00079-of-00721.parquet": {
+      "bytes": 129964981,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b4b67a8b40735c8f6100f670964f2ca55bfc56071d74f11f0fd4b467199563e1",
+      "shard": 79
+    },
+    "corpus_shards/train-00080-of-00721.parquet": {
+      "bytes": 129780211,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ae03cf79c8bdbd3d29b35f58d0571749f62c98b790649df7a14812f539537af8",
+      "shard": 80
+    },
+    "corpus_shards/train-00081-of-00721.parquet": {
+      "bytes": 129920384,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e747c6aabc8a5b55a4a162592d903382c2c652540b85cd77424083821bed81c7",
+      "shard": 81
+    },
+    "corpus_shards/train-00082-of-00721.parquet": {
+      "bytes": 130060300,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "929b8cd9dcf4b4e06ace09ed1ece5850f9f6018174e74497ecfd75b1f6fa3341",
+      "shard": 82
+    },
+    "corpus_shards/train-00083-of-00721.parquet": {
+      "bytes": 130141618,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "07d71c30328695ec744b1fd32831798203dec70fa31bef95f93a5f0013691bab",
+      "shard": 83
+    },
+    "corpus_shards/train-00084-of-00721.parquet": {
+      "bytes": 128917831,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c153e2679afd445dd54c24c099e4216eb6337e8ea764d4d0c0373700e895f46b",
+      "shard": 84
+    },
+    "corpus_shards/train-00085-of-00721.parquet": {
+      "bytes": 128644896,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "3dbbfe259b6416cde8adb903da9eff9a17f697abcce224e784f9d8d48e1660a4",
+      "shard": 85
+    },
+    "corpus_shards/train-00086-of-00721.parquet": {
+      "bytes": 129808837,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "6f8eef5c134c2bfffb5206cee762b2b9de7b0d74c4f58c844c6bcffe61ea589b",
+      "shard": 86
+    },
+    "corpus_shards/train-00087-of-00721.parquet": {
+      "bytes": 129883030,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "60e8760f7e1dd2407279bb03fdca31c7fe775116956d1f140b37ffa13104e0bc",
+      "shard": 87
+    },
+    "corpus_shards/train-00088-of-00721.parquet": {
+      "bytes": 130039568,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "5946f0b181dd328504d8459d32ce2056c74084e6e19876c347936af88cb38532",
+      "shard": 88
+    },
+    "corpus_shards/train-00089-of-00721.parquet": {
+      "bytes": 129694687,
+      "recorded_at": "2026-08-11T15:15:03",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "99ed25656487ffe7287f9d22269202b2c751b0bb44b528835e94847619ed1ddf",
+      "shard": 89
+    },
+    "corpus_shards/train-00090-of-00721.parquet": {
+      "bytes": 129794786,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "144fc7472b89e0d1e5e457efbefdeb3edba863270af977b0d88e2fb128a2fbf3",
+      "shard": 90
+    },
+    "corpus_shards/train-00091-of-00721.parquet": {
+      "bytes": 129695199,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "fd56bfbfb239a33007afe6cf7083c014840ce1da2f79a64aa36490b540c93063",
+      "shard": 91
+    },
+    "corpus_shards/train-00092-of-00721.parquet": {
+      "bytes": 129720162,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "44e56253f09db49b2b371327c91d2a111c8b63a3362fe20d074ea56a919e967c",
+      "shard": 92
+    },
+    "corpus_shards/train-00093-of-00721.parquet": {
+      "bytes": 129862909,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b57d4c57a99dadfcd8b01948bf1066230e8e0de35a4f86f8ed8eb8270c72196b",
+      "shard": 93
+    },
+    "corpus_shards/train-00094-of-00721.parquet": {
+      "bytes": 130132183,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "7d4457569d5abc8972e89837d12cf589199d48ae664018f7703c881ea752ea3d",
+      "shard": 94
+    },
+    "corpus_shards/train-00095-of-00721.parquet": {
+      "bytes": 130101302,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e533b5534148681b31f7d22053926b01fdda99056fb9ff48c62bd8d4fe5a6591",
+      "shard": 95
+    },
+    "corpus_shards/train-00096-of-00721.parquet": {
+      "bytes": 129344387,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1fc1578f512babb8b50c94333a84610a59229e4c09b3e36fcd2bc8045b7db18b",
+      "shard": 96
+    },
+    "corpus_shards/train-00097-of-00721.parquet": {
+      "bytes": 129327483,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b3e2c281ef7c4e5f80d28684319f38b066233ca748d53de937ff7ff1edcae283",
+      "shard": 97
+    },
+    "corpus_shards/train-00098-of-00721.parquet": {
+      "bytes": 129995155,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "50d3a18033809564599cde1d3a7f2992a067d1b141fd1326571431aeef1d121a",
+      "shard": 98
+    },
+    "corpus_shards/train-00099-of-00721.parquet": {
+      "bytes": 129889983,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ad81a085109666ed048f63e629b5ae58437f79c3565e38d1fbabe9a8a727eecf",
+      "shard": 99
+    },
+    "corpus_shards/train-00100-of-00721.parquet": {
+      "bytes": 129850382,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "cba3f5821b27084ee064ad0e569cd294a35745c57ce84c4c5deaf158fb28baac",
+      "shard": 100
+    },
+    "corpus_shards/train-00101-of-00721.parquet": {
+      "bytes": 130106512,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e940bfda178ea7b1295c288ff5a8cd3fff5208e915720ba503fa2e38ef1f23ce",
+      "shard": 101
+    },
+    "corpus_shards/train-00102-of-00721.parquet": {
+      "bytes": 129764013,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "6fb1cf8d8a7cddbc5b4899cc553ae4c884e4675b4b545f109e93fcf28ac044d9",
+      "shard": 102
+    },
+    "corpus_shards/train-00103-of-00721.parquet": {
+      "bytes": 129512550,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "89834e79cc139cfe8e9051d024f72446914d95f7bbbc2f1fc928a1406b331338",
+      "shard": 103
+    },
+    "corpus_shards/train-00104-of-00721.parquet": {
+      "bytes": 129543801,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "95d92b5b182b210eaf276763397a984eaf673ceca43f2715ab0ffc31ef2ce0fe",
+      "shard": 104
+    },
+    "corpus_shards/train-00105-of-00721.parquet": {
+      "bytes": 130044214,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "f2fb450eb5be41a6fc9a7a6fa17c048cfeaac54eb263641dc2f65a78ec5eaff2",
+      "shard": 105
+    },
+    "corpus_shards/train-00106-of-00721.parquet": {
+      "bytes": 129654214,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "6c353c3392c5bbac1b6be78cdf617307adb6cf10d4329db457b1096e05eaac81",
+      "shard": 106
+    },
+    "corpus_shards/train-00107-of-00721.parquet": {
+      "bytes": 129983156,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a2203df322764653e03754f719fde210ea641a05644512ae6da9cfe20b055110",
+      "shard": 107
+    },
+    "corpus_shards/train-00108-of-00721.parquet": {
+      "bytes": 128974553,
+      "recorded_at": "2026-08-11T15:15:04",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2433a7e086a6f8f3eedb38676df024d9716769a89bd348eaab64ee572bd7373f",
+      "shard": 108
+    },
+    "corpus_shards/train-00109-of-00721.parquet": {
+      "bytes": 128912973,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "46dcb33f835b8e02be85ae89a68de51b00876884ef5f085d996221fcdbd6b0e3",
+      "shard": 109
+    },
+    "corpus_shards/train-00110-of-00721.parquet": {
+      "bytes": 129930543,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "75f74655a876e21fe65066cc1141195361507766994df7be563f58a4587473b6",
+      "shard": 110
+    },
+    "corpus_shards/train-00111-of-00721.parquet": {
+      "bytes": 130008528,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "4cdee7f7975cc80580004c4d7f6f2ae7f43cfdf38a333c8f168fad70d26c2b51",
+      "shard": 111
+    },
+    "corpus_shards/train-00112-of-00721.parquet": {
+      "bytes": 130152514,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e02c72d0dc8c86ce8aa96f77794db0f14322dfd3786833beea1300429d831663",
+      "shard": 112
+    },
+    "corpus_shards/train-00113-of-00721.parquet": {
+      "bytes": 130273371,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b18381e05d3d7b9af504c8c482e4c5466de83393401b8dde8a3a69b4231e1bf0",
+      "shard": 113
+    },
+    "corpus_shards/train-00114-of-00721.parquet": {
+      "bytes": 129894940,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "cc92d512914e6b3dffedab599e984375701a13548b2a288fb75908a728109ad2",
+      "shard": 114
+    },
+    "corpus_shards/train-00115-of-00721.parquet": {
+      "bytes": 130086323,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9f94ec292707eca37dba978bd40fc3be7e14727a5096ef5b4659f32fd3ac682c",
+      "shard": 115
+    },
+    "corpus_shards/train-00116-of-00721.parquet": {
+      "bytes": 130127733,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "30a6847f6d29b8b9f9863d242985a29931431e81983a436c830bf35bb1f2915f",
+      "shard": 116
+    },
+    "corpus_shards/train-00117-of-00721.parquet": {
+      "bytes": 130104051,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a0db4bd7d5c9005fd36177d22d196fde15bfea9d05dda9c5da5bc945a73db89a",
+      "shard": 117
+    },
+    "corpus_shards/train-00118-of-00721.parquet": {
+      "bytes": 129759640,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ccce1ceffd364259788d80b6d808d28541d535f2606bc31ccc9fe97aab5bd129",
+      "shard": 118
+    },
+    "corpus_shards/train-00119-of-00721.parquet": {
+      "bytes": 130366811,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a705ba5b351762177d9646468edb13367dff00c22b389a0adb2649e7bfce6487",
+      "shard": 119
+    },
+    "corpus_shards/train-00120-of-00721.parquet": {
+      "bytes": 129739858,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "fe9ed457b2f938e6694311a5b0fb51fa40156677bab02a51b9929aed049c48f3",
+      "shard": 120
+    },
+    "corpus_shards/train-00121-of-00721.parquet": {
+      "bytes": 130208552,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "fa97b1dcfa56c7b5bc1814c8df118420a207103715166b6f88ec9555853b0517",
+      "shard": 121
+    },
+    "corpus_shards/train-00122-of-00721.parquet": {
+      "bytes": 129728517,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "08d8405108ccf6fa5e8b4d11d7d9deb432cf4eed3b3cc8f4d1f3e77750e8a444",
+      "shard": 122
+    },
+    "corpus_shards/train-00123-of-00721.parquet": {
+      "bytes": 130174662,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "0b63f9877b6cb2dad1899656bc7c75404b3099dbc88b40c7ea9c1acca0d9f497",
+      "shard": 123
+    },
+    "corpus_shards/train-00124-of-00721.parquet": {
+      "bytes": 130136802,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2e7ad9fdbe327cad3339f2b3dd6611f4f53a65c02a80dce6979e4eb85a2ab4ad",
+      "shard": 124
+    },
+    "corpus_shards/train-00125-of-00721.parquet": {
+      "bytes": 130028160,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a8a4d61abe79c6f07db051dcbba4c0b4683399230ed65f7e548b03063befeeb7",
+      "shard": 125
+    },
+    "corpus_shards/train-00126-of-00721.parquet": {
+      "bytes": 130894210,
+      "recorded_at": "2026-08-11T15:15:05",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "afe048c585ae279633e4b575dd29d94d021d3cc4ec3ab1dbc81dd57f230989f1",
+      "shard": 126
+    },
+    "corpus_shards/train-00127-of-00721.parquet": {
+      "bytes": 130102302,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "fc977f9ad4ab6c1666a63109be9fa5039a7954c04ab8ba791c315945272a8419",
+      "shard": 127
+    },
+    "corpus_shards/train-00128-of-00721.parquet": {
+      "bytes": 130403446,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ca281be2020992bb38b761473f94e1c64baa8abbe1f191a6d517226151a49f31",
+      "shard": 128
+    },
+    "corpus_shards/train-00129-of-00721.parquet": {
+      "bytes": 130538760,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9fdfe8b226a2eb7d6fab6c427b7282087585cca56f04f7c85b8d727045a3e43a",
+      "shard": 129
+    },
+    "corpus_shards/train-00130-of-00721.parquet": {
+      "bytes": 131278622,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "3801fbc0768ed7035cc874ca894d0ab63101514f1cdcbe490089e048ea346c9b",
+      "shard": 130
+    },
+    "corpus_shards/train-00131-of-00721.parquet": {
+      "bytes": 132650796,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ad11e35a4baf348722bf9e7b54c660e26df37445ad429b90b65ef0184173205a",
+      "shard": 131
+    },
+    "corpus_shards/train-00132-of-00721.parquet": {
+      "bytes": 132612238,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "64dc90ea967e555cdc6903f6712dcc2aeaceb616ed3ba8312b8891cbe7a42733",
+      "shard": 132
+    },
+    "corpus_shards/train-00133-of-00721.parquet": {
+      "bytes": 132620330,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "087cafea9880ba05f96c1d2256b9dee74d5153bdd578c6643e4ad7534ae1976a",
+      "shard": 133
+    },
+    "corpus_shards/train-00134-of-00721.parquet": {
+      "bytes": 132180079,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "43071a4309a8967257baefedbd4c1fd4f7dcd863ffda1742fe6b1cd29f6ee096",
+      "shard": 134
+    },
+    "corpus_shards/train-00135-of-00721.parquet": {
+      "bytes": 131792195,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2a7a22ce0de561d6306166c6089e7d9b062712ed836dc726af775d11f551778b",
+      "shard": 135
+    },
+    "corpus_shards/train-00136-of-00721.parquet": {
+      "bytes": 132617690,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "06875d188501dbeba3713462f0f301076563bf3cf20086a12821ab7585b4d6b6",
+      "shard": 136
+    },
+    "corpus_shards/train-00137-of-00721.parquet": {
+      "bytes": 132686955,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "d2e652693501f1311f43c8625dad8a4230511da838a12a3054b104c9c731c17a",
+      "shard": 137
+    },
+    "corpus_shards/train-00138-of-00721.parquet": {
+      "bytes": 132628845,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "87b16c84cbb04059f1ea9a000aee1fc4e53894686f250c93db53ce9b8aa32880",
+      "shard": 138
+    },
+    "corpus_shards/train-00139-of-00721.parquet": {
+      "bytes": 132028680,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a3004ce9cd519aaaacbee16dcb4537723af69705c8f2830d63906286f29bd755",
+      "shard": 139
+    },
+    "corpus_shards/train-00140-of-00721.parquet": {
+      "bytes": 131494254,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "b2f0dc44fe26b74e4d2863ee553235778a5eccd2a7d0d7eb46ee6bb8b01d97cc",
+      "shard": 140
+    },
+    "corpus_shards/train-00141-of-00721.parquet": {
+      "bytes": 130753082,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "717a2ba67e8a91cc6aa3489dab1ee23832cb56219710962b74a4134c27d96652",
+      "shard": 141
+    },
+    "corpus_shards/train-00142-of-00721.parquet": {
+      "bytes": 128924815,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "3fa0926975368ee21ab9660df69a2b7e9e66f84cbabb90eecb0f5b97934c5c10",
+      "shard": 142
+    },
+    "corpus_shards/train-00143-of-00721.parquet": {
+      "bytes": 131628178,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "977af74307b4a6fcc84292a90376090aa08c618e36c696860fbd094a165280cd",
+      "shard": 143
+    },
+    "corpus_shards/train-00144-of-00721.parquet": {
+      "bytes": 128580151,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "594cdaa7fdefca27d7228abcda7dc5a718ad666ea1413590e8b9cb0caab8114d",
+      "shard": 144
+    },
+    "corpus_shards/train-00145-of-00721.parquet": {
+      "bytes": 127046167,
+      "recorded_at": "2026-08-11T15:15:06",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "5912c8b3dd1d9c10234c5b819ab88ea58c81820aa1f8c63569b244f93701ef60",
+      "shard": 145
+    },
+    "corpus_shards/train-00146-of-00721.parquet": {
+      "bytes": 126318786,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "15bf6fa325cf75b2ddbd46905bc307ea5ffb244902a18894ba8399302de0151b",
+      "shard": 146
+    },
+    "corpus_shards/train-00147-of-00721.parquet": {
+      "bytes": 125326477,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "862c4e02ca25cb970ff8bca2946969a4d577530b1ebf1e76d71604a04abc07b4",
+      "shard": 147
+    },
+    "corpus_shards/train-00148-of-00721.parquet": {
+      "bytes": 125939164,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c2972d70353f25cba600247a4bb11e52c02c1406267c7912549ae915a0c04ff8",
+      "shard": 148
+    },
+    "corpus_shards/train-00149-of-00721.parquet": {
+      "bytes": 126610090,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a2334833208938e2321a8bec9c73f969db842037b4fdc96a4c941e010749ef41",
+      "shard": 149
+    },
+    "corpus_shards/train-00150-of-00721.parquet": {
+      "bytes": 126093524,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "85d5df1d41c14088db3ca9b732b9959380552b5b8357f244502f53a27c8e2cef",
+      "shard": 150
+    },
+    "corpus_shards/train-00151-of-00721.parquet": {
+      "bytes": 126617805,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "ae9332c34004be005b193790815871dba57164d3dc5367142638096d2593b4a3",
+      "shard": 151
+    },
+    "corpus_shards/train-00152-of-00721.parquet": {
+      "bytes": 130174137,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "1dd1e31e53a3e104a96db34d985fe0b4ea7c3173ca0ff6a70695c04e6a559cf1",
+      "shard": 152
+    },
+    "corpus_shards/train-00153-of-00721.parquet": {
+      "bytes": 132420990,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "59d7ba33d3e7062471c02de75b8443924a78c0934032f3025e3eedf3214abcd0",
+      "shard": 153
+    },
+    "corpus_shards/train-00154-of-00721.parquet": {
+      "bytes": 130237332,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "0ed8e7df267f463e6f0cdb0e9c0b929e445750b1655950e437f21d881c9f9f6f",
+      "shard": 154
+    },
+    "corpus_shards/train-00155-of-00721.parquet": {
+      "bytes": 130244810,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "cc0c0e910ad24330bc4c85715aa2b42f0ac8f2fa9642193a49a867f89aef32bc",
+      "shard": 155
+    },
+    "corpus_shards/train-00156-of-00721.parquet": {
+      "bytes": 130499783,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "5fac13265af3cff274b3865b6478a9009836578b8726c170897d8256bc50e6a3",
+      "shard": 156
+    },
+    "corpus_shards/train-00157-of-00721.parquet": {
+      "bytes": 130623393,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "9f63b52031fd9da066e99453a5d29279c2363c16d15ed6d1b237230bd605b3bc",
+      "shard": 157
+    },
+    "corpus_shards/train-00158-of-00721.parquet": {
+      "bytes": 130259086,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "0a58c9793932624e58e9aecbb30ea09b1deed23bbe3dae340df162f89dc32d24",
+      "shard": 158
+    },
+    "corpus_shards/train-00159-of-00721.parquet": {
+      "bytes": 130586347,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "e96641198aa0762b267271b060722a7deb60f3e46ece12f6ce1adf27d13f6204",
+      "shard": 159
+    },
+    "corpus_shards/train-00160-of-00721.parquet": {
+      "bytes": 129433337,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a26b75ad289d3b195bfa4a890b0f15966a99697987531e332c2e19715243451c",
+      "shard": 160
+    },
+    "corpus_shards/train-00161-of-00721.parquet": {
+      "bytes": 128995270,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "6fe33e00b2f5ac40f7266dce3f195d261d36561a40944ea2a0508d02ec15d9d4",
+      "shard": 161
+    },
+    "corpus_shards/train-00162-of-00721.parquet": {
+      "bytes": 130172759,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "657501571b3d2e8b277131b2881499197950fe67cff9380d33b32204bfd3f9e7",
+      "shard": 162
+    },
+    "corpus_shards/train-00163-of-00721.parquet": {
+      "bytes": 130496553,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "a132ccbec387cb18b999a268134391842831dbbb6891a1d23089116d61090dd8",
+      "shard": 163
+    },
+    "corpus_shards/train-00164-of-00721.parquet": {
+      "bytes": 130259478,
+      "recorded_at": "2026-08-11T15:15:07",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "bb6ba7b4db3478277fd4eb19b2bd3042bbf2089d16d6ef17a05d421aa399ee4f",
+      "shard": 164
+    },
+    "corpus_shards/train-00165-of-00721.parquet": {
+      "bytes": 130078376,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "c270134ec2102acc313402c431bd44ce2abfabbe66a96208edf9deffc0c1bc27",
+      "shard": 165
+    },
+    "corpus_shards/train-00166-of-00721.parquet": {
+      "bytes": 130753884,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "270cec3334b02aaaa495181ad37b66cbc7f6e5249176042112ff8543337de389",
+      "shard": 166
+    },
+    "corpus_shards/train-00167-of-00721.parquet": {
+      "bytes": 130219961,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "42453de0dd6fdbcd5335be36a0e251b1ec809791874e8447e0497ffea0c2e3c1",
+      "shard": 167
+    },
+    "corpus_shards/train-00168-of-00721.parquet": {
+      "bytes": 130419228,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "8e244c8e66c99cc65b1a45b951f1af4bb4785eb3e1694b1f663c00a6d250c204",
+      "shard": 168
+    },
+    "corpus_shards/train-00169-of-00721.parquet": {
+      "bytes": 130472126,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "5004b1e87789fd38995f3dcad6b3903fae7503dda90c2140c177d9ba2a28f4e7",
+      "shard": 169
+    },
+    "corpus_shards/train-00170-of-00721.parquet": {
+      "bytes": 130665647,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "0bb80ccf9baf58a3fe0aad9d688ae8845cefdcedadf049bb6d4b7c8da41d367b",
+      "shard": 170
+    },
+    "corpus_shards/train-00171-of-00721.parquet": {
+      "bytes": 130323304,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "577662bdac021da1c4d300fa8e9513422514d844ac0ba3c1c836a10754a3a894",
+      "shard": 171
+    },
+    "corpus_shards/train-00172-of-00721.parquet": {
+      "bytes": 130312283,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "990f5101b6c2bdea0becd3b356ca12ea3e783431eaf7acb428994b66b3f1eac3",
+      "shard": 172
+    },
+    "corpus_shards/train-00173-of-00721.parquet": {
+      "bytes": 130238203,
+      "recorded_at": "2026-08-11T15:15:08",
+      "repo": "mixedbread-ai/wikipedia-embed-en-2023-11",
+      "revision": "395eebc2bdd5d7b79a5c6d04d7fc4e66d1113494",
+      "rows": 57543,
+      "sha256": "2d4f22e45b0c69ab129151c88e9c6ecb4dd29bfd7fa0859ffe64e322bbece1f8",
+      "shard": 173
+    },
+    "gt_10m_top100.npz": {
+      "bytes": 16333030,
+      "device": "mps",
+      "fp16_prefilter": false,
+      "k": 100,
+      "n_gt_queries": 10000,
+      "n_ws4_queries": 3610,
+      "recorded_at": "2026-08-11T15:09:54",
+      "scale": "10m",
+      "seconds": 356,
+      "sha256": "f339f88f6caf67dfa3da6c3d73928ee384a89fddc187f2a58cfb9bd8cff60e55"
+    },
+    "gt_1m_top100.npz": {
+      "bytes": 16333030,
+      "device": "mps",
+      "fp16_prefilter": false,
+      "k": 100,
+      "n_gt_queries": 10000,
+      "n_ws4_queries": 3610,
+      "recorded_at": "2026-08-11T14:01:04",
+      "scale": "1m",
+      "seconds": 37,
+      "sha256": "8ea46df9458827322db030754ead327e8fd526d036944ad7fd1a2915c8dd2e9c"
+    },
+    "nq/train-00000-of-00001.parquet": {
+      "bytes": 4464642,
+      "recorded_at": "2026-08-11T13:59:35",
+      "repo": "google-research-datasets/nq_open",
+      "revision": "5dd9790a83002ad084ddeb7c420dc716852c6f28",
+      "sha256": "25d3a544324f900b31ebc05a3a5686bdd5b9b42738133500675c3f20eee7d83a",
+      "split": "train"
+    },
+    "nq/validation-00000-of-00001.parquet": {
+      "bytes": 213603,
+      "recorded_at": "2026-08-11T13:59:36",
+      "repo": "google-research-datasets/nq_open",
+      "revision": "5dd9790a83002ad084ddeb7c420dc716852c6f28",
+      "sha256": "b074bed0bccb56fa1551a8ac1c9c51ce89bc11c7fbb6a9c713b2c33a98531e12",
+      "split": "validation"
+    },
+    "queries_gt.parquet": {
+      "bytes": 474076,
+      "n": 10000,
+      "recorded_at": "2026-08-11T13:59:37",
+      "repo": "google-research-datasets/nq_open",
+      "revision": "5dd9790a83002ad084ddeb7c420dc716852c6f28",
+      "seed": 42,
+      "sha256": "a8cf1176be85517808c0f52a8b24a1387f1561f1e33d52597b47fdb0327057a5"
+    },
+    "queries_gt_emb.npy": {
+      "bytes": 40960128,
+      "model": "mixedbread-ai/mxbai-embed-large-v1",
+      "prefix": "Represent this sentence for searching relevant passages: ",
+      "recorded_at": "2026-08-11T14:00:26",
+      "revision": "b33106f585b9ce46904ad7443a3b52b7a63e231c",
+      "sha256": "b7237f31f88fc9f576e255096f87cdbebaa5c227f355a80d3952a83d423847e7"
+    },
+    "queries_ws4.parquet": {
+      "bytes": 203942,
+      "n": 3610,
+      "recorded_at": "2026-08-11T13:59:37",
+      "sha256": "b05a4f017745476e0f41f97c84112b3a5e0922ed07bb14c4f0982126f18276e3",
+      "split": "validation"
+    },
+    "queries_ws4_emb.npy": {
+      "bytes": 14786688,
+      "model": "mixedbread-ai/mxbai-embed-large-v1",
+      "recorded_at": "2026-08-11T14:00:26",
+      "revision": "b33106f585b9ce46904ad7443a3b52b7a63e231c",
+      "sha256": "7a66c6113d6636040e1f1ccf94a5b40607454954d3bcef5e754dea545849a682"
+    },
+    "results/ws2/footprint_decomposition_10m.csv": {
+      "bytes": 7718,
+      "recorded_at": "2026-09-15T12:03:55",
+      "sha256": "6aa737169ba1e5200868c2ab31aef8bac6d734fad046601476bd0b26fb09a41e"
+    },
+    "results/ws2/footprint_decomposition_1m.csv": {
+      "bytes": 9437,
+      "recorded_at": "2026-09-15T12:03:55",
+      "sha256": "5f1c29acd8a9a64debac9721ea55f05e7bfb3b2718c3143e9670e63a613e64bc"
+    },
+    "results/ws3/curves_10m.csv": {
+      "bytes": 6413,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "11f4425c889a232a62bdae2969027337136dd69a654110e7c6e540bd2ddcbf7f"
+    },
+    "results/ws3/dim_verdict_10m.csv": {
+      "bytes": 1310,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "6395fb80f7f2ff23238ead888a47a30db2e2a9f39f87a247f05b07a2c2a37ec2"
+    },
+    "results/ws4/answer_prompt.txt": {
+      "bytes": 292,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "f36a16cb305a34e25bbb557093433a8e4db484c3ad5c268ab2568b19214fc50a"
+    },
+    "results/ws4/arms.csv": {
+      "bytes": 1382,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "7cce520eba983cec3f5e1147aab0148329426d6c249fa2eb24a303df756ecf0c"
+    },
+    "results/ws4/judge_prompt.txt": {
+      "bytes": 944,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "288169b16505986f2d873d4b153474d5a00385d37cab5a4db4eeec65a6a8970b"
+    },
+    "results/ws4/judge_reliability.csv": {
+      "bytes": 8900,
+      "recorded_at": "2026-09-07T13:35:27",
+      "sha256": "95af6379508fb35e1bdbd5870fc91a127130385b9863c148bfe9c41a4456e4ec"
+    },
+    "results/ws4/pairs.csv": {
+      "bytes": 3507,
+      "recorded_at": "2026-09-07T13:35:26",
+      "sha256": "f411a0d04975fe1e839b0f7d3a341aed1848079e893dad62581827e16e28c87f"
+    },
+    "results/ws4/question_filter.csv": {
+      "bytes": 347,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "5f6980e181fb97e9882bc490492a289ccf037e5336d385ea44c7196de864ec6b"
+    },
+    "results/ws4/questions.csv": {
+      "bytes": 53802,
+      "n_main": 450,
+      "n_sanity": 50,
+      "recorded_at": "2026-09-07T13:35:25",
+      "seed": 42,
+      "sha256": "859dffa1e72b41386b16749da8ff658cb18fad79b95117c2a521f731a92b7115"
+    },
+    "results/ws4/recall_on_ws4_questions.csv": {
+      "bytes": 1554,
+      "recorded_at": "2026-09-07T13:35:26",
+      "sha256": "17e4334a5a65ac7f7701eeae08104fd5995e36f8ae0008b29575b477805073f7"
+    },
+    "results/ws4/residuals.csv": {
+      "bytes": 923,
+      "recorded_at": "2026-09-07T13:35:27",
+      "sha256": "25261b8bf2687ba78c40014196f1d58ce6d867aa377b532633034b293a27e8e5"
+    },
+    "results/ws4/runs.csv": {
+      "bytes": 2980463,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "6d8fd751868254b137bce5c002f3f01b709ae53a602573c764356251e481df3a"
+    },
+    "results/ws4/slopes.csv": {
+      "bytes": 3173,
+      "recorded_at": "2026-09-07T13:35:26",
+      "sha256": "326a34d8f404e03b3210ffd72eb886cac9b8da004f41e447f1c6fbb3d7dde72c"
+    },
+    "results/ws4/sq8_low_nprobe_sweep_10m.csv": {
+      "bytes": 326,
+      "recorded_at": "2026-09-07T13:35:25",
+      "sha256": "b0f96457c2347b8c1ff18d180eca8bcc43e5794724628a2967aa5e56d427bd55"
+    },
+    "results/ws4/summary.csv": {
+      "bytes": 6534,
+      "recorded_at": "2026-09-07T13:35:26",
+      "sha256": "5976b968d33be7a3aa0c120a0504286f64c33b8cc4bcbe5a49d9ecec0db798e3"
+    },
+    "results/ws4/summary_leak_adjusted.csv": {
+      "bytes": 2116,
+      "recorded_at": "2026-09-07T13:35:27",
+      "sha256": "e29632b0f1b91cd620b9801221961961972f045831fcee3d3f47a19941c044ce"
+    },
+    "results/ws4/summary_sanity.csv": {
+      "bytes": 1478,
+      "recorded_at": "2026-09-07T13:35:27",
+      "sha256": "fdd9167e670779d0fe123d28f14fd00178c9d4392ff1ec87f2b8bfce7a8f0ffc"
+    },
+    "results/ws4/summary_strata.csv": {
+      "bytes": 3136,
+      "recorded_at": "2026-09-07T13:35:27",
+      "sha256": "6bab5337ba7dd0e6c7d94709b718ba5445f298c4383f00d11464e6000a87118c"
+    },
+    "results/ws4b/decline_spotcheck_20.csv": {
+      "bytes": 8002,
+      "recorded_at": "2026-09-12T13:16:41",
+      "sha256": "695c7eea58e599c4e6e784f8bba7095f7c164c0787909f748df7f47c3201e85a"
+    },
+    "results/ws4b/decline_spotcheck_summary.csv": {
+      "bytes": 246,
+      "recorded_at": "2026-09-12T13:16:41",
+      "sha256": "9eb27d17995f7397a9effa93fdb72764232bc9eea5ef8ed963b6fd9a039362c9"
+    },
+    "results/ws4b/tier0d_concordance.csv": {
+      "bytes": 714,
+      "recorded_at": "2026-09-12T09:10:08",
+      "sha256": "1403fc9527999ad571546f0f63e444d32cae82c6b0e453fa88adabec8fab1df7"
+    },
+    "results/ws4b/tier0d_g4_diagnosis.csv": {
+      "bytes": 1143,
+      "recorded_at": "2026-09-12T09:40:06",
+      "sha256": "c850fef380e7819dbfda5a48d20b9a8565184a156e9a7ff64187c4e3c4ef40ab"
+    },
+    "results/ws4b/tier0d_gates.csv": {
+      "bytes": 357,
+      "recorded_at": "2026-09-12T09:10:08",
+      "sha256": "d3d844cf8d47f286a4e2c4048c2c99a402e3922cc33315c25bb1552c0386a164"
+    },
+    "results/ws4b/tier0d_gold_diff.csv": {
+      "bytes": 53080,
+      "recorded_at": "2026-09-12T09:10:08",
+      "sha256": "fcec536bed1a74c3a84c8fe7bda18dcdb3ca81ef44d6b2d411e32da8ed483e4d"
+    },
+    "results/ws4b/tier0d_propose_prompt.txt": {
+      "bytes": 1147,
+      "recorded_at": "2026-09-12T10:40:27",
+      "sha256": "287b4b711afd1d48045723f0ec5503a05dc84ccd47e1b2d0a48c4539a76927b2"
+    },
+    "results/ws4b/tier0d_verify_prompt.txt": {
+      "bytes": 805,
+      "recorded_at": "2026-09-12T10:40:27",
+      "sha256": "be3b7e3e49f71778504f3934b89a125760bdd47de24ae90aa9d2e5b1965cb986"
+    },
+    "results/ws4c/build_gates.csv": {
+      "bytes": 339,
+      "recorded_at": "2026-09-11T22:20:06",
+      "sha256": "366d95efd510f239e0739b7c157592f23e28da0ed02696e2de28e382999de6d4"
+    },
+    "results/ws4c/build_yield.csv": {
+      "bytes": 313,
+      "recorded_at": "2026-09-11T22:22:53",
+      "sha256": "665fd4ff6b1704f08509d6f03b70144613e6aee4c76f0c5566aadd13e5ad3601"
+    },
+    "results/ws4c/decline_categories.csv": {
+      "bytes": 1722,
+      "note": "Exact per-note tally (A=108, B=72, C=15, sums to 195) from data/ws4c_cache/build_checkpoint.jsonl, which is gitignored and not independently re-derivable; supersedes an earlier version of this file whose counts were rounded (~51%/~42%/~6%) and summed to 194.",
+      "purpose": "WS4c Phase 0b decline-note categorisation (manual LLM read of all 195 decline notes)",
+      "recorded_at": "2026-09-11T23:25:09",
+      "rows": 4,
+      "sha256": "57f969cf85f37b360d47eac6732d6107fb20e18c2c1c76f5bbbf98cdbef7c36b"
+    },
+    "results/ws4c/f4_canary.csv": {
+      "bytes": 4273,
+      "recorded_at": "2026-09-11T22:22:53",
+      "sha256": "32330f3530d9e7128a3b8b656e5d69607395606bb00a3a3ef2efd4d904b979c5"
+    },
+    "results/ws4c/pool_concentration.csv": {
+      "bytes": 1050,
+      "note": "Regenerated at $0 from data/ws4c_cache/pairs.parquet via benchlib.ws4c.page_cap(); confirms the 2% cap is binding on the 9,000-pair pool (max_title_share == cap_share == 12/9000).",
+      "purpose": "WS4c 2A.1 pool-level concentration control for gate G-C",
+      "recorded_at": "2026-09-11T23:03:30",
+      "rows": 1,
+      "sha256": "238305630c377691b3a613ef86240cec0cbf4cb7b05a49554d8ffc3c8f5f6b7a"
+    },
+    "results/ws4c/questions.csv": {
+      "bytes": 1406,
+      "note": "LLM generation is not reproducible; THIS FILE is the committed artifact (spec 2A.3)",
+      "purpose": "WS4c 2A frozen question set",
+      "recorded_at": "2026-09-11T22:17:57",
+      "rows": 5,
+      "sha256": "b3ff3f89cac141c4ec8de3b75744375b9772360545c86ddd4f2371edbe558fb7"
+    },
+    "results/ws4d/curve_changepoint.csv": {
+      "bytes": 266,
+      "recorded_at": "2026-09-12T15:32:42",
+      "sha256": "209d500d41f7f17478a89b1a0dcd4a8ca454c909a505055c5b34f87ccba423e1"
+    },
+    "results/ws4d/curve_gates.csv": {
+      "bytes": 111,
+      "recorded_at": "2026-09-12T15:32:42",
+      "sha256": "0644f8c53ae5af501278a7b81a15b4e581c01d6c7006fcbb0cfccf37f429bca1"
+    },
+    "results/ws4d/curve_points.csv": {
+      "bytes": 586,
+      "recorded_at": "2026-09-12T15:32:42",
+      "sha256": "b5a963878550a832d171c1be95db78ada3a8458ecf9a88c1810a35dc59bbe31f"
+    },
+    "results/ws4d/curve_sensitivities.csv": {
+      "bytes": 819,
+      "recorded_at": "2026-09-12T15:32:42",
+      "sha256": "563b100cc6d8b79475bc5997144c3339c49bcefcfff1db7b037dbc3a835ab574"
+    },
+    "results/ws4d/curve_slope.csv": {
+      "bytes": 126,
+      "recorded_at": "2026-09-12T15:32:42",
+      "sha256": "1be7707a6bb6e139bde24a6bc88a323f7ce9e7c22fc97b039aec251d90f5397d"
+    },
+    "results/ws4d/eligibility_agreement.csv": {
+      "bytes": 178,
+      "recorded_at": "2026-09-12T15:03:59",
+      "sha256": "08f450d9c1b2c11d8a1b197c3b9822af760150b4230761e323dfd2c35becef01"
+    },
+    "results/ws4d/eligibility_gates.csv": {
+      "bytes": 294,
+      "recorded_at": "2026-09-12T15:26:13",
+      "sha256": "053c94bba1bf6742b4f1bcf7858bae7611d95b3b0b26fcff77094cc4d7513cbe"
+    },
+    "results/ws4d/eligibility_labels.csv": {
+      "bytes": 234112,
+      "recorded_at": "2026-09-12T15:03:59",
+      "sha256": "5a06a9c556555d6d153e1ccf4254d38db68a6596fd5c9d5fb49be1692fba8e73"
+    },
+    "results/ws4d/eligibility_spotcheck_20.csv": {
+      "bytes": 4145,
+      "recorded_at": "2026-09-12T15:26:13",
+      "sha256": "dd10a0166cf1ae9cd265632951d1f598d16e91cae0e4e300ead34b638ee42ded"
+    },
+    "results/ws4d/ladder_gates.csv": {
+      "bytes": 197,
+      "recorded_at": "2026-09-13T08:02:15",
+      "sha256": "fccc10b60460aa2578852a63067a969479a1f330022b1a1d6a2a1fcbab0dcf34"
+    },
+    "results/ws4d/ladder_runs.csv": {
+      "bytes": 567,
+      "recorded_at": "2026-09-12T23:25:05",
+      "sha256": "85c71680fa0dc031c1baf2e727e0fe2fb7586a140792e6bd24b53a55d0547aaf"
+    },
+    "results/ws4d/solvable_changepoint.csv": {
+      "bytes": 547,
+      "recorded_at": "2026-09-13T07:53:56",
+      "sha256": "740682c7bfcf40fbe11ee6a04071e0a099f1b4c3d849a6ba57f2b01b6b9f25ba"
+    },
+    "results/ws4d/solvable_discrimination.csv": {
+      "bytes": 143,
+      "recorded_at": "2026-09-13T07:53:56",
+      "sha256": "5a18d288944579935f760002925b740735abd939797a535a37fd3d1d70e9ad9b"
+    },
+    "results/ws4d/solvable_points.csv": {
+      "bytes": 1070,
+      "recorded_at": "2026-09-13T07:53:56",
+      "sha256": "d7f49a6c788050a09de967f2c9a73a615b1c7a2be151c6a7f5bb5e4ed5b0a1db"
+    },
+    "results/ws4e/ceiling.csv": {
+      "bytes": 355,
+      "recorded_at": "2026-09-13T15:30:31",
+      "sha256": "141b64b6efee6f739c1bf4f1257fc4a9ba576a5e6d759f860176055243ae5ecf"
+    },
+    "results/ws4e/chart_mediator_by_depth.png": {
+      "bytes": 252480,
+      "recorded_at": "2026-09-13T16:52:35",
+      "sha256": "bbc66b91f2954185c1692c76530bc48b21346467ed42d47d43c5bb8e761bca3d"
+    },
+    "results/ws4e/composition_check.csv": {
+      "bytes": 3937,
+      "recorded_at": "2026-09-14T07:20:00",
+      "sha256": "2c45a290eaa36cae2c6406b9d91ab71360c878b70d7bb25d563baf7605a059d0"
+    },
+    "results/ws4e/conversion_composition_check.csv": {
+      "bytes": 15450,
+      "recorded_at": "2026-09-13T16:42:36",
+      "sha256": "658d9a8c0a6c552ac657256cf3446d7c46fc7494829557100110c0f84ca53832"
+    },
+    "results/ws4e/dedup_sensitivity.csv": {
+      "bytes": 3020,
+      "recorded_at": "2026-09-14T07:20:02",
+      "sha256": "5c953cfc77dbd8814ec2a42d056c75187a86352c60d2d977aed79d48b3e74209"
+    },
+    "results/ws4e/depth_points.csv": {
+      "bytes": 1765,
+      "recorded_at": "2026-09-13T15:03:53",
+      "sha256": "80e559b618fad9381857a77c2075733f772497723dc4c5db0e8101e89e0578e5"
+    },
+    "results/ws4e/discrimination_by_k.csv": {
+      "bytes": 2524,
+      "recorded_at": "2026-09-14T07:19:57",
+      "sha256": "a89adbd800527c41efa823f355e9c886c9df9e8d3a3a285c25cfda8921d4ee96"
+    },
+    "results/ws4e/gates.csv": {
+      "bytes": 1611,
+      "recorded_at": "2026-09-14T07:20:02",
+      "sha256": "482c30305261dad2ca246407614378862884567d40e5f227ebac5e29a02cbec8"
+    },
+    "results/ws4e/k3_rejudge.json": {
+      "bytes": 88,
+      "recorded_at": "2026-09-14T07:19:53",
+      "sha256": "c48f43c1fe357598f1c517ad2cdcf137d1175a866fc1d494096f87fcce14740d"
+    },
+    "results/ws4e/mediator_by_k.csv": {
+      "bytes": 9658,
+      "recorded_at": "2026-09-13T16:24:46",
+      "sha256": "034104d70998492956b17539ca3600244ec6d6783db0f73f44033be69c37445c"
+    },
+    "results/ws4e/noise_share_at_k10.csv": {
+      "bytes": 837,
+      "recorded_at": "2026-09-14T07:20:02",
+      "sha256": "55203f331195715e3ce2b760112ecb1cc473e1ed3ffad61bd165c2fdd80e6af9"
+    },
+    "results/ws4e/prefix_integrity.csv": {
+      "bytes": 237,
+      "recorded_at": "2026-09-13T15:30:31",
+      "sha256": "b0faa032cd9c91f2335d3081b42811639a1e1e19e2fa574d839ac6bd69ad09d4"
+    },
+    "results/ws4e/replicate_cell.csv": {
+      "bytes": 937,
+      "recorded_at": "2026-09-14T07:20:02",
+      "sha256": "dfeb1576293c924b94db7524cf77f2553969271d6d62024e9b7887352395854a"
+    },
+    "results/ws4e/rstar_final.csv": {
+      "bytes": 2667,
+      "recorded_at": "2026-09-13T16:27:14",
+      "sha256": "b65dbb9a00750bb15b2ad97e6171b1c229a9fd388d54120e2094965ccc22c419"
+    },
+    "results/ws4e/sensitivities.csv": {
+      "bytes": 1028,
+      "recorded_at": "2026-09-14T07:19:59",
+      "sha256": "de727e3d184f822560f2e242515c08ea95239f76d2baab4445915cbc1c7a6d2f"
+    },
+    "results/ws4e/signal_pairwise_bonferroni.csv": {
+      "bytes": 362,
+      "recorded_at": "2026-09-14T07:20:01",
+      "sha256": "4b5b09a7cb400cafbb9cae1be289effcfe879b0284b97b3e5bafccca4a6c1d3b"
+    },
+    "results/ws4e/slope_by_k.csv": {
+      "bytes": 1644,
+      "recorded_at": "2026-09-14T07:19:59",
+      "sha256": "6f6397372362a6307c28e49de171c9ad7f45b0994ec5232a6aa5fdcaaf9d2e58"
+    },
+    "results/ws5/break_even.csv": {
+      "bytes": 122154,
+      "recorded_at": "2026-09-15T23:25:08",
+      "sha256": "042df1b48087ab8af18345d09cb416aa2738002cb5852c6148f9b061a1516cb3"
+    },
+    "results/ws5/chart_break_even.png": {
+      "bytes": 209327,
+      "recorded_at": "2026-09-15T23:25:09",
+      "sha256": "75240b4ccf83950e5f7d4d0c4aeb4e77eb0d548941ab91bfbcf92c68f3830b75"
+    },
+    "results/ws5/chart_churn.png": {
+      "bytes": 185589,
+      "recorded_at": "2026-09-15T23:25:09",
+      "sha256": "0ad5f7c22315879c2f89b0bf353554b7e8c3224a032ec773f1716f20cfceca3b"
+    },
+    "results/ws5/chart_sensitivity.png": {
+      "bytes": 100362,
+      "recorded_at": "2026-09-15T23:25:10",
+      "sha256": "d6c2578fe6cd74fc72fe0eff1af18188b16a51ca29291c7ee57b6cbd16f6cb32"
+    },
+    "results/ws5/churn.csv": {
+      "bytes": 101364,
+      "recorded_at": "2026-09-15T23:25:09",
+      "sha256": "6130307cc2f9b7f3e667be61ca8652bc9a0bd6defea23018d1529687cb68da8a"
+    },
+    "results/ws5/postdiction_gate.csv": {
+      "bytes": 8484,
+      "recorded_at": "2026-09-15T23:25:08",
+      "sha256": "fa703417a7d30df25fe1796433605486d11403f122e6e34be54601721e954de5"
+    },
+    "results/ws5/pricing.csv": {
+      "bytes": 5345,
+      "recorded_at": "2026-09-15T23:25:08",
+      "sha256": "090b5ad661578d461f63dbb6184dd7d5051eba8ecf0da10cd0422e2aceb10ed4"
+    },
+    "results/ws5/sensitivity.csv": {
+      "bytes": 15750,
+      "recorded_at": "2026-09-15T23:25:10",
+      "sha256": "70cbc367fee6c35832ea441c47c1e22172373e3a2afb7a743e638d491d7b44ba"
+    },
+    "results/ws6a/index_cost.csv": {
+      "bytes": 1845,
+      "recorded_at": "2026-08-18T13:03:36",
+      "sha256": "349899bdb5e0eff50ced73030d0ed1c939ce6ce784dafc6ae5756ba989773c3d"
+    },
+    "results/ws6a/questions.csv": {
+      "bytes": 11567,
+      "recorded_at": "2026-08-18T10:20:40",
+      "sha256": "1e10ecb3bf53505b050830e89ba936e461ccd25061615750287a4adad9d29322"
+    },
+    "results/ws6a/repo_stats.csv": {
+      "bytes": 345,
+      "recorded_at": "2026-08-18T10:20:12",
+      "sha256": "8516d4d272718f62c7033f3bc3cd3a7afe8a893eb9b53cfcaf1cb8a98c6b98f1"
+    },
+    "results/ws6a/runs.csv": {
+      "bytes": 284514,
+      "recorded_at": "2026-08-18T12:59:15",
+      "sha256": "98e5962abfe3fcebb00698f986ea67c5c3595262f1e9b58aac5184f3646271f8"
+    },
+    "results/ws6a/scaling.csv": {
+      "bytes": 98054,
+      "recorded_at": "2026-08-18T13:14:50",
+      "sha256": "68a1e6ff167c8049cacd88d74f44fca629e780f50642867a86fb4a56d930002d"
+    },
+    "results/ws6b/chart_accuracy_by_depth.png": {
+      "bytes": 49904,
+      "recorded_at": "2026-08-18T17:08:32",
+      "sha256": "d218bd03ddab7514439dc603e246d3d7156a3e8b355fc48ee6435ebdfc9fa952"
+    },
+    "results/ws6b/chart_cost_vs_history.png": {
+      "bytes": 83040,
+      "recorded_at": "2026-08-18T17:08:32",
+      "sha256": "50ea16cf637d397e45682482fdf5cf045e384aafcdc4dcc7e8fcfd78b89c1b5f"
+    },
+    "results/ws6b/corpus_manifest.csv": {
+      "bytes": 8499,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "d5e352b4a0814631f6ce60185200e680c0fe574bae2fcb4738ed08dc1147e3ba"
+    },
+    "results/ws6b/corpus_stats.csv": {
+      "bytes": 190,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a74c9e8b4e5eb811863be3529ceeaaf5a5b69c368b3c823b9eeafd20de3e85c9"
+    },
+    "results/ws6b/index_cost.csv": {
+      "bytes": 416,
+      "recorded_at": "2026-08-18T16:40:41",
+      "sha256": "e479b148b82c9337e5daab3df102b2eae4b20571456cfebbef209f1f733e47b4"
+    },
+    "results/ws6b/parametric_gate.csv": {
+      "bytes": 27270,
+      "recorded_at": "2026-08-18T16:35:04",
+      "sha256": "fa07eae842957f3ce87864a6d5c3e652b667729bdf45b6836c7ebe05bd34889f"
+    },
+    "results/ws6b/probes.csv": {
+      "bytes": 6044,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8be504b7e2c9fc3d7755fa0bf2e9116fa4da20b37b2f92a263a6bd8036608808"
+    },
+    "results/ws6b/runs.csv": {
+      "bytes": 51274,
+      "recorded_at": "2026-08-18T17:07:27",
+      "sha256": "99c8b63bf4739cf94aa068ee9d5d44f08c3351ee91263fa44ef0805f0ff36adf"
+    },
+    "results/ws6b/skip_rate.csv": {
+      "bytes": 325,
+      "recorded_at": "2026-08-18T16:42:53",
+      "sha256": "737fdc436e7ba90b3cd027f2030f6d51fbe03da27263dc6fa8021b6d393b6bda"
+    },
+    "results/ws6b/summary_l.csv": {
+      "bytes": 353,
+      "recorded_at": "2026-08-18T17:08:32",
+      "sha256": "478f2e120b2318d3461842bd5366682548dd7101c0e859ee5d38ce3fe36ab075"
+    },
+    "results/ws6b/summary_m.csv": {
+      "bytes": 326,
+      "recorded_at": "2026-08-18T17:08:32",
+      "sha256": "c6a3ca06bb94ea786bdec61b398568ef2b414097c78e8359ca8fe1de7295551c"
+    },
+    "results/ws6b/summary_s.csv": {
+      "bytes": 315,
+      "recorded_at": "2026-08-18T17:08:31",
+      "sha256": "1a3dde6dfefebf9f0b7430994e084c116d3d85e7920393ab61199040f5279d2e"
+    },
+    "results/ws6c/branches.csv": {
+      "bytes": 1757,
+      "recorded_at": "2026-09-08T15:40:46",
+      "sha256": "6d21465f811a4c90a0d32dfa467465af26aef6b15bc32e2a2a85241c0fe48e3e"
+    },
+    "results/ws6c/corpus_stats.csv": {
+      "bytes": 519,
+      "recorded_at": "2026-09-08T11:29:49",
+      "sha256": "847edc599bd095de3b2fa2fd2a7800e182f388755305098e6964039cb093b933"
+    },
+    "results/ws6c/index_cost.csv": {
+      "bytes": 3013,
+      "recorded_at": "2026-09-15T21:35:51",
+      "sha256": "d8a0af8718cccccb9b6bd303c83b53c9558da45340efe950cd65ddaf3c135600"
+    },
+    "results/ws6c/matched_size_contamination.csv": {
+      "bytes": 3261,
+      "recorded_at": "2026-09-15T23:25:05",
+      "sha256": "baaa964119eb7d945332432d8894ee2d08dafd154f88a7d1087b7f222e2536e8"
+    },
+    "results/ws6c/nonmemorization_gate.csv": {
+      "bytes": 190,
+      "recorded_at": "2026-09-08T11:54:33",
+      "sha256": "0e23d233a8c47de93096c2d605398f3a3c85528a9e24b53abd7d076626f6cfe5"
+    },
+    "results/ws6c/paired_ci.csv": {
+      "bytes": 1924,
+      "recorded_at": "2026-09-08T15:40:46",
+      "sha256": "ee5ea10283602e01729f911b3ec4df9009a7527e882be53d366a42e755df0a4f"
+    },
+    "results/ws6c/paired_ci_scaling.csv": {
+      "bytes": 932,
+      "recorded_at": "2026-09-08T15:40:46",
+      "sha256": "a995df33ee8f03e779576f0f28d892d83fd70d15d5b075a183e5d71ce4335600"
+    },
+    "results/ws6c/paired_ci_unseen_scaling.csv": {
+      "bytes": 6284,
+      "recorded_at": "2026-09-15T23:25:05",
+      "sha256": "76fb6ffe64fcddd0c6af563104b6f5ed439bd4efe3572eb1d8613c2f81c9efa2"
+    },
+    "results/ws6c/questions.csv": {
+      "bytes": 14431,
+      "recorded_at": "2026-09-08T12:37:31",
+      "sha256": "6fe6a77b4b8f213057f3cc17a210735ae7b346d840d5bd07a8b663dc6b927192"
+    },
+    "results/ws6c/run_provenance.txt": {
+      "bytes": 2278,
+      "recorded_at": "2026-09-08T14:25:03",
+      "sha256": "094ddc6e669d0d60e2fb612a7d9199aaf1dee0e6faa248126e5d00002ca11722"
+    },
+    "results/ws6c/runs.csv": {
+      "bytes": 341046,
+      "recorded_at": "2026-09-08T14:25:03",
+      "sha256": "0ca7dbfa7f8005148b2690f3353979f4c35e885a1d9f512f42b69149e860a035"
+    },
+    "results/ws6c/scaling.csv": {
+      "bytes": 872369,
+      "recorded_at": "2026-09-16T00:04:27",
+      "sha256": "a8f4732ab518326c4558042231829b01ff6510e2ec986b8b796e437ab8ed0195"
+    },
+    "results/ws6c/scaling_corpus_stats.csv": {
+      "bytes": 807,
+      "recorded_at": "2026-09-15T21:23:52",
+      "sha256": "ea04676c78373e2ae6bb826f747f571f4a5dc84eb80450d08d4857ae4a9a444c"
+    },
+    "results/ws6c/scaling_provenance.txt": {
+      "bytes": 11542,
+      "recorded_at": "2026-09-16T00:04:27",
+      "sha256": "e88c4b35858e704b6baabf09615b8e35c7720a2284fb866daffab5a77dcb4794"
+    },
+    "results/ws6c/summary.csv": {
+      "bytes": 1730,
+      "recorded_at": "2026-09-08T15:40:46",
+      "sha256": "83b4fdef1023f1a47b004bc61a235c62428e1353674fe3a5c1126020c236122b"
+    },
+    "results/ws6c/topk_provenance.txt": {
+      "bytes": 383,
+      "recorded_at": "2026-09-08T10:39:15",
+      "sha256": "af4659c997aa67aa7586cd99908192df74be6c28f01aab55608cb6295e6c80fc"
+    },
+    "results/ws6c/topk_runs.csv": {
+      "bytes": 77641,
+      "recorded_at": "2026-09-08T10:59:47",
+      "sha256": "6737de049039051c1ab6673ae6e1a34a0417b497b943bfd7c1871f2430945e68"
+    },
+    "results/ws6c/topk_summary.csv": {
+      "bytes": 699,
+      "recorded_at": "2026-09-08T15:40:46",
+      "sha256": "38d2612b5e2bd9817a648eefcff7b3b6290e08609f34d9b4f7a3c7fc42c191db"
+    },
+    "results/ws8/branches.csv": {
+      "bytes": 1670,
+      "recorded_at": "2026-09-11T16:28:08",
+      "sha256": "b4fd9eca4d4b13a8fed20e4e5c3bcc1d60508d90632737410de9e8f77ed3f485"
+    },
+    "results/ws8/corpus_stats.csv": {
+      "bytes": 572,
+      "measured_tokens_total": 31704356,
+      "recorded_at": "2026-09-11T10:09:56",
+      "sha256": "6fbc40b8bfe80d13f86865122621f31cf6436dd9744e8dd174a850be761bf6e0"
+    },
+    "results/ws8/index_cost.csv": {
+      "bytes": 225,
+      "recorded_at": "2026-09-11T12:33:17",
+      "sha256": "19d9cc99bf7078f2600d5e228a22575cda7fbe7d9317a6013474f68216de12d5"
+    },
+    "results/ws8/judge_prompt.txt": {
+      "bytes": 1357,
+      "recorded_at": "2026-09-11T11:27:45",
+      "sha256": "d9b37380aeed8f607e0ccd5a1a1a2d0dc7cd032e4c22de7fe11f5c5ce1cb877b"
+    },
+    "results/ws8/mde_retrospective.csv": {
+      "bytes": 1100,
+      "recorded_at": "2026-09-11T16:28:08",
+      "sha256": "07f85043cd7f4cfc6066ce6d51e4efc3557b556530d2c7b1894d1229d2054e6c"
+    },
+    "results/ws8/paired_ci.csv": {
+      "bytes": 3128,
+      "recorded_at": "2026-09-11T16:28:08",
+      "sha256": "da595d15118f5766ce4574806f9febb51c38e2307e30bb9844a88e1155442994"
+    },
+    "results/ws8/parametric_gate.csv": {
+      "bytes": 153,
+      "recorded_at": "2026-09-11T11:27:45",
+      "sha256": "1900f425ed2c1a9840c0f25e842f6f4bb2e9dc2dacb1852d8c5fc3c8a16e3e73"
+    },
+    "results/ws8/questions.csv": {
+      "bytes": 24089,
+      "generator_dirty": false,
+      "generator_sha": "e9e6fce960fb9d7d5e5747103a88d2978c49158c",
+      "recorded_at": "2026-09-11T10:23:26",
+      "seed": 42,
+      "sha256": "14a449d0cbbf7c344e0c8849d178d913b2ca110f04a3b12c92587bfaddf191a2"
+    },
+    "results/ws8/questions_by_repo.csv": {
+      "bytes": 114,
+      "generator_dirty": false,
+      "generator_sha": "e9e6fce960fb9d7d5e5747103a88d2978c49158c",
+      "recorded_at": "2026-09-11T10:23:26",
+      "seed": 42,
+      "sha256": "d8a2748594d27e8973bd77daf0bd6647471316d6f74dce6bc1498b95c994e1b6"
+    },
+    "results/ws8/robustness.csv": {
+      "bytes": 1698,
+      "recorded_at": "2026-09-11T16:29:09",
+      "sha256": "0074f8e807dcc94d90f9c2a82e318c4b994e46388da34929469c82923cd11160"
+    },
+    "results/ws8/runs.csv": {
+      "bytes": 258914,
+      "recorded_at": "2026-09-11T14:21:25",
+      "sha256": "e9cca02025734eab76de7a43cd15588c0e5e0a1b7f096d52d8e05e792b223510"
+    },
+    "results/ws8/runs_parametric.csv": {
+      "bytes": 73030,
+      "recorded_at": "2026-09-11T11:27:45",
+      "sha256": "864fa2eaa04021d2c4060e9103c09efcace3f43dadeb6c45948a1d16d4f1a262"
+    },
+    "results/ws8/spend_ledger.csv": {
+      "bytes": 1695,
+      "recorded_at": "2026-09-11T14:24:19",
+      "sha256": "32dae71e76e06a13b8d810c0a3d389401dab4125613cb829068fb72cf2bce652"
+    },
+    "results/ws8/summary.csv": {
+      "bytes": 1269,
+      "recorded_at": "2026-09-11T16:28:08",
+      "sha256": "a97b941c19d9e952fb05230223ef5e9c3e583d511fc4457d78d5d232bd851323"
+    },
+    "ws3_derived/corpus_10m_mrl_512.npy": {
+      "bytes": 20480000128,
+      "dim": 512,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-09-07T01:12:40",
+      "rotation": null,
+      "scale": "10m",
+      "sha256": "c2e29427b5f328cd447bee295d03154fa10a825cced0faa1aee6a670f409c740",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_10m_pca_uc_384.npy": {
+      "bytes": 15360000128,
+      "dim": 384,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-09-07T00:04:30",
+      "rotation": "pca_rotation_1m_500000_pca_uc.npz",
+      "scale": "10m",
+      "sha256": "e460f791d326e6ed28ab123db07a226268ddd90469a04ea66e1ab189fb9827ca",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_10m_pca_uc_512.npy": {
+      "bytes": 20480000128,
+      "dim": 512,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-09-06T22:42:13",
+      "rotation": "pca_rotation_1m_500000_pca_uc.npz",
+      "scale": "10m",
+      "sha256": "9a8e608d1bfa552e1649db71ce5ca13051b446793dd1a1371899c646f14e02c6",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_mrl_128.npy": {
+      "bytes": 512000128,
+      "dim": 128,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T14:23:00",
+      "scale": "1m",
+      "sha256": "f7664e506ab312ea6e619a469d9f101d6d6310c8a2d120eec985283fce62e88c",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_256.npy": {
+      "bytes": 1024000128,
+      "dim": 256,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T14:22:59",
+      "scale": "1m",
+      "sha256": "78a646fbb2c333945e48eccfa971094207c66d4a9f2da442a238ece32e336d13",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_320.npy": {
+      "bytes": 1280000128,
+      "dim": 320,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:27:50",
+      "scale": "1m",
+      "sha256": "025bd3ef606faee9b470d142554b71cc8c74cd7d169288f13f5a14c3b6543bca",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_384.npy": {
+      "bytes": 1536000128,
+      "dim": 384,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:27:52",
+      "scale": "1m",
+      "sha256": "f3f2ed16135a2160b5d07fa2ce0e2957d9fde4b3146cb694a7fd4bdda84bb343",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_448.npy": {
+      "bytes": 1792000128,
+      "dim": 448,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:27:54",
+      "scale": "1m",
+      "sha256": "ce0f356e6ec8da41182e1c2a9d66570e3ee2f05329e46b33b2c4bfe5a7797a57",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_512.npy": {
+      "bytes": 2048000128,
+      "dim": 512,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T14:22:58",
+      "scale": "1m",
+      "sha256": "7e56ee67bea7803e4ba43f7fcf952f1fa3029ca3ee14e5e7e7bd9846103a87c0",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_640.npy": {
+      "bytes": 2560000128,
+      "dim": 640,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:06:59",
+      "scale": "1m",
+      "sha256": "40bb017b86e0e834ae3efdbb3e1ca1846dccd240f042f96bc4ecc472149f9916",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_768.npy": {
+      "bytes": 3072000128,
+      "dim": 768,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:06:51",
+      "scale": "1m",
+      "sha256": "09a396342f631d9490c8bab90dd10d5832baca73009b13ae85f5ed15874e5931",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_mrl_896.npy": {
+      "bytes": 3584000128,
+      "dim": 896,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:06:41",
+      "scale": "1m",
+      "sha256": "7bb66272b9d439168995cdd7d1ff1aef2f6eff1e91eb0960ac6e1b07aaf38bf9",
+      "transform": "mrl"
+    },
+    "ws3_derived/corpus_1m_pca_128.npy": {
+      "bytes": 512000128,
+      "dim": 128,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T14:23:09",
+      "scale": "1m",
+      "sha256": "240e7205a06b8612eaad231ebc05e998ecbdafdc259549f297393edcc3f8bb02",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_256.npy": {
+      "bytes": 1024000128,
+      "dim": 256,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T14:23:07",
+      "scale": "1m",
+      "sha256": "64c23f739bdf3a3b82dd92e89aaa2d6a3ec496f00171c7b4dd7601a6aa300f8c",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_320.npy": {
+      "bytes": 1280000128,
+      "dim": 320,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:27:58",
+      "scale": "1m",
+      "sha256": "4a57097cdcf89e40fc54cc08baabd67f2ddfc6acde1ff4b33e5071ac3f03b170",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_384.npy": {
+      "bytes": 1536000128,
+      "dim": 384,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:28:01",
+      "scale": "1m",
+      "sha256": "3b2ec974327e14552a694470e4ac7a7521f9ae68d4b67d56373e9085b70c74d7",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_448.npy": {
+      "bytes": 1792000128,
+      "dim": 448,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:28:05",
+      "scale": "1m",
+      "sha256": "3cd472565f4a5a862c5b7f5ac844b89f0a0467a02237f7614b8c5ea1fdfdea1d",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_512.npy": {
+      "bytes": 2048000128,
+      "dim": 512,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T14:23:05",
+      "scale": "1m",
+      "sha256": "f063d80f728a677aea1f2212986a3afd3749c5a3fd9b1e9c50165f9e4eb13ca2",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_640.npy": {
+      "bytes": 2560000128,
+      "dim": 640,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:07:38",
+      "scale": "1m",
+      "sha256": "01eba86564a37f18fe92bfb8df2d2f2d5d0e40819ee604b326c5900058833328",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_768.npy": {
+      "bytes": 3072000128,
+      "dim": 768,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:07:26",
+      "scale": "1m",
+      "sha256": "1b5c565fb5552b3dda58e5569193335f2f98a0ad21f99e624d85361c02aee97d",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_896.npy": {
+      "bytes": 3584000128,
+      "dim": 896,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:07:14",
+      "scale": "1m",
+      "sha256": "0b88c0518f617024e69f16926bce86bf0f1528e35361f1e880c9a085e6e7784c",
+      "transform": "pca"
+    },
+    "ws3_derived/corpus_1m_pca_uc_1024.npy": {
+      "bytes": 4096000128,
+      "dim": 1024,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:19:37",
+      "scale": "1m",
+      "sha256": "e6892574e848940c99103835d1bb55b2a067629a712f42a0dcd7a7f49aee732d",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_128.npy": {
+      "bytes": 512000128,
+      "dim": 128,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:18:46",
+      "scale": "1m",
+      "sha256": "c5ed57d3e062422b9a763a49d355306565ffd708bc836cd211cb861b2a243a56",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_256.npy": {
+      "bytes": 1024000128,
+      "dim": 256,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:18:49",
+      "scale": "1m",
+      "sha256": "b769176fbc097c841e72ebac9901921c3f3866af68dee148da2d1804e7bc366c",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_320.npy": {
+      "bytes": 1280000128,
+      "dim": 320,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:28:09",
+      "scale": "1m",
+      "sha256": "dfedaf4253639cd537c4fc20ab40b4c2365dd48e8d8e54aab73ccf717ceb7165",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_384.npy": {
+      "bytes": 1536000128,
+      "dim": 384,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:28:14",
+      "scale": "1m",
+      "sha256": "96be678f1c38a7006e900991221f64f77f01781ecfc52935ebbcb1f121861262",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_448.npy": {
+      "bytes": 1792000128,
+      "dim": 448,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:28:19",
+      "scale": "1m",
+      "sha256": "81e7b9e0e49fba2a57b4a14744da2d027ae0ceb78ce4fc508b43289e9a9780a4",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_512.npy": {
+      "bytes": 2048000128,
+      "dim": 512,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:18:54",
+      "scale": "1m",
+      "sha256": "2218ad2c482698583a089b4347382d2373f696a90d2e3e055221559e2ff22e7c",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_640.npy": {
+      "bytes": 2560000128,
+      "dim": 640,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:19:01",
+      "scale": "1m",
+      "sha256": "750bb2f9f8c7459a5fd61cdb7fd1cd5e08cbc5a64f839af63b9e0821ea294607",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_768.npy": {
+      "bytes": 3072000128,
+      "dim": 768,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:19:10",
+      "scale": "1m",
+      "sha256": "927656d221c7c774deebf3cdf0bb0f66005cae697565486c239b1d10e677e656",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/corpus_1m_pca_uc_896.npy": {
+      "bytes": 3584000128,
+      "dim": 896,
+      "kind": "ws3_corpus",
+      "recorded_at": "2026-08-16T20:19:23",
+      "scale": "1m",
+      "sha256": "f14b591655b4ed5541769a0f7dd91aeccf96ca09ac85f2d7c0fdf858e4d203e0",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/pca_rotation_1m_500000_pca.npz": {
+      "bytes": 8406412,
+      "centered": true,
+      "fit_rows": 500000,
+      "fit_source": "corpus only (never queries)",
+      "kind": "ws3_pca_rotation",
+      "recorded_at": "2026-08-16T20:27:46",
+      "scale": "1m",
+      "seed": 42,
+      "sha256": "a63e3a7109c3cb39e96ab77ab42ca78a587552553f27043d7037def976604e97"
+    },
+    "ws3_derived/pca_rotation_1m_500000_pca_uc.npz": {
+      "bytes": 8406412,
+      "centered": false,
+      "fit_rows": 500000,
+      "fit_source": "corpus only (never queries)",
+      "kind": "ws3_pca_rotation",
+      "recorded_at": "2026-08-16T20:27:46",
+      "scale": "1m",
+      "seed": 42,
+      "sha256": "57c819f6c991cc8816d6beccca00a44d80ad57cf4f97f98234871482810976bc"
+    },
+    "ws3_derived/queries_mrl_128.npy": {
+      "bytes": 5120128,
+      "dim": 128,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T14:23:00",
+      "scale": "1m",
+      "sha256": "6fd0a8bdf1ce72f547928f10e02d431627bf84ce9f77ad832d3695c5ff297d99",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_256.npy": {
+      "bytes": 10240128,
+      "dim": 256,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T14:22:59",
+      "scale": "1m",
+      "sha256": "9cbc4c692344d19b1ef0445b644426e8126f9af0eda6a624b79255331438da5f",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_320.npy": {
+      "bytes": 12800128,
+      "dim": 320,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:27:50",
+      "scale": "1m",
+      "sha256": "83366e289ed83dfc2435743edd6e7a82dd50def364add420b965a9f8ba81acbf",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_384.npy": {
+      "bytes": 15360128,
+      "dim": 384,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:27:52",
+      "scale": "1m",
+      "sha256": "f018934b285328d34bf262929271493a981193caa49581693653feccbc1ad15d",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_448.npy": {
+      "bytes": 17920128,
+      "dim": 448,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:27:54",
+      "scale": "1m",
+      "sha256": "03f59845ffbd9bb1fc5627f24562d1e962337c41b102d53b277dc651d9e3c641",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_512.npy": {
+      "bytes": 20480128,
+      "dim": 512,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T14:22:58",
+      "scale": "1m",
+      "sha256": "cc823e8a10666f5104c9764c92a182dbcf3e37830a00568f421e880c2525a398",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_640.npy": {
+      "bytes": 25600128,
+      "dim": 640,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:07:00",
+      "scale": "1m",
+      "sha256": "4f8bdd853b0de949f75bbaf923c7acd1168ca6a46cda61a3bb19e408c08dcbd2",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_768.npy": {
+      "bytes": 30720128,
+      "dim": 768,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:06:51",
+      "scale": "1m",
+      "sha256": "14d92fa6bb680f6e4fa72ad3c3a584c69d1c3b460a37dfa99410cc1ee78fe1f0",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_mrl_896.npy": {
+      "bytes": 35840128,
+      "dim": 896,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:06:41",
+      "scale": "1m",
+      "sha256": "e2a34e1944ce2f92ce72d9bf25902a154d812ac4c764bb4425b2ba244adf3b45",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_pca_128.npy": {
+      "bytes": 5120128,
+      "dim": 128,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T14:23:09",
+      "scale": "1m",
+      "sha256": "3c1b5d24bd317f3e0a309e754d2cd82c604de0ae4a8e72804f405f2329fffd26",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_256.npy": {
+      "bytes": 10240128,
+      "dim": 256,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T14:23:07",
+      "scale": "1m",
+      "sha256": "75a23d52b6687cd987d9d7964b5e4c5a71819af8efc12c6f4544816a357c23f4",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_320.npy": {
+      "bytes": 12800128,
+      "dim": 320,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:27:58",
+      "scale": "1m",
+      "sha256": "d6baeae171cd34ead9874493ab0f46786d6421b8e3d9e7787354c087c4c53d7d",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_384.npy": {
+      "bytes": 15360128,
+      "dim": 384,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:28:01",
+      "scale": "1m",
+      "sha256": "b3ac84c968ee0768f68bf5e044dbfa59db76b65b5df0e8f5ae829c0c72235877",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_448.npy": {
+      "bytes": 17920128,
+      "dim": 448,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:28:05",
+      "scale": "1m",
+      "sha256": "8fa1678a713355379742f66b8c759b04c83baf20279ddd8ea7296e0a19dc2998",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_512.npy": {
+      "bytes": 20480128,
+      "dim": 512,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T14:23:05",
+      "scale": "1m",
+      "sha256": "4fe0fb5d1d17ef1b063d79b3ef0055c6b143f6f1a4e79a5068851ea46c6baa87",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_640.npy": {
+      "bytes": 25600128,
+      "dim": 640,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:07:38",
+      "scale": "1m",
+      "sha256": "e87ab324f65ceb1ce9c524cab44c4d6012509b7aba6e0ecbcaf6820af57014af",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_768.npy": {
+      "bytes": 30720128,
+      "dim": 768,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:07:27",
+      "scale": "1m",
+      "sha256": "3d9ce62fe0961c43f08c5e81c6a9f6ef70291d6550516573bdf6ba96134548a4",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_896.npy": {
+      "bytes": 35840128,
+      "dim": 896,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:07:14",
+      "scale": "1m",
+      "sha256": "d903f59702505d8230e44feed8b2db7f8983cd37e28cad90e4f520fbc03204f0",
+      "transform": "pca"
+    },
+    "ws3_derived/queries_pca_uc_1024.npy": {
+      "bytes": 40960128,
+      "dim": 1024,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:19:37",
+      "scale": "1m",
+      "sha256": "ec958eaf4be0e3b664a3fec4ecfaf00aca7da525e13bd3822b07997cfce8a92e",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_128.npy": {
+      "bytes": 5120128,
+      "dim": 128,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:18:46",
+      "scale": "1m",
+      "sha256": "7365777235aa59adcb3e45fe221540d2818bc9be9c896485b2a08e767d49c801",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_256.npy": {
+      "bytes": 10240128,
+      "dim": 256,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:18:49",
+      "scale": "1m",
+      "sha256": "c6ca543d686bbafafbb80016f4e6bbec9383da78ae81b4ec818cdb12037fb299",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_320.npy": {
+      "bytes": 12800128,
+      "dim": 320,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:28:09",
+      "scale": "1m",
+      "sha256": "f9d612323ca94b9a21606ee10eff166406825672d5a871b8123529c4851787f6",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_384.npy": {
+      "bytes": 15360128,
+      "dim": 384,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:28:14",
+      "scale": "1m",
+      "sha256": "09e2f666212bc5c2deff34bf09b9ab9ff77cdfb9ed44cf1bf7195c875d6a50f1",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_448.npy": {
+      "bytes": 17920128,
+      "dim": 448,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:28:19",
+      "scale": "1m",
+      "sha256": "63a1f97effeef604d09da0e58f54be2fb79acb708e4282116daac12942b5901f",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_512.npy": {
+      "bytes": 20480128,
+      "dim": 512,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:18:54",
+      "scale": "1m",
+      "sha256": "7866c7e3c2b6bcbcd1d9f8088bb080e8f991b32a52738d7a9e7b62512465e389",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_640.npy": {
+      "bytes": 25600128,
+      "dim": 640,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:19:01",
+      "scale": "1m",
+      "sha256": "7a20cee22b9a4104a18500459af5eebe221bcf087b354c0d1027930057726333",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_768.npy": {
+      "bytes": 30720128,
+      "dim": 768,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:19:10",
+      "scale": "1m",
+      "sha256": "d5b19af2a8bd61d4e1d2c75751f315bbfdbdd99a10b8578a5e888554daf740d8",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_pca_uc_896.npy": {
+      "bytes": 35840128,
+      "dim": 896,
+      "kind": "ws3_queries",
+      "recorded_at": "2026-08-16T20:19:23",
+      "scale": "1m",
+      "sha256": "77923e750c6a7bcf459008a7d6eb3c4bc761e53975f720c6aa550daea451576c",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_ws4_mrl_512.npy": {
+      "bytes": 7393408,
+      "dim": 512,
+      "kind": "ws4_queries",
+      "recorded_at": "2026-09-07T01:12:40",
+      "sha256": "b276c7269c70da5297b74949f60c5e5394b040c263e6d1eade923a54e290b535",
+      "transform": "mrl"
+    },
+    "ws3_derived/queries_ws4_pca_uc_384.npy": {
+      "bytes": 5545088,
+      "dim": 384,
+      "kind": "ws4_queries",
+      "recorded_at": "2026-09-07T00:04:30",
+      "sha256": "04d8819f164f42b8f68a974144063191874632fe2b75659858c905ea30298b72",
+      "transform": "pca_uc"
+    },
+    "ws3_derived/queries_ws4_pca_uc_512.npy": {
+      "bytes": 7393408,
+      "dim": 512,
+      "kind": "ws4_queries",
+      "recorded_at": "2026-09-06T22:42:13",
+      "sha256": "cc37d6143476592b579362d187a11a4df55f178ef131cf55b4ebcb617067d803",
+      "transform": "pca_uc"
+    },
+    "ws4c_cache/gold_chunks.parquet": {
+      "bytes": 42976404,
+      "purpose": "WS4c C1 gold-title chunk texts",
+      "recorded_at": "2026-09-11T19:58:38",
+      "rows": 144218,
+      "sha256": "00e5830a00f9b4c1144d6473a88a3bb6bc402bb172c1ec69b002e1dd970882de",
+      "titles": 5392
+    },
+    "ws4c_cache/pair_chunks.parquet": {
+      "bytes": 5237755,
+      "purpose": "WS4c 2A chunk text for the pair pool -- CACHE ONLY, never committed (corpus licence, README Licenses)",
+      "recorded_at": "2026-09-11T21:49:12",
+      "rows": 17095,
+      "sha256": "5a69fd142601ad41d26e73d877f84fb31c0bca5dba7333f1ec25e588abff7aae"
+    },
+    "ws4c_cache/pairs.parquet": {
+      "bytes": 409658,
+      "purpose": "WS4c 2A.1 chunk-pair pool",
+      "recorded_at": "2026-09-11T21:49:10",
+      "rows": 9000,
+      "seed": 42,
+      "sha256": "b5c06a4ef95a62ddf5f3785929e662539fb8e1dc50ae62e4685459ed26b22344"
+    },
+    "ws6a_prefix_manifest.json": {
+      "bytes": 48269,
+      "recorded_at": "2026-08-18T10:20:12",
+      "sha256": "a2ccbf028bdf47a63b9780bd0a0a3ce3166c84ed0a57b2c22bda5b835fcdcaa7"
+    },
+    "ws6b_corpus/2025-01-06.md": {
+      "bytes": 33330,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "44f371caab9b385b516aa328371982148fdd81262a4fcc4f65aedec9c26cd92e"
+    },
+    "ws6b_corpus/2025-01-07.md": {
+      "bytes": 19336,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c43a97110e123f3bf981b445edd33d5548dc7598da5a43130afcd2e7a9512fad"
+    },
+    "ws6b_corpus/2025-01-08.md": {
+      "bytes": 21003,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "15f7a8a5543c335d80a97a17ebd8d84557c0c4e9c4c59df3cde626e14a643644"
+    },
+    "ws6b_corpus/2025-01-09.md": {
+      "bytes": 19743,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "554d8c6ba66593280e898cbe295457765d2ae86dfd9aab13cbb2e9b685d5b834"
+    },
+    "ws6b_corpus/2025-01-10.md": {
+      "bytes": 10044,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "82f0d58605d3b99d4668da6d086789858b020e1117688904f1655b7f829ab691"
+    },
+    "ws6b_corpus/2025-01-13.md": {
+      "bytes": 28123,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8ad3a60a750c6b0d2b0deed271778d70e0187964c9c63e8dae2b322636eaed3a"
+    },
+    "ws6b_corpus/2025-01-14.md": {
+      "bytes": 18838,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7a607410af898520c5fa9b77b071c83b9f7461fdb5bf438347f7b19787f60508"
+    },
+    "ws6b_corpus/2025-01-15.md": {
+      "bytes": 25873,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c5a99e0f1c21b0ca3db86481b7348b35043ca78c94a9b79906534f5a603fafe2"
+    },
+    "ws6b_corpus/2025-01-16.md": {
+      "bytes": 25104,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "56d5730531def8b103f08bd89a2c61fa097e61435affc3cf856aba7dca21c14b"
+    },
+    "ws6b_corpus/2025-01-17.md": {
+      "bytes": 14450,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "84ecad3b9e772ee73bf454a10b4353c5f8d07a2b454b8c70f5e1cdb49b349ff4"
+    },
+    "ws6b_corpus/2025-01-20.md": {
+      "bytes": 30809,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5238aff20c94a2b92ecc6fde06676b4b1da1230e6227b810ab749ad85f0bd321"
+    },
+    "ws6b_corpus/2025-01-21.md": {
+      "bytes": 24947,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "56587711b6765508fd352a72c31e9d7710cb571194f7bcc302aa3314dce786ff"
+    },
+    "ws6b_corpus/2025-01-22.md": {
+      "bytes": 14530,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7a2f49aff904d98d4578521dd0d654852f695033ef7a1a1e979ef967de5c7361"
+    },
+    "ws6b_corpus/2025-01-23.md": {
+      "bytes": 25160,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8a5735b8408231d7711bc7199ff82bc20cb36f0ce3e9b1ff19da095f722360db"
+    },
+    "ws6b_corpus/2025-01-24.md": {
+      "bytes": 18739,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "f68c5bdeae631e59cc1d97a22dc025d07c68a998782872132e4b96b012ffd6a7"
+    },
+    "ws6b_corpus/2025-01-27.md": {
+      "bytes": 19862,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "f8ececfc8d175f0246ecc8b7edfc127f42c277bcee5546d1bf6b0f52fa704d1b"
+    },
+    "ws6b_corpus/2025-01-28.md": {
+      "bytes": 9095,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "1812a8e6232d4417d75891006078c384c47165c03ccbd0e550a0d27526e0510c"
+    },
+    "ws6b_corpus/2025-01-29.md": {
+      "bytes": 22032,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7c07460d02ea4b5a21dfd94b27eb70572d563743a6ed3183d964414cdd9bdaac"
+    },
+    "ws6b_corpus/2025-01-30.md": {
+      "bytes": 14023,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5a5d6ca70030c89bf98fb49e7684835dd85337048d2e1ae97857d8cfab6b29ad"
+    },
+    "ws6b_corpus/2025-01-31.md": {
+      "bytes": 21868,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "782de48477bb52424a966315148ca73a58b7a6df1b6c04c6a5be621e183ff688"
+    },
+    "ws6b_corpus/2025-02-03.md": {
+      "bytes": 20730,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "42ca4793e5ff2c022f28ea510d320a37e72277447502c45031c1fb37efa7c087"
+    },
+    "ws6b_corpus/2025-02-04.md": {
+      "bytes": 16781,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "4704f61728244576bb97ce668a18aba93716831af335b47969cd8c0835356fbf"
+    },
+    "ws6b_corpus/2025-02-05.md": {
+      "bytes": 33645,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5986df2353f0953aa83a945f4a7019a667789ff0b86e28f6399b131968baea5e"
+    },
+    "ws6b_corpus/2025-02-06.md": {
+      "bytes": 21844,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "9f8c681e777108d0df5a122685d6b666811eb2380045df861666cb14637339d8"
+    },
+    "ws6b_corpus/2025-02-07.md": {
+      "bytes": 23140,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "cab057a5bf8d8663df25375440f871ced566fd099738b25def00808fe004b72c"
+    },
+    "ws6b_corpus/2025-02-10.md": {
+      "bytes": 24820,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "2a4d750e0025664623c9f4656084ff0f44f589ea59ec7d0d825d90592a86d159"
+    },
+    "ws6b_corpus/2025-02-11.md": {
+      "bytes": 15666,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5c5c670ff197903f1cf993901fb2025814a07a88602764cd786a86b21125c964"
+    },
+    "ws6b_corpus/2025-02-12.md": {
+      "bytes": 21223,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "49ec2d8f841ff0baebec343ad49bfdc0c1bcaf5d638ba297dee5d292f629a1d7"
+    },
+    "ws6b_corpus/2025-02-13.md": {
+      "bytes": 27013,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "cfdcf1b14c61f004c0daa887027f6a52cd9d1d158937a255989d2c42b1b33a65"
+    },
+    "ws6b_corpus/2025-02-14.md": {
+      "bytes": 13503,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3d4049a46109149f39a7a66a590025ddb4e8ea9f49226c858e1ad32bf0e3f0a5"
+    },
+    "ws6b_corpus/2025-02-17.md": {
+      "bytes": 26773,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7402d8b4769569782a6abc2f246dc6e06b9fcb413d9bbb27b63786561524bfa2"
+    },
+    "ws6b_corpus/2025-02-18.md": {
+      "bytes": 28845,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a38abc6bbb447a6c3b1f9d6e78bfd8546f5f3e864e4f137a163ecff075bb1ea1"
+    },
+    "ws6b_corpus/2025-02-19.md": {
+      "bytes": 9744,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "17836af209d2f02a37acf860c95488e65386be496c2783c6eb7b4c8ab182b958"
+    },
+    "ws6b_corpus/2025-02-20.md": {
+      "bytes": 31313,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "aebda14d433280f4767301dd046fd639e8cf4424b9ae19378560d1a43a49a5ff"
+    },
+    "ws6b_corpus/2025-02-21.md": {
+      "bytes": 10268,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "cf4354ce094ad7194553f268bd02d97f7755e7145774b6d66805f8b4c02b2007"
+    },
+    "ws6b_corpus/2025-02-24.md": {
+      "bytes": 7002,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "947bf2356791ca95f416f3ce5601b99613af5d6c7f4035571a4316135a51c048"
+    },
+    "ws6b_corpus/2025-02-25.md": {
+      "bytes": 9104,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "cb141caeb666bcba6cd1f1e4d6d4c25d2fda474d86a573111cdfe6d798e73555"
+    },
+    "ws6b_corpus/2025-02-26.md": {
+      "bytes": 17161,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c7157fb8313a7ecf184f121115f3cd0add89378e712359a51dd63b4b6f42a959"
+    },
+    "ws6b_corpus/2025-02-27.md": {
+      "bytes": 14705,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "b37cec6964aee5df7d62117067645026bef7b97e9859d5d4416926d3d99e1736"
+    },
+    "ws6b_corpus/2025-02-28.md": {
+      "bytes": 36397,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "023b826395295c02f661fd388b420ed1219f809c14a1c3eabe9d3fd51e016db7"
+    },
+    "ws6b_corpus/2025-03-03.md": {
+      "bytes": 12428,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "aeff90f0ada1b2d57a3bd80d966b7f136cd36389419d22a6268daf8a40a17405"
+    },
+    "ws6b_corpus/2025-03-04.md": {
+      "bytes": 13365,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "baeab7685b60383f1e39653b5940bbad4ea2e5acb6744d1db422be208469b257"
+    },
+    "ws6b_corpus/2025-03-05.md": {
+      "bytes": 25021,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "307615556ebc57f0b09ddef43b26fd04c57282ea7cb888eb6ca3c8406c67a9ed"
+    },
+    "ws6b_corpus/2025-03-06.md": {
+      "bytes": 25354,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "b6217ddd0d5a561551c3ff295afd4e1baffc30900b4a4673ffd4a3b9817cb426"
+    },
+    "ws6b_corpus/2025-03-07.md": {
+      "bytes": 25522,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a37dc6686e76af94bcc92364ba6daf9d2947195b169a5d28dce6f916df50d946"
+    },
+    "ws6b_corpus/2025-03-10.md": {
+      "bytes": 8729,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "1e50490a49cc31417b07e9fa4d183a98ee344db02dee54e0a12d51c4893e31a9"
+    },
+    "ws6b_corpus/2025-03-11.md": {
+      "bytes": 16822,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "33c19bb2fa9450e00f0b461ed11e77c682239781081985aa4507794911413b90"
+    },
+    "ws6b_corpus/2025-03-12.md": {
+      "bytes": 35570,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "961c8c5a346317b636fa2a42a806657dc6a7d1671f01abf07b2cc5553943bad4"
+    },
+    "ws6b_corpus/2025-03-13.md": {
+      "bytes": 24931,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c4b49a0e365da3201c6e23cc8bb7b2d95fd72e8672ff6d3969b13b10d0320f4d"
+    },
+    "ws6b_corpus/2025-03-14.md": {
+      "bytes": 22979,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "323eb1e0d0ffb83db0eb229c6a14377cfad185f588b5e955c7b38378a3eaa2c7"
+    },
+    "ws6b_corpus/2025-03-17.md": {
+      "bytes": 15399,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "0e14554b47e5ea3e8c77d1ab0be2fe88270be20a18db3f739cc8c446bcd2af90"
+    },
+    "ws6b_corpus/2025-03-18.md": {
+      "bytes": 29596,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "48ee3f936e7e0104c604f4bf8de18e89d8bf3438a52fe3ed16dd305deb50bd25"
+    },
+    "ws6b_corpus/2025-03-19.md": {
+      "bytes": 29686,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c86c8f93ecd6b81ec69e42b76eb9ad66db7845175a304b19ea07151e58de520c"
+    },
+    "ws6b_corpus/2025-03-20.md": {
+      "bytes": 23556,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "47c974ef9dcd00adb645996b3521958e8674376f36ec1e8d17a052de0bd9deef"
+    },
+    "ws6b_corpus/2025-03-21.md": {
+      "bytes": 30500,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "0df64740800ac5a034f35bdcc1b7496b6d2f3506380e525a34eb043f54b2f38a"
+    },
+    "ws6b_corpus/2025-03-24.md": {
+      "bytes": 21256,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "cad2bb8dddb896e42a5680f2a9073c012ea267b477fbb30dbf8c64e889949211"
+    },
+    "ws6b_corpus/2025-03-25.md": {
+      "bytes": 13145,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8fb1a542ae1dd88ec2c85f60735c3d29dfeba06e9f0544b8b481050cf4a4291e"
+    },
+    "ws6b_corpus/2025-03-26.md": {
+      "bytes": 11614,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "23cddfb586be5d0d8ddd2680aa2802a0fea3fbc5f4061ee8c2025a13d061806a"
+    },
+    "ws6b_corpus/2025-03-27.md": {
+      "bytes": 24746,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "369562fa9b5970e2aa4cbf69160d3f33ba9806603028bb2a84dac1292a772b3f"
+    },
+    "ws6b_corpus/2025-03-28.md": {
+      "bytes": 15538,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "e9abb6d6643bbf644a7e4f3e023d086015f922ccd4d05b05d0efa6365835bca5"
+    },
+    "ws6b_corpus/2025-03-31.md": {
+      "bytes": 25912,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "53d2c29c3c3e402e8e4f774889144a7a1db1577a574173c2674692f04a1507e4"
+    },
+    "ws6b_corpus/2025-04-01.md": {
+      "bytes": 35373,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "53ee9d27f0e2f4e6bf3f94baae6e947986db5b2cc271e8e7861238271d5bd4ee"
+    },
+    "ws6b_corpus/2025-04-02.md": {
+      "bytes": 9388,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5485c2d59275688363386ca3de6eb64f7dfaaf7d6aeafa369ed85a56dbec7370"
+    },
+    "ws6b_corpus/2025-04-03.md": {
+      "bytes": 11381,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "6a317b70c557d02793895e544ef359b1e0313561e1fbe4192b92430a0683e422"
+    },
+    "ws6b_corpus/2025-04-04.md": {
+      "bytes": 22712,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3835f287f21cf6c9f262cb2900d0579e95ff97e65d0736d752b12b34fe33e972"
+    },
+    "ws6b_corpus/2025-04-07.md": {
+      "bytes": 12968,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "52166b02fb6ee06d75fe36337d5a3f72675540fe4cf0167b3b3b81d3d0156360"
+    },
+    "ws6b_corpus/2025-04-08.md": {
+      "bytes": 14612,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c448bd60b02bb40104faa76d30e8970330a52a403219cdb80b8bb8f31451a07b"
+    },
+    "ws6b_corpus/2025-04-09.md": {
+      "bytes": 32211,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8a3187ab6ce995227669fd31515f25bfde504ea4db192c1f7205f782e5e8f6fa"
+    },
+    "ws6b_corpus/2025-04-10.md": {
+      "bytes": 14931,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "06ad4ac91ed46f1f1236dac8396f5f1dd4ee5229f5c66369c7eb737eb30d48b2"
+    },
+    "ws6b_corpus/2025-04-11.md": {
+      "bytes": 22900,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "fc36a927419a299d301460735b13dd285ba6830d460ce8ac80fbdeb9814f3c26"
+    },
+    "ws6b_corpus/2025-04-14.md": {
+      "bytes": 12792,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "171a3ac024ce1c8631aae1764248100235852069a0e34f0ac5dfd2466b7b8f17"
+    },
+    "ws6b_corpus/2025-04-15.md": {
+      "bytes": 17959,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "9640f26c14bb86f1ffdba99f10c6d1dd446210c3ad979d03138d32d93ad5eb60"
+    },
+    "ws6b_corpus/2025-04-16.md": {
+      "bytes": 9255,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "dca8c9076e826fbcc0c7182ff3d81b56721eb67f78937c51e7b64e5b06fd0e53"
+    },
+    "ws6b_corpus/2025-04-17.md": {
+      "bytes": 28005,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "9f1e8d01d81e1dd035f227cdac295376b03b9792b47c2154a65902e6c1a17875"
+    },
+    "ws6b_corpus/2025-04-18.md": {
+      "bytes": 17284,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "4cf6e372f8d050edf42e3069767cca3014769384ffb114f6d5d83f30343caa6d"
+    },
+    "ws6b_corpus/2025-04-21.md": {
+      "bytes": 24809,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "f6c0f4612d10189be666132a276a0b1ee0895a2584d6271d39b427d56542e182"
+    },
+    "ws6b_corpus/2025-04-22.md": {
+      "bytes": 15910,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5b3568c31351f72a3ba8f1a8320dc24b8891d9b0db4a1810370050b40ba90a4b"
+    },
+    "ws6b_corpus/2025-04-23.md": {
+      "bytes": 21202,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3310505a9af6831e50f19ff7b4e5b6e7a0ce795029713b3966e094cb3fb92274"
+    },
+    "ws6b_corpus/2025-04-24.md": {
+      "bytes": 11174,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "43a37f2d1881428047460e9083139db32518bcbbb8624df610514de2631709b3"
+    },
+    "ws6b_corpus/2025-04-25.md": {
+      "bytes": 13602,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "584ccd214161085015e8cde0e8fb289591d4de63b4f2427b3f344ad27bb6d6f1"
+    },
+    "ws6b_corpus/2025-04-28.md": {
+      "bytes": 24439,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "488de0863482eedf9c568e5148b1338e0a4d924b777b5a58487635f27808c011"
+    },
+    "ws6b_corpus/2025-04-29.md": {
+      "bytes": 29233,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "948f0db6ace08db2b4443e9bcf817f55f5be7dbc57f008b8a77f660ab5c4025e"
+    },
+    "ws6b_corpus/2025-04-30.md": {
+      "bytes": 16281,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5abd5093ad5b2a300b358c320909280a4b524a2a29f0d63b5a0a2df3d8702c95"
+    },
+    "ws6b_corpus/2025-05-01.md": {
+      "bytes": 20354,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5ea2def92d4aa18485c1d6b52d4b03f7febf9c8dec2dbc7f382613e07074ed87"
+    },
+    "ws6b_corpus/2025-05-02.md": {
+      "bytes": 27787,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "05e73c139462f1baf9e3328340cf82db9d3c9dfbd5f584c8ed3c4510c56c82d0"
+    },
+    "ws6b_corpus/2025-05-05.md": {
+      "bytes": 23531,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3659e4b501fba0626949fa42dbfa221fb8d22d4fbe1995840bda671dd3dfb635"
+    },
+    "ws6b_corpus/2025-05-06.md": {
+      "bytes": 25108,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c83fa83a43e55e8cf3536a50042a41fd569e45438fd010634379e4eceb313b90"
+    },
+    "ws6b_corpus/2025-05-07.md": {
+      "bytes": 10448,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "34a197161c428f4ed64fc16b5847bcdcaddb0b0f9bc752df28ca0f8270f8b016"
+    },
+    "ws6b_corpus/2025-05-08.md": {
+      "bytes": 23094,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "9f547cee53c0e9ad069936686a6c163b37bcca9e00fce26d582c490ce6dc0b73"
+    },
+    "ws6b_corpus/2025-05-09.md": {
+      "bytes": 33386,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3556fce4f7fa9b962de5045d9c18e74b4c97e2a3564acc8b7789c12a792e6665"
+    },
+    "ws6b_corpus/2025-05-12.md": {
+      "bytes": 17110,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "657fd6c388698187fe0fac0a5261c7b40ee11450144e0ee1a5501075bb4e60c7"
+    },
+    "ws6b_corpus/2025-05-13.md": {
+      "bytes": 13521,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "1763695227ec1e26b9fc8358737e8d9bd7626e267220c2ce42a89330dcecc32a"
+    },
+    "ws6b_corpus/2025-05-14.md": {
+      "bytes": 24531,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a053b242dbec098f98d1a49d32639b78f483047a84330678202bfb5f5dff6f3b"
+    },
+    "ws6b_corpus/2025-05-15.md": {
+      "bytes": 28720,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "130c3e4f4016dcbb552de956ea57f271d6c78460f3bb88b94133a1fa576a770d"
+    },
+    "ws6b_corpus/2025-05-16.md": {
+      "bytes": 35940,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a307396621e95cebe9076c21b7b7cd53ab03d23472956302107ccc47368b3c89"
+    },
+    "ws6b_corpus/2025-05-19.md": {
+      "bytes": 10584,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "2b3d93c106de4e6dc90aa9f4fdb7f48fce5f428d31dac375f0ec6272af5a4192"
+    },
+    "ws6b_corpus/2025-05-20.md": {
+      "bytes": 34858,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5164d655200747a84ba74f6943ac363f132ad780e42012a7492670187ade0fdd"
+    },
+    "ws6b_corpus/2025-05-21.md": {
+      "bytes": 38244,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "fa8f0c5964f556b8d9b1f2a8a0746f41a26bedd67629461d24ccebfbb3f8ea60"
+    },
+    "ws6b_corpus/2025-05-22.md": {
+      "bytes": 24851,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "385c554e53ce72ab4bcad62562c2c8bdcab96f959668b6820fca7d4819af89d4"
+    },
+    "ws6b_corpus/2025-05-23.md": {
+      "bytes": 26251,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "46a6f4674d1d4a2e3a9388a408f85de8ebb327e2c065a46ff7953f0fe1b08131"
+    },
+    "ws6b_corpus/2025-05-26.md": {
+      "bytes": 10220,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "895a561dc40c67c2bae9994f29b1c4766c3f957ca823c5529310d6d71a42ba4e"
+    },
+    "ws6b_corpus/2025-05-27.md": {
+      "bytes": 10455,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "d7ab140bd0236cf1813c0d0af70439392777622ca8a30c298917da878078a395"
+    },
+    "ws6b_corpus/2025-05-28.md": {
+      "bytes": 15725,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "991d86d070b246f03493d7f8c4854723af1db2cc13983b2dfcaea1a6d81d8576"
+    },
+    "ws6b_corpus/2025-05-29.md": {
+      "bytes": 37748,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "5bd4b7b04236e6f05636482a2fe7adb898e6e19e172f9e3ac49777bc27206a5b"
+    },
+    "ws6b_corpus/2025-05-30.md": {
+      "bytes": 21788,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "9d090b75b03a3204ea9aef8334d5e7c45e961993bad25dbce05753958bc83e77"
+    },
+    "ws6b_corpus/2025-06-02.md": {
+      "bytes": 27097,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3e489c9ebfb402f2506191513fb55346d699380553d688a1ca870a2eae762ac6"
+    },
+    "ws6b_corpus/2025-06-03.md": {
+      "bytes": 15467,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "f977c2e8ba38d904e393145f5c8bacc7618bb9b84004b702c517e469ba687c9e"
+    },
+    "ws6b_corpus/2025-06-04.md": {
+      "bytes": 13401,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7472a7d8dc892c90c74d1fd9187140519a41455c1b801fb6f82d92fbb2b94825"
+    },
+    "ws6b_corpus/2025-06-05.md": {
+      "bytes": 23531,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "84cc0883250bd60a108a8c46a46de26eb7ef850ba08f10a6c5a74daecf05d304"
+    },
+    "ws6b_corpus/2025-06-06.md": {
+      "bytes": 25451,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a52174813267c94f8f5d23b7aa0975db0f8bd3c99ecf339d1710b3bccff7efda"
+    },
+    "ws6b_corpus/2025-06-09.md": {
+      "bytes": 39973,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "14f31f94bcfc1636d9ca1d139f7bd918e27382d86febedde05f6406870b70f48"
+    },
+    "ws6b_corpus/2025-06-10.md": {
+      "bytes": 24934,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "95a5877d33e088160302d68ffe0d5e59d9eb59437165430b4137024d0e1810dc"
+    },
+    "ws6b_corpus/2025-06-11.md": {
+      "bytes": 13693,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "0136a69cfa61545e9ea2c8e0c89b9381570166ea92b39e8971e04b30bc8657ba"
+    },
+    "ws6b_corpus/2025-06-12.md": {
+      "bytes": 32251,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "92506212155768cac54ff3febc4c31e3398be16e3fa82488d183b6b43aa7abe6"
+    },
+    "ws6b_corpus/2025-06-13.md": {
+      "bytes": 24329,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "50c14021dfd7fcd11c552a00d7a34ab53cc2267ef6723f0dc2ddcbebb4f11b6e"
+    },
+    "ws6b_corpus/2025-06-16.md": {
+      "bytes": 9599,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8964a3e3ad21eb6d04db00df612e5332cb7af5d5820842ac3cdc0a4502cc60c2"
+    },
+    "ws6b_corpus/2025-06-17.md": {
+      "bytes": 19501,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "3e1e26fec118c01339bcbc54f5bfd8596ced1e4985f798a516a743016c501951"
+    },
+    "ws6b_corpus/2025-06-18.md": {
+      "bytes": 13168,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "926706e0b9369c98efcfac91ed371e206f257a735bef3a5e7847c5f90fc1cba1"
+    },
+    "ws6b_corpus/2025-06-19.md": {
+      "bytes": 27011,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "e8e0a285f24eaae5446065fdb763d3ff971b861d8c3b0e0e02d3b2306c398deb"
+    },
+    "ws6b_corpus/2025-06-20.md": {
+      "bytes": 30606,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a0e47ecea9550f16746a8f5790517c7d41dd64d1f8a02fcdfcaeab4ca1574503"
+    },
+    "ws6b_corpus/2025-06-23.md": {
+      "bytes": 22321,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "1a5bd524c7740e2b5f1c49ab1d49bcc11873ce29f1113985b600a2c4e7960b45"
+    },
+    "ws6b_corpus/2025-06-24.md": {
+      "bytes": 24548,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "b673fc0aac1baacdb428cf59cdfc20f79a93fc4a31efb339634a9a6b55fcf295"
+    },
+    "ws6b_corpus/2025-06-25.md": {
+      "bytes": 28659,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "b149f4f84600d5738e9b4246d2ff0e539f56b362c21dfb20091c22d44232dce3"
+    },
+    "ws6b_corpus/2025-06-26.md": {
+      "bytes": 16780,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "85973679da7cd7d19edfed71584b8de9c2f7ccb97368152b421b79e32c2bec08"
+    },
+    "ws6b_corpus/2025-06-27.md": {
+      "bytes": 24394,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "19c36c22ce5704ba83f800e267757fd3162e2f8b99ca34d29aee2ba081c74f65"
+    },
+    "ws6b_corpus/2025-06-30.md": {
+      "bytes": 24031,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "f73a4a4758866ff0b227d5c698f6b6c91fb2bfe5e0e1369b7339994b094a1f12"
+    },
+    "ws6b_corpus/2025-07-01.md": {
+      "bytes": 19292,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c767a516a2fd02bce37fb2e382a11154743e9bce7c16689a6469ae17236ac829"
+    },
+    "ws6b_corpus/2025-07-02.md": {
+      "bytes": 18116,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "39cdae6dcba20f6e2c3956f153e220412a31ad24636635e6f10a521fced309d5"
+    },
+    "ws6b_corpus/2025-07-03.md": {
+      "bytes": 14211,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8f02a128b817c92d62eddc62e617675770e710b497b49434fd9fc84b245f74e1"
+    },
+    "ws6b_corpus/2025-07-04.md": {
+      "bytes": 21113,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "71625abee4059df2ede25bf3085cf9b272526aaa69b2f239c002c5141b30aa34"
+    },
+    "ws6b_corpus/2025-07-07.md": {
+      "bytes": 17694,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "b900d4cb55928f645c3dbc009a82fe484ad1169589e4501f0328949a38047de5"
+    },
+    "ws6b_corpus/2025-07-08.md": {
+      "bytes": 24250,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "877c1f5c81115598f18e624edec60887c912aa16cf75e05bc689faba5f80290b"
+    },
+    "ws6b_corpus/2025-07-09.md": {
+      "bytes": 19195,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7aef3cdc4b01b08d3e5e74169c0313bfe584e3132f04449edf9b56a91cb38111"
+    },
+    "ws6b_corpus/2025-07-10.md": {
+      "bytes": 19639,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "4c8f155854cf4a9ce52434ab6f1b0282ab62c912267c8bb0d0a68c232eb7bd0b"
+    },
+    "ws6b_corpus/2025-07-11.md": {
+      "bytes": 29520,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "057ff445bac2025a76ab2a874827b6544361e7bf72079571b584fe1336a68f8c"
+    },
+    "ws6b_corpus/2025-07-14.md": {
+      "bytes": 13806,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "a86609562a2f0c2d3bf92b5150b977f2af1f42e4ad2003d4c265fbe51d079edc"
+    },
+    "ws6b_corpus/2025-07-15.md": {
+      "bytes": 13418,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c6a7da671255e358b595a2b0066fbee5ecd10e29df2f0eb714f59a5564f1b196"
+    },
+    "ws6b_corpus/2025-07-16.md": {
+      "bytes": 35320,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "8a73f4f67118a3504dbcdea022cc7305ca9cd5a7c7cebced0d567de58d2496f7"
+    },
+    "ws6b_corpus/2025-07-17.md": {
+      "bytes": 21380,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "e6ab7817f420314f688c33aacc984e4cf75f379ed91b8230aee1b361e5867843"
+    },
+    "ws6b_corpus/2025-07-18.md": {
+      "bytes": 12213,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "c1d549f6f2d5930fe879f7cec331994799b35ae2d3239513e4f7b84fb3ebc56f"
+    },
+    "ws6b_corpus/2025-07-21.md": {
+      "bytes": 8904,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "224483c97ec9ba1ca9f8d41ba8b65a28d5bd22d7e21f0d3d52b48b5100b6e5e3"
+    },
+    "ws6b_corpus/2025-07-22.md": {
+      "bytes": 16393,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "be3c9dc37da612fa380f3aa966811e050b0228256a7159f81933e94a429a9ece"
+    },
+    "ws6b_corpus/2025-07-23.md": {
+      "bytes": 13198,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "9039692e818fb880141d208bd27aa9a7babd0bffedb8f62091d8ee9c1377b991"
+    },
+    "ws6b_corpus/2025-07-24.md": {
+      "bytes": 24910,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "15104b6d64b6f4e39ef9ab9fd10d31af5f384d5728f18807209b09a1b3e51bd9"
+    },
+    "ws6b_corpus/2025-07-25.md": {
+      "bytes": 49104,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "7b83013d45964c4a00c1ec39db987477ba1add9162403bd36a78604387d6e137"
+    },
+    "ws6b_corpus/facts.json": {
+      "bytes": 11359,
+      "recorded_at": "2026-08-18T16:26:10",
+      "sha256": "519168c25293d4272cae0c8288d89f26f48c25ef07d4235ccc9afa9171c17c1b"
+    },
+    "ws8_corpus/raw/fastapi__fastapi.json": {
+      "backfilled_stamp": true,
+      "bytes": 3849542,
+      "comment_count_mismatch_detail": [],
+      "comment_count_mismatches": 0,
+      "created_at_max": "2026-08-31T05:10:56Z",
+      "created_at_min": "2026-06-01T04:41:44Z",
+      "direction": "asc",
+      "duplicate_threads_dropped": 0,
+      "fetch_basis": "cap8000_bulk_comments_v1",
+      "fetched_at": "2026-09-11T09:28:48Z",
+      "issues": 22,
+      "max_threads_per_repo": 8000,
+      "prs": 453,
+      "recorded_at": "2026-09-11T09:52:05",
+      "repo": "fastapi/fastapi",
+      "sha256": "56389aa3e445b709389720a88a1874f904265505c9fd738f1c66df53d2b17c9f",
+      "sort": "created",
+      "threads": 475,
+      "window_pinned": "2026-06-01..2026-09-01"
+    },
+    "ws8_corpus/raw/kubernetes__kubernetes.json": {
+      "backfilled_stamp": true,
+      "bytes": 45599561,
+      "comment_count_mismatch_detail": [
+        {
+          "actual": 4,
+          "expected": 5,
+          "number": 141310
+        },
+        {
+          "actual": 9,
+          "expected": 10,
+          "number": 141532
+        }
+      ],
+      "comment_count_mismatches": 2,
+      "created_at_max": "2026-08-31T22:25:43Z",
+      "created_at_min": "2026-06-01T02:52:45Z",
+      "direction": "asc",
+      "duplicate_threads_dropped": 0,
+      "fetch_basis": "cap8000_bulk_comments_v1",
+      "fetched_at": "2026-09-11T09:36:19Z",
+      "issues": 536,
+      "max_threads_per_repo": 8000,
+      "prs": 1776,
+      "recorded_at": "2026-09-11T09:52:05",
+      "repo": "kubernetes/kubernetes",
+      "sha256": "6ff4b2643857172089565ad77022eaa6a35d1a7072dbfbc268312f2b1b99b6d4",
+      "sort": "created",
+      "threads": 2312,
+      "window_pinned": "2026-06-01..2026-09-01"
+    },
+    "ws8_corpus/raw/rust-lang__rust.json": {
+      "bytes": 124161086,
+      "comment_count_mismatch_detail": [
+        {
+          "actual": 7,
+          "expected": 8,
+          "number": 158241
+        },
+        {
+          "actual": 7,
+          "expected": 8,
+          "number": 158950
+        },
+        {
+          "actual": 48,
+          "expected": 47,
+          "number": 159378
+        },
+        {
+          "actual": 29,
+          "expected": 26,
+          "number": 161349
+        },
+        {
+          "actual": 12,
+          "expected": 11,
+          "number": 161482
+        }
+      ],
+      "comment_count_mismatches": 5,
+      "created_at_max": "2026-08-31T23:38:08Z",
+      "created_at_min": "2026-06-01T00:40:35Z",
+      "direction": "asc",
+      "duplicate_threads_dropped": 0,
+      "fetch_basis": "cap8000_bulk_comments_v1",
+      "fetched_at": "2026-09-11T09:06:58Z",
+      "issues": 1162,
+      "max_threads_per_repo": 8000,
+      "prs": 3698,
+      "recorded_at": "2026-09-11T10:06:58",
+      "repo": "rust-lang/rust",
+      "sha256": "ae9cbb2148e4f2ab3b78acaedd12782668b85369602c3b5fa799bffdd5bc450c",
+      "sort": "created",
+      "threads": 4860,
+      "window_pinned": "2026-06-01..2026-09-01"
+    }
+  },
+  "meta": {
+    "nb01_completed_10m": "2026-08-11T15:23:38",
+    "nb01_completed_1m": "2026-08-11T14:04:20",
+    "nb04_completed": "2026-09-07T13:35:28"
+  }
+}

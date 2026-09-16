@@ -1,0 +1,27 @@
+{
+  "probe_id": "f17",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `vellwood` through?",
+  "expected": "shunt-ledger",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 870,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I could not find any record in the conversation history of a decision to \"route\" `vellwood` through anything. The mentions of `vellwood` in the logs are about smoke-check confirmations, workload comparisons, a deferred cleanup, and it being left untouched pending `ladder-ledger` work \u2014 none of which describe a routing decision."
+        }
+      ]
+    }
+  ]
+}

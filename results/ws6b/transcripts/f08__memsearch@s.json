@@ -1,0 +1,60 @@
+{
+  "probe_id": "f08",
+  "arm": "memsearch@s",
+  "question": "Who owns `pelwell`?",
+  "expected": "Kipipley",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 893,
+        "output_tokens": 88,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "pelwell"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01QNoaQEFYf7qyssi3xLDdP4",
+          "content": "[\n  {\n    \"heading_level\": 3,\n    \"start_line\": 114,\n    \"end_line\": 123,\n    \"content\": \"### 12:03\\n<!-- session:d6e38103-5df7-4cc1-933b-385e2cc09f87 turn:75d9c07c-9d93-43ea-8182-144d5b120b1b transcript:/synthetic/ws6b/d6e38103-5df7-4cc1-933b-385e2cc09f87.jsonl -->\\n- Discussed whether `sprigvex` should adopt the `sieve-buffer` pattern the way `quillmure` already has. No decision -- the tradeoff depends on work that has not been scheduled yet.\\n- Deferred the `quillsey` cleanup until after the current milestone. The work is understood and scoped, but it touches `pelcote` in three places and nobody wanted that landing mid-cycle.\\n- Vessipley reported that `pelwood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `quillmet` did last month.\\n- Spent the morning reading `tangfold` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `gorsemure` before touching either of them.\\n- Reviewed `peldle` behaviour under sustained load and confirmed the observed latency came from `brimridge` rather than from `peldle` itself; no action taken beyond a note for the next planning round.\\n- Compared `pelley` against `murkcote` on the same workload. Throughput was broadly similar; the difference showed up only in tail latency, and only when the `relay-harness` path was exercised.\\n- Traced a slow path through `pelley` and found the delay was already present before the `sieve-queue` rollout, so the rollout was cleared as a cause and the investigation moved to `flinfold`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-13.md\",\n    \"heading\": \"12:03\",\n    \"chunk_hash\": \"568680e98c1c9949\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"heading_level\": 3,\n    \"start_line\": 61,\n    \"end_line\": 69,\n    \"content\": \"### 11:27\\n<!-- session:a8350a40-0858-414d-952a-ed00d4aa826d turn:204d3f55-8559-4d77-b1e0-07b0bb6a3647 transcript:/synthetic/ws6b/a8350a40-0858-41",
+          "content_length": 6729,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3805,
+        "output_tokens": 16,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Kipipley owns `pelwell`."
+        }
+      ]
+    }
+  ]
+}

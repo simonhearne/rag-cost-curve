@@ -1,0 +1,2 @@
+stratum,n_questions,n_arms,tau,b1,b2,ci_lo,ci_hi,width,slope,slope_ci_lo,slope_ci_hi,n_boot,seed,sse_one_segment,sse_two_segment,branch
+primary,264,11,0.789429,-0.599989,0.267219,0.756942,0.969948,0.213005,0.21171,0.097498,0.331862,10000,42,0.00496829,0.00454744,N2

@@ -1,0 +1,15 @@
+qid,question,golds,subset,gt_presence_old,gt_presence_wb
+19,what age do you need to be to buy a bb gun,"[""18""]",main,True,False
+132,how many gold medals did australia win in the 2000 olympics,"[""16""]",main,True,False
+290,how many breeds of pigs are there in the uk,"[""---""]",main,True,False
+551,how many episodes in adventure time season 1,"[""26""]",main,True,False
+1094,new york heart association functional classification of angina,"[""II""]",main,True,False
+1342,most assists in an nba all star game,"[""60"", ""22""]",main,True,False
+1471,how many episodes of ray donovan series 3 are there,"[""60"", ""12""]",main,True,False
+1625,how many states have a cracker barrel restaurant,"[""43""]",main,True,False
+1964,how many series of diary of a wimpy kid are there,"[""12""]",main,False,False
+1969,what channel is abc on in phoenix arizona,"[""15""]",main,True,False
+1980,how many episodes is ash vs evil dead season 3,"[""10""]",main,True,False
+2284,how many co2 molecules are produced in aerobic respiration,"[""6""]",main,True,False
+2510,how many episodes in my name is earl season 4,"[""27""]",main,True,False
+3552,what episode does marnie come back in geordie shore,"[""5""]",main,True,False

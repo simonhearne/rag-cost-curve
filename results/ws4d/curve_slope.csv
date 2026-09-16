@@ -1,0 +1,2 @@
+stratum,n_questions,n_arms,slope,ci_lo,ci_hi,excludes_zero,n_boot,seed
+primary,264,11,0.21171,0.097498,0.331862,True,10000,42

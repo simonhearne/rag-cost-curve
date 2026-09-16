@@ -1,0 +1,24 @@
+{
+  "probe_id": "f07",
+  "arm": "replay@m",
+  "question": "What value did we set `camberceiling` on `flinley` to?",
+  "expected": "7051",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 23,
+        "output_tokens": 80,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 392171
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "**7051**\n\nThis was set in the Session 09:23 (2025 timestamp block around 15:18) conversation, during the \"12:25\" session with transcript `d7d2f88f-bdec-467a-ac6e-8294b9dac779`."
+        }
+      ]
+    }
+  ]
+}

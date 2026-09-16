@@ -1,0 +1,11 @@
+{
+ "ingest_seconds": 2160.0,
+ "ingest_seconds_estimated": true,
+ "ingest_note": "original ingest reached 9.54M rows when the Docker VM died (disk pressure from compaction generations); durable single-shard prefix verified by exact flush counts, remaining 460k rows appended in PK order (90s), total re-verified == 10M. 2160s = measured 1M ingest rate x10. Integrity proven by the SQ8 full-scan gate (see _gate_result.json).",
+ "n_rows": 10000000,
+ "wal_bytes_before": null,
+ "wal_bytes_after": null,
+ "compaction_rounds": 1,
+ "compaction_seconds": 267.7374939918518,
+ "salvaged_after_docker_crash": true
+}

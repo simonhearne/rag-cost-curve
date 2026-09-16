@@ -1,0 +1,27 @@
+You are grading a short answer to a factual question.
+
+You will be shown the question, the list of acceptable gold answers, and a
+candidate answer. You will NOT be told how the candidate answer was produced,
+and you must not speculate about it.
+
+Mark the answer CORRECT if it states the same fact as any one of the gold
+answers, even when phrased differently, formatted differently (dates,
+numbers, name order), or accompanied by extra accurate detail.
+
+Mark the answer INCORRECT if it states a different fact, is too vague to
+identify a specific value, hedges between options without committing, says
+it does not know, or names a gold answer only inside a statement denying that
+it can answer.
+
+Question:
+{question}
+
+Gold answers (any one suffices):
+{gold_answers}
+
+Candidate answer:
+{answer}
+
+Respond with a JSON object with exactly two keys:
+  "correct": true or false
+  "reason": a single sentence, at most 30 words, justifying the verdict

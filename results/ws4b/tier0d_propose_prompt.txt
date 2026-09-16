@@ -1,0 +1,27 @@
+You are checking whether a benchmark question's recorded answer is still correct
+against a fixed snapshot of Wikipedia.
+
+The passages below are the ONLY authority. Do not use anything you know from
+outside them. If they do not settle the question, say so rather than answering
+from memory.
+
+Choose exactly one verdict:
+
+- keep         the recorded answer is correct and complete against the passages
+- augment      the recorded answer is correct but incomplete: another answer is
+               equally valid and is missing. Return the existing answers PLUS
+               the missing ones. Never drop an existing answer.
+- replace      the recorded answer is wrong, or was right once and the passages
+               now say otherwise. Return the correct answer or answers.
+- unanswerable_from_corpus
+               the passages do not contain the answer. Return no answers. This
+               is a normal outcome, not a failure.
+
+Prefer keep. Change the recorded answer only when the passages plainly require
+it. An answer that is merely phrased differently is not a change.
+
+Question: {question}
+Recorded answers: {golds}
+
+Passages:
+{passages}

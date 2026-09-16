@@ -1,0 +1,57 @@
+{
+  "probe_id": "f20",
+  "arm": "memsearch@l",
+  "question": "What value did we set `plinthwidth` on `draycote` to?",
+  "expected": "8784",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 903,
+        "output_tokens": 56,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "plinthwidth draycote"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_017GZQQqNz4tXjvFh1uxFQqL",
+          "content": "[\n  {\n    \"start_line\": 12,\n    \"end_line\": 19,\n    \"content\": \"### 10:07\\n<!-- session:95e5b29d-3f9b-43d4-b475-25fcad6570df turn:2218e833-e0a5-4210-b0ef-a20b43058924 transcript:/synthetic/ws6b/95e5b29d-3f9b-43d4-b475-25fcad6570df.jsonl -->\\n- Marnesna asked whether `murkmet` needed a second reviewer before merging. It did not -- the change is confined to one file and does not alter how `murkley` consumes it.\\n- Spent the morning reading `galdmure` end to end and taking notes. No changes yet -- the goal was to understand how it hands off to `flindle` before touching either of them.\\n- Deferred the `sprigvex` cleanup until after the current milestone. The work is understood and scoped, but it touches `flinwood` in three places and nobody wanted that landing mid-cycle.\\n- Re-ran the `corbgate` verification suite after the `sieve-gateway` rollout. Everything passed, though two cases took noticeably longer than they did before the `murkmet` change landed.\\n- We set `plinthwidth` on `draycote` to 8784.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-04-21.md\",\n    \"heading\": \"10:07\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"145a552ac403ab54\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"start_line\": 54,\n    \"end_line\": 60,\n    \"content\": \"### 13:20\\n<!-- session:1d985d4a-0b5e-444f-945a-475844c1107f turn:a223d3b4-58ff-4c41-b306-7523f85b3e81 transcript:/synthetic/ws6b/1d985d4a-0b5e-444f-945a-475844c1107f.jsonl -->\\n- Noted that `thaxmet` and `brimridge` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Filed a note about `galdcote` for the next planning round. The gist is that it and `thaxridge` have grown apart enough that sharing the `sieve-ledger` path is now more cost than benefit.\\n- Traced a slow path through `galdwood` and found the delay was already present before the `ladder-queue` rollout, so the rollout was cleared a",
+          "content_length": 5568,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3420,
+        "output_tokens": 24,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "`plinthwidth` on `draycote` was set to **8784**."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+ "arm": "ivf_pq_m256",
+ "nprobe": 256,
+ "n_queries": 10000,
+ "measured": 0.81941,
+ "expected": 0.81941,
+ "delta": 0.0,
+ "tolerance": 0.003,
+ "passed": true,
+ "build_seconds": 7826.729673041991
+}

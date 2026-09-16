@@ -1,0 +1,27 @@
+{
+  "probe_id": "f00",
+  "arm": "replay_trunc@l",
+  "question": "What did we decide to route `flinmure` through?",
+  "expected": "spindle-buffer",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 18,
+        "output_tokens": 422,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 959251
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "text",
+          "text": "I don't see any record of a decision to route `flinmure` through anything in this conversation history. The only mention of `flinmure` I can find is a note that an experimental tweak to it was backed out (with `sieve-buffer` unaffected, requiring no follow-up) \u2014 there's no routing decision documented."
+        }
+      ]
+    }
+  ]
+}

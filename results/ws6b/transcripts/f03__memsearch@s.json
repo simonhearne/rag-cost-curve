@@ -1,0 +1,60 @@
+{
+  "probe_id": "f03",
+  "arm": "memsearch@s",
+  "question": "What did we decide to route `hobcote` through?",
+  "expected": "relay-gateway",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 897,
+        "output_tokens": 69,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "hobcote"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01E6Eh3yaVyB74vU36hwUQ33",
+          "content": "[\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-13.md\",\n    \"heading\": \"10:20\",\n    \"heading_level\": 3,\n    \"start_line\": 27,\n    \"end_line\": 33,\n    \"content\": \"### 10:20\\n<!-- session:4849032c-4875-4d16-ba0c-96e28720d00f turn:dcb9d394-e8ac-44c4-b6b9-824010416cbc transcript:/synthetic/ws6b/4849032c-4875-4d16-ba0c-96e28720d00f.jsonl -->\\n- Reviewed `vellcote` behaviour under sustained load and confirmed the observed latency came from `thaxridge` rather than from `vellcote` itself; no action taken beyond a note for the next planning round.\\n- Backed out an experimental tweak to `wraswell` after the numbers moved in the wrong direction. The revert was clean and `ladder-arbiter` was unaffected, so no follow-up is needed.\\n- Deferred the `hobsey` cleanup until after the current milestone. The work is understood and scoped, but it touches `tangfold` in three places and nobody wanted that landing mid-cycle.\\n- Re-ran the `murkcote` verification suite after the `sieve-arbiter` rollout. Everything passed, though two cases took noticeably longer than they did before the `thaxridge` change landed.\",\n    \"chunk_hash\": \"4a71ef027810ddcc\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-09.md\",\n    \"heading\": \"14:20\",\n    \"heading_level\": 3,\n    \"start_line\": 62,\n    \"end_line\": 69,\n    \"content\": \"### 14:20\\n<!-- session:37f39aac-e2ad-428b-913c-9f250b3f953a turn:7b6ce596-aa97-435d-99ff-74ebfa5f9e72 transcript:/synthetic/ws6b/37f39aac-e2ad-428b-913c-9f250b3f953a.jsonl -->\\n- Noted that `draynail` and `vellsey` disagree about retry semantics: one gives up after the first failure, the other keeps going. Neither is obviously wrong, so it was written down rather than fixed.\\n- Confirmed `tanggate` still passes its smoke checks after the `wrasmet` change. Branolm double-checked the `ladder-arbiter` interaction by hand because the automated coverage there is thin.\\n- Cleared a sta",
+          "content_length": 6011,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 3576,
+        "output_tokens": 34,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "We decided to route `hobcote` through `relay-gateway` rather than `bailer-queue`."
+        }
+      ]
+    }
+  ]
+}

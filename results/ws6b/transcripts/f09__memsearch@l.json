@@ -1,0 +1,96 @@
+{
+  "probe_id": "f09",
+  "arm": "memsearch@l",
+  "question": "Who owns `hobnail`?",
+  "expected": "Marniker",
+  "turns_detail": [
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 893,
+        "output_tokens": 92,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "hobnail owner"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01Qy8arCHfJ3p1ANzrEhgXGq",
+          "content": "[\n  {\n    \"start_line\": 53,\n    \"end_line\": 60,\n    \"content\": \"### 11:38\\n<!-- session:a8350a40-0858-414d-952a-ed00d4aa826d turn:3b4f068e-ecad-422d-9b2a-a4e4c0e354e7 transcript:/synthetic/ws6b/a8350a40-0858-414d-952a-ed00d4aa826d.jsonl -->\\n- Re-ran the `galdvex` verification suite after the `ladder-arbiter` rollout. Everything passed, though two cases took noticeably longer than they did before the `pelmure` change landed.\\n- Cleared a stale alert on `vellsey` that had been firing since Tuesday. The underlying condition resolved itself when `spindle-harness` was restarted, and Marnadou confirmed nothing downstream noticed.\\n- Rolled `gorsemure` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-queue` integration stayed green throughout.\\n- Marnadou reported that `gorsewood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `tanggate` did last month.\\n- Marniker owns `hobnail`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-20.md\",\n    \"heading\": \"11:38\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"2b8445ab336dc9fd\",\n    \"score\": 0.49999997206032276\n  },\n  {\n    \"start_line\": 72,\n    \"end_line\": 78,\n    \"content\": \"### 13:50\\n<!-- session:b75c3825-1c0f-487f-ab01-bba74b814a84 turn:53bddb05-1308-4f8b-ba34-5e8238f1f1ab transcript:/synthetic/ws6b/b75c3825-1c0f-487f-ab01-bba74b814a84.jsonl -->\\n- Skimmed the `gorsewood` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `quillmure`, which complicates bisecting.\\n- Dorlolm walked the team through the `quillrack` change set, flagged two places where error handling diverges from `galdwood`, and agreed to leave both alone until the interface settles.\\n- Rolled `galdnail` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-buffer` integration stayed g",
+          "content_length": 6268,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "tool_use",
+      "usage": {
+        "input_tokens": 3592,
+        "output_tokens": 95,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "thinking"
+        },
+        {
+          "type": "tool_use",
+          "name": "memory_search",
+          "input": {
+            "query": "owns hobnail"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "stop_reason": "",
+      "usage": null,
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01YCugZxBEwdLC8A7J21wFQF",
+          "content": "[\n  {\n    \"start_line\": 72,\n    \"end_line\": 78,\n    \"content\": \"### 13:50\\n<!-- session:b75c3825-1c0f-487f-ab01-bba74b814a84 turn:53bddb05-1308-4f8b-ba34-5e8238f1f1ab transcript:/synthetic/ws6b/b75c3825-1c0f-487f-ab01-bba74b814a84.jsonl -->\\n- Skimmed the `gorsewood` change history looking for the regression window. The likely candidates are all in the same week, and all of them also touch `quillmure`, which complicates bisecting.\\n- Dorlolm walked the team through the `quillrack` change set, flagged two places where error handling diverges from `galdwood`, and agreed to leave both alone until the interface settles.\\n- Rolled `galdnail` forward to the current build without incident; the smoke checks passed on the first attempt and the `ladder-buffer` integration stayed green throughout.\\n- Branipley owns `murknail`.\",\n    \"source\": \"/Users/simon/Projects/rag-cost-curve/data/ws6b_corpus/2025-01-20.md\",\n    \"heading\": \"13:50\",\n    \"heading_level\": 3,\n    \"chunk_hash\": \"caa689ca4401a595\",\n    \"score\": 0.9611662104725838\n  },\n  {\n    \"start_line\": 53,\n    \"end_line\": 60,\n    \"content\": \"### 11:38\\n<!-- session:a8350a40-0858-414d-952a-ed00d4aa826d turn:3b4f068e-ecad-422d-9b2a-a4e4c0e354e7 transcript:/synthetic/ws6b/a8350a40-0858-414d-952a-ed00d4aa826d.jsonl -->\\n- Re-ran the `galdvex` verification suite after the `ladder-arbiter` rollout. Everything passed, though two cases took noticeably longer than they did before the `pelmure` change landed.\\n- Cleared a stale alert on `vellsey` that had been firing since Tuesday. The underlying condition resolved itself when `spindle-harness` was restarted, and Marnadou confirmed nothing downstream noticed.\\n- Rolled `gorsemure` forward to the current build without incident; the smoke checks passed on the first attempt and the `sieve-queue` integration stayed green throughout.\\n- Marnadou reported that `gorsewood` looked healthy across the weekend window. One transient alert fired and cleared on its own, which matches what `tanggate",
+          "content_length": 5153,
+          "is_error": false
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "stop_reason": "end_turn",
+      "usage": {
+        "input_tokens": 6010,
+        "output_tokens": 15,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Marniker owns `hobnail`."
+        }
+      ]
+    }
+  ]
+}
